@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Việt Nhật Phiêu Lưu">
+  <meta name="description" content="Trò chơi phiêu lưu khám phá từ vựng và đánh vần tiếng Việt dành cho trẻ nhỏ trên iPad và trình duyệt.">
+  <title>Đảo Phiêu Lưu Từ Vựng — Tiếng Việt</title>
+  <link rel="stylesheet" href="app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Màn hình mở đầu: Chạm để bắt đầu (Kích hoạt Audio Context trên iPad Safari) -->
+  <div id="splash-screen" class="splash-screen">
+    <div class="splash-card">
+      <div class="mascot-bounce">🏝️ 🧭 🎒</div>
+      <h1 class="splash-title">ĐẢO PHIÊU LƯU TỪ VỰNG</h1>
+      <p class="splash-subtitle">Khám phá tiếng Việt qua từng bước ghép âm diệu kỳ!</p>
+      
+      <div class="ipad-badge">
+        <span>✨ Tối ưu mượt mà cho iPad Safari</span>
+      </div>
+
+      <button id="btn-start" class="btn-hero pulse">
+        <span class="icon">🚀</span> BẮT ĐẦU PHIÊU LƯU
+      </button>
+
+      <p class="splash-note">Chạm để mở khóa âm thanh giọng đọc chuẩn Hà Nội</p>
+    </div>
+  </div>
+
+  <!-- Thanh công cụ trên cùng (Top Navigation) -->
+  <header class="app-header">
+    <div class="header-left">
+      <button id="btn-back" class="nav-btn hidden" title="Quay lại bản đồ">
+        <span class="icon">🗺️</span> <span class="label">Bản đồ</span>
+      </button>
+      <div class="brand">
+        <span class="brand-icon">🏕️</span>
+        <span class="brand-name">Hành trình khám phá</span>
+      </div>
+    </div>
+
+    <div class="header-center">
+      <!-- Bộ chọn ngôn ngữ (Language Selector) -->
+      <div class="language-toggle-group">
+        <button id="lang-vi" class="lang-btn active">🇻🇳 Tiếng Việt</button>
+        <button id="lang-ja" class="lang-btn" title="Giai đoạn sau">🇯🇵 日本語 <span class="tag-soon">Sắp có</span></button>
+      </div>
+    </div>
+
+    <div class="header-right">
+      <!-- Điều khiển âm thanh độc lập -->
+      <button id="btn-sound-toggle" class="nav-btn icon-only" title="Bật/Tắt âm thanh">
+        <span id="sound-icon">🔊</span>
+      </button>
+      <button id="btn-speed-toggle" class="nav-btn speed-btn" title="Tốc độ đọc">
+        <span>Tốc độ: </span><b id="speed-label">Chậm</b>
+      </button>
+    </div>
+  </header>
+
+  <!-- Khu vực nội dung chính -->
+  <main id="app-container" class="app-container">
+    
+    <!-- GIAO DIỆN 1: BẢN ĐỒ KHÁM PHÁ (ISLAND MAP) -->
+    <section id="view-map" class="view active">
+      <div class="map-intro">
+        <h2>🧭 Bản Đồ Thám Hiểm</h2>
+        <p>Bé hãy chạm vào một trạm dừng chân để học ghép vần và thu thập huy hiệu nhé!</p>
+      </div>
+
+      <div class="filter-tabs">
+        <button class="tab-btn active" data-filter="confirmed">🌟 Từ đã duyệt (Chơi ngay)</button>
+        <button class="tab-btn" data-filter="starter">📚 Toàn bộ 32 từ khởi đầu</button>
+      </div>
+
+      <div id="island-grid" class="island-grid">
+        <!-- Render động từ dữ liệu vocabulary_vi_v2.json -->
+      </div>
+    </section>
+
+    <!-- GIAO DIỆN 2: PHÒNG KHÁM PHÁ TỪ & ĐÁNH VẦN (PHONICS STATION) -->
+    <section id="view-station" class="view hidden">
+      <div class="station-card">
+        <!-- Huy hiệu và chủ đề -->
+        <div class="station-meta">
+          <span id="word-topic" class="badge-topic">gia đình</span>
+          <span id="phonics-badge" class="badge-status">🌟 Đã kiểm duyệt</span>
+        </div>
+
+        <!-- Từ mục tiêu và hình ảnh minh họa -->
+        <div class="word-hero-box">
+          <div id="word-image-container" class="word-illustration">
+            <span id="word-emoji" class="word-emoji">👨</span>
+          </div>
+          <div class="word-text-group">
+            <h1 id="word-display" class="word-main">ba</h1>
+            <p id="word-meaning" class="word-meaning">Người bố thân yêu trong gia đình</p>
+          </div>
+          <button id="btn-play-full" class="btn-play-round" title="Nghe đọc cả từ">
+            <span>🔊</span>
+          </button>
+        </div>
+
+        <!-- QUY TRÌNH ĐÁNH VẦN TỪNG BƯỚC (Sound-by-Sound Blending) -->
+        <div class="blending-container">
+          <div class="blending-header">
+            <h3>🧩 Các bước ghép âm từng bước:</h3>
+            <button id="btn-play-all-steps" class="btn-action-small">
+              <span>▶️</span> Đọc toàn bộ chuỗi
+            </button>
+          </div>
+
+          <!-- Các thẻ bước đánh vần -->
+          <div id="phonics-steps-wrapper" class="steps-wrapper">
+            <!-- Render động: ví dụ [đờ] -> [a] -> [nhờ] -> [anh] -> [đanh] -> [đanh sắc đánh] -->
+          </div>
+        </div>
+
+        <!-- Câu ví dụ minh họa -->
+        <div class="example-box">
+          <span class="example-icon">💬</span>
+          <div class="example-content">
+            <span class="example-label">Câu ví dụ:</span>
+            <p id="example-text" class="example-text">"Ba đang đọc sách cho bé nghe."</p>
+          </div>
+          <button id="btn-play-example" class="btn-play-small" title="Nghe câu ví dụ">
+            <span>🔊</span>
+          </button>
+        </div>
+
+        <!-- Chân trang trạm học: Điều hướng & Nút thử thách -->
+        <div class="station-footer">
+          <button id="btn-prev-word" class="btn-secondary">◀ Từ trước</button>
+          <button id="btn-launch-game" class="btn-challenge">
+            <span>🎮</span> Chơi thử thách ghép từ!
+          </button>
+          <button id="btn-next-word" class="btn-secondary">Từ tiếp ▶</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- GIAO DIỆN 3: MINI GAME THỬ THÁCH (CHALLENGE ARENA) -->
+    <section id="view-game" class="view hidden">
+      <div class="challenge-card">
+        <div class="challenge-header">
+          <button id="btn-exit-game" class="btn-back-small">✕ Đóng game</button>
+          <div class="score-display">
+            <span>⭐ Ngôi sao: <b id="game-score">0</b></span>
+          </div>
+        </div>
+
+        <div class="challenge-body">
+          <h2 class="challenge-title">Bé hãy ghép các âm thành từ:</h2>
+          <div class="target-word-peek">
+            <span id="quiz-target-hint" class="quiz-target-hint">?</span>
+          </div>
+
+          <!-- Khu vực các thẻ đã chọn -->
+          <div id="drop-zone" class="drop-zone">
+            <!-- Thẻ đã chọn thả vào đây -->
+          </div>
+
+          <!-- Khu vực các mảnh âm để bé chọn -->
+          <div id="tiles-pool" class="tiles-pool">
+            <!-- Render các âm để bé chạm chọn -->
+          </div>
+
+          <div id="quiz-feedback" class="quiz-feedback hidden"></div>
+        </div>
+
+        <div class="challenge-footer">
+          <button id="btn-check-quiz" class="btn-hero">Kiểm tra kết quả</button>
+          <button id="btn-reset-quiz" class="btn-secondary">Làm lại</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Thông báo Toast dành cho iPad -->
+  <div id="toast" class="toast hidden"></div>
+
+  <!-- Script ứng dụng -->
+  <script src="app.js"></script>
+</body>
+</html>

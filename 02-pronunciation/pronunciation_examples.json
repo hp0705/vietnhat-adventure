@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "method": "sound_by_sound_blending",
+  "examples": [
+    {
+      "word": "bò",
+      "steps": [
+        {
+          "order": 1,
+          "type": "onset",
+          "display": "bờ"
+        },
+        {
+          "order": 2,
+          "type": "rime_part",
+          "display": "o"
+        },
+        {
+          "order": 3,
+          "type": "onset_rime_blend",
+          "display": "bo"
+        },
+        {
+          "order": 4,
+          "type": "tone_and_final",
+          "display": "bo huyền bò"
+        }
+      ],
+      "status": "user_confirmed"
+    },
+    {
+      "word": "bé",
+      "steps": [
+        {
+          "order": 1,
+          "type": "onset",
+          "display": "bờ"
+        },
+        {
+          "order": 2,
+          "type": "rime_part",
+          "display": "e"
+        },
+        {
+          "order": 3,
+          "type": "onset_rime_blend",
+          "display": "be"
+        },
+        {
+          "order": 4,
+          "type": "tone_and_final",
+          "display": "be sắc bé"
+        }
+      ],
+      "status": "user_confirmed"
+    },
+    {
+      "word": "bà",
+      "steps": [
+        {
+          "order": 1,
+          "type": "onset",
+          "display": "bờ"
+        },
+        {
+          "order": 2,
+          "type": "rime_part",
+          "display": "a"
+        },
+        {
+          "order": 3,
+          "type": "onset_rime_blend",
+          "display": "ba"
+        },
+        {
+          "order": 4,
+          "type": "tone_and_final",
+          "display": "ba huyền bà"
+        }
+      ],
+      "status": "user_confirmed"
+    },
+    {
+      "word": "ba",
+      "steps": [
+        {
+          "order": 1,
+          "type": "onset",
+          "display": "bờ"
+        },
+        {
+          "order": 2,
+          "type": "rime_part",
+          "display": "a"
+        },
+        {
+          "order": 3,
+          "type": "onset_rime_blend",
+          "display": "ba"
+        }
+      ],
+      "status": "user_confirmed"
+    },
+    {
+      "word": "đánh",
+      "steps": [
+        {
+          "order": 1,
+          "type": "onset",
+          "display": "đờ"
+        },
+        {
+          "order": 2,
+          "type": "rime_part",
+          "display": "a"
+        },
+        {
+          "order": 3,
+          "type": "rime_part",
+          "display": "nhờ"
+        },
+        {
+          "order": 4,
+          "type": "rime_blend",
+          "display": "anh"
+        },
+        {
+          "order": 5,
+          "type": "onset_rime_blend",
+          "display": "đanh"
+        },
+        {
+          "order": 6,
+          "type": "tone_and_final",
+          "display": "đanh sắc đánh"
+        }
+      ],
+      "status": "user_confirmed"
+    },
+    {
+      "word": "đau",
+      "steps": [
+        {
+          "order": 1,
+          "type": "onset",
+          "display": "đờ"
+        },
+        {
+          "order": 2,
+          "type": "rime_part",
+          "display": "a"
+        },
+        {
+          "order": 3,
+          "type": "rime_part",
+          "display": "u"
+        },
+        {
+          "order": 4,
+          "type": "rime_blend",
+          "display": "au"
+        },
+        {
+          "order": 5,
+          "type": "onset_rime_blend",
+          "display": "đau"
+        }
+      ],
+      "status": "editorial_correction_pending_owner_confirmation"
+    },
+    {
+      "word": "sau",
+      "steps": [
+        {
+          "order": 1,
+          "type": "onset",
+          "display": "sờ"
+        },
+        {
+          "order": 2,
+          "type": "rime_part",
+          "display": "a"
+        },
+        {
+          "order": 3,
+          "type": "rime_part",
+          "display": "u"
+        },
+        {
+          "order": 4,
+          "type": "rime_blend",
+          "display": "au"
+        },
+        {
+          "order": 5,
+          "type": "onset_rime_blend",
+          "display": "sau"
+        }
+      ],
+      "status": "editorial_correction_pending_owner_confirmation"
+    }
+  ]
+}
