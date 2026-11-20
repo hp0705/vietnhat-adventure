@@ -38,9 +38,13 @@
         "notes": "Chuỗi đánh vần đã được người dùng phê duyệt."
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0001/word.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0001/01-onset.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0001/02-rime.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0001/03-blend.mp3"
+        ],
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0001/example.mp3",
         "voice_profile": "adult_native_northern_clear_moderately_slow"
       },
       "image": {
@@ -97,9 +101,14 @@
         "notes": "Chuỗi đánh vần đã được người dùng phê duyệt."
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0002/word.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0002/01-onset.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0002/02-rime.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0002/03-blend.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0002/04-tone.mp3"
+        ],
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0002/example.mp3",
         "voice_profile": "adult_native_northern_clear_moderately_slow"
       },
       "image": {
@@ -237,9 +246,14 @@
         "notes": "Chuỗi đánh vần đã được người dùng phê duyệt."
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0005/word.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0005/01-onset.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0005/02-rime.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0005/03-blend.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0005/04-tone.mp3"
+        ],
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0005/example.mp3",
         "voice_profile": "adult_native_northern_clear_moderately_slow"
       },
       "image": {
@@ -306,9 +320,14 @@
         "notes": "Chuỗi đánh vần đã được người dùng phê duyệt."
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0006/word.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0006/01-onset.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0006/02-rime.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0006/03-blend.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0006/04-tone.mp3"
+        ],
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0006/example.mp3",
         "voice_profile": "adult_native_northern_clear_moderately_slow"
       },
       "image": {
@@ -1344,9 +1363,16 @@
         "status": "user_confirmed"
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0029/word.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0029/01-onset.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0029/02-rime-01.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0029/03-rime-02.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0029/04-rime-blend.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0029/05-blend.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0029/06-tone.mp3"
+        ],
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0029/example.mp3",
         "voice_profile": "adult_native_northern_clear_moderately_slow"
       },
       "image": {

@@ -109,14 +109,16 @@ function setupEventListeners() {
 
   // 5. Trạm học từ vựng
   document.getElementById('btn-play-full').addEventListener('click', () => {
-    if (state.currentWord) speakText(state.currentWord.word);
+    if (state.currentWord) {
+      playAudioSrc(state.currentWord.audio?.word_full, state.currentWord.word);
+    }
   });
 
   document.getElementById('btn-play-all-steps').addEventListener('click', playAllPhonicsSteps);
 
   document.getElementById('btn-play-example').addEventListener('click', () => {
     if (state.currentWord && state.currentWord.example_vi) {
-      speakText(state.currentWord.example_vi);
+      playAudioSrc(state.currentWord.audio?.example_sentence, state.currentWord.example_vi);
     }
   });
 
@@ -220,9 +222,9 @@ function openWordStation(item) {
   // Chuyển sang View Station
   switchView('view-station');
 
-  // Đọc từ chào mừng
+  // Đọc từ chào mừng bằng file thu âm chuẩn
   setTimeout(() => {
-    speakText(item.word);
+    playAudioSrc(item.audio?.word_full, item.word);
   }, 300);
 }
 
@@ -232,6 +234,7 @@ function renderPhonicsSteps(item) {
   wrapper.innerHTML = '';
 
   const sequence = (item.phonics && item.phonics.sequence) ? item.phonics.sequence : [];
+  const stepsAudio = (item.audio && item.audio.phonics_steps) ? item.audio.phonics_steps : [];
 
   if (sequence.length === 0) {
     wrapper.innerHTML = '<p style="color:#64748b; font-style:italic;">Chuỗi ghép âm đang chờ xác nhận từ giáo viên dạy đọc.</p>';
@@ -250,7 +253,8 @@ function renderPhonicsSteps(item) {
 
     card.addEventListener('click', () => {
       highlightStep(index);
-      speakText(stepText);
+      const audioSrc = stepsAudio[index];
+      playAudioSrc(audioSrc, stepText);
     });
 
     wrapper.appendChild(card);
@@ -265,20 +269,22 @@ function renderPhonicsSteps(item) {
   });
 }
 
-// Đọc toàn bộ chuỗi đánh vần lần lượt
+// Đọc toàn bộ chuỗi đánh vần lần lượt bằng audio chuẩn
 async function playAllPhonicsSteps() {
   if (!state.currentWord || !state.currentWord.phonics || !state.currentWord.phonics.sequence) return;
   const seq = state.currentWord.phonics.sequence;
+  const stepsAudio = (state.currentWord.audio && state.currentWord.audio.phonics_steps) ? state.currentWord.audio.phonics_steps : [];
 
   for (let i = 0; i < seq.length; i++) {
     highlightStep(i);
-    await speakTextAsync(seq[i]);
-    await waitMs(600);
+    const audioSrc = stepsAudio[i];
+    await playAudioSrc(audioSrc, seq[i]);
+    await waitMs(400);
   }
 
   // Đọc từ hoàn chỉnh cuối cùng
-  await waitMs(400);
-  speakText(state.currentWord.word);
+  await waitMs(300);
+  playAudioSrc(state.currentWord.audio?.word_full, state.currentWord.word);
 }
 
 function highlightStep(index) {
@@ -327,27 +333,29 @@ function startQuizGame() {
   tilesPool.innerHTML = '';
 
   // Xáo trộn các bước
-  const shuffled = [...seq].sort(() => Math.random() - 0.5);
+  const stepsAudio = (word.audio && word.audio.phonics_steps) ? word.audio.phonics_steps : [];
+  const stepsWithAudio = seq.map((step, i) => ({ step, audio: stepsAudio[i] }));
+  const shuffled = [...stepsWithAudio].sort(() => Math.random() - 0.5);
 
-  shuffled.forEach((step, idx) => {
+  shuffled.forEach((item, idx) => {
     const tile = document.createElement('button');
     tile.className = 'sound-tile';
-    tile.textContent = step;
-    tile.dataset.text = step;
+    tile.textContent = item.step;
+    tile.dataset.text = item.step;
     tile.dataset.id = `tile-${idx}`;
 
-    tile.addEventListener('click', () => selectQuizTile(tile, step));
+    tile.addEventListener('click', () => selectQuizTile(tile, item.step, item.audio));
     tilesPool.appendChild(tile);
   });
 
   switchView('view-game');
 }
 
-function selectQuizTile(tile, stepText) {
+function selectQuizTile(tile, stepText, stepAudio) {
   if (tile.classList.contains('selected')) return;
 
   tile.classList.add('selected');
-  speakText(stepText);
+  playAudioSrc(stepAudio, stepText);
   state.quizSelectedTiles.push({ el: tile, text: stepText });
 
   const dropZone = document.getElementById('drop-zone');
@@ -397,8 +405,42 @@ function confettiEffect() {
 }
 
 // ==========================================
-// 6. XỬ LÝ ÂM THANH & TỔNG HỢP GIỌNG ĐỌC
+// 6. XỬ LÝ ÂM THANH: PHÁT AUDIO FILE CHUẨN & DỰ PHÒNG TTS
 // ==========================================
+let currentAudio = null;
+
+function playAudioSrc(src, fallbackText) {
+  if (!state.soundEnabled) return Promise.resolve();
+
+  if (currentAudio) {
+    try {
+      currentAudio.pause();
+      currentAudio.currentTime = 0;
+    } catch (e) {}
+  }
+
+  // 1. Ưu tiên phát file âm thanh thu âm thật
+  if (src) {
+    return new Promise((resolve) => {
+      const audio = new Audio(src);
+      audio.playbackRate = state.speechRate === 0.75 ? 0.95 : 1.0;
+      currentAudio = audio;
+      audio.onended = () => resolve();
+      audio.onerror = (err) => {
+        console.warn('Không tải được audio file, chuyển sang giọng máy:', src, err);
+        speakTextAsync(fallbackText).then(resolve);
+      };
+      audio.play().catch(err => {
+        console.warn('Trình duyệt chặn autoplay hoặc lỗi play audio:', err);
+        speakTextAsync(fallbackText).then(resolve);
+      });
+    });
+  } else {
+    // 2. Dự phòng bằng giọng đọc nếu chưa có file thu âm
+    return speakTextAsync(fallbackText);
+  }
+}
+
 function speakText(text) {
   if (!state.soundEnabled || !text) return;
 
