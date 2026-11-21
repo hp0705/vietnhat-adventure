@@ -164,6 +164,9 @@ function setupEventListeners() {
 function unlockAudioAndStart() {
   state.audioUnlocked = true;
   
+  // Mở khóa Web Audio API trên iPad Safari
+  getAudioContext();
+
   // Phát âm thanh câm để giải phóng AudioContext trên WebKit Safari
   if ('speechSynthesis' in window) {
     const silent = new SpeechSynthesisUtterance('');
@@ -296,7 +299,7 @@ function renderPhonicsSteps(item) {
   });
 }
 
-// Đọc toàn bộ chuỗi đánh vần lần lượt bằng audio chuẩn
+// Đọc toàn bộ chuỗi đánh vần lần lượt bằng audio chuẩn với nhịp điệu tự nhiên, nhanh vừa
 async function playAllPhonicsSteps() {
   if (!state.currentWord || !state.currentWord.phonics || !state.currentWord.phonics.sequence) return;
   const seq = state.currentWord.phonics.sequence;
@@ -304,13 +307,14 @@ async function playAllPhonicsSteps() {
   for (let i = 0; i < seq.length; i++) {
     highlightStep(i);
     const audioSrc = getDialectAudio(state.currentWord, 'step', i);
-    await playAudioSrc(audioSrc, seq[i]);
-    await waitMs(400);
+    // Tăng tốc độ đọc từng bước lên 1.25x và rút ngắn thời gian nghỉ để chuỗi liền mạch
+    await playAudioSrc(audioSrc, seq[i], 1.25);
+    await waitMs(120);
   }
 
   // Đọc từ hoàn chỉnh cuối cùng
-  await waitMs(300);
-  playAudioSrc(getDialectAudio(state.currentWord, 'word'), state.currentWord.word);
+  await waitMs(180);
+  playAudioSrc(getDialectAudio(state.currentWord, 'word'), state.currentWord.word, 1.0);
 }
 
 function highlightStep(index) {
@@ -407,14 +411,22 @@ function handlePictureSelect(cardElement, option) {
     // Bé chọn ĐÚNG!
     cardElement.classList.add('correct');
     feedback.className = 'quiz-feedback success';
-    feedback.innerHTML = `🎉 Hoan hô bé! Chữ <b>"${option.word}"</b> chính là <b>${option.label}</b>!`;
+    feedback.innerHTML = `🎉 Đúng rồi! Bé giỏi quá! Chữ <b>"${option.word}"</b> chính là <b>${option.label}</b>!`;
     
     state.score += 10;
     document.getElementById('game-score').textContent = state.score;
 
-    // Phát âm thanh đọc từ đã chọn bằng giọng đang chọn
-    playAudioSrc(getDialectAudio(state.quizCurrentWord, 'word'), state.quizCurrentWord.word);
-    confettiEffect();
+    // 1. Phát âm thanh chuông reo chiến thắng vui nhộn
+    playChimeSound('correct');
+
+    // 2. Bắn pháo hoa rực rỡ trên màn hình iPad
+    triggerFireworks();
+
+    // 3. Giọng đọc khen ngợi "Đúng rồi! Bé giỏi quá!" theo giọng đang chọn (Bắc / Nam)
+    const correctAudio = `06-assets/audio/common/correct-${state.currentDialect}.mp3`;
+    setTimeout(() => {
+      playAudioSrc(correctAudio, 'Đúng rồi! Bé giỏi quá!');
+    }, 250);
 
     // Hiện nút chuyển sang từ tiếp theo
     document.getElementById('btn-next-quiz').classList.remove('hidden');
@@ -427,11 +439,14 @@ function handlePictureSelect(cardElement, option) {
     feedback.className = 'quiz-feedback error';
     feedback.innerHTML = `💡 Chưa đúng rồi! Đây là <b>${option.label}</b>. Bé nhìn kỹ chữ lại nhé!`;
     
-    // Phát âm thanh đọc từ của hình bé vừa bấm để bé học thêm từ đó!
-    const distractorItem = state.items.find(x => x.word === option.word);
-    if (distractorItem) {
-      playAudioSrc(getDialectAudio(distractorItem, 'word'), option.word);
-    }
+    // 1. Âm thanh báo sai nhẹ nhàng thân thiện
+    playChimeSound('wrong');
+
+    // 2. Giọng đọc động viên "Bé thử lại nhé!" theo giọng đang chọn (Bắc / Nam)
+    const tryAgainAudio = `06-assets/audio/common/try-again-${state.currentDialect}.mp3`;
+    setTimeout(() => {
+      playAudioSrc(tryAgainAudio, 'Bé thử lại nhé!');
+    }, 150);
 
     setTimeout(() => {
       cardElement.classList.remove('wrong');
@@ -462,6 +477,138 @@ function confettiEffect() {
 // 6. XỬ LÝ ÂM THANH: PHÁT AUDIO FILE CHUẨN & DỰ PHÒNG TTS
 // ==========================================
 let currentAudio = null;
+let audioCtx = null;
+
+function getAudioContext() {
+  if (!audioCtx) {
+    const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+    if (AudioContextClass) audioCtx = new AudioContextClass();
+  }
+  if (audioCtx && audioCtx.state === 'suspended') {
+    audioCtx.resume();
+  }
+  return audioCtx;
+}
+
+// Phát âm thanh chuông reo (Đúng) hoặc âm boing nhẹ (Sai)
+function playChimeSound(type) {
+  if (!state.soundEnabled) return;
+  const ctx = getAudioContext();
+  if (!ctx) return;
+
+  if (type === 'correct') {
+    // Hợp âm chiến thắng rộn rã: C5, E5, G5, C6
+    const notes = [523.25, 659.25, 783.99, 1046.50];
+    notes.forEach((freq, idx) => {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(freq, ctx.currentTime + idx * 0.08);
+
+      gain.gain.setValueAtTime(0, ctx.currentTime + idx * 0.08);
+      gain.gain.linearRampToValueAtTime(0.22, ctx.currentTime + idx * 0.08 + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + idx * 0.08 + 0.45);
+
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.start(ctx.currentTime + idx * 0.08);
+      osc.stop(ctx.currentTime + idx * 0.08 + 0.5);
+    });
+  } else if (type === 'wrong') {
+    // Âm thanh boing nhẹ nhàng, hài hước, khích lệ
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(329.63, ctx.currentTime);
+    osc.frequency.exponentialRampToValueAtTime(220, ctx.currentTime + 0.3);
+
+    gain.gain.setValueAtTime(0.18, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.35);
+
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    osc.start(ctx.currentTime);
+    osc.stop(ctx.currentTime + 0.35);
+  }
+}
+
+// Bắn pháo hoa rực rỡ Canvas khi làm đúng
+let fireworksAnimationId = null;
+const particles = [];
+
+function triggerFireworks() {
+  const canvas = document.getElementById('fireworks-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const centers = [
+    { x: canvas.width * 0.28, y: canvas.height * 0.4 },
+    { x: canvas.width * 0.5, y: canvas.height * 0.32 },
+    { x: canvas.width * 0.72, y: canvas.height * 0.42 }
+  ];
+
+  const colors = ['#f59e0b', '#22c55e', '#38bdf8', '#ef4444', '#ec4899', '#a855f7', '#fbbf24', '#ffffff'];
+
+  centers.forEach(c => {
+    for (let i = 0; i < 40; i++) {
+      const angle = Math.random() * Math.PI * 2;
+      const speed = Math.random() * 8 + 3;
+      particles.push({
+        x: c.x,
+        y: c.y,
+        vx: Math.cos(angle) * speed,
+        vy: Math.sin(angle) * speed - 2,
+        size: Math.random() * 6 + 3,
+        color: colors[Math.floor(Math.random() * colors.length)],
+        alpha: 1,
+        decay: Math.random() * 0.018 + 0.012,
+        gravity: 0.15
+      });
+    }
+  });
+
+  if (!fireworksAnimationId) {
+    animateFireworks();
+  }
+}
+
+function animateFireworks() {
+  const canvas = document.getElementById('fireworks-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  for (let i = particles.length - 1; i >= 0; i--) {
+    const p = particles[i];
+    p.x += p.vx;
+    p.y += p.vy;
+    p.vy += p.gravity;
+    p.vx *= 0.98;
+    p.alpha -= p.decay;
+
+    if (p.alpha <= 0) {
+      particles.splice(i, 1);
+      continue;
+    }
+
+    ctx.save();
+    ctx.globalAlpha = p.alpha;
+    ctx.fillStyle = p.color;
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+  }
+
+  if (particles.length > 0) {
+    fireworksAnimationId = requestAnimationFrame(animateFireworks);
+  } else {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    fireworksAnimationId = null;
+  }
+}
 
 // Lấy file audio theo phương ngữ đang chọn (Bắc / Nam)
 function getDialectAudio(item, type, stepIndex) {
@@ -499,7 +646,7 @@ function toggleDialect() {
   }
 }
 
-function playAudioSrc(src, fallbackText) {
+function playAudioSrc(src, fallbackText, speedMultiplier = 1.0) {
   if (!state.soundEnabled) return Promise.resolve();
 
   if (currentAudio) {
@@ -513,7 +660,8 @@ function playAudioSrc(src, fallbackText) {
   if (src) {
     return new Promise((resolve) => {
       const audio = new Audio(src);
-      audio.playbackRate = state.speechRate === 0.75 ? 0.95 : 1.0;
+      const baseRate = state.speechRate === 0.75 ? 0.95 : 1.0;
+      audio.playbackRate = baseRate * speedMultiplier;
       currentAudio = audio;
       audio.onended = () => resolve();
       audio.onerror = (err) => {
