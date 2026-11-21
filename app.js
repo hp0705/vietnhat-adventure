@@ -396,15 +396,37 @@ function getPictureDataForWord(word) {
   if (word.includes('mèo')) return { emoji: '🐱', label: `Con ${word}` };
   if (word.includes('gà')) return { emoji: '🐔', label: `Con ${word}` };
   if (word.includes('vịt')) return { emoji: '🦆', label: `Con ${word}` };
-  if (word.includes('chim') || word.includes('bồ') || word.includes('tu hú') || word.includes('le le')) return { emoji: '🐦', label: `Con ${word}` };
-  if (word.includes('hoa') || word.includes('nụ')) return { emoji: '🌸', label: `Bông ${word}` };
-  if (word.includes('cây') || word.includes('đa') || word.includes('thụ')) return { emoji: '🌳', label: `Cây ${word}` };
-  if (word.includes('lá') || word.includes('cỏ') || word.includes('mạ')) return { emoji: '🌿', label: word };
-  if (word.includes('quả') || word.includes('khế') || word.includes('na') || word.includes('lê') || word.includes('nho') || word.includes('thị')) return { emoji: '🍎', label: `Quả ${word}` };
-  if (word.includes('xe') || word.includes('ca nô') || word.includes('đò')) return { emoji: '🚗', label: word };
-  if (word.includes('nhà') || word.includes('cố đô') || word.includes('phố')) return { emoji: '🏡', label: word };
-  if (word.includes('đá')) return { emoji: '🪨', label: `Hòn ${word}` };
-  if (word.includes('mì') || word.includes('phở') || word.includes('cơm') || word.includes('cỗ')) return { emoji: '🍜', label: `Món ${word}` };
+  if (word.includes('chim') || word.includes('bồ') || word.includes('tu hú') || word.includes('le le') || word.includes('vẹt') || word.includes('yến') || word.includes('quạ')) return { emoji: '🐦', label: `Con ${word}` };
+  if (word.includes('ngựa')) return { emoji: '🐎', label: `Con ${word}` };
+  if (word.includes('cua') || word.includes('ghẹ')) return { emoji: '🦀', label: `Con ${word}` };
+  if (word.includes('tôm')) return { emoji: '🦐', label: `Con ${word}` };
+  if (word.includes('ốc') || word.includes('sò')) return { emoji: '🐚', label: `Con ${word}` };
+  if (word.includes('ve') || word.includes('ong') || word.includes('bướm')) return { emoji: '🐝', label: `Con ${word}` };
+  if (word.includes('khỉ') || word.includes('vượn')) return { emoji: '🐒', label: `Con ${word}` };
+  if (word.includes('thỏ')) return { emoji: '🐰', label: `Con ${word}` };
+  if (word.includes('hổ') || word.includes('cọp')) return { emoji: '🐯', label: `Con ${word}` };
+  if (word.includes('voi')) return { emoji: '🐘', label: `Con ${word}` };
+
+  if (word.includes('hoa') || word.includes('nụ') || word.includes('sen')) return { emoji: '🌸', label: `Bông ${word}` };
+  if (word.includes('cây') || word.includes('đa') || word.includes('thụ') || word.includes('tre') || word.includes('rừng')) return { emoji: '🌳', label: `Cây ${word}` };
+  if (word.includes('lá') || word.includes('cỏ') || word.includes('mạ') || word.includes('rau')) return { emoji: '🌿', label: word };
+  if (word.includes('quả') || word.includes('trái') || word.includes('khế') || word.includes('na') || word.includes('lê') || word.includes('nho') || word.includes('thị') || word.includes('ngô') || word.includes('mía') || word.includes('dừa')) return { emoji: '🍎', label: `Quả ${word}` };
+  
+  if (word.includes('máy bay')) return { emoji: '✈️', label: word };
+  if (word.includes('tàu') || word.includes('thuyền') || word.includes('đò') || word.includes('ca nô')) return { emoji: '🚢', label: word };
+  if (word.includes('xe') || word.includes('bò kéo')) return { emoji: '🚗', label: word };
+
+  if (word.includes('nhà') || word.includes('cố đô') || word.includes('phố') || word.includes('trường') || word.includes('kho')) return { emoji: '🏡', label: word };
+  if (word.includes('đá') || word.includes('núi') || word.includes('đồi')) return { emoji: '🪨', label: `Hòn ${word}` };
+  if (word.includes('sông') || word.includes('suối') || word.includes('biển') || word.includes('hồ') || word.includes('nước')) return { emoji: '🌊', label: word };
+
+  if (word.includes('sách') || word.includes('vở') || word.includes('truyện')) return { emoji: '📖', label: word };
+  if (word.includes('bút') || word.includes('thước') || word.includes('phấn')) return { emoji: '✏️', label: word };
+  if (word.includes('bàn') || word.includes('ghế')) return { emoji: '🪑', label: word };
+  if (word.includes('đàn') || word.includes('pi-a-nô') || word.includes('hát') || word.includes('múa') || word.includes('ca')) return { emoji: '🎵', label: word };
+  if (word.includes('mì') || word.includes('phở') || word.includes('cơm') || word.includes('cỗ') || word.includes('bánh') || word.includes('chè')) return { emoji: '🍜', label: `Món ${word}` };
+  if (word.includes('chạy') || word.includes('nhảy') || word.includes('bơi') || word.includes('đi')) return { emoji: '🏃', label: word };
+  if (word.includes('áo') || word.includes('quần') || word.includes('mũ') || word.includes('nón') || word.includes('nơ') || word.includes('yếm')) return { emoji: '🎀', label: word };
 
   const emoji = emojiMap[word] || '🌟';
   return { emoji, label: `Từ: ${word}` };
@@ -630,14 +652,19 @@ async function loadLibraryData() {
   applyActiveModule(state.activeModule || 'vocab');
 }
 
-// Xây dựng lộ trình Học từ mới (Function 1)
+// Xây dựng lộ trình Học từ mới (Function 1 - 63 Bài học bao phủ trọn vẹn 632 từ vựng SGK)
 function buildVocabLessons() {
-  const authored = state.vocabItems.filter(x => x.content_status === 'authored_starter');
-  const sgkItems = state.vocabItems.filter(x => x.content_status !== 'authored_starter');
+  const itemMap = new Map();
+  state.vocabItems.forEach(it => itemMap.set(it.id, it));
 
-  const level1 = authored.filter(x => x.phonics?.complexity === '2_am');
-  const level2 = authored.filter(x => x.phonics?.complexity === '3_am');
-  const level3 = authored.filter(x => x.phonics?.complexity === '4_5_am' || x.phonics?.complexity === '5_am_tro_len');
+  const old60Ids = [
+    'vi_0001', 'vi_0002', 'vi_0003', 'vi_0004', 'vi_0005', 'vi_0006', 'vi_0007', 'vi_0008', 'vi_0009', 'vi_0010',
+    'vi_0011', 'vi_0012', 'vi_0013', 'vi_0014', 'vi_0015', 'vi_0016', 'vi_0017', 'vi_0018', 'vi_0019', 'vi_0020',
+    'vi_0021', 'vi_0022', 'vi_0023', 'vi_0024', 'vi_0025', 'vi_0026', 'vi_0027', 'vi_0028', 'vi_0029', 'vi_0030',
+    'vi_0031', 'vi_0032', 'vi_0033', 'vi_0034', 'vi_0036', 'vi_0037', 'vi_0038', 'vi_0040', 'vi_0041', 'vi_0042',
+    'vi_0043', 'vi_0044', 'vi_0045', 'vi_0047', 'vi_0048', 'vi_0049', 'vi_0051', 'vi_0054', 'vi_0055', 'vi_0056',
+    'vi_0059', 'vi_0063', 'vi_0066', 'vi_0067', 'vi_0068', 'vi_0072', 'vi_0073', 'vi_0074', 'vi_0080', 'vi_0081'
+  ];
 
   const lessons = [];
   lessons.push({
@@ -645,50 +672,47 @@ function buildVocabLessons() {
     lessonIndex: 0,
     title: 'Bài 1: Ghép 2 âm cơ bản (Gia đình & Động vật)',
     level: 'Cấp 1 (2 âm - Rất dễ)',
-    items: level1.slice(0, 10)
+    items: old60Ids.slice(0, 10).map(id => itemMap.get(id)).filter(Boolean)
   });
   lessons.push({
     id: 'lesson-2',
     lessonIndex: 1,
     title: 'Bài 2: Ghép 2 âm cơ bản (Thiên nhiên & Cây cối)',
     level: 'Cấp 1 (2 âm - Dễ)',
-    items: level1.slice(10, 20)
+    items: old60Ids.slice(10, 20).map(id => itemMap.get(id)).filter(Boolean)
   });
   lessons.push({
     id: 'lesson-3',
     lessonIndex: 2,
     title: 'Bài 3: Ghép 2 âm mở rộng (Đồ dùng & Sinh hoạt)',
     level: 'Cấp 1 (2 âm - Dễ)',
-    items: level1.slice(20, 30)
+    items: old60Ids.slice(20, 30).map(id => itemMap.get(id)).filter(Boolean)
   });
-  const l4Items = [...level1.slice(30), ...level2.slice(0, 8)];
   lessons.push({
     id: 'lesson-4',
     lessonIndex: 3,
     title: 'Bài 4: Nâng lên 3 âm (Vần đôi & Thiên nhiên)',
     level: 'Cấp 2 (3 âm - Vừa)',
-    items: l4Items
+    items: old60Ids.slice(30, 40).map(id => itemMap.get(id)).filter(Boolean)
   });
-  const l5Items = level2.slice(8, 18);
   lessons.push({
     id: 'lesson-5',
     lessonIndex: 4,
     title: 'Bài 5: Nâng lên 3 âm (Cơ thể & Hoạt động)',
     level: 'Cấp 2 (3 âm - Vừa)',
-    items: l5Items
+    items: old60Ids.slice(40, 50).map(id => itemMap.get(id)).filter(Boolean)
   });
-  const l6Items = [...level2.slice(18), ...level3];
   lessons.push({
     id: 'lesson-6',
     lessonIndex: 5,
     title: 'Bài 6: Nâng lên 4-5 âm & Từ ghép',
     level: 'Cấp 3 (4-5 âm - Nâng cao)',
-    items: l6Items
+    items: old60Ids.slice(50, 60).map(id => itemMap.get(id)).filter(Boolean)
   });
 
-  // Bài 7 (10 từ có đầy đủ âm thanh, ví dụ và hình ảnh)
+  // Bài 7 (10 từ ghép & động thực vật)
   const b7Ids = ['vi_0078', 'vi_0079', 'vi_0082', 'vi_0083', 'vi_0084', 'vi_0085', 'vi_0086', 'vi_0088', 'vi_0089', 'vi_0092'];
-  const b7Items = b7Ids.map(id => state.vocabItems.find(x => x.id === id)).filter(Boolean);
+  const b7Items = b7Ids.map(id => itemMap.get(id)).filter(Boolean);
   lessons.push({
     id: 'lesson-7',
     lessonIndex: 6,
@@ -697,9 +721,9 @@ function buildVocabLessons() {
     items: b7Items
   });
 
-  // Bài 8 (10 từ có đầy đủ âm thanh, ví dụ và hình ảnh)
+  // Bài 8 (10 từ thế giới tự nhiên & đời sống)
   const b8Ids = ['vi_0093', 'vi_0094', 'vi_0095', 'vi_0096', 'vi_0098', 'vi_0100', 'vi_0101', 'vi_0102', 'vi_0107', 'vi_0109'];
-  const b8Items = b8Ids.map(id => state.vocabItems.find(x => x.id === id)).filter(Boolean);
+  const b8Items = b8Ids.map(id => itemMap.get(id)).filter(Boolean);
   lessons.push({
     id: 'lesson-8',
     lessonIndex: 7,
@@ -707,6 +731,33 @@ function buildVocabLessons() {
     level: 'Cấp 3 (Mở rộng & Nâng cao)',
     items: b8Items
   });
+
+  // Toàn bộ các từ vựng còn lại được chia vào Bài 9 đến Bài 63 (Trọn vẹn 63 Bài học SGK)
+  const usedIds = new Set([...old60Ids, ...b7Ids, ...b8Ids]);
+  const remaining = state.vocabItems.filter(x => !usedIds.has(x.id));
+
+  const chunkSize = 10;
+  let lessonNum = 9;
+  let i = 0;
+  while (i < remaining.length) {
+    let chunk;
+    // Nếu gần cuối còn sót lại ít hơn 5 từ, gom vào Bài 63 để tạo đúng tròn 63 bài học
+    if (i + chunkSize >= remaining.length - 4 && i + chunkSize < remaining.length) {
+      chunk = remaining.slice(i);
+      i = remaining.length;
+    } else {
+      chunk = remaining.slice(i, i + chunkSize);
+      i += chunkSize;
+    }
+    lessons.push({
+      id: `lesson-${lessonNum}`,
+      lessonIndex: lessonNum - 1,
+      title: `Bài ${lessonNum}: Luyện đọc SGK (${chunk.length} từ)`,
+      level: `Cấp ${Math.min(5, Math.floor((lessonNum - 1) / 12) + 1)} (SGK Lớp 1)`,
+      items: chunk
+    });
+    lessonNum++;
+  }
 
   state.vocabLessons = lessons;
 }
@@ -1125,13 +1176,14 @@ async function playAllPhonicsSteps() {
   try {
     for (let i = 0; i < seq.length; i++) {
       const audioSrc = getDialectAudio(wordItem, 'step', i);
-      await playAudioSrc(audioSrc, seq[i], 1.25);
-      await waitMs(140);
+      // Đọc từ tốn, thong thả (tốc độ 0.9, nghỉ 350ms giữa các bước) để bé nghe rõ và nhẩm theo
+      await playAudioSrc(audioSrc, seq[i], 0.9);
+      await waitMs(350);
     }
 
-    // Đọc từ hoàn chỉnh cuối cùng
-    await waitMs(180);
-    await playAudioSrc(getDialectAudio(wordItem, 'word'), wordItem.word, 1.0);
+    // Khoảng lặng ngắn trước khi đọc từ hoàn chỉnh
+    await waitMs(500);
+    await playAudioSrc(getDialectAudio(wordItem, 'word'), wordItem.word, 0.95);
   } finally {
     if (btn) btn.classList.remove('playing');
   }
