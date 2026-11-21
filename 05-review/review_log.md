@@ -113,3 +113,13 @@
   - Cập nhật chuỗi đánh vần cho `vi_0007` (mèo): `['mờ', 'e', 'o', 'e o eo', 'mờ eo meo', 'meo huyền mèo']` (thay vì gộp tắt `eo`).
   - Sinh 6 file âm thanh chuẩn Bắc (`vi_0007/step_1.mp3` đến `step_6.mp3`): *Mờ ➔ E ➔ O ➔ E O EO ➔ Mờ EO MEO ➔ MEO huyền MÈO* bằng giọng Hoài My (`vi-VN-HoaiMyNeural`).
   - Cập nhật đồng bộ trong `vocabulary_vi_v2.json` và `vocabulary_vi_v2.csv`.
+
+
+### Phiên Bản 2.6.3 (2026-11-21) - Cá Nhân Hóa Lời Khen & Động Viên Cho "Bé Mây"
+- **Yêu cầu người dùng:** Đổi toàn bộ lời khen và động viên từ "Bé" thành "Bé Mây" (nickname của con), đảm bảo đồng nhất 100% giữa âm thanh và chữ hiển thị.
+- **Thực hiện:**
+  - Thu âm lại 8 câu khen ngợi (`praise_0.mp3` - `praise_7.mp3`) và 6 câu động viên (`encourage_0.mp3` - `encourage_5.mp3`) bằng giọng nữ chuẩn Hà Nội (`vi-VN-HoaiMyNeural`), gọi tên "Bé Mây".
+  - Cập nhật file âm thanh gốc `correct-north.mp3` và `try-again-north.mp3` tương ứng.
+  - Cập nhật bảng `PRAISE_ITEMS` và `ENCOURAGE_ITEMS` trong `app.js` để text, display và audio khớp nhau 100%.
+  - Cập nhật modal vinh danh chiến thắng (`Xuất sắc quá Bé Mây ơi! Bé Mây đạt...`) và modal động viên (`Cố lên Bé Mây yêu! Bé Mây hãy thử lại nhé...`).
+  - Cập nhật toàn bộ thông báo toast thân thiện dành riêng cho Bé Mây.

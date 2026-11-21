@@ -23,26 +23,26 @@ const state = {
   unlockAllMode: true // Mặc định tự do chọn bất kỳ bài học nào trên iPad
 };
 
-// Danh sách lời khen ngợi phong phú: ĐỒNG NHẤT 100% GIỮA ÂM THANH VÀ CHỮ HIỂN THỊ
+// Danh sách lời khen ngợi phong phú dành riêng cho Bé Mây: ĐỒNG NHẤT 100% GIỮA ÂM THANH VÀ CHỮ HIỂN THỊ
 const PRAISE_ITEMS = [
-  { text: "Đúng rồi! Bé giỏi quá!", display: "Đúng rồi! Bé giỏi quá! 🌟", audio: "06-assets/audio/common/praise_0.mp3" },
-  { text: "Hoan hô bé! Bé thông minh tuyệt vời!", display: "Hoan hô bé! Bé thông minh tuyệt vời! 🎉", audio: "06-assets/audio/common/praise_1.mp3" },
-  { text: "Chính xác rồi! Bé tuyệt vời quá!", display: "Chính xác rồi! Bé tuyệt vời quá! 🚀", audio: "06-assets/audio/common/praise_2.mp3" },
-  { text: "Bé chọn chuẩn xác rồi! Quá tuyệt vời!", display: "Bé chọn chuẩn xác rồi! Quá tuyệt vời! 👏", audio: "06-assets/audio/common/praise_3.mp3" },
-  { text: "Bé chăm ngoan và giỏi quá!", display: "Bé chăm ngoan và giỏi quá! 🌈", audio: "06-assets/audio/common/praise_4.mp3" },
-  { text: "Đúng rồi bé ơi! Bé làm tốt lắm!", display: "Đúng rồi bé ơi! Bé làm tốt lắm! 💖", audio: "06-assets/audio/common/praise_5.mp3" },
-  { text: "Bé trả lời xuất sắc quá!", display: "Bé trả lời xuất sắc quá! 🐱✨", audio: "06-assets/audio/common/praise_6.mp3" },
-  { text: "Giỏi lắm! Bé nhớ bài rất tốt!", display: "Giỏi lắm! Bé nhớ bài rất tốt! 🏆", audio: "06-assets/audio/common/praise_7.mp3" }
+  { text: "Đúng rồi Bé Mây giỏi quá", display: "Đúng rồi Bé Mây giỏi quá! 🌟", audio: "06-assets/audio/common/praise_0.mp3" },
+  { text: "Hoan hô bé Mây!", display: "Hoan hô bé Mây! 🎉", audio: "06-assets/audio/common/praise_1.mp3" },
+  { text: "Bé Mây tuyệt vời quá.", display: "Bé Mây tuyệt vời quá! 🚀", audio: "06-assets/audio/common/praise_2.mp3" },
+  { text: "Bé Mây chọn đúng rồi", display: "Bé Mây chọn đúng rồi! 👏", audio: "06-assets/audio/common/praise_3.mp3" },
+  { text: "Bé Mây rất là giỏi.", display: "Bé Mây rất là giỏi! 🌈", audio: "06-assets/audio/common/praise_4.mp3" },
+  { text: "Bé Mây làm tốt lắm!", display: "Bé Mây làm tốt lắm! 💖", audio: "06-assets/audio/common/praise_5.mp3" },
+  { text: "Bé Mây trả lời rất hay.", display: "Bé Mây trả lời rất hay! 🐱✨", audio: "06-assets/audio/common/praise_6.mp3" },
+  { text: "Bé Mây thật là giỏi!", display: "Bé Mây thật là giỏi! 🏆", audio: "06-assets/audio/common/praise_7.mp3" }
 ];
 
-// Danh sách lời khích lệ nhẹ nhàng: ĐỒNG NHẤT 100% GIỮA ÂM THANH VÀ CHỮ HIỂN THỊ
+// Danh sách lời khích lệ nhẹ nhàng dành riêng cho Bé Mây: ĐỒNG NHẤT 100% GIỮA ÂM THANH VÀ CHỮ HIỂN THỊ
 const ENCOURAGE_ITEMS = [
-  { text: "Bé cố lên, thử lại lần nữa nào!", display: "Bé cố lên, thử lại lần nữa nào! 💪", audio: "06-assets/audio/common/encourage_0.mp3" },
-  { text: "Bé nhìn kỹ lại nhé!", display: "Bé nhìn kỹ lại nhé! 👀", audio: "06-assets/audio/common/encourage_1.mp3" },
-  { text: "Tiếc quá, bé thử chọn lại lần nữa nhé!", display: "Tiếc quá, bé thử chọn lại lần nữa nhé! 🍀", audio: "06-assets/audio/common/encourage_2.mp3" },
-  { text: "Không sao đâu bé yêu, cùng làm lại nào!", display: "Không sao đâu bé yêu, cùng làm lại nào! 💖", audio: "06-assets/audio/common/encourage_3.mp3" },
-  { text: "Gần đúng rồi, bé thử lại nào!", display: "Gần đúng rồi, bé thử lại nào! ✨", audio: "06-assets/audio/common/encourage_4.mp3" },
-  { text: "Bé nhìn kỹ chữ và chọn lại nhé!", display: "Bé nhìn kỹ chữ và chọn lại nhé! 🧐", audio: "06-assets/audio/common/encourage_5.mp3" }
+  { text: "Bé Mây cố lên, thử lại lần nữa nào!", display: "Bé Mây cố lên, thử lại lần nữa nào! 💪", audio: "06-assets/audio/common/encourage_0.mp3" },
+  { text: "Bé Mây nhìn kỹ lại nhé!", display: "Bé Mây nhìn kỹ lại nhé! 👀", audio: "06-assets/audio/common/encourage_1.mp3" },
+  { text: "Bé Mây chọn lại một lần nữa nhé!", display: "Bé Mây chọn lại một lần nữa nhé! 🍀", audio: "06-assets/audio/common/encourage_2.mp3" },
+  { text: "Không sao đâu Bé Mây yêu, cùng làm lại nào!", display: "Không sao đâu Bé Mây yêu, cùng làm lại nào! 💖", audio: "06-assets/audio/common/encourage_3.mp3" },
+  { text: "Bé Mây gần đúng rồi", display: "Bé Mây gần đúng rồi! ✨", audio: "06-assets/audio/common/encourage_4.mp3" },
+  { text: "Bé Mây hãy chọn lại nhé", display: "Bé Mây hãy chọn lại nhé! 🧐", audio: "06-assets/audio/common/encourage_5.mp3" }
 ];
 
 // Hình minh họa sinh động cho từng câu ví dụ
@@ -536,7 +536,7 @@ function renderLessonTabs() {
 
     btn.addEventListener('click', () => {
       if (!isUnlocked) {
-        showToast(`🔒 Bé hãy đạt từ 8/10 điểm ở Bài ${idx} để mở khóa Bài ${idx + 1} nhé!`);
+        showToast(`🔒 Bé Mây hãy đạt từ 8/10 điểm ở Bài ${idx} để mở khóa Bài ${idx + 1} nhé!`);
         return;
       }
       state.currentLessonIndex = idx;
@@ -590,7 +590,7 @@ function setupEventListeners() {
     saveProgressToStorage();
     renderLessonTabs();
     showToast(state.unlockAllMode
-      ? 'Đã BẬT: Bé có thể tự do chọn bất kỳ bài học nào! 🔓'
+      ? 'Đã BẬT: Bé Mây có thể tự do chọn bất kỳ bài học nào! 🔓'
       : 'Đã BẬT: Chế độ học theo lộ trình (đạt 8/10 để qua bài) 🔒');
   });
 
@@ -681,7 +681,7 @@ function unlockAudioAndStart() {
       splash.style.display = 'none';
     }, 450);
   }
-  showToast('Đã mở khóa âm thanh cho iPad! Chúc bé học vui! 🌟');
+  showToast('Đã mở khóa âm thanh cho iPad! Chúc Bé Mây học vui! 🌟');
 }
 
 // ==========================================
@@ -812,7 +812,7 @@ function nextWord() {
   if (idx >= 0 && idx < list.length - 1) {
     openWordStation(list[idx + 1]);
   } else {
-    showToast('Bé đã xem hết các từ trong bài học này! 🎉');
+    showToast('Bé Mây đã xem hết các từ trong bài học này! 🎉');
   }
 }
 
@@ -976,7 +976,7 @@ function handlePictureSelect(cardElement, option) {
 
     // Lời khích lệ hiển thị đồng nhất
     feedback.className = 'quiz-feedback error';
-    feedback.innerHTML = `💡 ${encourageItem.display} Đây là <b>${option.label}</b>. Bé nhìn kỹ chữ lại nhé!`;
+    feedback.innerHTML = `💡 ${encourageItem.display} Đây là <b>${option.label}</b>. Bé Mây nhìn kỹ chữ lại nhé!`;
 
     setTimeout(() => {
       cardElement.classList.remove('wrong');
@@ -1028,15 +1028,15 @@ function finishQuizRound() {
     let carryMsg = '';
     if (state.carriedOverWords.length > 0) {
       const wordsStr = state.carriedOverWords.map(w => `<b>"${w.word}"</b>`).join(', ');
-      carryMsg = `<div class="carry-notice">📌 Các từ ${wordsStr} bé sẽ được gặp lại để ôn tập ở bài tiếp theo nhé!</div>`;
+      carryMsg = `<div class="carry-notice">📌 Các từ ${wordsStr} Bé Mây sẽ được gặp lại để ôn tập ở bài tiếp theo nhé!</div>`;
     }
 
     modal.innerHTML = `
       <div class="summary-card victory">
         <div class="summary-icon">🏆 🌟 🎓</div>
-        <h2>XUẤT SẮC QUÁ BÉ ƠI!</h2>
-        <p class="summary-score">Bé đạt <b>${round.score}/${total}</b> câu đúng!</p>
-        <p class="summary-desc">Bé đã hoàn thành xuất sắc và mở khóa <b>Bài ${nextLessonIdx + 1}</b>!</p>
+        <h2>XUẤT SẮC QUÁ BÉ MÂY ƠI!</h2>
+        <p class="summary-score">Bé Mây đạt <b>${round.score}/${total}</b> câu đúng!</p>
+        <p class="summary-desc">Bé Mây đã hoàn thành xuất sắc và mở khóa <b>Bài ${nextLessonIdx + 1}</b>!</p>
         ${carryMsg}
         <div class="summary-actions">
           ${nextLessonIdx < state.lessons.length ? `
@@ -1054,7 +1054,7 @@ function finishQuizRound() {
       </div>
     `;
 
-    speakVoiceText(`Xuất sắc quá bé ơi! Bé đạt ${round.score} trên ${total} câu đúng và mở khóa bài tiếp theo!`);
+    speakVoiceText(`Xuất sắc quá Bé Mây ơi! Bé Mây đạt ${round.score} trên ${total} câu đúng và mở khóa bài tiếp theo!`);
   } else {
     // CHƯA ĐẠT ĐIỂM YÊU CẦU
     playWrongBuzzer();
@@ -1062,9 +1062,9 @@ function finishQuizRound() {
     modal.innerHTML = `
       <div class="summary-card retry">
         <div class="summary-icon">💪 🐣 🌈</div>
-        <h2>CỐ LÊN BÉ YÊU!</h2>
-        <p class="summary-score">Bé đạt <b>${round.score}/${total}</b> câu đúng.</p>
-        <p class="summary-desc">Bé cần đạt ít nhất <b>${passingScore}/${total}</b> câu đúng để mở khóa Bài tiếp theo. Bé hãy thử lại nhé!</p>
+        <h2>CỐ LÊN BÉ MÂY YÊU!</h2>
+        <p class="summary-score">Bé Mây đạt <b>${round.score}/${total}</b> câu đúng.</p>
+        <p class="summary-desc">Bé Mây cần đạt ít nhất <b>${passingScore}/${total}</b> câu đúng để mở khóa Bài tiếp theo. Bé Mây hãy thử lại nhé!</p>
         <div class="summary-actions">
           <button id="btn-modal-retry" class="btn-hero">
             🔄 Thử lại ngay nào!
@@ -1076,7 +1076,7 @@ function finishQuizRound() {
       </div>
     `;
 
-    speakVoiceText(`Bé đạt ${round.score} trên ${total} điểm. Bé thử lại để đạt từ ${passingScore} điểm trở lên nhé!`);
+    speakVoiceText(`Bé Mây đạt ${round.score} trên ${total} điểm. Bé Mây thử lại để đạt từ ${passingScore} điểm trở lên nhé!`);
   }
 
   // Gắn sự kiện cho các nút điều hướng trong modal
