@@ -276,18 +276,31 @@ function setupEventListeners() {
 function unlockAudioAndStart() {
   state.audioUnlocked = true;
   
-  // Mở khóa Web Audio API trên iPad Safari
-  getAudioContext();
+  // Mở khóa Web Audio API trên iPad Safari (bọc try-catch an toàn tuyệt đối)
+  try {
+    getAudioContext();
+  } catch (e) {
+    console.warn('AudioContext init note:', e);
+  }
 
   // Phát âm thanh câm để giải phóng AudioContext trên WebKit Safari
-  if ('speechSynthesis' in window) {
-    const silent = new SpeechSynthesisUtterance('');
-    window.speechSynthesis.speak(silent);
+  try {
+    if ('speechSynthesis' in window) {
+      const silent = new SpeechSynthesisUtterance('');
+      window.speechSynthesis.speak(silent);
+    }
+  } catch (e) {
+    console.warn('SpeechSynthesis note:', e);
   }
 
   // Ẩn màn hình Splash
   const splash = document.getElementById('splash-screen');
-  splash.classList.add('hidden');
+  if (splash) {
+    splash.classList.add('hidden');
+    setTimeout(() => {
+      splash.style.display = 'none';
+    }, 450);
+  }
   showToast('Đã mở khóa âm thanh cho iPad! Chúc bé học vui! 🌟');
 }
 
@@ -357,18 +370,6 @@ function openWordStation(item) {
     badge.style.background = '#fef3c7';
     badge.style.color = '#92400e';
   }
-
-  // Render các bước đánh vần
-  renderPhonicsSteps(item);
-
-  // Chuyển sang View Station
-  switchView('view-station');
-
-  // Đọc từ chào mừng bằng file thu âm chuẩn của giọng đang chọn
-  setTimeout(() => {
-    playAudioSrc(getDialectAudio(item, 'word'), item.word);
-  }, 300);
-}
 
   // Render các bước đánh vần
   renderPhonicsSteps(item);
