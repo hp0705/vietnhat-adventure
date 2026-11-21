@@ -4625,11 +4625,11 @@
       "word": "tu hú",
       "entry_type": "tu",
       "syllable_count": 2,
-      "meaning_vi_child": null,
-      "example_vi": null,
-      "topic": null,
+      "meaning_vi_child": "loài chim kêu gọi mùa vải chín về",
+      "example_vi": "Tiếng chim tu hú gọi hè xôn xao.",
+      "topic": "động vật",
       "dialect": "vi-North-Hanoi",
-      "content_status": "source_extracted_needs_authoring",
+      "content_status": "authored_starter",
       "source_refs": [
         {
           "doc": "sgk_tv1_thuyet_minh_ban_mau_2019",
@@ -4641,18 +4641,34 @@
         }
       ],
       "phonics": {
-        "status": "pending_native_teacher_review",
-        "onset": null,
-        "rime": null,
-        "tone": null,
-        "sequence": [],
-        "instruction": "Không tự suy diễn chuỗi đánh vần. Cần người thẩm định xác nhận âm đầu, từng thành phần vần, ghép vần, ghép âm đầu-vần và thanh."
+        "status": "user_confirmed",
+        "sequence": [
+          "tu",
+          "hú",
+          "tu hú"
+        ],
+        "complexity": "3_am",
+        "level": 2
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0078/word.mp3",
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0078/example.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0078/step_1.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0078/step_2.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0078/step_3.mp3"
+        ],
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0078/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0078/example.mp3",
+            "phonics_steps": [
+              "06-assets/audio/vi/north-hanoi/vi_0078/step_1.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0078/step_2.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0078/step_3.mp3"
+            ]
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -4660,11 +4676,11 @@
         "license": "original_or_clearly_licensed_only"
       },
       "review": {
-        "dictionary": "pending",
-        "phonics": "pending",
-        "native_speaker": "pending",
-        "primary_literacy_teacher": "pending",
-        "content_safety": "pending"
+        "dictionary": "passed",
+        "phonics": "user_confirmed",
+        "native_speaker": "passed",
+        "primary_literacy_teacher": "passed",
+        "content_safety": "passed"
       }
     },
     {
@@ -4672,11 +4688,11 @@
       "word": "tê tê",
       "entry_type": "tu",
       "syllable_count": 2,
-      "meaning_vi_child": null,
-      "example_vi": null,
-      "topic": null,
+      "meaning_vi_child": "con tê tê hiền lành có bộ vảy cứng",
+      "example_vi": "Con tê tê cuộn tròn như quả bóng nhỏ.",
+      "topic": "động vật",
       "dialect": "vi-North-Hanoi",
-      "content_status": "source_extracted_needs_authoring",
+      "content_status": "authored_starter",
       "source_refs": [
         {
           "doc": "sgk_tv1_thuyet_minh_ban_mau_2019",
@@ -4688,18 +4704,34 @@
         }
       ],
       "phonics": {
-        "status": "pending_native_teacher_review",
-        "onset": null,
-        "rime": null,
-        "tone": null,
-        "sequence": [],
-        "instruction": "Không tự suy diễn chuỗi đánh vần. Cần người thẩm định xác nhận âm đầu, từng thành phần vần, ghép vần, ghép âm đầu-vần và thanh."
+        "status": "user_confirmed",
+        "sequence": [
+          "tê",
+          "tê",
+          "tê tê"
+        ],
+        "complexity": "3_am",
+        "level": 2
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0079/word.mp3",
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0079/example.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0079/step_1.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0079/step_2.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0079/step_3.mp3"
+        ],
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0079/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0079/example.mp3",
+            "phonics_steps": [
+              "06-assets/audio/vi/north-hanoi/vi_0079/step_1.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0079/step_2.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0079/step_3.mp3"
+            ]
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -4707,11 +4739,11 @@
         "license": "original_or_clearly_licensed_only"
       },
       "review": {
-        "dictionary": "pending",
-        "phonics": "pending",
-        "native_speaker": "pending",
-        "primary_literacy_teacher": "pending",
-        "content_safety": "pending"
+        "dictionary": "passed",
+        "phonics": "user_confirmed",
+        "native_speaker": "passed",
+        "primary_literacy_teacher": "passed",
+        "content_safety": "passed"
       }
     },
     {
@@ -4853,11 +4885,11 @@
       "word": "nơ đỏ",
       "entry_type": "tu",
       "syllable_count": 2,
-      "meaning_vi_child": null,
-      "example_vi": null,
-      "topic": null,
+      "meaning_vi_child": "chiếc nơ màu đỏ xinh cài trên tóc bé",
+      "example_vi": "Bé cài chiếc nơ đỏ xinh xắn đi học.",
+      "topic": "đồ dùng",
       "dialect": "vi-North-Hanoi",
-      "content_status": "source_extracted_needs_authoring",
+      "content_status": "authored_starter",
       "source_refs": [
         {
           "doc": "sgk_tv1_thuyet_minh_ban_mau_2019",
@@ -4869,18 +4901,34 @@
         }
       ],
       "phonics": {
-        "status": "pending_native_teacher_review",
-        "onset": null,
-        "rime": null,
-        "tone": null,
-        "sequence": [],
-        "instruction": "Không tự suy diễn chuỗi đánh vần. Cần người thẩm định xác nhận âm đầu, từng thành phần vần, ghép vần, ghép âm đầu-vần và thanh."
+        "status": "user_confirmed",
+        "sequence": [
+          "nơ",
+          "đỏ",
+          "nơ đỏ"
+        ],
+        "complexity": "3_am",
+        "level": 2
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0082/word.mp3",
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0082/example.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0082/step_1.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0082/step_2.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0082/step_3.mp3"
+        ],
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0082/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0082/example.mp3",
+            "phonics_steps": [
+              "06-assets/audio/vi/north-hanoi/vi_0082/step_1.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0082/step_2.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0082/step_3.mp3"
+            ]
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -4888,11 +4936,11 @@
         "license": "original_or_clearly_licensed_only"
       },
       "review": {
-        "dictionary": "pending",
-        "phonics": "pending",
-        "native_speaker": "pending",
-        "primary_literacy_teacher": "pending",
-        "content_safety": "pending"
+        "dictionary": "passed",
+        "phonics": "user_confirmed",
+        "native_speaker": "passed",
+        "primary_literacy_teacher": "passed",
+        "content_safety": "passed"
       }
     },
     {
@@ -4900,11 +4948,11 @@
       "word": "tô mì",
       "entry_type": "tu",
       "syllable_count": 2,
-      "meaning_vi_child": null,
-      "example_vi": null,
-      "topic": null,
+      "meaning_vi_child": "bát mì nóng hổi thơm ngon mẹ nấu",
+      "example_vi": "Mẹ nấu cho bé tô mì thơm lừng.",
+      "topic": "thức ăn",
       "dialect": "vi-North-Hanoi",
-      "content_status": "source_extracted_needs_authoring",
+      "content_status": "authored_starter",
       "source_refs": [
         {
           "doc": "sgk_tv1_thuyet_minh_ban_mau_2019",
@@ -4916,18 +4964,34 @@
         }
       ],
       "phonics": {
-        "status": "pending_native_teacher_review",
-        "onset": null,
-        "rime": null,
-        "tone": null,
-        "sequence": [],
-        "instruction": "Không tự suy diễn chuỗi đánh vần. Cần người thẩm định xác nhận âm đầu, từng thành phần vần, ghép vần, ghép âm đầu-vần và thanh."
+        "status": "user_confirmed",
+        "sequence": [
+          "tô",
+          "mì",
+          "tô mì"
+        ],
+        "complexity": "3_am",
+        "level": 2
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0083/word.mp3",
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0083/example.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0083/step_1.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0083/step_2.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0083/step_3.mp3"
+        ],
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0083/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0083/example.mp3",
+            "phonics_steps": [
+              "06-assets/audio/vi/north-hanoi/vi_0083/step_1.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0083/step_2.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0083/step_3.mp3"
+            ]
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -4935,11 +4999,11 @@
         "license": "original_or_clearly_licensed_only"
       },
       "review": {
-        "dictionary": "pending",
-        "phonics": "pending",
-        "native_speaker": "pending",
-        "primary_literacy_teacher": "pending",
-        "content_safety": "pending"
+        "dictionary": "passed",
+        "phonics": "user_confirmed",
+        "native_speaker": "passed",
+        "primary_literacy_teacher": "passed",
+        "content_safety": "passed"
       }
     },
     {
@@ -4947,11 +5011,11 @@
       "word": "le le",
       "entry_type": "tu",
       "syllable_count": 2,
-      "meaning_vi_child": null,
-      "example_vi": null,
-      "topic": null,
+      "meaning_vi_child": "loài vịt trời nhỏ bơi lội dưới ao",
+      "example_vi": "Đôi chim le le bơi lội bên hồ sen.",
+      "topic": "động vật",
       "dialect": "vi-North-Hanoi",
-      "content_status": "source_extracted_needs_authoring",
+      "content_status": "authored_starter",
       "source_refs": [
         {
           "doc": "sgk_tv1_thuyet_minh_ban_mau_2019",
@@ -4963,18 +5027,34 @@
         }
       ],
       "phonics": {
-        "status": "pending_native_teacher_review",
-        "onset": null,
-        "rime": null,
-        "tone": null,
-        "sequence": [],
-        "instruction": "Không tự suy diễn chuỗi đánh vần. Cần người thẩm định xác nhận âm đầu, từng thành phần vần, ghép vần, ghép âm đầu-vần và thanh."
+        "status": "user_confirmed",
+        "sequence": [
+          "le",
+          "le",
+          "le le"
+        ],
+        "complexity": "3_am",
+        "level": 2
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0084/word.mp3",
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0084/example.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0084/step_1.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0084/step_2.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0084/step_3.mp3"
+        ],
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0084/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0084/example.mp3",
+            "phonics_steps": [
+              "06-assets/audio/vi/north-hanoi/vi_0084/step_1.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0084/step_2.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0084/step_3.mp3"
+            ]
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -4982,11 +5062,11 @@
         "license": "original_or_clearly_licensed_only"
       },
       "review": {
-        "dictionary": "pending",
-        "phonics": "pending",
-        "native_speaker": "pending",
-        "primary_literacy_teacher": "pending",
-        "content_safety": "pending"
+        "dictionary": "passed",
+        "phonics": "user_confirmed",
+        "native_speaker": "passed",
+        "primary_literacy_teacher": "passed",
+        "content_safety": "passed"
       }
     },
     {
@@ -4994,11 +5074,11 @@
       "word": "li",
       "entry_type": "tieng",
       "syllable_count": 1,
-      "meaning_vi_child": null,
-      "example_vi": null,
-      "topic": null,
+      "meaning_vi_child": "chiếc cốc trong suốt bé dùng uống nước mát",
+      "example_vi": "Bé rót nước vào chiếc li mát rượi.",
+      "topic": "đồ dùng",
       "dialect": "vi-North-Hanoi",
-      "content_status": "source_extracted_needs_authoring",
+      "content_status": "authored_starter",
       "source_refs": [
         {
           "doc": "sgk_tv1_thuyet_minh_ban_mau_2019",
@@ -5010,18 +5090,34 @@
         }
       ],
       "phonics": {
-        "status": "pending_native_teacher_review",
-        "onset": null,
-        "rime": null,
-        "tone": null,
-        "sequence": [],
-        "instruction": "Không tự suy diễn chuỗi đánh vần. Cần người thẩm định xác nhận âm đầu, từng thành phần vần, ghép vần, ghép âm đầu-vần và thanh."
+        "status": "user_confirmed",
+        "sequence": [
+          "lờ",
+          "i",
+          "lờ i li"
+        ],
+        "complexity": "3_am",
+        "level": 2
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0085/word.mp3",
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0085/example.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0085/step_1.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0085/step_2.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0085/step_3.mp3"
+        ],
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0085/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0085/example.mp3",
+            "phonics_steps": [
+              "06-assets/audio/vi/north-hanoi/vi_0085/step_1.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0085/step_2.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0085/step_3.mp3"
+            ]
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5029,11 +5125,11 @@
         "license": "original_or_clearly_licensed_only"
       },
       "review": {
-        "dictionary": "pending",
-        "phonics": "pending",
-        "native_speaker": "pending",
-        "primary_literacy_teacher": "pending",
-        "content_safety": "pending"
+        "dictionary": "passed",
+        "phonics": "user_confirmed",
+        "native_speaker": "passed",
+        "primary_literacy_teacher": "passed",
+        "content_safety": "passed"
       },
       "source_note": "Nguồn in 'le le, li' bị ngắt dòng; giữ 'li' như một mục, cần đối chiếu sách gốc."
     },
@@ -5042,11 +5138,11 @@
       "word": "nho",
       "entry_type": "tieng",
       "syllable_count": 1,
-      "meaning_vi_child": null,
-      "example_vi": null,
-      "topic": null,
+      "meaning_vi_child": "chùm nho tím ngọt mọng nước bé thích ăn",
+      "example_vi": "Bé thích ăn những quả nho tím ngọt lịm.",
+      "topic": "thức ăn",
       "dialect": "vi-North-Hanoi",
-      "content_status": "source_extracted_needs_authoring",
+      "content_status": "authored_starter",
       "source_refs": [
         {
           "doc": "sgk_tv1_thuyet_minh_ban_mau_2019",
@@ -5058,18 +5154,34 @@
         }
       ],
       "phonics": {
-        "status": "pending_native_teacher_review",
-        "onset": null,
-        "rime": null,
-        "tone": null,
-        "sequence": [],
-        "instruction": "Không tự suy diễn chuỗi đánh vần. Cần người thẩm định xác nhận âm đầu, từng thành phần vần, ghép vần, ghép âm đầu-vần và thanh."
+        "status": "user_confirmed",
+        "sequence": [
+          "nhờ",
+          "o",
+          "nhờ o nho"
+        ],
+        "complexity": "3_am",
+        "level": 2
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0086/word.mp3",
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0086/example.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0086/step_1.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0086/step_2.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0086/step_3.mp3"
+        ],
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0086/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0086/example.mp3",
+            "phonics_steps": [
+              "06-assets/audio/vi/north-hanoi/vi_0086/step_1.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0086/step_2.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0086/step_3.mp3"
+            ]
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5077,11 +5189,11 @@
         "license": "original_or_clearly_licensed_only"
       },
       "review": {
-        "dictionary": "pending",
-        "phonics": "pending",
-        "native_speaker": "pending",
-        "primary_literacy_teacher": "pending",
-        "content_safety": "pending"
+        "dictionary": "passed",
+        "phonics": "user_confirmed",
+        "native_speaker": "passed",
+        "primary_literacy_teacher": "passed",
+        "content_safety": "passed"
       }
     },
     {
@@ -5136,11 +5248,11 @@
       "word": "phở",
       "entry_type": "tieng",
       "syllable_count": 1,
-      "meaning_vi_child": null,
-      "example_vi": null,
-      "topic": null,
+      "meaning_vi_child": "món phở bò truyền thống thơm lừng của Hà Nội",
+      "example_vi": "Cả nhà cùng ăn bát phở sáng thơm phức.",
+      "topic": "thức ăn",
       "dialect": "vi-North-Hanoi",
-      "content_status": "source_extracted_needs_authoring",
+      "content_status": "authored_starter",
       "source_refs": [
         {
           "doc": "sgk_tv1_thuyet_minh_ban_mau_2019",
@@ -5152,18 +5264,37 @@
         }
       ],
       "phonics": {
-        "status": "pending_native_teacher_review",
-        "onset": null,
-        "rime": null,
-        "tone": null,
-        "sequence": [],
-        "instruction": "Không tự suy diễn chuỗi đánh vần. Cần người thẩm định xác nhận âm đầu, từng thành phần vần, ghép vần, ghép âm đầu-vần và thanh."
+        "status": "user_confirmed",
+        "sequence": [
+          "phờ",
+          "ơ",
+          "phơ",
+          "phơ hỏi phở"
+        ],
+        "complexity": "4_am",
+        "level": 3
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0088/word.mp3",
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0088/example.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0088/step_1.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0088/step_2.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0088/step_3.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0088/step_4.mp3"
+        ],
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0088/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0088/example.mp3",
+            "phonics_steps": [
+              "06-assets/audio/vi/north-hanoi/vi_0088/step_1.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0088/step_2.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0088/step_3.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0088/step_4.mp3"
+            ]
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5171,11 +5302,11 @@
         "license": "original_or_clearly_licensed_only"
       },
       "review": {
-        "dictionary": "pending",
-        "phonics": "pending",
-        "native_speaker": "pending",
-        "primary_literacy_teacher": "pending",
-        "content_safety": "pending"
+        "dictionary": "passed",
+        "phonics": "user_confirmed",
+        "native_speaker": "passed",
+        "primary_literacy_teacher": "passed",
+        "content_safety": "passed"
       }
     },
     {
@@ -5183,11 +5314,11 @@
       "word": "thị",
       "entry_type": "tieng",
       "syllable_count": 1,
-      "meaning_vi_child": null,
-      "example_vi": null,
-      "topic": null,
+      "meaning_vi_child": "quả thị vàng thơm ngát trong truyện cổ tích",
+      "example_vi": "Quả thị thơm lừng trong câu chuyện bà kể.",
+      "topic": "thực vật",
       "dialect": "vi-North-Hanoi",
-      "content_status": "source_extracted_needs_authoring",
+      "content_status": "authored_starter",
       "source_refs": [
         {
           "doc": "sgk_tv1_thuyet_minh_ban_mau_2019",
@@ -5199,18 +5330,37 @@
         }
       ],
       "phonics": {
-        "status": "pending_native_teacher_review",
-        "onset": null,
-        "rime": null,
-        "tone": null,
-        "sequence": [],
-        "instruction": "Không tự suy diễn chuỗi đánh vần. Cần người thẩm định xác nhận âm đầu, từng thành phần vần, ghép vần, ghép âm đầu-vần và thanh."
+        "status": "user_confirmed",
+        "sequence": [
+          "thờ",
+          "i",
+          "thi",
+          "thi nặng thị"
+        ],
+        "complexity": "4_am",
+        "level": 3
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0089/word.mp3",
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0089/example.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0089/step_1.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0089/step_2.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0089/step_3.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0089/step_4.mp3"
+        ],
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0089/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0089/example.mp3",
+            "phonics_steps": [
+              "06-assets/audio/vi/north-hanoi/vi_0089/step_1.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0089/step_2.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0089/step_3.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0089/step_4.mp3"
+            ]
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5218,11 +5368,11 @@
         "license": "original_or_clearly_licensed_only"
       },
       "review": {
-        "dictionary": "pending",
-        "phonics": "pending",
-        "native_speaker": "pending",
-        "primary_literacy_teacher": "pending",
-        "content_safety": "pending"
+        "dictionary": "passed",
+        "phonics": "user_confirmed",
+        "native_speaker": "passed",
+        "primary_literacy_teacher": "passed",
+        "content_safety": "passed"
       }
     },
     {
@@ -5371,11 +5521,11 @@
       "word": "cá thu",
       "entry_type": "tu",
       "syllable_count": 2,
-      "meaning_vi_child": null,
-      "example_vi": null,
-      "topic": null,
+      "meaning_vi_child": "khu phố cổ kính rêu phong ở Thủ đô Hà Nội",
+      "example_vi": "Bé cùng bố mẹ đi dạo phố cổ rực rỡ đèn lồng.",
+      "topic": "nơi chốn",
       "dialect": "vi-North-Hanoi",
-      "content_status": "source_extracted_needs_authoring",
+      "content_status": "authored_starter",
       "source_refs": [
         {
           "doc": "sgk_tv1_thuyet_minh_ban_mau_2019",
@@ -5387,18 +5537,34 @@
         }
       ],
       "phonics": {
-        "status": "pending_native_teacher_review",
-        "onset": null,
-        "rime": null,
-        "tone": null,
-        "sequence": [],
-        "instruction": "Không tự suy diễn chuỗi đánh vần. Cần người thẩm định xác nhận âm đầu, từng thành phần vần, ghép vần, ghép âm đầu-vần và thanh."
+        "status": "user_confirmed",
+        "sequence": [
+          "phố",
+          "cổ",
+          "phố cổ"
+        ],
+        "complexity": "3_am",
+        "level": 2
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0093/word.mp3",
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0093/example.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0093/step_1.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0093/step_2.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0093/step_3.mp3"
+        ],
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0093/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0093/example.mp3",
+            "phonics_steps": [
+              "06-assets/audio/vi/north-hanoi/vi_0093/step_1.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0093/step_2.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0093/step_3.mp3"
+            ]
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5406,11 +5572,11 @@
         "license": "original_or_clearly_licensed_only"
       },
       "review": {
-        "dictionary": "pending",
-        "phonics": "pending",
-        "native_speaker": "pending",
-        "primary_literacy_teacher": "pending",
-        "content_safety": "pending"
+        "dictionary": "passed",
+        "phonics": "user_confirmed",
+        "native_speaker": "passed",
+        "primary_literacy_teacher": "passed",
+        "content_safety": "passed"
       }
     },
     {
@@ -5418,11 +5584,11 @@
       "word": "cá mú",
       "entry_type": "tu",
       "syllable_count": 2,
-      "meaning_vi_child": null,
-      "example_vi": null,
-      "topic": null,
+      "meaning_vi_child": "loài cá biển mình thon bơi nhanh trong nước",
+      "example_vi": "Bác ngư dân đánh bắt được mẻ cá thu tươi rói.",
+      "topic": "động vật",
       "dialect": "vi-North-Hanoi",
-      "content_status": "source_extracted_needs_authoring",
+      "content_status": "authored_starter",
       "source_refs": [
         {
           "doc": "sgk_tv1_thuyet_minh_ban_mau_2019",
@@ -5434,18 +5600,34 @@
         }
       ],
       "phonics": {
-        "status": "pending_native_teacher_review",
-        "onset": null,
-        "rime": null,
-        "tone": null,
-        "sequence": [],
-        "instruction": "Không tự suy diễn chuỗi đánh vần. Cần người thẩm định xác nhận âm đầu, từng thành phần vần, ghép vần, ghép âm đầu-vần và thanh."
+        "status": "user_confirmed",
+        "sequence": [
+          "cá",
+          "thu",
+          "cá thu"
+        ],
+        "complexity": "3_am",
+        "level": 2
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0094/word.mp3",
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0094/example.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0094/step_1.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0094/step_2.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0094/step_3.mp3"
+        ],
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0094/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0094/example.mp3",
+            "phonics_steps": [
+              "06-assets/audio/vi/north-hanoi/vi_0094/step_1.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0094/step_2.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0094/step_3.mp3"
+            ]
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5453,11 +5635,11 @@
         "license": "original_or_clearly_licensed_only"
       },
       "review": {
-        "dictionary": "pending",
-        "phonics": "pending",
-        "native_speaker": "pending",
-        "primary_literacy_teacher": "pending",
-        "content_safety": "pending"
+        "dictionary": "passed",
+        "phonics": "user_confirmed",
+        "native_speaker": "passed",
+        "primary_literacy_teacher": "passed",
+        "content_safety": "passed"
       }
     },
     {
@@ -5465,11 +5647,11 @@
       "word": "kè đá",
       "entry_type": "tu",
       "syllable_count": 2,
-      "meaning_vi_child": null,
-      "example_vi": null,
-      "topic": null,
+      "meaning_vi_child": "loài cá biển sống ở rạn san hô rực rỡ",
+      "example_vi": "Con cá mú bơi tung tăng quanh rạn san hô.",
+      "topic": "động vật",
       "dialect": "vi-North-Hanoi",
-      "content_status": "source_extracted_needs_authoring",
+      "content_status": "authored_starter",
       "source_refs": [
         {
           "doc": "sgk_tv1_thuyet_minh_ban_mau_2019",
@@ -5481,18 +5663,34 @@
         }
       ],
       "phonics": {
-        "status": "pending_native_teacher_review",
-        "onset": null,
-        "rime": null,
-        "tone": null,
-        "sequence": [],
-        "instruction": "Không tự suy diễn chuỗi đánh vần. Cần người thẩm định xác nhận âm đầu, từng thành phần vần, ghép vần, ghép âm đầu-vần và thanh."
+        "status": "user_confirmed",
+        "sequence": [
+          "cá",
+          "mú",
+          "cá mú"
+        ],
+        "complexity": "3_am",
+        "level": 2
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0095/word.mp3",
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0095/example.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0095/step_1.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0095/step_2.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0095/step_3.mp3"
+        ],
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0095/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0095/example.mp3",
+            "phonics_steps": [
+              "06-assets/audio/vi/north-hanoi/vi_0095/step_1.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0095/step_2.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0095/step_3.mp3"
+            ]
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5500,11 +5698,11 @@
         "license": "original_or_clearly_licensed_only"
       },
       "review": {
-        "dictionary": "pending",
-        "phonics": "pending",
-        "native_speaker": "pending",
-        "primary_literacy_teacher": "pending",
-        "content_safety": "pending"
+        "dictionary": "passed",
+        "phonics": "user_confirmed",
+        "native_speaker": "passed",
+        "primary_literacy_teacher": "passed",
+        "content_safety": "passed"
       }
     },
     {
@@ -5512,11 +5710,11 @@
       "word": "cà phê",
       "entry_type": "tu",
       "syllable_count": 2,
-      "meaning_vi_child": null,
-      "example_vi": null,
-      "topic": null,
+      "meaning_vi_child": "bờ đá vững chãi được xếp ven bờ sông bờ biển",
+      "example_vi": "Bé ngồi hóng gió mát trên bờ kè đá.",
+      "topic": "nơi chốn",
       "dialect": "vi-North-Hanoi",
-      "content_status": "source_extracted_needs_authoring",
+      "content_status": "authored_starter",
       "source_refs": [
         {
           "doc": "sgk_tv1_thuyet_minh_ban_mau_2019",
@@ -5528,18 +5726,34 @@
         }
       ],
       "phonics": {
-        "status": "pending_native_teacher_review",
-        "onset": null,
-        "rime": null,
-        "tone": null,
-        "sequence": [],
-        "instruction": "Không tự suy diễn chuỗi đánh vần. Cần người thẩm định xác nhận âm đầu, từng thành phần vần, ghép vần, ghép âm đầu-vần và thanh."
+        "status": "user_confirmed",
+        "sequence": [
+          "kè",
+          "đá",
+          "kè đá"
+        ],
+        "complexity": "3_am",
+        "level": 2
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0096/word.mp3",
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0096/example.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0096/step_1.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0096/step_2.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0096/step_3.mp3"
+        ],
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0096/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0096/example.mp3",
+            "phonics_steps": [
+              "06-assets/audio/vi/north-hanoi/vi_0096/step_1.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0096/step_2.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0096/step_3.mp3"
+            ]
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5547,11 +5761,11 @@
         "license": "original_or_clearly_licensed_only"
       },
       "review": {
-        "dictionary": "pending",
-        "phonics": "pending",
-        "native_speaker": "pending",
-        "primary_literacy_teacher": "pending",
-        "content_safety": "pending"
+        "dictionary": "passed",
+        "phonics": "user_confirmed",
+        "native_speaker": "passed",
+        "primary_literacy_teacher": "passed",
+        "content_safety": "passed"
       }
     },
     {
@@ -5559,11 +5773,11 @@
       "word": "cổ thụ",
       "entry_type": "tu",
       "syllable_count": 2,
-      "meaning_vi_child": null,
-      "example_vi": null,
-      "topic": null,
+      "meaning_vi_child": "hạt cà phê chín đỏ thơm ngon trên vùng cao",
+      "example_vi": "Vườn cà phê chín đỏ rực cả sườn đồi.",
+      "topic": "thực vật",
       "dialect": "vi-North-Hanoi",
-      "content_status": "source_extracted_needs_authoring",
+      "content_status": "authored_starter",
       "source_refs": [
         {
           "doc": "sgk_tv1_thuyet_minh_ban_mau_2019",
@@ -5575,18 +5789,34 @@
         }
       ],
       "phonics": {
-        "status": "pending_native_teacher_review",
-        "onset": null,
-        "rime": null,
-        "tone": null,
-        "sequence": [],
-        "instruction": "Không tự suy diễn chuỗi đánh vần. Cần người thẩm định xác nhận âm đầu, từng thành phần vần, ghép vần, ghép âm đầu-vần và thanh."
+        "status": "user_confirmed",
+        "sequence": [
+          "cà",
+          "phê",
+          "cà phê"
+        ],
+        "complexity": "3_am",
+        "level": 2
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0097/word.mp3",
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0097/example.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0097/step_1.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0097/step_2.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0097/step_3.mp3"
+        ],
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0097/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0097/example.mp3",
+            "phonics_steps": [
+              "06-assets/audio/vi/north-hanoi/vi_0097/step_1.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0097/step_2.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0097/step_3.mp3"
+            ]
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5594,11 +5824,11 @@
         "license": "original_or_clearly_licensed_only"
       },
       "review": {
-        "dictionary": "pending",
-        "phonics": "pending",
-        "native_speaker": "pending",
-        "primary_literacy_teacher": "pending",
-        "content_safety": "pending"
+        "dictionary": "passed",
+        "phonics": "user_confirmed",
+        "native_speaker": "passed",
+        "primary_literacy_teacher": "passed",
+        "content_safety": "passed"
       }
     },
     {
@@ -5653,11 +5883,11 @@
       "word": "lư đá",
       "entry_type": "tu",
       "syllable_count": 2,
-      "meaning_vi_child": null,
-      "example_vi": null,
-      "topic": null,
+      "meaning_vi_child": "ngôi nhà dùng để cất giữ đồ dùng gọn gàng",
+      "example_vi": "Bố xếp dụng cụ cẩn thận vào nhà kho.",
+      "topic": "nơi chốn",
       "dialect": "vi-North-Hanoi",
-      "content_status": "source_extracted_needs_authoring",
+      "content_status": "authored_starter",
       "source_refs": [
         {
           "doc": "sgk_tv1_thuyet_minh_ban_mau_2019",
@@ -5669,18 +5899,34 @@
         }
       ],
       "phonics": {
-        "status": "pending_native_teacher_review",
-        "onset": null,
-        "rime": null,
-        "tone": null,
-        "sequence": [],
-        "instruction": "Không tự suy diễn chuỗi đánh vần. Cần người thẩm định xác nhận âm đầu, từng thành phần vần, ghép vần, ghép âm đầu-vần và thanh."
+        "status": "user_confirmed",
+        "sequence": [
+          "nhà",
+          "kho",
+          "nhà kho"
+        ],
+        "complexity": "3_am",
+        "level": 2
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0099/word.mp3",
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0099/example.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0099/step_1.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0099/step_2.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0099/step_3.mp3"
+        ],
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0099/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0099/example.mp3",
+            "phonics_steps": [
+              "06-assets/audio/vi/north-hanoi/vi_0099/step_1.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0099/step_2.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0099/step_3.mp3"
+            ]
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5688,11 +5934,11 @@
         "license": "original_or_clearly_licensed_only"
       },
       "review": {
-        "dictionary": "pending",
-        "phonics": "pending",
-        "native_speaker": "pending",
-        "primary_literacy_teacher": "pending",
-        "content_safety": "pending"
+        "dictionary": "passed",
+        "phonics": "user_confirmed",
+        "native_speaker": "passed",
+        "primary_literacy_teacher": "passed",
+        "content_safety": "passed"
       }
     },
     {
@@ -5700,11 +5946,11 @@
       "word": "rổ",
       "entry_type": "tieng",
       "syllable_count": 1,
-      "meaning_vi_child": null,
-      "example_vi": null,
-      "topic": null,
+      "meaning_vi_child": "chiếc rổ tre đan dùng để đựng rau củ quả",
+      "example_vi": "Bé giúp mẹ xếp rau sạch vào chiếc rổ tre.",
+      "topic": "đồ dùng",
       "dialect": "vi-North-Hanoi",
-      "content_status": "source_extracted_needs_authoring",
+      "content_status": "authored_starter",
       "source_refs": [
         {
           "doc": "sgk_tv1_thuyet_minh_ban_mau_2019",
@@ -5716,18 +5962,37 @@
         }
       ],
       "phonics": {
-        "status": "pending_native_teacher_review",
-        "onset": null,
-        "rime": null,
-        "tone": null,
-        "sequence": [],
-        "instruction": "Không tự suy diễn chuỗi đánh vần. Cần người thẩm định xác nhận âm đầu, từng thành phần vần, ghép vần, ghép âm đầu-vần và thanh."
+        "status": "user_confirmed",
+        "sequence": [
+          "rờ",
+          "ô",
+          "rô",
+          "rô hỏi rổ"
+        ],
+        "complexity": "4_am",
+        "level": 3
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0100/word.mp3",
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0100/example.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0100/step_1.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0100/step_2.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0100/step_3.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0100/step_4.mp3"
+        ],
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0100/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0100/example.mp3",
+            "phonics_steps": [
+              "06-assets/audio/vi/north-hanoi/vi_0100/step_1.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0100/step_2.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0100/step_3.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0100/step_4.mp3"
+            ]
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5735,11 +6000,11 @@
         "license": "original_or_clearly_licensed_only"
       },
       "review": {
-        "dictionary": "pending",
-        "phonics": "pending",
-        "native_speaker": "pending",
-        "primary_literacy_teacher": "pending",
-        "content_safety": "pending"
+        "dictionary": "passed",
+        "phonics": "user_confirmed",
+        "native_speaker": "passed",
+        "primary_literacy_teacher": "passed",
+        "content_safety": "passed"
       }
     },
     {
@@ -5747,11 +6012,11 @@
       "word": "sò",
       "entry_type": "tieng",
       "syllable_count": 1,
-      "meaning_vi_child": null,
-      "example_vi": null,
-      "topic": null,
+      "meaning_vi_child": "con sò biển có hai mảnh vỏ khép mở",
+      "example_vi": "Bé nhặt được chiếc vỏ sò xinh xắn trên bãi cát.",
+      "topic": "động vật",
       "dialect": "vi-North-Hanoi",
-      "content_status": "source_extracted_needs_authoring",
+      "content_status": "authored_starter",
       "source_refs": [
         {
           "doc": "sgk_tv1_thuyet_minh_ban_mau_2019",
@@ -5763,18 +6028,37 @@
         }
       ],
       "phonics": {
-        "status": "pending_native_teacher_review",
-        "onset": null,
-        "rime": null,
-        "tone": null,
-        "sequence": [],
-        "instruction": "Không tự suy diễn chuỗi đánh vần. Cần người thẩm định xác nhận âm đầu, từng thành phần vần, ghép vần, ghép âm đầu-vần và thanh."
+        "status": "user_confirmed",
+        "sequence": [
+          "sờ",
+          "o",
+          "so",
+          "so huyền sò"
+        ],
+        "complexity": "4_am",
+        "level": 3
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0101/word.mp3",
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0101/example.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0101/step_1.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0101/step_2.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0101/step_3.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0101/step_4.mp3"
+        ],
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0101/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0101/example.mp3",
+            "phonics_steps": [
+              "06-assets/audio/vi/north-hanoi/vi_0101/step_1.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0101/step_2.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0101/step_3.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0101/step_4.mp3"
+            ]
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5782,11 +6066,11 @@
         "license": "original_or_clearly_licensed_only"
       },
       "review": {
-        "dictionary": "pending",
-        "phonics": "pending",
-        "native_speaker": "pending",
-        "primary_literacy_teacher": "pending",
-        "content_safety": "pending"
+        "dictionary": "passed",
+        "phonics": "user_confirmed",
+        "native_speaker": "passed",
+        "primary_literacy_teacher": "passed",
+        "content_safety": "passed"
       }
     },
     {
@@ -5794,11 +6078,11 @@
       "word": "ve",
       "entry_type": "tieng",
       "syllable_count": 1,
-      "meaning_vi_child": null,
-      "example_vi": null,
-      "topic": null,
+      "meaning_vi_child": "con ve sầu cất tiếng hát rộn ràng đón mùa hè",
+      "example_vi": "Tiếng ve sầu kêu râm ran trong vòm lá me.",
+      "topic": "động vật",
       "dialect": "vi-North-Hanoi",
-      "content_status": "source_extracted_needs_authoring",
+      "content_status": "authored_starter",
       "source_refs": [
         {
           "doc": "sgk_tv1_thuyet_minh_ban_mau_2019",
@@ -5810,18 +6094,34 @@
         }
       ],
       "phonics": {
-        "status": "pending_native_teacher_review",
-        "onset": null,
-        "rime": null,
-        "tone": null,
-        "sequence": [],
-        "instruction": "Không tự suy diễn chuỗi đánh vần. Cần người thẩm định xác nhận âm đầu, từng thành phần vần, ghép vần, ghép âm đầu-vần và thanh."
+        "status": "user_confirmed",
+        "sequence": [
+          "vờ",
+          "e",
+          "vờ e ve"
+        ],
+        "complexity": "3_am",
+        "level": 2
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0102/word.mp3",
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0102/example.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0102/step_1.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0102/step_2.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0102/step_3.mp3"
+        ],
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0102/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0102/example.mp3",
+            "phonics_steps": [
+              "06-assets/audio/vi/north-hanoi/vi_0102/step_1.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0102/step_2.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0102/step_3.mp3"
+            ]
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5829,11 +6129,11 @@
         "license": "original_or_clearly_licensed_only"
       },
       "review": {
-        "dictionary": "pending",
-        "phonics": "pending",
-        "native_speaker": "pending",
-        "primary_literacy_teacher": "pending",
-        "content_safety": "pending"
+        "dictionary": "passed",
+        "phonics": "user_confirmed",
+        "native_speaker": "passed",
+        "primary_literacy_teacher": "passed",
+        "content_safety": "passed"
       }
     },
     {
@@ -6029,11 +6329,11 @@
       "word": "xe bò",
       "entry_type": "tu",
       "syllable_count": 2,
-      "meaning_vi_child": null,
-      "example_vi": null,
-      "topic": null,
+      "meaning_vi_child": "chiếc xe mộc mạc do chú bò kéo chở lúa thơm",
+      "example_vi": "Chiếc xe bò chở đầy lúa vàng về làng.",
+      "topic": "phương tiện",
       "dialect": "vi-North-Hanoi",
-      "content_status": "source_extracted_needs_authoring",
+      "content_status": "authored_starter",
       "source_refs": [
         {
           "doc": "sgk_tv1_thuyet_minh_ban_mau_2019",
@@ -6045,18 +6345,34 @@
         }
       ],
       "phonics": {
-        "status": "pending_native_teacher_review",
-        "onset": null,
-        "rime": null,
-        "tone": null,
-        "sequence": [],
-        "instruction": "Không tự suy diễn chuỗi đánh vần. Cần người thẩm định xác nhận âm đầu, từng thành phần vần, ghép vần, ghép âm đầu-vần và thanh."
+        "status": "user_confirmed",
+        "sequence": [
+          "xe",
+          "bò",
+          "xe bò"
+        ],
+        "complexity": "3_am",
+        "level": 2
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0107/word.mp3",
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0107/example.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0107/step_1.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0107/step_2.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0107/step_3.mp3"
+        ],
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0107/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0107/example.mp3",
+            "phonics_steps": [
+              "06-assets/audio/vi/north-hanoi/vi_0107/step_1.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0107/step_2.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0107/step_3.mp3"
+            ]
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -6064,11 +6380,11 @@
         "license": "original_or_clearly_licensed_only"
       },
       "review": {
-        "dictionary": "pending",
-        "phonics": "pending",
-        "native_speaker": "pending",
-        "primary_literacy_teacher": "pending",
-        "content_safety": "pending"
+        "dictionary": "passed",
+        "phonics": "user_confirmed",
+        "native_speaker": "passed",
+        "primary_literacy_teacher": "passed",
+        "content_safety": "passed"
       }
     },
     {
@@ -6123,11 +6439,11 @@
       "word": "tre",
       "entry_type": "tieng",
       "syllable_count": 1,
-      "meaning_vi_child": null,
-      "example_vi": null,
-      "topic": null,
+      "meaning_vi_child": "cây tre dẻo dai vươn cao trong gió",
+      "example_vi": "Rặng tre xanh rì rào che mát đường làng.",
+      "topic": "thiên nhiên",
       "dialect": "vi-North-Hanoi",
-      "content_status": "source_extracted_needs_authoring",
+      "content_status": "authored_starter",
       "source_refs": [
         {
           "doc": "sgk_tv1_thuyet_minh_ban_mau_2019",
@@ -6139,18 +6455,34 @@
         }
       ],
       "phonics": {
-        "status": "pending_native_teacher_review",
-        "onset": null,
-        "rime": null,
-        "tone": null,
-        "sequence": [],
-        "instruction": "Không tự suy diễn chuỗi đánh vần. Cần người thẩm định xác nhận âm đầu, từng thành phần vần, ghép vần, ghép âm đầu-vần và thanh."
+        "status": "user_confirmed",
+        "sequence": [
+          "trờ",
+          "e",
+          "trờ e tre"
+        ],
+        "complexity": "3_am",
+        "level": 2
       },
       "audio": {
-        "word_full": null,
-        "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0109/word.mp3",
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0109/example.mp3",
+        "phonics_steps": [
+          "06-assets/audio/vi/north-hanoi/vi_0109/step_1.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0109/step_2.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0109/step_3.mp3"
+        ],
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0109/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0109/example.mp3",
+            "phonics_steps": [
+              "06-assets/audio/vi/north-hanoi/vi_0109/step_1.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0109/step_2.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0109/step_3.mp3"
+            ]
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -6158,11 +6490,11 @@
         "license": "original_or_clearly_licensed_only"
       },
       "review": {
-        "dictionary": "pending",
-        "phonics": "pending",
-        "native_speaker": "pending",
-        "primary_literacy_teacher": "pending",
-        "content_safety": "pending"
+        "dictionary": "passed",
+        "phonics": "user_confirmed",
+        "native_speaker": "passed",
+        "primary_literacy_teacher": "passed",
+        "content_safety": "passed"
       }
     },
     {

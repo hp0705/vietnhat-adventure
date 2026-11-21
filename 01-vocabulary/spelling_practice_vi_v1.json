@@ -2446,7 +2446,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "a",
-            "pờ"
+            "phờ"
           ],
           "blend": "ap"
         },
@@ -2470,7 +2470,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -2491,7 +2491,7 @@
         "sequence": [
           "sờ",
           "a",
-          "pờ",
+          "phờ",
           "ap",
           "sap",
           "sap sắc sáp"
@@ -2561,7 +2561,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "a",
-            "pờ"
+            "phờ"
           ],
           "blend": "ap"
         },
@@ -2585,7 +2585,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -2606,7 +2606,7 @@
         "sequence": [
           "thờ",
           "a",
-          "pờ",
+          "phờ",
           "ap",
           "thap",
           "thap sắc tháp"
@@ -2677,7 +2677,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "a",
-            "pờ"
+            "phờ"
           ],
           "blend": "ap"
         },
@@ -2701,7 +2701,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -2722,7 +2722,7 @@
         "sequence": [
           "rờ",
           "a",
-          "pờ",
+          "phờ",
           "ap",
           "rap",
           "rap nặng rạp"
@@ -2791,7 +2791,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "a",
-            "pờ"
+            "phờ"
           ],
           "blend": "ap"
         },
@@ -2815,7 +2815,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -2836,7 +2836,7 @@
         "sequence": [
           "cờ",
           "a",
-          "pờ",
+          "phờ",
           "ap",
           "cap",
           "cap sắc cáp"
@@ -2905,7 +2905,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "a",
-            "pờ"
+            "phờ"
           ],
           "blend": "ap"
         },
@@ -2929,7 +2929,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -2950,7 +2950,7 @@
         "sequence": [
           "sờ",
           "a",
-          "pờ",
+          "phờ",
           "ap",
           "sap",
           "sap nặng sạp"
@@ -3016,7 +3016,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "a",
-            "pờ"
+            "phờ"
           ],
           "blend": "ap"
         },
@@ -3040,7 +3040,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -3061,7 +3061,7 @@
         "sequence": [
           "nhờ",
           "a",
-          "pờ",
+          "phờ",
           "ap",
           "nhap",
           "nhap sắc nháp"
@@ -3128,7 +3128,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "a",
-            "pờ"
+            "phờ"
           ],
           "blend": "ap"
         },
@@ -3152,7 +3152,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -3173,7 +3173,7 @@
         "sequence": [
           "đờ",
           "a",
-          "pờ",
+          "phờ",
           "ap",
           "đap",
           "đap sắc đáp"
@@ -3243,7 +3243,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "a",
-            "pờ"
+            "phờ"
           ],
           "blend": "ap"
         },
@@ -3267,7 +3267,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -3288,7 +3288,7 @@
         "sequence": [
           "rờ",
           "a",
-          "pờ",
+          "phờ",
           "ap",
           "rap",
           "rap sắc ráp"
@@ -3362,7 +3362,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ă",
-            "pờ"
+            "phờ"
           ],
           "blend": "ăp"
         },
@@ -3386,7 +3386,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -3407,7 +3407,7 @@
         "sequence": [
           "cờ",
           "ă",
-          "pờ",
+          "phờ",
           "ăp",
           "căp",
           "căp nặng cặp"
@@ -3480,7 +3480,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ă",
-            "pờ"
+            "phờ"
           ],
           "blend": "ăp"
         },
@@ -3504,7 +3504,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -3525,7 +3525,7 @@
         "sequence": [
           "gờ",
           "ă",
-          "pờ",
+          "phờ",
           "ăp",
           "găp",
           "găp nặng gặp"
@@ -3597,7 +3597,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ă",
-            "pờ"
+            "phờ"
           ],
           "blend": "ăp"
         },
@@ -3621,7 +3621,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -3642,7 +3642,7 @@
         "sequence": [
           "lờ",
           "ă",
-          "pờ",
+          "phờ",
           "ăp",
           "lăp",
           "lăp sắc lắp"
@@ -3712,7 +3712,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ă",
-            "pờ"
+            "phờ"
           ],
           "blend": "ăp"
         },
@@ -3736,7 +3736,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -3757,7 +3757,7 @@
         "sequence": [
           "bờ",
           "ă",
-          "pờ",
+          "phờ",
           "ăp",
           "băp",
           "băp sắc bắp"
@@ -3827,7 +3827,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ă",
-            "pờ"
+            "phờ"
           ],
           "blend": "ăp"
         },
@@ -3851,7 +3851,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -3872,7 +3872,7 @@
         "sequence": [
           "nờ",
           "ă",
-          "pờ",
+          "phờ",
           "ăp",
           "năp",
           "năp sắc nắp"
@@ -3942,7 +3942,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ă",
-            "pờ"
+            "phờ"
           ],
           "blend": "ăp"
         },
@@ -3966,7 +3966,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -3987,7 +3987,7 @@
         "sequence": [
           "đờ",
           "ă",
-          "pờ",
+          "phờ",
           "ăp",
           "đăp",
           "đăp sắc đắp"
@@ -4057,7 +4057,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ă",
-            "pờ"
+            "phờ"
           ],
           "blend": "ăp"
         },
@@ -4081,7 +4081,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -4102,7 +4102,7 @@
         "sequence": [
           "thờ",
           "ă",
-          "pờ",
+          "phờ",
           "ăp",
           "thăp",
           "thăp sắc thắp"
@@ -4174,7 +4174,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ă",
-            "pờ"
+            "phờ"
           ],
           "blend": "ăp"
         },
@@ -4198,7 +4198,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -4219,7 +4219,7 @@
         "sequence": [
           "chờ",
           "ă",
-          "pờ",
+          "phờ",
           "ăp",
           "chăp",
           "chăp sắc chắp"
@@ -4288,7 +4288,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ă",
-            "pờ"
+            "phờ"
           ],
           "blend": "ăp"
         },
@@ -4312,7 +4312,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -4333,7 +4333,7 @@
         "sequence": [
           "khờ",
           "ă",
-          "pờ",
+          "phờ",
           "ăp",
           "khăp",
           "khăp sắc khắp"
@@ -4406,7 +4406,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ă",
-            "pờ"
+            "phờ"
           ],
           "blend": "ăp"
         },
@@ -4430,7 +4430,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -4451,7 +4451,7 @@
         "sequence": [
           "sờ",
           "ă",
-          "pờ",
+          "phờ",
           "ăp",
           "săp",
           "săp sắc sắp"
@@ -4525,7 +4525,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "â",
-            "pờ"
+            "phờ"
           ],
           "blend": "âp"
         },
@@ -4549,7 +4549,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -4570,7 +4570,7 @@
         "sequence": [
           "tờ",
           "â",
-          "pờ",
+          "phờ",
           "âp",
           "tâp",
           "tâp nặng tập"
@@ -4640,7 +4640,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "â",
-            "pờ"
+            "phờ"
           ],
           "blend": "âp"
         },
@@ -4664,7 +4664,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -4685,7 +4685,7 @@
         "sequence": [
           "thờ",
           "â",
-          "pờ",
+          "phờ",
           "âp",
           "thâp",
           "thâp sắc thấp"
@@ -4759,7 +4759,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "â",
-            "pờ"
+            "phờ"
           ],
           "blend": "âp"
         },
@@ -4783,7 +4783,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -4804,7 +4804,7 @@
         "sequence": [
           "gờ",
           "â",
-          "pờ",
+          "phờ",
           "âp",
           "gâp",
           "gâp sắc gấp"
@@ -4874,7 +4874,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "â",
-            "pờ"
+            "phờ"
           ],
           "blend": "âp"
         },
@@ -4898,7 +4898,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -4919,7 +4919,7 @@
         "sequence": [
           "hờ",
           "â",
-          "pờ",
+          "phờ",
           "âp",
           "hâp",
           "hâp sắc hấp"
@@ -4989,7 +4989,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "â",
-            "pờ"
+            "phờ"
           ],
           "blend": "âp"
         },
@@ -5013,7 +5013,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -5034,7 +5034,7 @@
         "sequence": [
           "nờ",
           "â",
-          "pờ",
+          "phờ",
           "âp",
           "nâp",
           "nâp sắc nấp"
@@ -5105,7 +5105,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "â",
-            "pờ"
+            "phờ"
           ],
           "blend": "âp"
         },
@@ -5129,7 +5129,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -5150,7 +5150,7 @@
         "sequence": [
           "ngờ",
           "â",
-          "pờ",
+          "phờ",
           "âp",
           "ngâp",
           "ngâp nặng ngập"
@@ -5222,7 +5222,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "â",
-            "pờ"
+            "phờ"
           ],
           "blend": "âp"
         },
@@ -5246,7 +5246,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -5267,7 +5267,7 @@
         "sequence": [
           "gờ",
           "â",
-          "pờ",
+          "phờ",
           "âp",
           "gâp",
           "gâp nặng gập"
@@ -5336,7 +5336,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "â",
-            "pờ"
+            "phờ"
           ],
           "blend": "âp"
         },
@@ -5360,7 +5360,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -5381,7 +5381,7 @@
         "sequence": [
           "vờ",
           "â",
-          "pờ",
+          "phờ",
           "âp",
           "vâp",
           "vâp sắc vấp"
@@ -5453,7 +5453,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "â",
-            "pờ"
+            "phờ"
           ],
           "blend": "âp"
         },
@@ -5477,7 +5477,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -5498,7 +5498,7 @@
         "sequence": [
           "chờ",
           "â",
-          "pờ",
+          "phờ",
           "âp",
           "châp",
           "châp nặng chập"
@@ -5568,7 +5568,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "â",
-            "pờ"
+            "phờ"
           ],
           "blend": "âp"
         },
@@ -5592,7 +5592,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -5613,7 +5613,7 @@
         "sequence": [
           "lờ",
           "â",
-          "pờ",
+          "phờ",
           "âp",
           "lâp",
           "lâp sắc lấp"
@@ -5684,7 +5684,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "e",
-            "pờ"
+            "phờ"
           ],
           "blend": "ep"
         },
@@ -5708,7 +5708,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -5729,7 +5729,7 @@
         "sequence": [
           "dờ",
           "e",
-          "pờ",
+          "phờ",
           "ep",
           "dep",
           "dep sắc dép"
@@ -5800,7 +5800,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "e",
-            "pờ"
+            "phờ"
           ],
           "blend": "ep"
         },
@@ -5824,7 +5824,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -5845,7 +5845,7 @@
         "sequence": [
           "cờ",
           "e",
-          "pờ",
+          "phờ",
           "ep",
           "kep",
           "kep nặng kẹp"
@@ -5915,7 +5915,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "e",
-            "pờ"
+            "phờ"
           ],
           "blend": "ep"
         },
@@ -5939,7 +5939,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -5960,7 +5960,7 @@
         "sequence": [
           "gờ",
           "e",
-          "pờ",
+          "phờ",
           "ep",
           "ghep",
           "ghep sắc ghép"
@@ -6026,7 +6026,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "e",
-            "pờ"
+            "phờ"
           ],
           "blend": "ep"
         },
@@ -6050,7 +6050,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -6071,7 +6071,7 @@
         "sequence": [
           "đờ",
           "e",
-          "pờ",
+          "phờ",
           "ep",
           "đep",
           "đep nặng đẹp"
@@ -6137,7 +6137,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "e",
-            "pờ"
+            "phờ"
           ],
           "blend": "ep"
         },
@@ -6161,7 +6161,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -6182,7 +6182,7 @@
         "sequence": [
           "hờ",
           "e",
-          "pờ",
+          "phờ",
           "ep",
           "hep",
           "hep nặng hẹp"
@@ -6251,7 +6251,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "e",
-            "pờ"
+            "phờ"
           ],
           "blend": "ep"
         },
@@ -6275,7 +6275,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -6296,7 +6296,7 @@
         "sequence": [
           "xờ",
           "e",
-          "pờ",
+          "phờ",
           "ep",
           "xep",
           "xep nặng xẹp"
@@ -6364,7 +6364,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "e",
-            "pờ"
+            "phờ"
           ],
           "blend": "ep"
         },
@@ -6388,7 +6388,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -6409,7 +6409,7 @@
         "sequence": [
           "chờ",
           "e",
-          "pờ",
+          "phờ",
           "ep",
           "chep",
           "chep sắc chép"
@@ -6473,7 +6473,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "e",
-            "pờ"
+            "phờ"
           ],
           "blend": "ep"
         },
@@ -6492,7 +6492,7 @@
           {
             "order": 2,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 3,
@@ -6507,7 +6507,7 @@
         ],
         "sequence": [
           "e",
-          "pờ",
+          "phờ",
           "ep",
           "ep sắc ép"
         ],
@@ -6572,7 +6572,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "e",
-            "pờ"
+            "phờ"
           ],
           "blend": "ep"
         },
@@ -6596,7 +6596,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -6617,7 +6617,7 @@
         "sequence": [
           "khờ",
           "e",
-          "pờ",
+          "phờ",
           "ep",
           "khep",
           "khep sắc khép"
@@ -6684,7 +6684,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "e",
-            "pờ"
+            "phờ"
           ],
           "blend": "ep"
         },
@@ -6708,7 +6708,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -6729,7 +6729,7 @@
         "sequence": [
           "tờ",
           "e",
-          "pờ",
+          "phờ",
           "ep",
           "tep",
           "tep sắc tép"
@@ -6795,7 +6795,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "e",
-            "pờ"
+            "phờ"
           ],
           "blend": "ep"
         },
@@ -6819,7 +6819,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -6840,7 +6840,7 @@
         "sequence": [
           "thờ",
           "e",
-          "pờ",
+          "phờ",
           "ep",
           "thep",
           "thep sắc thép"
@@ -6910,7 +6910,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ê",
-            "pờ"
+            "phờ"
           ],
           "blend": "êp"
         },
@@ -6934,7 +6934,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -6955,7 +6955,7 @@
         "sequence": [
           "bờ",
           "ê",
-          "pờ",
+          "phờ",
           "êp",
           "bêp",
           "bêp sắc bếp"
@@ -7027,7 +7027,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ê",
-            "pờ"
+            "phờ"
           ],
           "blend": "êp"
         },
@@ -7051,7 +7051,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -7072,7 +7072,7 @@
         "sequence": [
           "nờ",
           "ê",
-          "pờ",
+          "phờ",
           "êp",
           "nêp",
           "nêp sắc nếp"
@@ -7145,7 +7145,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ê",
-            "pờ"
+            "phờ"
           ],
           "blend": "êp"
         },
@@ -7169,7 +7169,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -7190,7 +7190,7 @@
         "sequence": [
           "xờ",
           "ê",
-          "pờ",
+          "phờ",
           "êp",
           "xêp",
           "xêp sắc xếp"
@@ -7261,7 +7261,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "i",
-            "pờ"
+            "phờ"
           ],
           "blend": "ip"
         },
@@ -7285,7 +7285,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -7306,7 +7306,7 @@
         "sequence": [
           "cờ",
           "i",
-          "pờ",
+          "phờ",
           "ip",
           "kip",
           "kip nặng kịp"
@@ -7374,7 +7374,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "i",
-            "pờ"
+            "phờ"
           ],
           "blend": "ip"
         },
@@ -7398,7 +7398,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -7419,7 +7419,7 @@
         "sequence": [
           "nhờ",
           "i",
-          "pờ",
+          "phờ",
           "ip",
           "nhip",
           "nhip nặng nhịp"
@@ -7491,7 +7491,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "i",
-            "pờ"
+            "phờ"
           ],
           "blend": "ip"
         },
@@ -7515,7 +7515,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -7536,7 +7536,7 @@
         "sequence": [
           "chờ",
           "i",
-          "pờ",
+          "phờ",
           "ip",
           "chip",
           "chip sắc chíp"
@@ -7605,7 +7605,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "i",
-            "pờ"
+            "phờ"
           ],
           "blend": "ip"
         },
@@ -7629,7 +7629,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -7650,7 +7650,7 @@
         "sequence": [
           "dờ",
           "i",
-          "pờ",
+          "phờ",
           "ip",
           "dip",
           "dip nặng dịp"
@@ -7716,7 +7716,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "i",
-            "pờ"
+            "phờ"
           ],
           "blend": "ip"
         },
@@ -7740,7 +7740,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -7761,7 +7761,7 @@
         "sequence": [
           "nhờ",
           "i",
-          "pờ",
+          "phờ",
           "ip",
           "nhip",
           "nhip sắc nhíp"
@@ -7833,7 +7833,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "o",
-            "pờ"
+            "phờ"
           ],
           "blend": "op"
         },
@@ -7857,7 +7857,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -7878,7 +7878,7 @@
         "sequence": [
           "chờ",
           "o",
-          "pờ",
+          "phờ",
           "op",
           "chop",
           "chop sắc chóp"
@@ -7946,7 +7946,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "o",
-            "pờ"
+            "phờ"
           ],
           "blend": "op"
         },
@@ -7970,7 +7970,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -7991,7 +7991,7 @@
         "sequence": [
           "hờ",
           "o",
-          "pờ",
+          "phờ",
           "op",
           "hop",
           "hop nặng họp"
@@ -8062,7 +8062,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "o",
-            "pờ"
+            "phờ"
           ],
           "blend": "op"
         },
@@ -8086,7 +8086,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -8107,7 +8107,7 @@
         "sequence": [
           "gờ",
           "o",
-          "pờ",
+          "phờ",
           "op",
           "gop",
           "gop sắc góp"
@@ -8175,7 +8175,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "o",
-            "pờ"
+            "phờ"
           ],
           "blend": "op"
         },
@@ -8199,7 +8199,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -8220,7 +8220,7 @@
         "sequence": [
           "bờ",
           "o",
-          "pờ",
+          "phờ",
           "op",
           "bop",
           "bop sắc bóp"
@@ -8290,7 +8290,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ô",
-            "pờ"
+            "phờ"
           ],
           "blend": "ôp"
         },
@@ -8314,7 +8314,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -8335,7 +8335,7 @@
         "sequence": [
           "hờ",
           "ô",
-          "pờ",
+          "phờ",
           "ôp",
           "hôp",
           "hôp nặng hộp"
@@ -8403,7 +8403,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ô",
-            "pờ"
+            "phờ"
           ],
           "blend": "ôp"
         },
@@ -8427,7 +8427,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -8448,7 +8448,7 @@
         "sequence": [
           "lờ",
           "ô",
-          "pờ",
+          "phờ",
           "ôp",
           "lôp",
           "lôp sắc lốp"
@@ -8521,7 +8521,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ô",
-            "pờ"
+            "phờ"
           ],
           "blend": "ôp"
         },
@@ -8545,7 +8545,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -8566,7 +8566,7 @@
         "sequence": [
           "xờ",
           "ô",
-          "pờ",
+          "phờ",
           "ôp",
           "xôp",
           "xôp sắc xốp"
@@ -8633,7 +8633,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ô",
-            "pờ"
+            "phờ"
           ],
           "blend": "ôp"
         },
@@ -8657,7 +8657,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -8678,7 +8678,7 @@
         "sequence": [
           "nờ",
           "ô",
-          "pờ",
+          "phờ",
           "ôp",
           "nôp",
           "nôp nặng nộp"
@@ -8749,7 +8749,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ô",
-            "pờ"
+            "phờ"
           ],
           "blend": "ôp"
         },
@@ -8773,7 +8773,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -8794,7 +8794,7 @@
         "sequence": [
           "gờ",
           "ô",
-          "pờ",
+          "phờ",
           "ôp",
           "gôp",
           "gôp nặng gộp"
@@ -8863,7 +8863,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ô",
-            "pờ"
+            "phờ"
           ],
           "blend": "ôp"
         },
@@ -8887,7 +8887,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -8908,7 +8908,7 @@
         "sequence": [
           "tờ",
           "ô",
-          "pờ",
+          "phờ",
           "ôp",
           "tôp",
           "tôp sắc tốp"
@@ -8982,7 +8982,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ơ",
-            "pờ"
+            "phờ"
           ],
           "blend": "ơp"
         },
@@ -9006,7 +9006,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -9027,7 +9027,7 @@
         "sequence": [
           "chờ",
           "ơ",
-          "pờ",
+          "phờ",
           "ơp",
           "chơp",
           "chơp sắc chớp"
@@ -9096,7 +9096,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ơ",
-            "pờ"
+            "phờ"
           ],
           "blend": "ơp"
         },
@@ -9120,7 +9120,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -9141,7 +9141,7 @@
         "sequence": [
           "lờ",
           "ơ",
-          "pờ",
+          "phờ",
           "ơp",
           "lơp",
           "lơp nặng lợp"
@@ -9211,7 +9211,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ơ",
-            "pờ"
+            "phờ"
           ],
           "blend": "ơp"
         },
@@ -9235,7 +9235,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -9256,7 +9256,7 @@
         "sequence": [
           "rờ",
           "ơ",
-          "pờ",
+          "phờ",
           "ơp",
           "rơp",
           "rơp nặng rợp"
@@ -9324,7 +9324,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ơ",
-            "pờ"
+            "phờ"
           ],
           "blend": "ơp"
         },
@@ -9348,7 +9348,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -9369,7 +9369,7 @@
         "sequence": [
           "hờ",
           "ơ",
-          "pờ",
+          "phờ",
           "ơp",
           "hơp",
           "hơp sắc hớp"
@@ -9436,7 +9436,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "ơ",
-            "pờ"
+            "phờ"
           ],
           "blend": "ơp"
         },
@@ -9460,7 +9460,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -9481,7 +9481,7 @@
         "sequence": [
           "đờ",
           "ơ",
-          "pờ",
+          "phờ",
           "ơp",
           "đơp",
           "đơp sắc đớp"
@@ -9544,7 +9544,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "u",
-            "pờ"
+            "phờ"
           ],
           "blend": "up"
         },
@@ -9563,7 +9563,7 @@
           {
             "order": 2,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 3,
@@ -9578,7 +9578,7 @@
         ],
         "sequence": [
           "u",
-          "pờ",
+          "phờ",
           "up",
           "up sắc úp"
         ],
@@ -9646,7 +9646,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "u",
-            "pờ"
+            "phờ"
           ],
           "blend": "up"
         },
@@ -9670,7 +9670,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -9691,7 +9691,7 @@
         "sequence": [
           "sờ",
           "u",
-          "pờ",
+          "phờ",
           "up",
           "sup",
           "sup sắc súp"
@@ -9761,7 +9761,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "u",
-            "pờ"
+            "phờ"
           ],
           "blend": "up"
         },
@@ -9785,7 +9785,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -9806,7 +9806,7 @@
         "sequence": [
           "cờ",
           "u",
-          "pờ",
+          "phờ",
           "up",
           "cup",
           "cup sắc cúp"
@@ -9876,7 +9876,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "u",
-            "pờ"
+            "phờ"
           ],
           "blend": "up"
         },
@@ -9900,7 +9900,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -9921,7 +9921,7 @@
         "sequence": [
           "bờ",
           "u",
-          "pờ",
+          "phờ",
           "up",
           "bup",
           "bup sắc búp"
@@ -9990,7 +9990,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "u",
-            "pờ"
+            "phờ"
           ],
           "blend": "up"
         },
@@ -10014,7 +10014,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -10035,7 +10035,7 @@
         "sequence": [
           "chờ",
           "u",
-          "pờ",
+          "phờ",
           "up",
           "chup",
           "chup nặng chụp"
@@ -10102,7 +10102,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "u",
-            "pờ"
+            "phờ"
           ],
           "blend": "up"
         },
@@ -10126,7 +10126,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -10147,7 +10147,7 @@
         "sequence": [
           "tờ",
           "u",
-          "pờ",
+          "phờ",
           "up",
           "tup",
           "tup sắc túp"
@@ -10215,7 +10215,7 @@
           "final_type": "stop",
           "letter_sound_steps": [
             "u",
-            "pờ"
+            "phờ"
           ],
           "blend": "up"
         },
@@ -10239,7 +10239,7 @@
           {
             "order": 3,
             "type": "rime_part",
-            "display": "pờ"
+            "display": "phờ"
           },
           {
             "order": 4,
@@ -10260,7 +10260,7 @@
         "sequence": [
           "ngờ",
           "u",
-          "pờ",
+          "phờ",
           "up",
           "ngup",
           "ngup nặng ngụp"
