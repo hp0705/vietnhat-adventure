@@ -123,3 +123,28 @@
   - Cập nhật bảng `PRAISE_ITEMS` và `ENCOURAGE_ITEMS` trong `app.js` để text, display và audio khớp nhau 100%.
   - Cập nhật modal vinh danh chiến thắng (`Xuất sắc quá Bé Mây ơi! Bé Mây đạt...`) và modal động viên (`Cố lên Bé Mây yêu! Bé Mây hãy thử lại nhé...`).
   - Cập nhật toàn bộ thông báo toast thân thiện dành riêng cho Bé Mây.
+
+
+### Phiên Bản 2.7.0 (2026-11-21) - Bổ Sung Nhánh Song Song "Tập Đánh Vần" & Sửa Chuỗi Đánh Vần Từ "Bút"
+- **Yêu cầu người dùng:**
+  1. Thêm nhánh tính năng song song mới có tên **"Tập đánh vần"** (từ thư mục `function 2`), chọn trực tiếp tại màn hình chính giữa "Học từ mới" và "Tập đánh vần", giữ nguyên quy tắc đánh vần từng bước tự nhiên.
+  2. Sửa lại cách đánh vần từ **"Bút"** trong tính năng hiện tại vì trước đó đọc chưa ổn.
+- **Thực hiện chi tiết:**
+  1. **Chuẩn hóa chữ "Bút":**
+     - Sửa chuỗi từ 4 bước thành 6 bước chuẩn mực: `['bờ', 'u', 'tờ', 'u tờ ut', 'bờ ut but', 'but sắc bút']` (tương tự như *sách, mèo, đánh*).
+     - Thu âm mới toàn bộ 6 bước `step_1.mp3` - `step_6.mp3`, `word.mp3`, `example.mp3` bằng giọng Bắc (`vi-VN-HoaiMyNeural`).
+     - Đồng bộ trong `vocabulary_vi_v2.json` và `vocabulary_vi_v2.csv`.
+  2. **Tích hợp nhánh Function 2 "Tập đánh vần":**
+     - Màn hình mở đầu (Splash Screen) hiển thị 2 thẻ lựa chọn lớn trực quan: **🎓 HỌC TỪ MỚI** (6 bài, 60 từ) và **🔤 TẬP ĐÁNH VẦN** (7 bài, 113 từ).
+     - Thanh Header bổ sung nút `🏠 Trang chủ` và cụm chuyển đổi nhanh giữa 2 chế độ (`📖 Học từ mới` ⟷ `🔤 Tập đánh vần`).
+     - Xây dựng 7 bài học đánh vần theo tiến trình sư phạm của âm cuối và họ vần:
+       - Bài 1: Vần ap & ăp (Âm cuối P) - 18 từ
+       - Bài 2: Vần âp & ep (Âm cuối P) - 21 từ
+       - Bài 3: Vần êp, ip & op (Âm cuối P) - 12 từ
+       - Bài 4: Vần ôp, ơp & up (Âm cuối P) - 18 từ
+       - Bài 5: Vần ach, êch & ich (Âm cuối CH) - 18 từ
+       - Bài 6: Vần anh (Âm cuối NH) - 15 từ
+       - Bài 7: Vần au (Âm cuối U) - 11 từ
+     - Phòng trạm học (Station) có đầy đủ nút **"Cách đánh vần"** đọc chuẩn xác từng bước, giải thích nghĩa, câu ví dụ và emoji trực quan.
+     - Mini game Thử thách ghép hình / đánh vần 10 câu (đạt 8/10 câu đúng để mở khóa bài tiếp theo), cá nhân hóa lời khen và động viên cho "Bé Mây".
+     - Thu âm sẵn 113 tệp âm thanh đọc từ hoàn chỉnh và hệ thống phát âm từng bước đánh vần.

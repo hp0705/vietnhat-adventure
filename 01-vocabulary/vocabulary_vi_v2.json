@@ -1195,12 +1195,14 @@
         "status": "user_confirmed",
         "sequence": [
           "bờ",
-          "ut",
+          "u",
+          "tờ",
+          "u tờ ut",
           "bờ ut but",
           "but sắc bút"
         ],
-        "complexity": "3_am",
-        "level": 2
+        "complexity": "5_am_tro_len",
+        "level": 3
       },
       "audio": {
         "word_full": "06-assets/audio/vi/north-hanoi/vi_0019/word.mp3",
@@ -1209,7 +1211,9 @@
           "06-assets/audio/vi/north-hanoi/vi_0019/step_1.mp3",
           "06-assets/audio/vi/north-hanoi/vi_0019/step_2.mp3",
           "06-assets/audio/vi/north-hanoi/vi_0019/step_3.mp3",
-          "06-assets/audio/vi/north-hanoi/vi_0019/step_4.mp3"
+          "06-assets/audio/vi/north-hanoi/vi_0019/step_4.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0019/step_5.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0019/step_6.mp3"
         ],
         "voice_profile": "vi-VN-HoaiMyNeural",
         "dialects": {
@@ -1220,7 +1224,9 @@
               "06-assets/audio/vi/north-hanoi/vi_0019/step_1.mp3",
               "06-assets/audio/vi/north-hanoi/vi_0019/step_2.mp3",
               "06-assets/audio/vi/north-hanoi/vi_0019/step_3.mp3",
-              "06-assets/audio/vi/north-hanoi/vi_0019/step_4.mp3"
+              "06-assets/audio/vi/north-hanoi/vi_0019/step_4.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0019/step_5.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0019/step_6.mp3"
             ]
           }
         }

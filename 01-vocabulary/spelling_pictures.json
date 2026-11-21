@@ -1,0 +1,454 @@
+{
+  "sáp": {
+    "emoji": "🖍️",
+    "label": "Sáp Màu"
+  },
+  "tháp": {
+    "emoji": "🗼",
+    "label": "Ngọn Tháp"
+  },
+  "rạp": {
+    "emoji": "🎪",
+    "label": "Rạp Xiếc"
+  },
+  "cáp": {
+    "emoji": "🚠",
+    "label": "Cáp Treo"
+  },
+  "sạp": {
+    "emoji": "🏪",
+    "label": "Sạp Hàng"
+  },
+  "nháp": {
+    "emoji": "📝",
+    "label": "Giấy Nháp"
+  },
+  "đáp": {
+    "emoji": "🛬",
+    "label": "Hạ Cánh / Trả Lời"
+  },
+  "ráp": {
+    "emoji": "🧩",
+    "label": "Lắp Ráp"
+  },
+  "cặp": {
+    "emoji": "🎒",
+    "label": "Cặp Sách"
+  },
+  "gặp": {
+    "emoji": "🤝",
+    "label": "Gặp Gỡ"
+  },
+  "lắp": {
+    "emoji": "🔧",
+    "label": "Lắp Ghép"
+  },
+  "bắp": {
+    "emoji": "🌽",
+    "label": "Bắp Ngô / Bắp Cải"
+  },
+  "nắp": {
+    "emoji": "🫙",
+    "label": "Nắp Hộp"
+  },
+  "đắp": {
+    "emoji": "🛌",
+    "label": "Đắp Chăn"
+  },
+  "thắp": {
+    "emoji": "🕯️",
+    "label": "Thắp Nến"
+  },
+  "chắp": {
+    "emoji": "🙏",
+    "label": "Chắp Tay"
+  },
+  "khắp": {
+    "emoji": "🌍",
+    "label": "Khắp Nơi"
+  },
+  "sắp": {
+    "emoji": "📦",
+    "label": "Sắp Xếp"
+  },
+  "tập": {
+    "emoji": "🤸",
+    "label": "Tập Thể Dục"
+  },
+  "thấp": {
+    "emoji": "🌱",
+    "label": "Cây Thấp"
+  },
+  "gấp": {
+    "emoji": "📄",
+    "label": "Gấp Giấy"
+  },
+  "hấp": {
+    "emoji": "🥟",
+    "label": "Bánh Hấp"
+  },
+  "nấp": {
+    "emoji": "🙈",
+    "label": "Trốn Nấp"
+  },
+  "ngập": {
+    "emoji": "🌊",
+    "label": "Ngập Nước"
+  },
+  "gập": {
+    "emoji": "📖",
+    "label": "Gập Sách"
+  },
+  "vấp": {
+    "emoji": "🦶",
+    "label": "Vấp Ngã"
+  },
+  "chập": {
+    "emoji": "👶",
+    "label": "Chập Chững"
+  },
+  "lấp": {
+    "emoji": "✨",
+    "label": "Lấp Lánh"
+  },
+  "dép": {
+    "emoji": "🩴",
+    "label": "Đôi Dép"
+  },
+  "kẹp": {
+    "emoji": "📎",
+    "label": "Cái Kẹp"
+  },
+  "ghép": {
+    "emoji": "🧩",
+    "label": "Ghép Hình"
+  },
+  "đẹp": {
+    "emoji": "🌺",
+    "label": "Xinh Đẹp"
+  },
+  "hẹp": {
+    "emoji": "🚪",
+    "label": "Ngõ Hẹp"
+  },
+  "xẹp": {
+    "emoji": "🎈",
+    "label": "Bóng Xẹp"
+  },
+  "chép": {
+    "emoji": "✍️",
+    "label": "Chép Bài / Cá Chép"
+  },
+  "ép": {
+    "emoji": "🧃",
+    "label": "Nước Ép"
+  },
+  "khép": {
+    "emoji": "🚪",
+    "label": "Khép Cửa"
+  },
+  "tép": {
+    "emoji": "🦐",
+    "label": "Con Tép"
+  },
+  "thép": {
+    "emoji": "⛓️",
+    "label": "Sắt Thép"
+  },
+  "bếp": {
+    "emoji": "🍳",
+    "label": "Nhà Bếp"
+  },
+  "nếp": {
+    "emoji": "🍚",
+    "label": "Xôi Nếp"
+  },
+  "xếp": {
+    "emoji": "🧱",
+    "label": "Xếp Gạch"
+  },
+  "kịp": {
+    "emoji": "⏰",
+    "label": "Kịp Giờ"
+  },
+  "nhịp": {
+    "emoji": "🥁",
+    "label": "Nhịp Điệu"
+  },
+  "chíp": {
+    "emoji": "🐥",
+    "label": "Tiếng Chíp Chíp"
+  },
+  "dịp": {
+    "emoji": "🎉",
+    "label": "Dịp Lễ Hội"
+  },
+  "nhíp": {
+    "emoji": "✂️",
+    "label": "Cái Nhíp"
+  },
+  "chóp": {
+    "emoji": "⛰️",
+    "label": "Chóp Núi"
+  },
+  "họp": {
+    "emoji": "👥",
+    "label": "Họp Mặt"
+  },
+  "góp": {
+    "emoji": "🪙",
+    "label": "Đóng Góp"
+  },
+  "bóp": {
+    "emoji": "👛",
+    "label": "Cái Ví / Bóp Tay"
+  },
+  "hộp": {
+    "emoji": "📦",
+    "label": "Chiếc Hộp"
+  },
+  "lốp": {
+    "emoji": "🛞",
+    "label": "Lốp Xe"
+  },
+  "xốp": {
+    "emoji": "🧽",
+    "label": "Miếng Xốp"
+  },
+  "nộp": {
+    "emoji": "📑",
+    "label": "Nộp Bài"
+  },
+  "gộp": {
+    "emoji": "➕",
+    "label": "Gộp Lại"
+  },
+  "tốp": {
+    "emoji": "🚶‍♂️",
+    "label": "Tốp Ca / Tốp Người"
+  },
+  "chớp": {
+    "emoji": "⚡",
+    "label": "Tia Chớp"
+  },
+  "lợp": {
+    "emoji": "🏠",
+    "label": "Lợp Mái Nhà"
+  },
+  "rợp": {
+    "emoji": "🌳",
+    "label": "Rợp Bóng Cây"
+  },
+  "hớp": {
+    "emoji": "🍵",
+    "label": "Hớp Nước"
+  },
+  "đớp": {
+    "emoji": "🐟",
+    "label": "Cá Đớp Mồi"
+  },
+  "úp": {
+    "emoji": "🥣",
+    "label": "Úp Bát"
+  },
+  "súp": {
+    "emoji": "🍲",
+    "label": "Bát Súp"
+  },
+  "cúp": {
+    "emoji": "🏆",
+    "label": "Chiếc Cúp"
+  },
+  "búp": {
+    "emoji": "🌷",
+    "label": "Búp Hoa / Búp Bê"
+  },
+  "chụp": {
+    "emoji": "📸",
+    "label": "Chụp Ảnh"
+  },
+  "túp": {
+    "emoji": "🛖",
+    "label": "Túp Lều"
+  },
+  "ngụp": {
+    "emoji": "🤿",
+    "label": "Ngụp Lặn"
+  },
+  "sách": {
+    "emoji": "📖",
+    "label": "Cuốn Sách"
+  },
+  "gạch": {
+    "emoji": "🧱",
+    "label": "Viên Gạch"
+  },
+  "lạch": {
+    "emoji": "🛶",
+    "label": "Con Lạch Nước"
+  },
+  "sạch": {
+    "emoji": "🧼",
+    "label": "Sạch Sẽ"
+  },
+  "khách": {
+    "emoji": "🛎️",
+    "label": "Vị Khách"
+  },
+  "tách": {
+    "emoji": "☕",
+    "label": "Tách Trà"
+  },
+  "thạch": {
+    "emoji": "🍮",
+    "label": "Thạch Rau Câu"
+  },
+  "vạch": {
+    "emoji": "📏",
+    "label": "Vạch Kẻ"
+  },
+  "bạch": {
+    "emoji": "🐙",
+    "label": "Bạch Tuộc"
+  },
+  "ếch": {
+    "emoji": "🐸",
+    "label": "Con Ếch"
+  },
+  "lệch": {
+    "emoji": "📐",
+    "label": "Bị Lệch"
+  },
+  "lịch": {
+    "emoji": "🗓️",
+    "label": "Tờ Lịch"
+  },
+  "thích": {
+    "emoji": "😍",
+    "label": "Yêu Thích"
+  },
+  "chích": {
+    "emoji": "🐦",
+    "label": "Chim Chích"
+  },
+  "tích": {
+    "emoji": "⏱️",
+    "label": "Đồng Hồ Tích Tắc"
+  },
+  "xích": {
+    "emoji": "⛓️",
+    "label": "Xích Đu"
+  },
+  "kịch": {
+    "emoji": "🎭",
+    "label": "Vở Kịch"
+  },
+  "đích": {
+    "emoji": "🎯",
+    "label": "Về Đích"
+  },
+  "đánh": {
+    "emoji": "🥁",
+    "label": "Đánh Trống"
+  },
+  "anh": {
+    "emoji": "👦",
+    "label": "Anh Trai"
+  },
+  "ảnh": {
+    "emoji": "🖼️",
+    "label": "Bức Ảnh"
+  },
+  "bánh": {
+    "emoji": "🎂",
+    "label": "Chiếc Bánh"
+  },
+  "canh": {
+    "emoji": "🥣",
+    "label": "Bát Canh"
+  },
+  "chanh": {
+    "emoji": "🍋",
+    "label": "Quả Chanh"
+  },
+  "tranh": {
+    "emoji": "🎨",
+    "label": "Bức Tranh"
+  },
+  "cành": {
+    "emoji": "🌿",
+    "label": "Cành Cây"
+  },
+  "xanh": {
+    "emoji": "🟢",
+    "label": "Màu Xanh"
+  },
+  "nhanh": {
+    "emoji": "🏃",
+    "label": "Chạy Nhanh"
+  },
+  "lạnh": {
+    "emoji": "❄️",
+    "label": "Trời Lạnh"
+  },
+  "mạnh": {
+    "emoji": "💪",
+    "label": "Khỏe Mạnh"
+  },
+  "gánh": {
+    "emoji": "🧺",
+    "label": "Đòn Gánh"
+  },
+  "hành": {
+    "emoji": "🧅",
+    "label": "Hành Lá"
+  },
+  "lánh": {
+    "emoji": "⭐",
+    "label": "Lấp Lánh"
+  },
+  "đau": {
+    "emoji": "🩹",
+    "label": "Vết Đau"
+  },
+  "sau": {
+    "emoji": "➡️",
+    "label": "Đi Sau"
+  },
+  "màu": {
+    "emoji": "🎨",
+    "label": "Hộp Màu"
+  },
+  "rau": {
+    "emoji": "🥦",
+    "label": "Rau Xanh"
+  },
+  "lau": {
+    "emoji": "🧽",
+    "label": "Lau Bàn"
+  },
+  "tàu": {
+    "emoji": "🚢",
+    "label": "Con Tàu"
+  },
+  "sáu": {
+    "emoji": "6️⃣",
+    "label": "Số Sáu"
+  },
+  "cháu": {
+    "emoji": "👧",
+    "label": "Em Bé Cháu"
+  },
+  "mau": {
+    "emoji": "⚡",
+    "label": "Mau Chóng"
+  },
+  "nhau": {
+    "emoji": "👫",
+    "label": "Cùng Nhau"
+  },
+  "cau": {
+    "emoji": "🌴",
+    "label": "Cây Cau"
+  }
+}

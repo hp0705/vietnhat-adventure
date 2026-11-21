@@ -17,39 +17,66 @@
   <!-- Màn hình mở đầu: Chạm để bắt đầu (Kích hoạt Audio Context trên iPad Safari) -->
   <div id="splash-screen" class="splash-screen">
     <div class="splash-card">
-      <div class="mascot-bounce">🏝️ 🧭 🎒</div>
-      <h1 class="splash-title">ĐẢO PHIÊU LƯU TỪ VỰNG</h1>
-      <p class="splash-subtitle">Khám phá tiếng Việt qua từng bước ghép âm diệu kỳ!</p>
+      <div class="mascot-bounce">🏝️ 🔤 🎒</div>
+      <h1 class="splash-title">ĐẢO PHIÊU LƯU TIẾNG VIỆT</h1>
+      <p class="splash-subtitle">Chào mừng Bé Mây đến với thế giới từ vựng và đánh vần diệu kỳ!</p>
       
       <div class="ipad-badge">
-        <span>✨ Tối ưu mượt mà cho iPad Safari</span>
+        <span>✨ Tối ưu mượt mà cho iPad Safari • Giọng chuẩn Hà Nội</span>
       </div>
 
-      <button id="btn-start" class="btn-hero pulse">
-        <span class="icon">🚀</span> BẮT ĐẦU PHIÊU LƯU
-      </button>
+      <p class="splash-choose-title">Bé Mây hãy chọn nội dung học tập hôm nay nhé:</p>
 
-      <p class="splash-note">Chạm để mở khóa âm thanh giọng đọc chuẩn Hà Nội</p>
+      <div class="main-mode-selection">
+        <button id="btn-start-vocab" class="btn-mode-card vocab-card pulse">
+          <div class="mode-card-icon">📖 🌟</div>
+          <div class="mode-card-content">
+            <h2 class="mode-card-title">HỌC TỪ MỚI</h2>
+            <p class="mode-card-desc">Khám phá từ vựng theo cấp độ (2, 3, 4, 5 vần), hình ảnh sinh động và câu ví dụ thân quen!</p>
+            <span class="mode-card-pill">6 Bài học • 60 từ vựng</span>
+          </div>
+          <div class="mode-card-action">Bắt đầu ➔</div>
+        </button>
+
+        <button id="btn-start-spelling" class="btn-mode-card spelling-card pulse">
+          <div class="mode-card-icon">🔤 🎙️</div>
+          <div class="mode-card-content">
+            <h2 class="mode-card-title">TẬP ĐÁNH VẦN</h2>
+            <p class="mode-card-desc">Luyện ghép âm từng bước chuẩn theo họ vần (p, ch, nh, u) và thử thách thú vị!</p>
+            <span class="mode-card-pill">7 Bài học • 113 từ đánh vần</span>
+          </div>
+          <div class="mode-card-action">Bắt đầu ➔</div>
+        </button>
+      </div>
+
+      <p class="splash-note">Chạm vào một chức năng để mở khóa âm thanh giọng đọc chuẩn Hà Nội</p>
     </div>
   </div>
 
   <!-- Thanh công cụ trên cùng (Top Navigation) -->
   <header class="app-header">
     <div class="header-left">
+      <button id="btn-home" class="nav-btn" title="Về màn hình chính">
+        <span class="icon">🏠</span> <span class="label">Trang chủ</span>
+      </button>
       <button id="btn-back" class="nav-btn hidden" title="Quay lại bản đồ">
         <span class="icon">🗺️</span> <span class="label">Bản đồ</span>
       </button>
       <div class="brand">
         <span class="brand-icon">🏕️</span>
-        <span class="brand-name">Hành trình khám phá</span>
+        <span class="brand-name" id="app-brand-name">Học từ mới</span>
       </div>
     </div>
 
     <div class="header-center">
-      <!-- Bộ chọn ngôn ngữ (Language Selector) -->
-      <div class="language-toggle-group">
-        <button id="lang-vi" class="lang-btn active">🇻🇳 Tiếng Việt</button>
-        <button id="lang-ja" class="lang-btn" title="Giai đoạn sau">🇯🇵 日本語 <span class="tag-soon">Sắp có</span></button>
+      <!-- Bộ chuyển đổi chế độ: Học từ mới & Tập đánh vần -->
+      <div class="module-switch-group">
+        <button id="btn-tab-vocab" class="module-tab-btn active" title="Chuyển sang Học từ mới">
+          <span class="icon">📖</span> <span class="tab-text">Học từ mới</span>
+        </button>
+        <button id="btn-tab-spelling" class="module-tab-btn" title="Chuyển sang Tập đánh vần">
+          <span class="icon">🔤</span> <span class="tab-text">Tập đánh vần</span>
+        </button>
       </div>
     </div>
 
