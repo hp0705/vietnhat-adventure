@@ -1119,7 +1119,10 @@ function openWordStation(item) {
 
   // Cập nhật thông tin giao diện
   document.getElementById('word-display').textContent = item.word;
-  document.getElementById('word-meaning').textContent = item.meaning_vi_child || 'Chờ cập nhật nghĩa';
+  const meaningText = (item.cum_tu_goi_nghia && item.cum_tu_goi_nghia !== item.word)
+    ? `[${item.cum_tu_goi_nghia.toUpperCase()}] ${item.meaning_vi_child || ''}`
+    : (item.meaning_vi_child || 'Chờ cập nhật nghĩa');
+  document.getElementById('word-meaning').textContent = meaningText;
   document.getElementById('word-topic').textContent = item.topic || 'khám phá';
   document.getElementById('example-text').textContent = `"${item.example_vi || 'Đang cập nhật ví dụ'}"`;
   

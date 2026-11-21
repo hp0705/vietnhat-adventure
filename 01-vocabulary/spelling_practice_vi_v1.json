@@ -2491,12 +2491,16 @@
         "sequence": [
           "sờ",
           "a",
-          "phờ",
+          "pờ",
+          "ap",
+          "sờ",
           "ap",
           "sap",
-          "sap sắc sáp"
+          "sắc",
+          "sáp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "sờ - a - pờ - ap - sờ - ap - sap - sắc - sáp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0001.mp3",
@@ -2519,7 +2523,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "sáp"
     },
     {
       "id": "sp_0002",
@@ -2606,12 +2611,16 @@
         "sequence": [
           "thờ",
           "a",
-          "phờ",
+          "pờ",
+          "ap",
+          "thờ",
           "ap",
           "thap",
-          "thap sắc tháp"
+          "sắc",
+          "tháp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "thờ - a - pờ - ap - thờ - ap - thap - sắc - tháp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0002.mp3",
@@ -2634,7 +2643,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "tháp"
     },
     {
       "id": "sp_0003",
@@ -2722,12 +2732,16 @@
         "sequence": [
           "rờ",
           "a",
-          "phờ",
+          "pờ",
+          "ap",
+          "rờ",
           "ap",
           "rap",
-          "rap nặng rạp"
+          "nặng",
+          "rạp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "rờ - a - pờ - ap - rờ - ap - rap - nặng - rạp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0003.mp3",
@@ -2750,7 +2764,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "rạp"
     },
     {
       "id": "sp_0042",
@@ -2836,12 +2851,16 @@
         "sequence": [
           "cờ",
           "a",
-          "phờ",
+          "pờ",
+          "ap",
+          "cờ",
           "ap",
           "cap",
-          "cap sắc cáp"
+          "sắc",
+          "cáp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "cờ - a - pờ - ap - cờ - ap - cap - sắc - cáp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0042.mp3",
@@ -2864,7 +2883,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "con cáp"
     },
     {
       "id": "sp_0043",
@@ -2950,12 +2970,16 @@
         "sequence": [
           "sờ",
           "a",
-          "phờ",
+          "pờ",
+          "ap",
+          "sờ",
           "ap",
           "sap",
-          "sap nặng sạp"
+          "nặng",
+          "sạp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "sờ - a - pờ - ap - sờ - ap - sap - nặng - sạp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0043.mp3",
@@ -2978,7 +3002,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "sạp"
     },
     {
       "id": "sp_0044",
@@ -3061,12 +3086,16 @@
         "sequence": [
           "nhờ",
           "a",
-          "phờ",
+          "pờ",
+          "ap",
+          "nhờ",
           "ap",
           "nhap",
-          "nhap sắc nháp"
+          "sắc",
+          "nháp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "nhờ - a - pờ - ap - nhờ - ap - nhap - sắc - nháp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0044.mp3",
@@ -3089,7 +3118,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "nháp"
     },
     {
       "id": "sp_0045",
@@ -3173,12 +3203,16 @@
         "sequence": [
           "đờ",
           "a",
-          "phờ",
+          "pờ",
+          "ap",
+          "đờ",
           "ap",
           "đap",
-          "đap sắc đáp"
+          "sắc",
+          "đáp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "đờ - a - pờ - ap - đờ - ap - đap - sắc - đáp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0045.mp3",
@@ -3201,7 +3235,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "đáp"
     },
     {
       "id": "sp_0046",
@@ -3288,12 +3323,16 @@
         "sequence": [
           "rờ",
           "a",
-          "phờ",
+          "pờ",
+          "ap",
+          "rờ",
           "ap",
           "rap",
-          "rap sắc ráp"
+          "sắc",
+          "ráp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "rờ - a - pờ - ap - rờ - ap - rap - sắc - ráp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0046.mp3",
@@ -3316,7 +3355,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "ráp"
     },
     {
       "id": "sp_0010",
@@ -3407,12 +3447,16 @@
         "sequence": [
           "cờ",
           "ă",
-          "phờ",
+          "pờ",
+          "ăp",
+          "cờ",
           "ăp",
           "căp",
-          "căp nặng cặp"
+          "nặng",
+          "cặp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "cờ - ă - pờ - ăp - cờ - ăp - căp - nặng - cặp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0010.mp3",
@@ -3435,7 +3479,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "cặp"
     },
     {
       "id": "sp_0011",
@@ -3525,12 +3570,16 @@
         "sequence": [
           "gờ",
           "ă",
-          "phờ",
+          "pờ",
+          "ăp",
+          "gờ",
           "ăp",
           "găp",
-          "găp nặng gặp"
+          "nặng",
+          "gặp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "gờ - ă - pờ - ăp - gờ - ăp - găp - nặng - gặp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0011.mp3",
@@ -3553,7 +3602,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "gặp"
     },
     {
       "id": "sp_0012",
@@ -3642,12 +3692,16 @@
         "sequence": [
           "lờ",
           "ă",
-          "phờ",
+          "pờ",
+          "ăp",
+          "lờ",
           "ăp",
           "lăp",
-          "lăp sắc lắp"
+          "sắc",
+          "lắp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "lờ - ă - pờ - ăp - lờ - ăp - lăp - sắc - lắp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0012.mp3",
@@ -3670,7 +3724,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "lắp"
     },
     {
       "id": "sp_0047",
@@ -3757,12 +3812,16 @@
         "sequence": [
           "bờ",
           "ă",
-          "phờ",
+          "pờ",
+          "ăp",
+          "bờ",
           "ăp",
           "băp",
-          "băp sắc bắp"
+          "sắc",
+          "bắp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "bờ - ă - pờ - ăp - bờ - ăp - băp - sắc - bắp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0047.mp3",
@@ -3785,7 +3844,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "bắp"
     },
     {
       "id": "sp_0048",
@@ -3872,12 +3932,16 @@
         "sequence": [
           "nờ",
           "ă",
-          "phờ",
+          "pờ",
+          "ăp",
+          "nờ",
           "ăp",
           "năp",
-          "năp sắc nắp"
+          "sắc",
+          "nắp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "nờ - ă - pờ - ăp - nờ - ăp - năp - sắc - nắp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0048.mp3",
@@ -3900,7 +3964,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "nắp"
     },
     {
       "id": "sp_0049",
@@ -3987,12 +4052,16 @@
         "sequence": [
           "đờ",
           "ă",
-          "phờ",
+          "pờ",
+          "ăp",
+          "đờ",
           "ăp",
           "đăp",
-          "đăp sắc đắp"
+          "sắc",
+          "đắp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "đờ - ă - pờ - ăp - đờ - ăp - đăp - sắc - đắp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0049.mp3",
@@ -4015,7 +4084,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "đắp"
     },
     {
       "id": "sp_0050",
@@ -4102,12 +4172,16 @@
         "sequence": [
           "thờ",
           "ă",
-          "phờ",
+          "pờ",
+          "ăp",
+          "thờ",
           "ăp",
           "thăp",
-          "thăp sắc thắp"
+          "sắc",
+          "thắp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "thờ - ă - pờ - ăp - thờ - ăp - thăp - sắc - thắp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0050.mp3",
@@ -4130,7 +4204,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "thắp"
     },
     {
       "id": "sp_0051",
@@ -4219,12 +4294,16 @@
         "sequence": [
           "chờ",
           "ă",
-          "phờ",
+          "pờ",
+          "ăp",
+          "chờ",
           "ăp",
           "chăp",
-          "chăp sắc chắp"
+          "sắc",
+          "chắp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "chờ - ă - pờ - ăp - chờ - ăp - chăp - sắc - chắp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0051.mp3",
@@ -4247,7 +4326,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "chắp"
     },
     {
       "id": "sp_0052",
@@ -4333,12 +4413,16 @@
         "sequence": [
           "khờ",
           "ă",
-          "phờ",
+          "pờ",
+          "ăp",
+          "khờ",
           "ăp",
           "khăp",
-          "khăp sắc khắp"
+          "sắc",
+          "khắp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "khờ - ă - pờ - ăp - khờ - ăp - khăp - sắc - khắp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0052.mp3",
@@ -4361,7 +4445,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "khắp"
     },
     {
       "id": "sp_0053",
@@ -4451,12 +4536,16 @@
         "sequence": [
           "sờ",
           "ă",
-          "phờ",
+          "pờ",
+          "ăp",
+          "sờ",
           "ăp",
           "săp",
-          "săp sắc sắp"
+          "sắc",
+          "sắp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "sờ - ă - pờ - ăp - sờ - ăp - săp - sắc - sắp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0053.mp3",
@@ -4479,7 +4568,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "sắp"
     },
     {
       "id": "sp_0013",
@@ -4570,12 +4660,16 @@
         "sequence": [
           "tờ",
           "â",
-          "phờ",
+          "pờ",
+          "âp",
+          "tờ",
           "âp",
           "tâp",
-          "tâp nặng tập"
+          "nặng",
+          "tập"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "tờ - â - pờ - âp - tờ - âp - tâp - nặng - tập"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0013.mp3",
@@ -4598,7 +4692,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "tập"
     },
     {
       "id": "sp_0014",
@@ -4685,12 +4780,16 @@
         "sequence": [
           "thờ",
           "â",
-          "phờ",
+          "pờ",
+          "âp",
+          "thờ",
           "âp",
           "thâp",
-          "thâp sắc thấp"
+          "sắc",
+          "thấp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "thờ - â - pờ - âp - thờ - âp - thâp - sắc - thấp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0014.mp3",
@@ -4713,7 +4812,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "thấp"
     },
     {
       "id": "sp_0015",
@@ -4804,12 +4904,16 @@
         "sequence": [
           "gờ",
           "â",
-          "phờ",
+          "pờ",
+          "âp",
+          "gờ",
           "âp",
           "gâp",
-          "gâp sắc gấp"
+          "sắc",
+          "gấp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "gờ - â - pờ - âp - gờ - âp - gâp - sắc - gấp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0015.mp3",
@@ -4832,7 +4936,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "gấp"
     },
     {
       "id": "sp_0054",
@@ -4919,12 +5024,16 @@
         "sequence": [
           "hờ",
           "â",
-          "phờ",
+          "pờ",
+          "âp",
+          "hờ",
           "âp",
           "hâp",
-          "hâp sắc hấp"
+          "sắc",
+          "hấp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "hờ - â - pờ - âp - hờ - âp - hâp - sắc - hấp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0054.mp3",
@@ -4947,7 +5056,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "hấp"
     },
     {
       "id": "sp_0055",
@@ -5034,12 +5144,16 @@
         "sequence": [
           "nờ",
           "â",
-          "phờ",
+          "pờ",
+          "âp",
+          "nờ",
           "âp",
           "nâp",
-          "nâp sắc nấp"
+          "sắc",
+          "nấp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "nờ - â - pờ - âp - nờ - âp - nâp - sắc - nấp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0055.mp3",
@@ -5062,7 +5176,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "nấp"
     },
     {
       "id": "sp_0056",
@@ -5150,12 +5265,16 @@
         "sequence": [
           "ngờ",
           "â",
-          "phờ",
+          "pờ",
+          "âp",
+          "ngờ",
           "âp",
           "ngâp",
-          "ngâp nặng ngập"
+          "nặng",
+          "ngập"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "ngờ - â - pờ - âp - ngờ - âp - ngâp - nặng - ngập"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0056.mp3",
@@ -5178,7 +5297,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "ngập"
     },
     {
       "id": "sp_0057",
@@ -5267,12 +5387,16 @@
         "sequence": [
           "gờ",
           "â",
-          "phờ",
+          "pờ",
+          "âp",
+          "gờ",
           "âp",
           "gâp",
-          "gâp nặng gập"
+          "nặng",
+          "gập"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "gờ - â - pờ - âp - gờ - âp - gâp - nặng - gập"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0057.mp3",
@@ -5295,7 +5419,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "gập"
     },
     {
       "id": "sp_0058",
@@ -5381,12 +5506,16 @@
         "sequence": [
           "vờ",
           "â",
-          "phờ",
+          "pờ",
+          "âp",
+          "vờ",
           "âp",
           "vâp",
-          "vâp sắc vấp"
+          "sắc",
+          "vấp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "vờ - â - pờ - âp - vờ - âp - vâp - sắc - vấp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0058.mp3",
@@ -5409,7 +5538,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "vấp"
     },
     {
       "id": "sp_0059",
@@ -5498,12 +5628,16 @@
         "sequence": [
           "chờ",
           "â",
-          "phờ",
+          "pờ",
+          "âp",
+          "chờ",
           "âp",
           "châp",
-          "châp nặng chập"
+          "nặng",
+          "chập"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "chờ - â - pờ - âp - chờ - âp - châp - nặng - chập"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0059.mp3",
@@ -5526,7 +5660,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "chập"
     },
     {
       "id": "sp_0060",
@@ -5613,12 +5748,16 @@
         "sequence": [
           "lờ",
           "â",
-          "phờ",
+          "pờ",
+          "âp",
+          "lờ",
           "âp",
           "lâp",
-          "lâp sắc lấp"
+          "sắc",
+          "lấp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "lờ - â - pờ - âp - lờ - âp - lâp - sắc - lấp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0060.mp3",
@@ -5641,7 +5780,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "lấp"
     },
     {
       "id": "sp_0016",
@@ -5729,12 +5869,16 @@
         "sequence": [
           "dờ",
           "e",
-          "phờ",
+          "pờ",
+          "ep",
+          "dờ",
           "ep",
           "dep",
-          "dep sắc dép"
+          "sắc",
+          "dép"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "dờ - e - pờ - ep - dờ - ep - dep - sắc - dép"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0016.mp3",
@@ -5757,7 +5901,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "dép"
     },
     {
       "id": "sp_0017",
@@ -5845,12 +5990,16 @@
         "sequence": [
           "cờ",
           "e",
-          "phờ",
+          "pờ",
+          "ep",
+          "cờ",
           "ep",
           "kep",
-          "kep nặng kẹp"
+          "nặng",
+          "kẹp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "cờ - e - pờ - ep - cờ - ep - kep - nặng - kẹp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0017.mp3",
@@ -5873,7 +6022,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "kẹp"
     },
     {
       "id": "sp_0018",
@@ -5960,12 +6110,16 @@
         "sequence": [
           "gờ",
           "e",
-          "phờ",
+          "pờ",
+          "ep",
+          "gờ",
           "ep",
           "ghep",
-          "ghep sắc ghép"
+          "sắc",
+          "ghép"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "gờ - e - pờ - ep - gờ - ep - ghep - sắc - ghép"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0018.mp3",
@@ -5988,7 +6142,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "ghép"
     },
     {
       "id": "sp_0061",
@@ -6071,12 +6226,16 @@
         "sequence": [
           "đờ",
           "e",
-          "phờ",
+          "pờ",
+          "ep",
+          "đờ",
           "ep",
           "đep",
-          "đep nặng đẹp"
+          "nặng",
+          "đẹp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "đờ - e - pờ - ep - đờ - ep - đep - nặng - đẹp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0061.mp3",
@@ -6099,7 +6258,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "đẹp"
     },
     {
       "id": "sp_0062",
@@ -6182,12 +6342,16 @@
         "sequence": [
           "hờ",
           "e",
-          "phờ",
+          "pờ",
+          "ep",
+          "hờ",
           "ep",
           "hep",
-          "hep nặng hẹp"
+          "nặng",
+          "hẹp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "hờ - e - pờ - ep - hờ - ep - hep - nặng - hẹp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0062.mp3",
@@ -6210,7 +6374,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "hẹp"
     },
     {
       "id": "sp_0063",
@@ -6296,12 +6461,16 @@
         "sequence": [
           "xờ",
           "e",
-          "phờ",
+          "pờ",
+          "ep",
+          "xờ",
           "ep",
           "xep",
-          "xep nặng xẹp"
+          "nặng",
+          "xẹp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "xờ - e - pờ - ep - xờ - ep - xep - nặng - xẹp"
       },
       "audio": {
         "word_full": null,
@@ -6322,7 +6491,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "xẹp"
     },
     {
       "id": "sp_0064",
@@ -6409,12 +6579,16 @@
         "sequence": [
           "chờ",
           "e",
-          "phờ",
+          "pờ",
+          "ep",
+          "chờ",
           "ep",
           "chep",
-          "chep sắc chép"
+          "sắc",
+          "chép"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "chờ - e - pờ - ep - chờ - ep - chep - sắc - chép"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0064.mp3",
@@ -6437,7 +6611,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "chép"
     },
     {
       "id": "sp_0065",
@@ -6507,11 +6682,13 @@
         ],
         "sequence": [
           "e",
-          "phờ",
+          "pờ",
           "ep",
-          "ep sắc ép"
+          "sắc",
+          "ép"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "e - pờ - ep - sắc - ép"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0065.mp3",
@@ -6534,7 +6711,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "ép"
     },
     {
       "id": "sp_0066",
@@ -6617,12 +6795,16 @@
         "sequence": [
           "khờ",
           "e",
-          "phờ",
+          "pờ",
+          "ep",
+          "khờ",
           "ep",
           "khep",
-          "khep sắc khép"
+          "sắc",
+          "khép"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "khờ - e - pờ - ep - khờ - ep - khep - sắc - khép"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0066.mp3",
@@ -6645,7 +6827,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "khép"
     },
     {
       "id": "sp_0067",
@@ -6729,12 +6912,16 @@
         "sequence": [
           "tờ",
           "e",
-          "phờ",
+          "pờ",
+          "ep",
+          "tờ",
           "ep",
           "tep",
-          "tep sắc tép"
+          "sắc",
+          "tép"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "tờ - e - pờ - ep - tờ - ep - tep - sắc - tép"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0067.mp3",
@@ -6757,7 +6944,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "tép"
     },
     {
       "id": "sp_0068",
@@ -6840,12 +7028,16 @@
         "sequence": [
           "thờ",
           "e",
-          "phờ",
+          "pờ",
+          "ep",
+          "thờ",
           "ep",
           "thep",
-          "thep sắc thép"
+          "sắc",
+          "thép"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "thờ - e - pờ - ep - thờ - ep - thep - sắc - thép"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0068.mp3",
@@ -6868,7 +7060,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "thép"
     },
     {
       "id": "sp_0019",
@@ -6955,12 +7148,16 @@
         "sequence": [
           "bờ",
           "ê",
-          "phờ",
+          "pờ",
+          "êp",
+          "bờ",
           "êp",
           "bêp",
-          "bêp sắc bếp"
+          "sắc",
+          "bếp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "bờ - ê - pờ - êp - bờ - êp - bêp - sắc - bếp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0019.mp3",
@@ -6983,7 +7180,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "bếp"
     },
     {
       "id": "sp_0020",
@@ -7072,12 +7270,16 @@
         "sequence": [
           "nờ",
           "ê",
-          "phờ",
+          "pờ",
+          "êp",
+          "nờ",
           "êp",
           "nêp",
-          "nêp sắc nếp"
+          "sắc",
+          "nếp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "nờ - ê - pờ - êp - nờ - êp - nêp - sắc - nếp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0020.mp3",
@@ -7100,7 +7302,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "nếp"
     },
     {
       "id": "sp_0021",
@@ -7190,12 +7393,16 @@
         "sequence": [
           "xờ",
           "ê",
-          "phờ",
+          "pờ",
+          "êp",
+          "xờ",
           "êp",
           "xêp",
-          "xêp sắc xếp"
+          "sắc",
+          "xếp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "xờ - ê - pờ - êp - xờ - êp - xêp - sắc - xếp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0021.mp3",
@@ -7218,7 +7425,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "xếp"
     },
     {
       "id": "sp_0022",
@@ -7306,12 +7514,16 @@
         "sequence": [
           "cờ",
           "i",
-          "phờ",
+          "pờ",
+          "ip",
+          "cờ",
           "ip",
           "kip",
-          "kip nặng kịp"
+          "nặng",
+          "kịp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "cờ - i - pờ - ip - cờ - ip - kip - nặng - kịp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0022.mp3",
@@ -7334,7 +7546,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "kịp"
     },
     {
       "id": "sp_0023",
@@ -7419,12 +7632,16 @@
         "sequence": [
           "nhờ",
           "i",
-          "phờ",
+          "pờ",
+          "ip",
+          "nhờ",
           "ip",
           "nhip",
-          "nhip nặng nhịp"
+          "nặng",
+          "nhịp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "nhờ - i - pờ - ip - nhờ - ip - nhip - nặng - nhịp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0023.mp3",
@@ -7447,7 +7664,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "nhịp"
     },
     {
       "id": "sp_0024",
@@ -7536,12 +7754,16 @@
         "sequence": [
           "chờ",
           "i",
-          "phờ",
+          "pờ",
+          "ip",
+          "chờ",
           "ip",
           "chip",
-          "chip sắc chíp"
+          "sắc",
+          "chíp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "chờ - i - pờ - ip - chờ - ip - chip - sắc - chíp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0024.mp3",
@@ -7564,7 +7786,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "chíp"
     },
     {
       "id": "sp_0069",
@@ -7650,12 +7873,16 @@
         "sequence": [
           "dờ",
           "i",
-          "phờ",
+          "pờ",
+          "ip",
+          "dờ",
           "ip",
           "dip",
-          "dip nặng dịp"
+          "nặng",
+          "dịp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "dờ - i - pờ - ip - dờ - ip - dip - nặng - dịp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0069.mp3",
@@ -7678,7 +7905,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "dịp"
     },
     {
       "id": "sp_0070",
@@ -7761,12 +7989,16 @@
         "sequence": [
           "nhờ",
           "i",
-          "phờ",
+          "pờ",
+          "ip",
+          "nhờ",
           "ip",
           "nhip",
-          "nhip sắc nhíp"
+          "sắc",
+          "nhíp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "nhờ - i - pờ - ip - nhờ - ip - nhip - sắc - nhíp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0070.mp3",
@@ -7789,7 +8021,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "nhíp"
     },
     {
       "id": "sp_0025",
@@ -7878,12 +8111,16 @@
         "sequence": [
           "chờ",
           "o",
-          "phờ",
+          "pờ",
+          "op",
+          "chờ",
           "op",
           "chop",
-          "chop sắc chóp"
+          "sắc",
+          "chóp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "chờ - o - pờ - op - chờ - op - chop - sắc - chóp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0025.mp3",
@@ -7906,7 +8143,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "con chóp"
     },
     {
       "id": "sp_0026",
@@ -7991,12 +8229,16 @@
         "sequence": [
           "hờ",
           "o",
-          "phờ",
+          "pờ",
+          "op",
+          "hờ",
           "op",
           "hop",
-          "hop nặng họp"
+          "nặng",
+          "họp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "hờ - o - pờ - op - hờ - op - hop - nặng - họp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0026.mp3",
@@ -8019,7 +8261,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "họp"
     },
     {
       "id": "sp_0027",
@@ -8107,12 +8350,16 @@
         "sequence": [
           "gờ",
           "o",
-          "phờ",
+          "pờ",
+          "op",
+          "gờ",
           "op",
           "gop",
-          "gop sắc góp"
+          "sắc",
+          "góp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "gờ - o - pờ - op - gờ - op - gop - sắc - góp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0027.mp3",
@@ -8135,7 +8382,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "góp"
     },
     {
       "id": "sp_0071",
@@ -8220,12 +8468,16 @@
         "sequence": [
           "bờ",
           "o",
-          "phờ",
+          "pờ",
+          "op",
+          "bờ",
           "op",
           "bop",
-          "bop sắc bóp"
+          "sắc",
+          "bóp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "bờ - o - pờ - op - bờ - op - bop - sắc - bóp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0071.mp3",
@@ -8248,7 +8500,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "bóp"
     },
     {
       "id": "sp_0028",
@@ -8335,12 +8588,16 @@
         "sequence": [
           "hờ",
           "ô",
-          "phờ",
+          "pờ",
+          "ôp",
+          "hờ",
           "ôp",
           "hôp",
-          "hôp nặng hộp"
+          "nặng",
+          "hộp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "hờ - ô - pờ - ôp - hờ - ôp - hôp - nặng - hộp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0028.mp3",
@@ -8363,7 +8620,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "hộp"
     },
     {
       "id": "sp_0029",
@@ -8448,12 +8706,16 @@
         "sequence": [
           "lờ",
           "ô",
-          "phờ",
+          "pờ",
+          "ôp",
+          "lờ",
           "ôp",
           "lôp",
-          "lôp sắc lốp"
+          "sắc",
+          "lốp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "lờ - ô - pờ - ôp - lờ - ôp - lôp - sắc - lốp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0029.mp3",
@@ -8476,7 +8738,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "lốp"
     },
     {
       "id": "sp_0030",
@@ -8566,12 +8829,16 @@
         "sequence": [
           "xờ",
           "ô",
-          "phờ",
+          "pờ",
+          "ôp",
+          "xờ",
           "ôp",
           "xôp",
-          "xôp sắc xốp"
+          "sắc",
+          "xốp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "xờ - ô - pờ - ôp - xờ - ôp - xôp - sắc - xốp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0030.mp3",
@@ -8594,7 +8861,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "xốp"
     },
     {
       "id": "sp_0072",
@@ -8678,12 +8946,16 @@
         "sequence": [
           "nờ",
           "ô",
-          "phờ",
+          "pờ",
+          "ôp",
+          "nờ",
           "ôp",
           "nôp",
-          "nôp nặng nộp"
+          "nặng",
+          "nộp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "nờ - ô - pờ - ôp - nờ - ôp - nôp - nặng - nộp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0072.mp3",
@@ -8706,7 +8978,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "nộp"
     },
     {
       "id": "sp_0073",
@@ -8794,12 +9067,16 @@
         "sequence": [
           "gờ",
           "ô",
-          "phờ",
+          "pờ",
+          "ôp",
+          "gờ",
           "ôp",
           "gôp",
-          "gôp nặng gộp"
+          "nặng",
+          "gộp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "gờ - ô - pờ - ôp - gờ - ôp - gôp - nặng - gộp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0073.mp3",
@@ -8822,7 +9099,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "gộp"
     },
     {
       "id": "sp_0074",
@@ -8908,12 +9186,16 @@
         "sequence": [
           "tờ",
           "ô",
-          "phờ",
+          "pờ",
+          "ôp",
+          "tờ",
           "ôp",
           "tôp",
-          "tôp sắc tốp"
+          "sắc",
+          "tốp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "tờ - ô - pờ - ôp - tờ - ôp - tôp - sắc - tốp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0074.mp3",
@@ -8936,7 +9218,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "tốp"
     },
     {
       "id": "sp_0031",
@@ -9027,12 +9310,16 @@
         "sequence": [
           "chờ",
           "ơ",
-          "phờ",
+          "pờ",
+          "ơp",
+          "chờ",
           "ơp",
           "chơp",
-          "chơp sắc chớp"
+          "sắc",
+          "chớp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "chờ - ơ - pờ - ơp - chờ - ơp - chơp - sắc - chớp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0031.mp3",
@@ -9055,7 +9342,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "chớp"
     },
     {
       "id": "sp_0032",
@@ -9141,12 +9429,16 @@
         "sequence": [
           "lờ",
           "ơ",
-          "phờ",
+          "pờ",
+          "ơp",
+          "lờ",
           "ơp",
           "lơp",
-          "lơp nặng lợp"
+          "nặng",
+          "lợp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "lờ - ơ - pờ - ơp - lờ - ơp - lơp - nặng - lợp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0032.mp3",
@@ -9169,7 +9461,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "lợp"
     },
     {
       "id": "sp_0075",
@@ -9256,12 +9549,16 @@
         "sequence": [
           "rờ",
           "ơ",
-          "phờ",
+          "pờ",
+          "ơp",
+          "rờ",
           "ơp",
           "rơp",
-          "rơp nặng rợp"
+          "nặng",
+          "rợp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "rờ - ơ - pờ - ơp - rờ - ơp - rơp - nặng - rợp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0075.mp3",
@@ -9284,7 +9581,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "rợp"
     },
     {
       "id": "sp_0076",
@@ -9369,12 +9667,16 @@
         "sequence": [
           "hờ",
           "ơ",
-          "phờ",
+          "pờ",
+          "ơp",
+          "hờ",
           "ơp",
           "hơp",
-          "hơp sắc hớp"
+          "sắc",
+          "hớp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "hờ - ơ - pờ - ơp - hờ - ơp - hơp - sắc - hớp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0076.mp3",
@@ -9397,7 +9699,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "hớp"
     },
     {
       "id": "sp_0077",
@@ -9481,12 +9784,16 @@
         "sequence": [
           "đờ",
           "ơ",
-          "phờ",
+          "pờ",
+          "ơp",
+          "đờ",
           "ơp",
           "đơp",
-          "đơp sắc đớp"
+          "sắc",
+          "đớp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "đờ - ơ - pờ - ơp - đờ - ơp - đơp - sắc - đớp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0077.mp3",
@@ -9509,7 +9816,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "đớp"
     },
     {
       "id": "sp_0033",
@@ -9578,11 +9886,13 @@
         ],
         "sequence": [
           "u",
-          "phờ",
+          "pờ",
           "up",
-          "up sắc úp"
+          "sắc",
+          "úp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "u - pờ - up - sắc - úp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0033.mp3",
@@ -9605,7 +9915,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "úp"
     },
     {
       "id": "sp_0034",
@@ -9691,12 +10002,16 @@
         "sequence": [
           "sờ",
           "u",
-          "phờ",
+          "pờ",
+          "up",
+          "sờ",
           "up",
           "sup",
-          "sup sắc súp"
+          "sắc",
+          "súp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "sờ - u - pờ - up - sờ - up - sup - sắc - súp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0034.mp3",
@@ -9719,7 +10034,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "súp"
     },
     {
       "id": "sp_0035",
@@ -9806,12 +10122,16 @@
         "sequence": [
           "cờ",
           "u",
-          "phờ",
+          "pờ",
+          "up",
+          "cờ",
           "up",
           "cup",
-          "cup sắc cúp"
+          "sắc",
+          "cúp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "cờ - u - pờ - up - cờ - up - cup - sắc - cúp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0035.mp3",
@@ -9834,7 +10154,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "cúp"
     },
     {
       "id": "sp_0036",
@@ -9921,12 +10242,16 @@
         "sequence": [
           "bờ",
           "u",
-          "phờ",
+          "pờ",
+          "up",
+          "bờ",
           "up",
           "bup",
-          "bup sắc búp"
+          "sắc",
+          "búp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "bờ - u - pờ - up - bờ - up - bup - sắc - búp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0036.mp3",
@@ -9949,7 +10274,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "búp"
     },
     {
       "id": "sp_0078",
@@ -10035,12 +10361,16 @@
         "sequence": [
           "chờ",
           "u",
-          "phờ",
+          "pờ",
+          "up",
+          "chờ",
           "up",
           "chup",
-          "chup nặng chụp"
+          "nặng",
+          "chụp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "chờ - u - pờ - up - chờ - up - chup - nặng - chụp"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0078.mp3",
@@ -10063,7 +10393,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "chụp"
     },
     {
       "id": "sp_0079",
@@ -10147,12 +10478,16 @@
         "sequence": [
           "tờ",
           "u",
-          "phờ",
+          "pờ",
+          "up",
+          "tờ",
           "up",
           "tup",
-          "tup sắc túp"
+          "sắc",
+          "túp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "tờ - u - pờ - up - tờ - up - tup - sắc - túp"
       },
       "audio": {
         "word_full": null,
@@ -10173,7 +10508,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "túp"
     },
     {
       "id": "sp_0080",
@@ -10260,12 +10596,16 @@
         "sequence": [
           "ngờ",
           "u",
-          "phờ",
+          "pờ",
+          "up",
+          "ngờ",
           "up",
           "ngup",
-          "ngup nặng ngụp"
+          "nặng",
+          "ngụp"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "ngờ - u - pờ - up - ngờ - up - ngup - nặng - ngụp"
       },
       "audio": {
         "word_full": null,
@@ -10286,7 +10626,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_p"
+      "lesson_id": "les_p",
+      "cum_tu_goi_nghia": "ngụp"
     },
     {
       "id": "sp_0005",
@@ -10378,10 +10719,14 @@
           "a",
           "chờ",
           "ach",
+          "sờ",
+          "ach",
           "sach",
-          "sach sắc sách"
+          "sắc",
+          "sách"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "sờ - a - chờ - ach - sờ - ach - sach - sắc - sách"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0005.mp3",
@@ -10404,7 +10749,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_ch"
+      "lesson_id": "les_ch",
+      "cum_tu_goi_nghia": "cuốn sách"
     },
     {
       "id": "sp_0006",
@@ -10497,10 +10843,14 @@
           "a",
           "chờ",
           "ach",
+          "gờ",
+          "ach",
           "gach",
-          "gach nặng gạch"
+          "nặng",
+          "gạch"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "gờ - a - chờ - ach - gờ - ach - gach - nặng - gạch"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0006.mp3",
@@ -10523,7 +10873,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_ch"
+      "lesson_id": "les_ch",
+      "cum_tu_goi_nghia": "gạch"
     },
     {
       "id": "sp_0007",
@@ -10615,10 +10966,14 @@
           "a",
           "chờ",
           "ach",
+          "lờ",
+          "ach",
           "lach",
-          "lach nặng lạch"
+          "nặng",
+          "lạch"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "lờ - a - chờ - ach - lờ - ach - lach - nặng - lạch"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0007.mp3",
@@ -10641,7 +10996,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_ch"
+      "lesson_id": "les_ch",
+      "cum_tu_goi_nghia": "lạch"
     },
     {
       "id": "sp_0081",
@@ -10731,10 +11087,14 @@
           "a",
           "chờ",
           "ach",
+          "sờ",
+          "ach",
           "sach",
-          "sach nặng sạch"
+          "nặng",
+          "sạch"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "sờ - a - chờ - ach - sờ - ach - sach - nặng - sạch"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0081.mp3",
@@ -10757,7 +11117,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_ch"
+      "lesson_id": "les_ch",
+      "cum_tu_goi_nghia": "sạch"
     },
     {
       "id": "sp_0082",
@@ -10845,10 +11206,14 @@
           "a",
           "chờ",
           "ach",
+          "khờ",
+          "ach",
           "khach",
-          "khach sắc khách"
+          "sắc",
+          "khách"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "khờ - a - chờ - ach - khờ - ach - khach - sắc - khách"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0082.mp3",
@@ -10871,7 +11236,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_ch"
+      "lesson_id": "les_ch",
+      "cum_tu_goi_nghia": "khách"
     },
     {
       "id": "sp_0083",
@@ -10959,10 +11325,14 @@
           "a",
           "chờ",
           "ach",
+          "tờ",
+          "ach",
           "tach",
-          "tach sắc tách"
+          "sắc",
+          "tách"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "tờ - a - chờ - ach - tờ - ach - tach - sắc - tách"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0083.mp3",
@@ -10985,7 +11355,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_ch"
+      "lesson_id": "les_ch",
+      "cum_tu_goi_nghia": "tách"
     },
     {
       "id": "sp_0084",
@@ -11073,10 +11444,14 @@
           "a",
           "chờ",
           "ach",
+          "thờ",
+          "ach",
           "thach",
-          "thach nặng thạch"
+          "nặng",
+          "thạch"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "thờ - a - chờ - ach - thờ - ach - thach - nặng - thạch"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0084.mp3",
@@ -11099,7 +11474,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_ch"
+      "lesson_id": "les_ch",
+      "cum_tu_goi_nghia": "thạch"
     },
     {
       "id": "sp_0085",
@@ -11187,10 +11563,14 @@
           "a",
           "chờ",
           "ach",
+          "vờ",
+          "ach",
           "vach",
-          "vach nặng vạch"
+          "nặng",
+          "vạch"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "vờ - a - chờ - ach - vờ - ach - vach - nặng - vạch"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0085.mp3",
@@ -11213,7 +11593,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_ch"
+      "lesson_id": "les_ch",
+      "cum_tu_goi_nghia": "vạch"
     },
     {
       "id": "sp_0086",
@@ -11302,10 +11683,14 @@
           "a",
           "chờ",
           "ach",
+          "bờ",
+          "ach",
           "bach",
-          "bach nặng bạch"
+          "nặng",
+          "bạch"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "bờ - a - chờ - ach - bờ - ach - bach - nặng - bạch"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0086.mp3",
@@ -11328,7 +11713,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_ch"
+      "lesson_id": "les_ch",
+      "cum_tu_goi_nghia": "bạch"
     },
     {
       "id": "sp_0037",
@@ -11405,9 +11791,11 @@
           "ê",
           "chờ",
           "êch",
-          "êch sắc ếch"
+          "sắc",
+          "ếch"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "ê - chờ - êch - sắc - ếch"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0037.mp3",
@@ -11430,7 +11818,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_ch"
+      "lesson_id": "les_ch",
+      "cum_tu_goi_nghia": "con ếch"
     },
     {
       "id": "sp_0038",
@@ -11520,10 +11909,14 @@
           "ê",
           "chờ",
           "êch",
+          "lờ",
+          "êch",
           "lêch",
-          "lêch nặng lệch"
+          "nặng",
+          "lệch"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "lờ - ê - chờ - êch - lờ - êch - lêch - nặng - lệch"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0038.mp3",
@@ -11546,7 +11939,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_ch"
+      "lesson_id": "les_ch",
+      "cum_tu_goi_nghia": "lệch"
     },
     {
       "id": "sp_0039",
@@ -11637,10 +12031,14 @@
           "i",
           "chờ",
           "ich",
+          "lờ",
+          "ich",
           "lich",
-          "lich nặng lịch"
+          "nặng",
+          "lịch"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "lờ - i - chờ - ich - lờ - ich - lich - nặng - lịch"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0039.mp3",
@@ -11663,7 +12061,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_ch"
+      "lesson_id": "les_ch",
+      "cum_tu_goi_nghia": "lịch"
     },
     {
       "id": "sp_0040",
@@ -11751,10 +12150,14 @@
           "i",
           "chờ",
           "ich",
+          "thờ",
+          "ich",
           "thich",
-          "thich sắc thích"
+          "sắc",
+          "thích"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "thờ - i - chờ - ich - thờ - ich - thich - sắc - thích"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0040.mp3",
@@ -11777,7 +12180,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_ch"
+      "lesson_id": "les_ch",
+      "cum_tu_goi_nghia": "thích"
     },
     {
       "id": "sp_0041",
@@ -11871,10 +12275,14 @@
           "i",
           "chờ",
           "ich",
+          "chờ",
+          "ich",
           "chich",
-          "chich sắc chích"
+          "sắc",
+          "chích"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "chờ - i - chờ - ich - chờ - ich - chich - sắc - chích"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0041.mp3",
@@ -11897,7 +12305,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_ch"
+      "lesson_id": "les_ch",
+      "cum_tu_goi_nghia": "chích"
     },
     {
       "id": "sp_0087",
@@ -11987,10 +12396,14 @@
           "i",
           "chờ",
           "ich",
+          "tờ",
+          "ich",
           "tich",
-          "tich sắc tích"
+          "sắc",
+          "tích"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "tờ - i - chờ - ich - tờ - ich - tich - sắc - tích"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0087.mp3",
@@ -12013,7 +12426,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_ch"
+      "lesson_id": "les_ch",
+      "cum_tu_goi_nghia": "tích"
     },
     {
       "id": "sp_0088",
@@ -12105,10 +12519,14 @@
           "i",
           "chờ",
           "ich",
+          "xờ",
+          "ich",
           "xich",
-          "xich sắc xích"
+          "sắc",
+          "xích"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "xờ - i - chờ - ich - xờ - ich - xich - sắc - xích"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0088.mp3",
@@ -12131,7 +12549,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_ch"
+      "lesson_id": "les_ch",
+      "cum_tu_goi_nghia": "xích"
     },
     {
       "id": "sp_0089",
@@ -12222,10 +12641,14 @@
           "i",
           "chờ",
           "ich",
+          "cờ",
+          "ich",
           "kich",
-          "kich nặng kịch"
+          "nặng",
+          "kịch"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "cờ - i - chờ - ich - cờ - ich - kich - nặng - kịch"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0089.mp3",
@@ -12248,7 +12671,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_ch"
+      "lesson_id": "les_ch",
+      "cum_tu_goi_nghia": "kịch"
     },
     {
       "id": "sp_0090",
@@ -12336,10 +12760,14 @@
           "i",
           "chờ",
           "ich",
+          "đờ",
+          "ich",
           "đich",
-          "đich sắc đích"
+          "sắc",
+          "đích"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "đờ - i - chờ - ich - đờ - ich - đich - sắc - đích"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0090.mp3",
@@ -12362,7 +12790,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_ch"
+      "lesson_id": "les_ch",
+      "cum_tu_goi_nghia": "đích"
     },
     {
       "id": "sp_0004",
@@ -12449,10 +12878,14 @@
           "a",
           "nhờ",
           "anh",
+          "đờ",
+          "anh",
           "đanh",
-          "đanh sắc đánh"
+          "sắc",
+          "đánh"
         ],
-        "instruction": "Giữ đúng chuỗi người dùng đã xác nhận/biên tập; không tự sửa."
+        "instruction": "Giữ đúng chuỗi người dùng đã xác nhận/biên tập; không tự sửa.",
+        "spelling_rule": "đờ - a - nhờ - anh - đờ - anh - đanh - sắc - đánh"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0004.mp3",
@@ -12475,7 +12908,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_nh"
+      "lesson_id": "les_nh",
+      "cum_tu_goi_nghia": "đánh"
     },
     {
       "id": "sp_0091",
@@ -12542,7 +12976,8 @@
           "nhờ",
           "anh"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "a - nhờ - anh"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0091.mp3",
@@ -12565,7 +13000,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_nh"
+      "lesson_id": "les_nh",
+      "cum_tu_goi_nghia": "anh"
     },
     {
       "id": "sp_0092",
@@ -12636,9 +13072,11 @@
           "a",
           "nhờ",
           "anh",
-          "anh hỏi ảnh"
+          "hỏi",
+          "ảnh"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "a - nhờ - anh - hỏi - ảnh"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0092.mp3",
@@ -12661,7 +13099,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_nh"
+      "lesson_id": "les_nh",
+      "cum_tu_goi_nghia": "ảnh"
     },
     {
       "id": "sp_0093",
@@ -12746,10 +13185,14 @@
           "a",
           "nhờ",
           "anh",
+          "bờ",
+          "anh",
           "banh",
-          "banh sắc bánh"
+          "sắc",
+          "bánh"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "bờ - a - nhờ - anh - bờ - anh - banh - sắc - bánh"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0093.mp3",
@@ -12772,7 +13215,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_nh"
+      "lesson_id": "les_nh",
+      "cum_tu_goi_nghia": "bánh"
     },
     {
       "id": "sp_0094",
@@ -12855,9 +13299,12 @@
           "a",
           "nhờ",
           "anh",
+          "cờ",
+          "anh",
           "canh"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "cờ - a - nhờ - anh - cờ - anh - canh"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0094.mp3",
@@ -12880,7 +13327,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_nh"
+      "lesson_id": "les_nh",
+      "cum_tu_goi_nghia": "canh"
     },
     {
       "id": "sp_0095",
@@ -12963,9 +13411,12 @@
           "a",
           "nhờ",
           "anh",
+          "chờ",
+          "anh",
           "chanh"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "chờ - a - nhờ - anh - chờ - anh - chanh"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0095.mp3",
@@ -12988,7 +13439,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_nh"
+      "lesson_id": "les_nh",
+      "cum_tu_goi_nghia": "quả chanh"
     },
     {
       "id": "sp_0096",
@@ -13071,9 +13523,12 @@
           "a",
           "nhờ",
           "anh",
+          "trờ",
+          "anh",
           "tranh"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "trờ - a - nhờ - anh - trờ - anh - tranh"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0096.mp3",
@@ -13096,7 +13551,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_nh"
+      "lesson_id": "les_nh",
+      "cum_tu_goi_nghia": "tranh"
     },
     {
       "id": "sp_0097",
@@ -13184,10 +13640,14 @@
           "a",
           "nhờ",
           "anh",
+          "cờ",
+          "anh",
           "canh",
-          "canh huyền cành"
+          "huyền",
+          "cành"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "cờ - a - nhờ - anh - cờ - anh - canh - huyền - cành"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0097.mp3",
@@ -13210,7 +13670,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_nh"
+      "lesson_id": "les_nh",
+      "cum_tu_goi_nghia": "cành"
     },
     {
       "id": "sp_0098",
@@ -13293,9 +13754,12 @@
           "a",
           "nhờ",
           "anh",
+          "xờ",
+          "anh",
           "xanh"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "xờ - a - nhờ - anh - xờ - anh - xanh"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0098.mp3",
@@ -13318,7 +13782,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_nh"
+      "lesson_id": "les_nh",
+      "cum_tu_goi_nghia": "xanh"
     },
     {
       "id": "sp_0099",
@@ -13398,9 +13863,12 @@
           "a",
           "nhờ",
           "anh",
+          "nhờ",
+          "anh",
           "nhanh"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "nhờ - a - nhờ - anh - nhờ - anh - nhanh"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0099.mp3",
@@ -13423,7 +13891,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_nh"
+      "lesson_id": "les_nh",
+      "cum_tu_goi_nghia": "nhanh"
     },
     {
       "id": "sp_0100",
@@ -13508,10 +13977,14 @@
           "a",
           "nhờ",
           "anh",
+          "lờ",
+          "anh",
           "lanh",
-          "lanh nặng lạnh"
+          "nặng",
+          "lạnh"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "lờ - a - nhờ - anh - lờ - anh - lanh - nặng - lạnh"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0100.mp3",
@@ -13534,7 +14007,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_nh"
+      "lesson_id": "les_nh",
+      "cum_tu_goi_nghia": "lạnh"
     },
     {
       "id": "sp_0101",
@@ -13619,10 +14093,14 @@
           "a",
           "nhờ",
           "anh",
+          "mờ",
+          "anh",
           "manh",
-          "manh nặng mạnh"
+          "nặng",
+          "mạnh"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "mờ - a - nhờ - anh - mờ - anh - manh - nặng - mạnh"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0101.mp3",
@@ -13645,7 +14123,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_nh"
+      "lesson_id": "les_nh",
+      "cum_tu_goi_nghia": "mạnh"
     },
     {
       "id": "sp_0102",
@@ -13733,10 +14212,14 @@
           "a",
           "nhờ",
           "anh",
+          "gờ",
+          "anh",
           "ganh",
-          "ganh sắc gánh"
+          "sắc",
+          "gánh"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "gờ - a - nhờ - anh - gờ - anh - ganh - sắc - gánh"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0102.mp3",
@@ -13759,7 +14242,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_nh"
+      "lesson_id": "les_nh",
+      "cum_tu_goi_nghia": "gánh"
     },
     {
       "id": "sp_0103",
@@ -13844,10 +14328,14 @@
           "a",
           "nhờ",
           "anh",
+          "hờ",
+          "anh",
           "hanh",
-          "hanh huyền hành"
+          "huyền",
+          "hành"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "hờ - a - nhờ - anh - hờ - anh - hanh - huyền - hành"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0103.mp3",
@@ -13870,7 +14358,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_nh"
+      "lesson_id": "les_nh",
+      "cum_tu_goi_nghia": "hành"
     },
     {
       "id": "sp_0104",
@@ -13956,10 +14445,14 @@
           "a",
           "nhờ",
           "anh",
+          "lờ",
+          "anh",
           "lanh",
-          "lanh sắc lánh"
+          "sắc",
+          "lánh"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "lờ - a - nhờ - anh - lờ - anh - lanh - sắc - lánh"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0104.mp3",
@@ -13982,7 +14475,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_nh"
+      "lesson_id": "les_nh",
+      "cum_tu_goi_nghia": "lánh"
     },
     {
       "id": "sp_0008",
@@ -14062,9 +14556,12 @@
           "a",
           "u",
           "au",
+          "đờ",
+          "au",
           "đau"
         ],
-        "instruction": "Giữ đúng chuỗi người dùng đã xác nhận/biên tập; không tự sửa."
+        "instruction": "Giữ đúng chuỗi người dùng đã xác nhận/biên tập; không tự sửa.",
+        "spelling_rule": "đờ - a - u - au - đờ - au - đau"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0008.mp3",
@@ -14087,7 +14584,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_u"
+      "lesson_id": "les_u",
+      "cum_tu_goi_nghia": "cây đau"
     },
     {
       "id": "sp_0009",
@@ -14170,9 +14668,12 @@
           "a",
           "u",
           "au",
+          "sờ",
+          "au",
           "sau"
         ],
-        "instruction": "Giữ đúng chuỗi người dùng đã xác nhận/biên tập; không tự sửa."
+        "instruction": "Giữ đúng chuỗi người dùng đã xác nhận/biên tập; không tự sửa.",
+        "spelling_rule": "sờ - a - u - au - sờ - au - sau"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0009.mp3",
@@ -14195,7 +14696,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_u"
+      "lesson_id": "les_u",
+      "cum_tu_goi_nghia": "sau"
     },
     {
       "id": "sp_0105",
@@ -14279,10 +14781,14 @@
           "a",
           "u",
           "au",
+          "mờ",
+          "au",
           "mau",
-          "mau huyền màu"
+          "huyền",
+          "màu"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "mờ - a - u - au - mờ - au - mau - huyền - màu"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0105.mp3",
@@ -14305,7 +14811,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_u"
+      "lesson_id": "les_u",
+      "cum_tu_goi_nghia": "màu"
     },
     {
       "id": "sp_0106",
@@ -14387,9 +14894,12 @@
           "a",
           "u",
           "au",
+          "rờ",
+          "au",
           "rau"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "rờ - a - u - au - rờ - au - rau"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0106.mp3",
@@ -14412,7 +14922,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_u"
+      "lesson_id": "les_u",
+      "cum_tu_goi_nghia": "rau"
     },
     {
       "id": "sp_0107",
@@ -14491,9 +15002,12 @@
           "a",
           "u",
           "au",
+          "lờ",
+          "au",
           "lau"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "lờ - a - u - au - lờ - au - lau"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0107.mp3",
@@ -14516,7 +15030,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_u"
+      "lesson_id": "les_u",
+      "cum_tu_goi_nghia": "lau"
     },
     {
       "id": "sp_0108",
@@ -14600,10 +15115,14 @@
           "a",
           "u",
           "au",
+          "tờ",
+          "au",
           "tau",
-          "tau huyền tàu"
+          "huyền",
+          "tàu"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "tờ - a - u - au - tờ - au - tau - huyền - tàu"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0108.mp3",
@@ -14626,7 +15145,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_u"
+      "lesson_id": "les_u",
+      "cum_tu_goi_nghia": "tàu"
     },
     {
       "id": "sp_0109",
@@ -14713,10 +15233,14 @@
           "a",
           "u",
           "au",
+          "sờ",
+          "au",
           "sau",
-          "sau sắc sáu"
+          "sắc",
+          "sáu"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "sờ - a - u - au - sờ - au - sau - sắc - sáu"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0109.mp3",
@@ -14739,7 +15263,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_u"
+      "lesson_id": "les_u",
+      "cum_tu_goi_nghia": "sáu"
     },
     {
       "id": "sp_0110",
@@ -14826,10 +15351,14 @@
           "a",
           "u",
           "au",
+          "chờ",
+          "au",
           "chau",
-          "chau sắc cháu"
+          "sắc",
+          "cháu"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "chờ - a - u - au - chờ - au - chau - sắc - cháu"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0110.mp3",
@@ -14852,7 +15381,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_u"
+      "lesson_id": "les_u",
+      "cum_tu_goi_nghia": "cháu"
     },
     {
       "id": "sp_0111",
@@ -14931,9 +15461,12 @@
           "a",
           "u",
           "au",
+          "mờ",
+          "au",
           "mau"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "mờ - a - u - au - mờ - au - mau"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0111.mp3",
@@ -14956,7 +15489,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_u"
+      "lesson_id": "les_u",
+      "cum_tu_goi_nghia": "mau"
     },
     {
       "id": "sp_0112",
@@ -15035,9 +15569,12 @@
           "a",
           "u",
           "au",
+          "nhờ",
+          "au",
           "nhau"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "nhờ - a - u - au - nhờ - au - nhau"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0112.mp3",
@@ -15060,7 +15597,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_u"
+      "lesson_id": "les_u",
+      "cum_tu_goi_nghia": "nhau"
     },
     {
       "id": "sp_0113",
@@ -15142,9 +15680,12 @@
           "a",
           "u",
           "au",
+          "cờ",
+          "au",
           "cau"
         ],
-        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm."
+        "instruction": "Chuỗi do quy tắc sinh theo mẫu 'đánh' đã xác nhận; chưa phải bản duyệt. Cần giáo viên dạy đọc và người bản ngữ xác nhận trước khi ghi âm.",
+        "spelling_rule": "cờ - a - u - au - cờ - au - cau"
       },
       "audio": {
         "word_full": "06-assets/audio/spelling/words/sp_0113.mp3",
@@ -15167,7 +15708,8 @@
         "primary_literacy_teacher": "pending",
         "content_safety": "pending"
       },
-      "lesson_id": "les_u"
+      "lesson_id": "les_u",
+      "cum_tu_goi_nghia": "cau"
     }
   ],
   "compounds": [
