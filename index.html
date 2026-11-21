@@ -75,12 +75,18 @@
     <section id="view-map" class="view active">
       <div class="map-intro">
         <h2>🧭 Bản Đồ Thám Hiểm</h2>
-        <p>Bé hãy chạm vào một trạm dừng chân để học ghép vần và thu thập huy hiệu nhé!</p>
+        <p>Bé hãy chọn Bài học và chạm vào các trạm từ vựng để phiêu lưu nhé!</p>
       </div>
 
-      <div class="filter-tabs">
-        <button class="tab-btn active" data-filter="confirmed">🌟 Từ đã duyệt (Chơi ngay)</button>
-        <button class="tab-btn" data-filter="starter">📚 Toàn bộ 32 từ khởi đầu</button>
+      <!-- Thanh chọn Bài học (chia 10 từ/bài từ dễ đến khó) -->
+      <div class="lesson-picker-container">
+        <div class="lesson-picker-header">
+          <span class="lesson-badge">Lộ trình học tập</span>
+          <h3 id="current-lesson-title">Bài 1: Gia đình & Động vật gần gũi</h3>
+        </div>
+        <div id="lesson-tabs" class="lesson-tabs">
+          <!-- Render các nút Bài 1, Bài 2, Bài 3... -->
+        </div>
       </div>
 
       <div id="island-grid" class="island-grid">
@@ -126,9 +132,11 @@
           </div>
         </div>
 
-        <!-- Câu ví dụ minh họa -->
+        <!-- Câu ví dụ minh họa kèm hình ảnh trực quan -->
         <div class="example-box">
-          <span class="example-icon">💬</span>
+          <div class="example-illustration" id="example-illustration">
+            <span id="example-emoji">📚</span>
+          </div>
           <div class="example-content">
             <span class="example-label">Câu ví dụ:</span>
             <p id="example-text" class="example-text">"Ba đang đọc sách cho bé nghe."</p>
@@ -140,11 +148,15 @@
 
         <!-- Chân trang trạm học: Điều hướng & Nút thử thách -->
         <div class="station-footer">
-          <button id="btn-prev-word" class="btn-secondary">◀ Từ trước</button>
-          <button id="btn-launch-game" class="btn-challenge">
-            <span>🖼️</span> Chơi thử thách ghép hình!
+          <button id="btn-prev-word" class="btn-secondary" title="Xem từ trước">
+            <span class="btn-nav-icon">◀</span> <span class="btn-nav-text">Từ trước</span>
           </button>
-          <button id="btn-next-word" class="btn-secondary">Từ tiếp ▶</button>
+          <button id="btn-launch-game" class="btn-challenge">
+            <span>🖼️</span> <span class="btn-nav-text">Thử thách ghép hình!</span>
+          </button>
+          <button id="btn-next-word" class="btn-secondary" title="Xem từ sau">
+            <span class="btn-nav-text">Từ sau</span> <span class="btn-nav-icon">▶</span>
+          </button>
         </div>
       </div>
     </section>

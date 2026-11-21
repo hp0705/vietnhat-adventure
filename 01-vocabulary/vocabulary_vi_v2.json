@@ -33,7 +33,7 @@
         "sequence": [
           "bờ",
           "a",
-          "ba"
+          "bờ a ba"
         ],
         "notes": "Chuỗi đánh vần đã được người dùng phê duyệt."
       },
@@ -115,7 +115,7 @@
         "sequence": [
           "bờ",
           "a",
-          "ba",
+          "bờ a ba",
           "ba huyền bà"
         ],
         "notes": "Chuỗi đánh vần đã được người dùng phê duyệt."
@@ -282,7 +282,7 @@
         "sequence": [
           "bờ",
           "e",
-          "be",
+          "bờ e be",
           "be sắc bé"
         ],
         "notes": "Chuỗi đánh vần đã được người dùng phê duyệt."
@@ -378,7 +378,7 @@
         "sequence": [
           "bờ",
           "o",
-          "bo",
+          "bờ o bo",
           "bo huyền bò"
         ],
         "notes": "Chuỗi đánh vần đã được người dùng phê duyệt."
@@ -1441,8 +1441,8 @@
           "đờ",
           "a",
           "nhờ",
-          "anh",
-          "đanh",
+          "a nhờ anh",
+          "đờ anh đanh",
           "đanh sắc đánh"
         ],
         "notes": "Giữ đúng cách đọc ghép âm người dùng cung cấp. Âm trong vần được đọc tách theo từng thành phần âm, không đọc tên chữ cái.",

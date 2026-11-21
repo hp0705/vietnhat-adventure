@@ -302,29 +302,71 @@ html, body {
   margin-top: 4px;
 }
 
-.filter-tabs {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
+/* THANH CHỌN BÀI HỌC (LESSONS - 10 TỪ/BÀI TỪ DỄ ĐẾN KHÓ) */
+.lesson-picker-container {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border: 3px solid #bae6fd;
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
   margin-bottom: 24px;
+  box-shadow: 0 4px 14px rgba(3, 105, 161, 0.08);
 }
 
-.tab-btn {
-  background: rgba(255, 255, 255, 0.8);
-  border: 2px solid #bae6fd;
-  border-radius: var(--radius-full);
-  padding: 10px 22px;
-  font-size: 16px;
-  font-weight: 800;
-  color: #0369a1;
-  cursor: pointer;
+.lesson-picker-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 
-.tab-btn.active {
+.lesson-badge {
   background: #0284c7;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+}
+
+.lesson-picker-header h3 {
+  font-size: 20px;
+  font-weight: 900;
+  color: #075985;
+}
+
+.lesson-tabs {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.lesson-tab-btn {
+  background: #f1f5f9;
+  border: 2px solid #cbd5e1;
+  border-radius: var(--radius-full);
+  padding: 8px 18px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #334155;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: var(--font-family) !important;
+}
+
+.lesson-tab-btn.active {
+  background: linear-gradient(180deg, #0284c7 0%, #0369a1 100%);
   border-color: #0284c7;
-  color: var(--white);
-  box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3);
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(2, 132, 199, 0.35);
+}
+
+.lesson-tab-btn:active {
+  transform: translateY(2px);
 }
 
 .island-grid {
@@ -576,20 +618,31 @@ html, body {
   font-weight: 900;
 }
 
-/* CÂU VÍ DỤ */
+/* CÂU VÍ DỤ MINH HỌA */
 .example-box {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
   background: #fefce8;
-  border: 2px solid #fef08a;
-  padding: 16px 20px;
+  border: 3px solid #fef08a;
+  padding: 18px 22px;
   border-radius: var(--radius-md);
   margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(254, 240, 138, 0.3);
 }
 
-.example-icon {
-  font-size: 28px;
+.example-illustration {
+  width: 72px;
+  height: 72px;
+  background: #ffffff;
+  border: 2px solid #fef08a;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .example-content {
@@ -597,29 +650,35 @@ html, body {
 }
 
 .example-label {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 800;
   color: #854d0e;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .example-text {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 800;
   color: #713f12;
-  margin-top: 2px;
+  margin-top: 4px;
+  line-height: 1.4;
 }
 
 .btn-play-small {
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: none;
   background: #eab308;
   color: var(--white);
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
   box-shadow: 0 4px 0 #a16207;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-play-small:active {
@@ -627,7 +686,7 @@ html, body {
   box-shadow: 0 2px 0 #a16207;
 }
 
-/* ĐIỀU HƯỚNG TRẠM */
+/* ĐIỀU HƯỚNG TRẠM VÀ NÚT BẤM (FIX FONT CHO IPAD SAFARI) */
 .station-footer {
   display: flex;
   justify-content: space-between;
@@ -636,18 +695,37 @@ html, body {
 }
 
 .btn-secondary {
-  background: #f1f5f9;
+  background: #ffffff;
   border: 2px solid #cbd5e1;
   border-radius: var(--radius-full);
-  padding: 12px 20px;
+  padding: 12px 24px;
   font-size: 16px;
   font-weight: 800;
-  color: #334155;
+  color: #1e293b;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 0 #cbd5e1;
+  transition: all 0.15s ease;
+  font-family: var(--font-family) !important;
 }
 
 .btn-secondary:active {
-  background: #e2e8f0;
+  background: #f1f5f9;
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #cbd5e1;
+}
+
+.btn-nav-icon {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.btn-nav-text {
+  font-size: 16px;
+  font-weight: 800;
+  font-family: var(--font-family) !important;
 }
 
 .btn-challenge {
@@ -660,14 +738,16 @@ html, body {
   font-weight: 900;
   box-shadow: 0 6px 0 #b45309;
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
+  font-family: var(--font-family) !important;
 }
 
 .btn-challenge:active {
   transform: translateY(3px);
   box-shadow: 0 3px 0 #b45309;
+}
 }
 
 .dialect-btn {

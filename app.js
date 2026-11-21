@@ -8,7 +8,8 @@
 // ==========================================
 const state = {
   items: [],
-  activeFilter: 'confirmed', // 'confirmed' hoặc 'starter'
+  lessons: [],
+  currentLessonIndex: 0,
   currentWordIndex: 0,
   currentWord: null,
   currentDialect: 'north', // 'north' (Bắc - Hà Nội) hoặc 'south' (Nam - Sài Gòn)
@@ -17,6 +18,42 @@ const state = {
   audioUnlocked: false,
   score: 0,
   quizCurrentWord: null
+};
+
+// Hình minh họa sinh động cho từng câu ví dụ
+const exampleIllustrationMap = {
+  'ba': '📚👨‍👧', // Ba đọc sách cùng bé
+  'bà': '👵✨', // Bà kể chuyện cổ tích
+  'bố': '👨🚲', // Bố đưa bé đi chơi
+  'mẹ': '👩‍👦💖', // Mẹ ôm bé
+  'bé': '👶🎈', // Bé cười với bóng bay
+  'bò': '🐄🌾', // Bò gặm cỏ xanh
+  'mèo': '🐱💤', // Mèo nằm ngủ
+  'gà': '🐔🌽', // Gà mổ thóc
+  'cá': '🐟🌊', // Cá bơi tung tăng
+  'vịt': '🦆🏊', // Vịt bơi ở ao
+  'chó': '🐶🎾', // Chó chơi bóng
+  'hoa': '🌸🌿', // Bé ngắm hoa
+  'lá': '🍃🍂', // Chiếc lá rơi
+  'cây': '🌳🍎', // Cây cao trong vườn
+  'nắng': '☀️🕶️', // Hôm nay có nắng
+  'mưa': '🌧️☔', // Trời đang mưa
+  'đá': '🪨🏞️', // Bé nhặt viên đá
+  'đèn': '💡🛋️', // Bé bật đèn
+  'bút': '✏️📝', // Bé cầm bút vẽ
+  'sách': '📖🎒', // Bé mở sách học
+  'vở': '📓✏️', // Cuốn vở xinh xắn
+  'bàn': '🪑📚', // Bàn học ngăn nắp
+  'ghế': '🛋️🏡', // Chiếc ghế êm ái
+  'nhà': '🏡🌸', // Ngôi nhà ấm cúng
+  'cửa': '🚪🔑', // Cửa mở rộng
+  'cơm': '🍚🥢', // Bát cơm thơm dẻo
+  'nước': '🥛🧊', // Cốc nước mát
+  'xe': '🚗🛣️', // Chiếc xe chạy bon bon
+  'đánh': '🥁🎵', // Bé đánh trống rộn ràng
+  'bóng': '⚽🥅', // Bé đá bóng
+  'đau': '🩹🤕', // Băng dán vết thương
+  'sau': '➡️🚶' // Đi sau một bước
 };
 
 // Dữ liệu hình ảnh và tên gọi trực quan cho trẻ nhỏ
@@ -92,11 +129,86 @@ async function loadVocabularyData() {
     if (!response.ok) throw new Error('Không thể tải file JSON');
     const data = await response.json();
     state.items = data.items || [];
+    buildLessons();
+    renderLessonTabs();
     renderIslandMap();
   } catch (err) {
     console.warn('Đang tải dữ liệu dự phòng...', err);
     // Dữ liệu dự phòng nếu mở trực tiếp bằng file:/// trên máy
     loadFallbackData();
+  }
+}
+
+// Xây dựng lộ trình bài học: mỗi bài ~10 từ theo mức độ dễ đến khó
+function buildLessons() {
+  const starterItems = state.items.filter(x => x.content_status === 'authored_starter');
+  const sgkItems = state.items.filter(x => x.content_status !== 'authored_starter');
+
+  const lessons = [];
+
+  // Bài 1: 10 từ khởi đầu 1 (Gia đình & Động vật gần gũi)
+  lessons.push({
+    id: 'lesson-1',
+    title: 'Bài 1: Gia đình & Động vật gần gũi',
+    level: 'Mức 1 (Rất dễ)',
+    items: starterItems.slice(0, 10)
+  });
+
+  // Bài 2: 10 từ khởi đầu 2 (Thiên nhiên & Đồ dùng)
+  lessons.push({
+    id: 'lesson-2',
+    title: 'Bài 2: Thiên nhiên & Đồ dùng',
+    level: 'Mức 2 (Dễ)',
+    items: starterItems.slice(10, 20)
+  });
+
+  // Bài 3: 12 từ khởi đầu 3 (Ngôi nhà & Hoạt động)
+  lessons.push({
+    id: 'lesson-3',
+    title: 'Bài 3: Ngôi nhà & Hoạt động',
+    level: 'Mức 3 (Vừa)',
+    items: starterItems.slice(20, 32)
+  });
+
+  // Bài 4 đến Bài 63: Chia toàn bộ 600 từ SGK, mỗi bài ~10 từ từ dễ đến nâng cao
+  const chunkSize = 10;
+  let lessonNum = 4;
+  for (let i = 0; i < sgkItems.length; i += chunkSize) {
+    const chunk = sgkItems.slice(i, i + chunkSize);
+    const week = chunk[0]?.source_refs?.[0]?.week || Math.floor(lessonNum / 2);
+    lessons.push({
+      id: `lesson-${lessonNum}`,
+      title: `Bài ${lessonNum}: Tuần ${week} SGK`,
+      level: `Mức ${lessonNum}`,
+      items: chunk
+    });
+    lessonNum++;
+  }
+
+  state.lessons = lessons;
+}
+
+// Render các nút chọn bài học (Lesson tabs)
+function renderLessonTabs() {
+  const container = document.getElementById('lesson-tabs');
+  if (!container) return;
+  container.innerHTML = '';
+
+  state.lessons.forEach((l, idx) => {
+    const btn = document.createElement('button');
+    btn.className = `lesson-tab-btn ${idx === state.currentLessonIndex ? 'active' : ''}`;
+    btn.textContent = `Bài ${idx + 1} (${l.items.length} từ)`;
+    btn.addEventListener('click', () => {
+      state.currentLessonIndex = idx;
+      renderLessonTabs();
+      renderIslandMap();
+    });
+    container.appendChild(btn);
+  });
+
+  const curLesson = state.lessons[state.currentLessonIndex];
+  if (curLesson) {
+    document.getElementById('current-lesson-title').textContent = `${curLesson.title} — ${curLesson.level}`;
   }
 }
 
@@ -180,28 +292,21 @@ function unlockAudioAndStart() {
 }
 
 // ==========================================
-// 3. RENDER BẢN ĐỒ THÁM HIỂM (ISLAND MAP)
+// 3. RENDER BẢN ĐỒ THÁM HIỂM (ISLAND MAP THEO BÀI HỌC)
 // ==========================================
 function renderIslandMap() {
   const container = document.getElementById('island-grid');
   container.innerHTML = '';
 
-  // Lọc từ: từ đã duyệt hoặc 32 từ khởi đầu
-  const filtered = state.items.filter(item => {
-    if (state.activeFilter === 'confirmed') {
-      return item.phonics && item.phonics.status === 'user_confirmed';
-    } else {
-      // 32 từ khởi đầu (vi_0001 - vi_0032)
-      return item.content_status === 'authored_starter';
-    }
-  });
+  const currentLesson = state.lessons[state.currentLessonIndex];
+  const itemsToRender = currentLesson ? currentLesson.items : state.items.slice(0, 10);
 
-  if (filtered.length === 0) {
-    container.innerHTML = '<p class="map-intro">Chưa có từ nào trong mục này.</p>';
+  if (!itemsToRender || itemsToRender.length === 0) {
+    container.innerHTML = '<p class="map-intro">Chưa có từ nào trong bài học này.</p>';
     return;
   }
 
-  filtered.forEach(item => {
+  itemsToRender.forEach(item => {
     const isConfirmed = item.phonics && item.phonics.status === 'user_confirmed';
     const card = document.createElement('div');
     card.className = `island-node ${isConfirmed ? 'confirmed' : ''}`;
@@ -232,8 +337,14 @@ function openWordStation(item) {
   document.getElementById('word-display').textContent = item.word;
   document.getElementById('word-meaning').textContent = item.meaning_vi_child || 'Chờ cập nhật nghĩa';
   document.getElementById('word-topic').textContent = item.topic || 'khám phá';
-  document.getElementById('example-text').textContent = `"${item.example_vi || ''}"`;
+  document.getElementById('example-text').textContent = `"${item.example_vi || 'Đang cập nhật ví dụ'}"`;
   document.getElementById('word-emoji').textContent = emojiMap[item.word] || '📖';
+  
+  // Cập nhật hình ảnh minh họa cho câu ví dụ
+  const exEmoji = document.getElementById('example-emoji');
+  if (exEmoji) {
+    exEmoji.textContent = exampleIllustrationMap[item.word] || '🌟';
+  }
 
   const isConfirmed = item.phonics && item.phonics.status === 'user_confirmed';
   const badge = document.getElementById('phonics-badge');
@@ -246,6 +357,18 @@ function openWordStation(item) {
     badge.style.background = '#fef3c7';
     badge.style.color = '#92400e';
   }
+
+  // Render các bước đánh vần
+  renderPhonicsSteps(item);
+
+  // Chuyển sang View Station
+  switchView('view-station');
+
+  // Đọc từ chào mừng bằng file thu âm chuẩn của giọng đang chọn
+  setTimeout(() => {
+    playAudioSrc(getDialectAudio(item, 'word'), item.word);
+  }, 300);
+}
 
   // Render các bước đánh vần
   renderPhonicsSteps(item);
@@ -326,22 +449,26 @@ function highlightStep(index) {
   }
 }
 
-// Điều hướng từ tiếp / từ trước
+// Điều hướng từ tiếp / từ trước trong bài học
 function prevWord() {
-  if (state.currentWordIndex > 0) {
-    state.currentWordIndex--;
-    openWordStation(state.items[state.currentWordIndex]);
+  const currentLesson = state.lessons[state.currentLessonIndex];
+  const list = currentLesson ? currentLesson.items : state.items;
+  const idx = list.findIndex(x => x.id === state.currentWord?.id);
+  if (idx > 0) {
+    openWordStation(list[idx - 1]);
   } else {
-    showToast('Đây là từ đầu tiên trong danh sách!');
+    showToast('Đây là từ đầu tiên của bài học!');
   }
 }
 
 function nextWord() {
-  if (state.currentWordIndex < state.items.length - 1) {
-    state.currentWordIndex++;
-    openWordStation(state.items[state.currentWordIndex]);
+  const currentLesson = state.lessons[state.currentLessonIndex];
+  const list = currentLesson ? currentLesson.items : state.items;
+  const idx = list.findIndex(x => x.id === state.currentWord?.id);
+  if (idx >= 0 && idx < list.length - 1) {
+    openWordStation(list[idx + 1]);
   } else {
-    showToast('Đã đến từ cuối cùng!');
+    showToast('Bé đã xem hết các từ trong bài học này! 🎉');
   }
 }
 
@@ -781,7 +908,7 @@ function loadFallbackData() {
       content_status: "authored_starter",
       phonics: {
         status: "user_confirmed",
-        sequence: ["bờ", "a", "ba"]
+        sequence: ["bờ", "a", "bờ a ba"]
       },
       audio: {
         dialects: {
@@ -815,7 +942,7 @@ function loadFallbackData() {
       content_status: "authored_starter",
       phonics: {
         status: "user_confirmed",
-        sequence: ["bờ", "a", "ba", "ba huyền bà"]
+        sequence: ["bờ", "a", "bờ a ba", "ba huyền bà"]
       },
       audio: {
         dialects: {
@@ -851,7 +978,7 @@ function loadFallbackData() {
       content_status: "authored_starter",
       phonics: {
         status: "user_confirmed",
-        sequence: ["bờ", "e", "be", "be sắc bé"]
+        sequence: ["bờ", "e", "bờ e be", "be sắc bé"]
       },
       audio: {
         dialects: {
@@ -887,7 +1014,7 @@ function loadFallbackData() {
       content_status: "authored_starter",
       phonics: {
         status: "user_confirmed",
-        sequence: ["bờ", "o", "bo", "bo huyền bò"]
+        sequence: ["bờ", "o", "bờ o bo", "bo huyền bò"]
       },
       audio: {
         dialects: {
@@ -923,7 +1050,7 @@ function loadFallbackData() {
       content_status: "authored_starter",
       phonics: {
         status: "user_confirmed",
-        sequence: ["đờ", "a", "nhờ", "anh", "đanh", "đanh sắc đánh"]
+        sequence: ["đờ", "a", "nhờ", "a nhờ anh", "đờ anh đanh", "đanh sắc đánh"]
       },
       audio: {
         dialects: {
@@ -955,5 +1082,7 @@ function loadFallbackData() {
       }
     }
   ];
+  buildLessons();
+  renderLessonTabs();
   renderIslandMap();
 }
