@@ -54,6 +54,10 @@
     </div>
 
     <div class="header-right">
+      <!-- Nút chuyển đổi giọng đọc Bắc / Nam -->
+      <button id="btn-dialect-toggle" class="nav-btn dialect-btn" title="Chuyển đổi Giọng miền Bắc / Giọng miền Nam">
+        <span class="icon">🗣️</span> <b id="dialect-label">Miền Bắc</b>
+      </button>
       <!-- Điều khiển âm thanh độc lập -->
       <button id="btn-sound-toggle" class="nav-btn icon-only" title="Bật/Tắt âm thanh">
         <span id="sound-icon">🔊</span>
@@ -138,45 +142,44 @@
         <div class="station-footer">
           <button id="btn-prev-word" class="btn-secondary">◀ Từ trước</button>
           <button id="btn-launch-game" class="btn-challenge">
-            <span>🎮</span> Chơi thử thách ghép từ!
+            <span>🖼️</span> Chơi thử thách ghép hình!
           </button>
           <button id="btn-next-word" class="btn-secondary">Từ tiếp ▶</button>
         </div>
       </div>
     </section>
 
-    <!-- GIAO DIỆN 3: MINI GAME THỬ THÁCH (CHALLENGE ARENA) -->
+    <!-- GIAO DIỆN 3: THỬ THÁCH NHÌN CHỮ GHÉP HÌNH (WORD-TO-PICTURE CHALLENGE) -->
     <section id="view-game" class="view hidden">
       <div class="challenge-card">
         <div class="challenge-header">
-          <button id="btn-exit-game" class="btn-back-small">✕ Đóng game</button>
+          <button id="btn-exit-game" class="btn-back-small">✕ Về trạm học</button>
           <div class="score-display">
             <span>⭐ Ngôi sao: <b id="game-score">0</b></span>
           </div>
         </div>
 
         <div class="challenge-body">
-          <h2 class="challenge-title">Bé hãy ghép các âm thành từ:</h2>
+          <h2 class="challenge-title">Bé hãy tự đọc chữ và chọn đúng hình nhé:</h2>
+
+          <!-- Ô chữ mục tiêu to rõ ràng cho bé tự đọc -->
           <div class="target-word-peek">
-            <span id="quiz-target-hint" class="quiz-target-hint">?</span>
+            <span id="quiz-word-display" class="quiz-target-word">ba</span>
+            <button id="btn-quiz-listen" class="btn-listen-hint" title="Bé nghe đọc gợi ý">
+              <span>🔊</span> Gợi ý âm thanh
+            </button>
           </div>
 
-          <!-- Khu vực các thẻ đã chọn -->
-          <div id="drop-zone" class="drop-zone">
-            <!-- Thẻ đã chọn thả vào đây -->
-          </div>
-
-          <!-- Khu vực các mảnh âm để bé chọn -->
-          <div id="tiles-pool" class="tiles-pool">
-            <!-- Render các âm để bé chạm chọn -->
+          <!-- Lưới các thẻ hình ảnh minh họa cho bé chạm chọn -->
+          <div id="picture-options-grid" class="picture-options-grid">
+            <!-- Render động 3-4 hình minh họa lớn sinh động -->
           </div>
 
           <div id="quiz-feedback" class="quiz-feedback hidden"></div>
         </div>
 
         <div class="challenge-footer">
-          <button id="btn-check-quiz" class="btn-hero">Kiểm tra kết quả</button>
-          <button id="btn-reset-quiz" class="btn-secondary">Làm lại</button>
+          <button id="btn-next-quiz" class="btn-hero hidden">Từ tiếp theo ▶</button>
         </div>
       </div>
     </section>
