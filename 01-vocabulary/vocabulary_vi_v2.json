@@ -406,7 +406,9 @@
         "status": "user_confirmed",
         "sequence": [
           "mờ",
-          "eo",
+          "e",
+          "o",
+          "e o eo",
           "mờ eo meo",
           "meo huyền mèo"
         ],
@@ -420,7 +422,9 @@
           "06-assets/audio/vi/north-hanoi/vi_0007/step_1.mp3",
           "06-assets/audio/vi/north-hanoi/vi_0007/step_2.mp3",
           "06-assets/audio/vi/north-hanoi/vi_0007/step_3.mp3",
-          "06-assets/audio/vi/north-hanoi/vi_0007/step_4.mp3"
+          "06-assets/audio/vi/north-hanoi/vi_0007/step_4.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0007/step_5.mp3",
+          "06-assets/audio/vi/north-hanoi/vi_0007/step_6.mp3"
         ],
         "voice_profile": "vi-VN-HoaiMyNeural",
         "dialects": {
@@ -431,7 +435,9 @@
               "06-assets/audio/vi/north-hanoi/vi_0007/step_1.mp3",
               "06-assets/audio/vi/north-hanoi/vi_0007/step_2.mp3",
               "06-assets/audio/vi/north-hanoi/vi_0007/step_3.mp3",
-              "06-assets/audio/vi/north-hanoi/vi_0007/step_4.mp3"
+              "06-assets/audio/vi/north-hanoi/vi_0007/step_4.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0007/step_5.mp3",
+              "06-assets/audio/vi/north-hanoi/vi_0007/step_6.mp3"
             ]
           }
         }

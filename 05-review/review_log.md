@@ -107,3 +107,9 @@
   - Tạo riêng 6 file âm thanh chuẩn Bắc (`encourage_0.mp3` - `encourage_5.mp3`) cho 6 mẫu lời động viên khi bé làm sai.
   - Khi bé bấm đúng: chọn ngẫu nhiên 1 trong 8 cặp lời khen; âm thanh đọc chính xác từng từ chữ hiển thị trên màn hình.
   - Khi bé bấm sai: chọn ngẫu nhiên 1 trong 6 cặp lời động viên; âm thanh đọc chính xác từng từ chữ hiển thị trên màn hình.
+
+## v2.6.2 (2026-11-21)
+- **Chuẩn hóa chuỗi đánh vần từ "mèo" theo chỉ dẫn của người dùng:**
+  - Cập nhật chuỗi đánh vần cho `vi_0007` (mèo): `['mờ', 'e', 'o', 'e o eo', 'mờ eo meo', 'meo huyền mèo']` (thay vì gộp tắt `eo`).
+  - Sinh 6 file âm thanh chuẩn Bắc (`vi_0007/step_1.mp3` đến `step_6.mp3`): *Mờ ➔ E ➔ O ➔ E O EO ➔ Mờ EO MEO ➔ MEO huyền MÈO* bằng giọng Hoài My (`vi-VN-HoaiMyNeural`).
+  - Cập nhật đồng bộ trong `vocabulary_vi_v2.json` và `vocabulary_vi_v2.csv`.
