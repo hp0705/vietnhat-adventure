@@ -159,7 +159,7 @@
           </button>
         </div>
 
-        <!-- NÚT NGHE CÁCH ĐÁNH VẦN (Chỉ 1 nút đọc duy nhất, không hiển thị các bước chữ rườm rà) -->
+        <!-- NÚT NGHE CÁCH ĐÁNH VẦN -->
         <div class="spelling-bar">
           <button id="btn-play-all-steps" class="btn-spelling-play" title="Nghe cô đọc cách đánh vần">
             <span class="icon">▶️</span>
@@ -167,6 +167,8 @@
           </button>
           <span class="spelling-hint">Chạm để nghe cô đọc cách đánh vần</span>
         </div>
+        <!-- Vùng hiển thị trực quan các bước đánh vần được highlight khi đọc (R3) -->
+        <div id="spelling-seq" class="spelling-seq" aria-live="polite"></div>
 
         <!-- Câu ví dụ minh họa kèm hình ảnh trực quan -->
         <div class="example-box">
@@ -254,8 +256,9 @@
   <!-- Thông báo Toast dành cho iPad -->
   <div id="toast" class="toast hidden"></div>
 
-  <!-- Thuật toán đánh vần tiếng Việt thuần chuẩn giáo viên tiểu học -->
+  <!-- Thuật toán đánh vần và trình phát âm thanh tiếng Việt chuẩn 100% -->
   <script src="danh-van.js"></script>
+  <script src="danh-van-speech.js"></script>
 
   <!-- Script ứng dụng -->
   <script src="app.js"></script>

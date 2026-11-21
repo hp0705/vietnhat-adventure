@@ -103,12 +103,11 @@
       van: rime,
       thanh: tone,
       danh_van: seq.join(' - '),
-      steps: seq
     };
   }
 
   function spellWord(word) {
-    const clean = word.trim().toLowerCase().normalize('NFC').replace(/[-\s]+/g, ' ');
+    const clean = word.trim().toLowerCase().normalize('NFC').replace(/\s+/g, ' ');
     return {
       tu: clean,
       tieng: clean.split(' ').map(spellSyllable),
@@ -134,12 +133,101 @@
     return { ok: got === expected, tieng: syllable, expected, got };
   }
 
-  const api = { spellSyllable, spellWord, auditSyllable, normalizeSpelling };
+  // ---- KIỂM TRA TỪ NHIỀU TIẾNG (nơ đỏ, tu hú, con tê tê...) ----
+  // Chuỗi đúng của một từ = đánh vần ĐỦ từng tiếng (không bỏ tiếng nào) + đọc trơn cả từ (nếu từ >= 2 tiếng).
+  function tokenize(s) {
+    return String(s).normalize('NFC').toLowerCase()
+      .split(/[\s,;|/\-–—−‒.]+/).map((p) => p.trim()).filter(Boolean);
+  }
+
+  function expectedWordParts(word) {
+    const sylls = tokenize(word);
+    const parts = sylls.map((s) => ({ tieng: s, tokens: tokenize(spellSyllable(s).danh_van) }));
+    const whole = sylls.length > 1 ? { tieng: sylls.join(' '), tokens: sylls.slice() } : null;
+    return { parts, whole };
+  }
+
+  function expectedWordTokens(word) {
+    const { parts, whole } = expectedWordParts(word);
+    const out = [];
+    parts.forEach((p) => out.push(...p.tokens));
+    if (whole) out.push(...whole.tokens);
+    return out;
+  }
+
+  function diffTokens(expected, got) {
+    // LCS để chỉ ra token thiếu / thừa
+    const n = expected.length, m = got.length;
+    const dp = Array.from({ length: n + 1 }, () => new Array(m + 1).fill(0));
+    for (let i = n - 1; i >= 0; i--) {
+      for (let j = m - 1; j >= 0; j--) {
+        dp[i][j] = expected[i] === got[j] ? dp[i + 1][j + 1] + 1 : Math.max(dp[i + 1][j], dp[i][j + 1]);
+      }
+    }
+    const missing = [], extra = [];
+    let i = 0, j = 0;
+    while (i < n && j < m) {
+      if (expected[i] === got[j]) { i++; j++; }
+      else if (dp[i + 1][j] >= dp[i][j + 1]) missing.push({ token: expected[i++], viTri: j });
+      else extra.push({ token: got[j++], viTri: j - 1 });
+    }
+    while (i < n) missing.push({ token: expected[i++], viTri: j });
+    while (j < m) extra.push({ token: got[j++], viTri: j - 1 });
+    return { missing, extra };
+  }
+
+  function containsRun(hay, needle) {
+    for (let i = 0; i + needle.length <= hay.length; i++) {
+      if (needle.every((t, k) => hay[i + k] === t)) return true;
+    }
+    return false;
+  }
+
+  /**
+   * auditWord("nơ đỏ", "Nờ ơ nơ đỏ đo hỏi đỏ nơ đỏ")
+   * => { ok:false, problems:[...], missing:[...], extra:[...], expected:"nờ - ơ - nơ | đờ - o - đo - hỏi - đỏ | nơ đỏ" }
+   * Không cần dấu gạch trong chuỗi cần kiểm tra: chỉ cần đủ và đúng thứ tự các âm.
+   */
+  function auditWord(word, givenSpelling) {
+    const { parts, whole } = expectedWordParts(word);
+    const got = tokenize(givenSpelling);
+    const expected = expectedWordTokens(word);
+    const problems = [];
+    parts.forEach((p) => {
+      if (!containsRun(got, p.tokens)) {
+        problems.push('Tiếng "' + p.tieng + '" không được đánh vần đủ, phải là: ' + p.tokens.join(' - '));
+      }
+    });
+    if (whole && !containsRun(got.slice(-whole.tokens.length), whole.tokens)) {
+      problems.push('Thiếu đọc trơn cả từ ở cuối: "' + whole.tieng + '"');
+    }
+    const { missing, extra } = diffTokens(expected, got);
+    const ok = problems.length === 0 && missing.length === 0 && extra.length === 0;
+    const sections = parts.map((p) => p.tokens.join(' - '));
+    if (whole) sections.push(whole.tieng);
+    return { ok, word, expected: sections.join(' | '), got: got.join(' '), problems, missing, extra };
+  }
+
+  // Kiểm tra cả danh sách từ vựng: entries = [{ word: 'nơ đỏ', spelling: '...' }, ...]
+  function auditList(entries) {
+    return entries.map((e) => auditWord(e.word, e.spelling)).filter((r) => !r.ok);
+  }
+
+  const api = { spellSyllable, spellWord, auditSyllable, normalizeSpelling, auditWord, auditList, expectedWordTokens };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.DanhVan = api;
 
   if (typeof require !== 'undefined' && typeof module !== 'undefined' && require.main === module) {
-    const words = process.argv.slice(2);
+    const args = process.argv.slice(2);
+    if (args[0] === '--audit') {
+      const r = auditWord(args[1], args[2] || '');
+      console.log(r.ok ? 'ĐÚNG' : 'SAI');
+      console.log('  đúng phải là: ' + r.expected);
+      console.log('  đang là     : ' + r.got);
+      r.problems.forEach((p) => console.log('  - ' + p));
+      process.exit(r.ok ? 0 : 1);
+    }
+    const words = args;
     for (const w of words) {
       const r = spellWord(w);
       console.log(w);

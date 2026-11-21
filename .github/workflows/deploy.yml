@@ -25,6 +25,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run Unit Tests
+        run: node --test danh-van.test.js danh-van-speech.test.js
+
+      - name: Run Data Integrity Check
+        run: node kiem-tra-du-lieu.js
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

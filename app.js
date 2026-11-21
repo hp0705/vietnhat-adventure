@@ -39,6 +39,51 @@ const state = {
   }
 };
 
+// ==========================================
+// 1.1 TRÌNH PHÁT ĐÁNH VẦN DÙNG CHUNG DUY NHẤT (R3)
+// ==========================================
+let danhVanPlayer = null;
+
+function getDanhVanPlayer() {
+  if (!danhVanPlayer && typeof DanhVanSpeech !== 'undefined' && DanhVanSpeech.createPlayer) {
+    danhVanPlayer = DanhVanSpeech.createPlayer({
+      audioBase: '06-assets/audio/spelling/steps/',
+      rate: state.speechRate || 0.75,
+      onItem: (item, index) => {
+        highlightSpellingStep(item, index);
+      }
+    });
+  }
+  return danhVanPlayer;
+}
+
+function renderSpellingSequence(word) {
+  const container = document.getElementById('spelling-seq');
+  if (!container) return;
+  if (typeof DanhVanSpeech !== 'undefined' && DanhVanSpeech.planWord) {
+    try {
+      const plan = DanhVanSpeech.planWord(word);
+      container.innerHTML = plan.map((p, i) => `<span id="sp-token-${i}" class="sp-token">${p.text}</span>`).join(' ');
+      return;
+    } catch (e) {
+      console.warn('planWord error:', e);
+    }
+  }
+  container.innerHTML = '';
+}
+
+function highlightSpellingStep(item, index) {
+  const tokens = document.querySelectorAll('#spelling-seq .sp-token');
+  tokens.forEach((el, i) => {
+    if (i === index) {
+      el.classList.add('active');
+      el.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    } else {
+      el.classList.remove('active');
+    }
+  });
+}
+
 // Danh sách lời khen ngợi phong phú dành riêng cho Bé Mây: ĐỒNG NHẤT 100% GIỮA ÂM THANH VÀ CHỮ HIỂN THỊ
 const PRAISE_ITEMS = [
   { text: "Đúng rồi Bé Mây giỏi quá", display: "Đúng rồi Bé Mây giỏi quá! 🌟", audio: "06-assets/audio/common/praise_0.mp3" },
@@ -1118,6 +1163,11 @@ function openWordStation(item) {
   state.currentWord = item;
   state.currentWordIndex = state.items.findIndex(x => x.id === item.id);
 
+  // Dừng âm thanh trước đó và hiển thị chuỗi đánh vần (R3)
+  const player = getDanhVanPlayer();
+  if (player) player.stop();
+  renderSpellingSequence(item.word);
+
   // Cập nhật thông tin giao diện
   document.getElementById('word-display').textContent = item.word;
   const meaningText = item.meaning_vi_child || item.meaning_vi || 'Chờ cập nhật nghĩa';
@@ -1164,44 +1214,32 @@ function openWordStation(item) {
   }, 300);
 }
 
-// PHÁT ÂM THANH ĐÁNH VẦN DUY NHẤT (Không hiển thị thẻ bước chữ rườm rà)
+// PHÁT ÂM THANH ĐÁNH VẦN DÙNG CHUNG DUY NHẤT (R3)
 async function playAllPhonicsSteps() {
   if (!state.currentWord) return;
-  const wordItem = state.currentWord;
-  let seq = [];
-  if (typeof DanhVan !== 'undefined' && DanhVan.spellWord) {
-    try {
-      const res = DanhVan.spellWord(wordItem.word);
-      for (const t of res.tieng) {
-        seq.push(...t.steps);
-      }
-    } catch (e) {
-      console.warn('DanhVan.spellWord error:', e);
-    }
-  }
-  if (!seq || seq.length === 0) {
-    seq = (wordItem.phonics && wordItem.phonics.sequence && wordItem.phonics.sequence.length > 0)
-      ? wordItem.phonics.sequence
-      : [wordItem.word];
-  }
-
+  const word = state.currentWord.word;
   const btn = document.getElementById('btn-play-all-steps');
   if (btn) btn.classList.add('playing');
 
-  try {
-    for (let i = 0; i < seq.length; i++) {
-      const stepText = seq[i];
-      const audioSrc = getDialectAudio(wordItem, 'step', i, stepText);
-      // Đọc từ tốn, thong thả (tốc độ 0.9, nghỉ 350ms giữa các bước) để bé nghe rõ và nhẩm theo
-      await playAudioSrc(audioSrc, stepText, 0.9);
-      await waitMs(350);
-    }
+  // Đảm bảo dừng mọi âm thanh trước đó
+  const player = getDanhVanPlayer();
+  if (player) player.stop();
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+  }
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+  }
 
-    // Khoảng lặng ngắn trước khi đọc từ hoàn chỉnh
-    await waitMs(500);
-    await playAudioSrc(getDialectAudio(wordItem, 'word'), wordItem.word, 0.95);
+  try {
+    if (player) {
+      await player.say(word);
+    }
   } finally {
     if (btn) btn.classList.remove('playing');
+    const tokens = document.querySelectorAll('#spelling-seq .sp-token');
+    tokens.forEach((el) => el.classList.remove('active'));
   }
 }
 
@@ -1756,6 +1794,10 @@ function toggleSpeed() {
     label.textContent = 'Chậm';
     showToast('Tốc độ đọc: Chậm chuẩn');
   }
+  const player = getDanhVanPlayer();
+  if (player && player.setRate) {
+    player.setRate(state.speechRate);
+  }
 }
 
 // ==========================================
@@ -1840,6 +1882,17 @@ function animateFireworks() {
 // 8. TIỆN ÍCH GIAO DIỆN & ĐIỀU HƯỚNG
 // ==========================================
 function switchView(viewId) {
+  // Dừng mọi âm thanh đang đọc khi chuyển màn hình (R3)
+  const player = getDanhVanPlayer();
+  if (player) player.stop();
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+  }
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+  }
+
   document.querySelectorAll('.view').forEach(v => v.classList.add('hidden'));
   const target = document.getElementById(viewId);
   if (target) target.classList.remove('hidden');
