@@ -687,7 +687,7 @@ function buildVocabLessons() {
   });
 
   // Bài 7 (10 từ có đầy đủ âm thanh, ví dụ và hình ảnh)
-  const b7Ids = ['vi_0078', 'vi_0079', 'vi_0082', 'vi_0083', 'vi_0084', 'vi_0085', 'vi_0086', 'vi_0088', 'vi_0089', 'vi_0093'];
+  const b7Ids = ['vi_0078', 'vi_0079', 'vi_0082', 'vi_0083', 'vi_0084', 'vi_0085', 'vi_0086', 'vi_0088', 'vi_0089', 'vi_0092'];
   const b7Items = b7Ids.map(id => state.vocabItems.find(x => x.id === id)).filter(Boolean);
   lessons.push({
     id: 'lesson-7',
@@ -698,7 +698,7 @@ function buildVocabLessons() {
   });
 
   // Bài 8 (10 từ có đầy đủ âm thanh, ví dụ và hình ảnh)
-  const b8Ids = ['vi_0094', 'vi_0095', 'vi_0096', 'vi_0097', 'vi_0099', 'vi_0100', 'vi_0101', 'vi_0102', 'vi_0107', 'vi_0109'];
+  const b8Ids = ['vi_0093', 'vi_0094', 'vi_0095', 'vi_0096', 'vi_0098', 'vi_0100', 'vi_0101', 'vi_0102', 'vi_0107', 'vi_0109'];
   const b8Items = b8Ids.map(id => state.vocabItems.find(x => x.id === id)).filter(Boolean);
   lessons.push({
     id: 'lesson-8',
