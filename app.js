@@ -913,11 +913,6 @@ function loadQuizQuestionByIndex(index) {
   });
 }
 
-    card.addEventListener('click', () => handlePictureSelect(card, opt));
-    container.appendChild(card);
-  });
-}
-
 // Xử lý khi bé chạm chọn hình
 function handlePictureSelect(cardElement, option) {
   const round = state.quizRound;
