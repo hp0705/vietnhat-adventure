@@ -164,7 +164,8 @@ const pictureData = {
   'cây': { emoji: '🌳', label: 'Cây Xanh' },
   'nắng': { emoji: '☀️', label: 'Ánh Nắng' },
   'mưa': { emoji: '🌧️', label: 'Trời Mưa' },
-  'đá': { emoji: '🪨', label: 'Hòn Đá' },
+  'đá': { emoji: '🪨', label: 'Cục đá' },
+  'cục đá': { emoji: '🪨', label: 'Cục đá' },
   'đèn': { emoji: '💡', label: 'Cái Đèn' },
   'bút': { emoji: '✏️', label: 'Cây Bút' },
   'sách': { emoji: '📖', label: 'Cuốn Sách' },
@@ -254,7 +255,7 @@ const pictureData = {
   'cà phê': { emoji: '☕', label: 'Ly Cà Phê' },
   'cổ thụ': { emoji: '🌳', label: 'Cây Cổ Thụ' },
   'nhà kho': { emoji: '🏭', label: 'Nhà Kho' },
-  'lư đá': { emoji: '🪨', label: 'Lư Đá' },
+  'cục đá': { emoji: '🪨', label: 'Cục đá' },
   'rổ': { emoji: '🧺', label: 'Cái Rổ' },
 
   // --- FUNCTION 2: TẬP ĐÁNH VẦN (113 từ) ---
@@ -722,7 +723,7 @@ function buildVocabLessons() {
   });
 
   // Bài 8 (10 từ thế giới tự nhiên & đời sống)
-  const b8Ids = ['vi_0093', 'vi_0094', 'vi_0095', 'vi_0096', 'vi_0098', 'vi_0100', 'vi_0101', 'vi_0102', 'vi_0107', 'vi_0109'];
+  const b8Ids = ['vi_0093', 'vi_0094', 'vi_0095', 'vi_0096', 'vi_0099', 'vi_0100', 'vi_0101', 'vi_0102', 'vi_0107', 'vi_0109'];
   const b8Items = b8Ids.map(id => itemMap.get(id)).filter(Boolean);
   lessons.push({
     id: 'lesson-8',
@@ -1119,9 +1120,7 @@ function openWordStation(item) {
 
   // Cập nhật thông tin giao diện
   document.getElementById('word-display').textContent = item.word;
-  const meaningText = (item.cum_tu_goi_nghia && item.cum_tu_goi_nghia !== item.word)
-    ? `[${item.cum_tu_goi_nghia.toUpperCase()}] ${item.meaning_vi_child || ''}`
-    : (item.meaning_vi_child || 'Chờ cập nhật nghĩa');
+  const meaningText = item.meaning_vi_child || item.meaning_vi || 'Chờ cập nhật nghĩa';
   document.getElementById('word-meaning').textContent = meaningText;
   document.getElementById('word-topic').textContent = item.topic || 'khám phá';
   document.getElementById('example-text').textContent = `"${item.example_vi || 'Đang cập nhật ví dụ'}"`;
@@ -1169,18 +1168,32 @@ function openWordStation(item) {
 async function playAllPhonicsSteps() {
   if (!state.currentWord) return;
   const wordItem = state.currentWord;
-  const seq = (wordItem.phonics && wordItem.phonics.sequence && wordItem.phonics.sequence.length > 0)
-    ? wordItem.phonics.sequence
-    : [wordItem.word];
+  let seq = [];
+  if (typeof DanhVan !== 'undefined' && DanhVan.spellWord) {
+    try {
+      const res = DanhVan.spellWord(wordItem.word);
+      for (const t of res.tieng) {
+        seq.push(...t.steps);
+      }
+    } catch (e) {
+      console.warn('DanhVan.spellWord error:', e);
+    }
+  }
+  if (!seq || seq.length === 0) {
+    seq = (wordItem.phonics && wordItem.phonics.sequence && wordItem.phonics.sequence.length > 0)
+      ? wordItem.phonics.sequence
+      : [wordItem.word];
+  }
 
   const btn = document.getElementById('btn-play-all-steps');
   if (btn) btn.classList.add('playing');
 
   try {
     for (let i = 0; i < seq.length; i++) {
-      const audioSrc = getDialectAudio(wordItem, 'step', i);
+      const stepText = seq[i];
+      const audioSrc = getDialectAudio(wordItem, 'step', i, stepText);
       // Đọc từ tốn, thong thả (tốc độ 0.9, nghỉ 350ms giữa các bước) để bé nghe rõ và nhẩm theo
-      await playAudioSrc(audioSrc, seq[i], 0.9);
+      await playAudioSrc(audioSrc, stepText, 0.9);
       await waitMs(350);
     }
 
@@ -1650,8 +1663,19 @@ function fallbackSpeech(text, resolve) {
 }
 
 // Lấy đường dẫn âm thanh tương ứng với giọng đang chọn (Bắc / Nam)
-function getDialectAudio(item, type, stepIndex = 0) {
+function getDialectAudio(item, type, stepIndex = 0, stepText = null) {
   if (!item) return null;
+
+  if (type === 'step') {
+    if (stepText && state.spellingStepAudioMap && state.spellingStepAudioMap[stepText]) {
+      return state.spellingStepAudioMap[stepText];
+    }
+    const seq = item.phonics?.sequence || [];
+    const textAtIdx = stepText || seq[stepIndex];
+    if (textAtIdx && state.spellingStepAudioMap && state.spellingStepAudioMap[textAtIdx]) {
+      return state.spellingStepAudioMap[textAtIdx];
+    }
+  }
 
   // Xử lý riêng cho Function 2: Tập đánh vần
   if (state.activeModule === 'spelling') {
@@ -1662,11 +1686,6 @@ function getDialectAudio(item, type, stepIndex = 0) {
       return item.audio?.example_sentence || null;
     }
     if (type === 'step') {
-      const seq = item.phonics?.sequence || [];
-      const stepText = seq[stepIndex];
-      if (stepText && state.spellingStepAudioMap && state.spellingStepAudioMap[stepText]) {
-        return state.spellingStepAudioMap[stepText];
-      }
       return null;
     }
   }

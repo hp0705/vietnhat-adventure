@@ -1112,8 +1112,8 @@
     {
       "id": "vi_0017",
       "word": "đá",
-      "meaning_vi_child": "viên đá cứng ngoài sân",
-      "example_vi": "Bé nhặt viên đá nhỏ bên bờ suối.",
+      "meaning_vi_child": "cục đá, hòn đá tự nhiên",
+      "example_vi": "Dòng suối trong veo chảy qua cục đá.",
       "topic": "thiên nhiên",
       "dialect": "vi-North-Hanoi",
       "phonics": {
@@ -1125,9 +1125,8 @@
           "sắc",
           "đá"
         ],
-        "complexity": "5_am",
-        "level": 1,
-        "spelling_rule": "đờ - a - đa - sắc - đá"
+        "spelling_rule": "đờ - a - đa - sắc - đá",
+        "complexity": "5_am"
       },
       "audio": {
         "word_full": "06-assets/audio/vi/north-hanoi/vi_0017/word.mp3",
@@ -1185,7 +1184,7 @@
         "hòn đá",
         "ướp đá"
       ],
-      "cum_tu_goi_nghia": "đá"
+      "cum_tu_goi_nghia": "cục đá"
     },
     {
       "id": "vi_0018",
@@ -2244,8 +2243,8 @@
       "word": "na",
       "entry_type": "tieng",
       "syllable_count": 1,
-      "meaning_vi_child": "quả na ngọt lịm thơm ngon",
-      "example_vi": "Mẹ mua quả na chín thơm cho bé ăn.",
+      "meaning_vi_child": "quả na chín mềm thơm ngọt",
+      "example_vi": "Mẹ mua cho bé quả na thơm ngọt.",
       "topic": "hoa quả",
       "dialect": "vi-North-Hanoi",
       "content_status": "authored_starter",
@@ -2266,9 +2265,8 @@
           "a",
           "na"
         ],
-        "complexity": "3_am",
-        "level": 1,
-        "spelling_rule": "nờ - a - na"
+        "spelling_rule": "nờ - a - na",
+        "complexity": "3_am"
       },
       "audio": {
         "word_full": "06-assets/audio/vi/north-hanoi/vi_0034/word.mp3",
@@ -5690,18 +5688,16 @@
         "sequence": [
           "pờ",
           "i",
-          "-",
+          "pi",
           "a",
-          "-",
-          "n",
+          "nờ",
           "ô",
-          "pờ",
-          "i-a-nô",
+          "nô",
           "pi-a-nô"
         ],
         "complexity": "10_am",
         "level": 3,
-        "spelling_rule": "pờ - i - - - a - - - n - ô - pờ - i-a-nô - pi-a-nô"
+        "spelling_rule": "tiếng 1: pờ - i - pi / tiếng 2: a / tiếng 3: nờ - ô - nô / đọc: pi a nô"
       },
       "audio": {
         "word_full": null,
@@ -5945,19 +5941,15 @@
         "sequence": [
           "pờ",
           "a",
-          "-",
-          "a-",
+          "pa",
           "nờ",
-          "a-n",
           "ô",
-          "a-nô",
-          "pờ",
-          "a-nô",
+          "nô",
           "pa-nô"
         ],
         "complexity": "11_am",
         "level": 2,
-        "spelling_rule": "pờ - a - - - a- - nờ - a-n - ô - a-nô - pờ - a-nô - pa-nô"
+        "spelling_rule": "tiếng 1: pờ - a - pa / tiếng 2: nờ - ô - nô / đọc: pa nô"
       },
       "audio": {
         "word_full": null,
@@ -6478,12 +6470,12 @@
     },
     {
       "id": "vi_0099",
-      "word": "lư đá",
+      "word": "cục đá",
       "entry_type": "tu",
       "syllable_count": 2,
-      "meaning_vi_child": "từ ngữ tiếng Việt quen thuộc, gần gũi trong đời sống",
-      "example_vi": "Bé đọc to và rõ ràng từ \"lư đá\" cho cô giáo nghe.",
-      "topic": "nơi chốn",
+      "meaning_vi_child": "viên đá nhỏ tròn bé nhặt trên sân",
+      "example_vi": "Bé nhặt cục đá nhỏ xếp thành hình tròn.",
+      "topic": "thiên nhiên",
       "dialect": "vi-North-Hanoi",
       "content_status": "authored_starter",
       "source_refs": [
@@ -6499,19 +6491,24 @@
       "phonics": {
         "status": "user_confirmed",
         "sequence": [
-          "lờ",
-          "ư",
-          "lư",
+          "cờ",
+          "u",
+          "cờ",
+          "uc",
+          "cờ",
+          "uc",
+          "cuc",
+          "nặng",
+          "cục",
           "đờ",
           "a",
           "đa",
           "sắc",
           "đá",
-          "lư đá"
+          "cục đá"
         ],
-        "complexity": "9_am",
-        "level": 2,
-        "spelling_rule": "tiếng 1: lờ - ư - lư / tiếng 2: đờ - a - đa - sắc - đá / đọc: lư đá"
+        "spelling_rule": "tiếng 1: cờ - u - cờ - uc - cờ - uc - cuc - nặng - cục / tiếng 2: đờ - a - đa - sắc - đá / đọc: cục đá",
+        "complexity": "15_am"
       },
       "audio": {
         "word_full": null,
@@ -6537,7 +6534,7 @@
         "primary_literacy_teacher": "passed",
         "content_safety": "passed"
       },
-      "cum_tu_goi_nghia": "lư đá"
+      "cum_tu_goi_nghia": "cục đá"
     },
     {
       "id": "vi_0100",
@@ -34839,24 +34836,30 @@
         "sequence": [
           "phờ",
           "e",
-          "c",
-          "-",
-          "m",
+          "cờ",
+          "ec",
+          "phờ",
+          "ec",
+          "phec",
+          "sắc",
+          "phéc",
+          "mờ",
           "ơ",
-          "-",
-          "t",
+          "mơ",
+          "tờ",
           "u",
           "y",
+          "uy",
           "a",
-          "phờ",
-          "ec-mơ-tuya",
-          "phec-mơ-tuya",
-          "sắc",
+          "uya",
+          "tờ",
+          "uya",
+          "tuya",
           "phéc-mơ-tuya"
         ],
         "complexity": "16_am",
         "level": 3,
-        "spelling_rule": "phờ - e - c - - - m - ơ - - - t - u - y - a - phờ - ec-mơ-tuya - phec-mơ-tuya - sắc - phéc-mơ-tuya"
+        "spelling_rule": "tiếng 1: phờ - e - cờ - ec - phờ - ec - phec - sắc - phéc / tiếng 2: mờ - ơ - mơ / tiếng 3: tờ - u - y - uy - a - uya - tờ - uya - tuya / đọc: phéc mơ tuya"
       },
       "audio": {
         "word_full": null,
@@ -37517,6 +37520,7 @@
       "phonics": {
         "status": "user_confirmed",
         "sequence": [
+          "quờ",
           "â",
           "nờ",
           "ân",
@@ -37525,6 +37529,7 @@
           "quân",
           "sắc",
           "quấn",
+          "quờ",
           "y",
           "tờ",
           "yt",
@@ -37537,7 +37542,7 @@
         ],
         "complexity": "17_am",
         "level": 2,
-        "spelling_rule": "tiếng 1: â - nờ - ân - quờ - ân - quân - sắc - quấn / tiếng 2: y - tờ - yt - quờ - yt - quyt - sắc - quýt / đọc: quấn quýt"
+        "spelling_rule": "tiếng 1: quờ - â - nờ - ân - quờ - ân - quân - sắc - quấn / tiếng 2: quờ - y - tờ - yt - quờ - yt - quyt - sắc - quýt / đọc: quấn quýt"
       },
       "audio": {
         "word_full": null,
@@ -39571,6 +39576,7 @@
           "lờ",
           "oanh",
           "loanh",
+          "quờ",
           "a",
           "nhờ",
           "anh",
@@ -39581,7 +39587,7 @@
         ],
         "complexity": "16_am",
         "level": 2,
-        "spelling_rule": "tiếng 1: lờ - o - a - oa - nhờ - oanh - lờ - oanh - loanh / tiếng 2: a - nhờ - anh - quờ - anh - quanh / đọc: loanh quanh"
+        "spelling_rule": "tiếng 1: lờ - o - a - oa - nhờ - oanh - lờ - oanh - loanh / tiếng 2: quờ - a - nhờ - anh - quờ - anh - quanh / đọc: loanh quanh"
       },
       "audio": {
         "word_full": null,
@@ -39786,6 +39792,7 @@
           "huynh",
           "huyền",
           "huỳnh",
+          "quờ",
           "a",
           "ngờ",
           "ang",
@@ -39796,7 +39803,7 @@
         ],
         "complexity": "27_am",
         "level": 3,
-        "spelling_rule": "tiếng 1: đờ - e - nờ - en - đờ - en - đen - huyền - đèn / tiếng 2: hờ - u - y - uy - nhờ - uynh - hờ - uynh - huynh - huyền - huỳnh / tiếng 3: a - ngờ - ang - quờ - ang - quang / đọc: đèn huỳnh quang"
+        "spelling_rule": "tiếng 1: đờ - e - nờ - en - đờ - en - đen - huyền - đèn / tiếng 2: hờ - u - y - uy - nhờ - uynh - hờ - uynh - huynh - huyền - huỳnh / tiếng 3: quờ - a - ngờ - ang - quờ - ang - quang / đọc: đèn huỳnh quang"
       },
       "audio": {
         "word_full": null,
