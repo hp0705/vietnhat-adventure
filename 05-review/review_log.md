@@ -79,3 +79,23 @@
   - Mặc định kích hoạt chế độ tự do: Phụ huynh và bé có thể tự do bấm chọn bất kỳ bài học nào (Bài 1, Bài 2, Bài 3, ...) mà không bị khóa bài.
   - Tích hợp nút chuyển đổi trực quan `[🔓 Tự do chọn bài]` / `[🔒 Học theo lộ trình qua bài]` ngay cạnh tiêu đề bài học.
   - Bổ sung nút `[🔄 Đặt lại]` để phụ huynh reset tiến độ về Bài 1 bất cứ lúc nào.
+
+## v2.6.0 (2026-11-21)
+- **Chuẩn hóa 100% âm thanh duy nhất bằng giọng Bắc (Hà Nội - `vi-VN-HoaiMyNeural`):**
+  - Xử lý dứt điểm tình trạng lẫn lộn âm sắc giữa các bước đánh vần (như ở chữ `lá`, `bút`, `đánh`...): toàn bộ file đọc từ, câu ví dụ và từng bước đánh vần được tổng hợp 100% bằng giọng nữ giáo viên chuẩn Hà Nội (`vi-VN-HoaiMyNeural`) thông qua thuật toán phân tách dấu thanh đa tầng (`format_for_tts`).
+  - Loại bỏ hoàn toàn các file âm thanh tạm Google TTS chắp vá trước đây, đảm bảo tính đồng nhất tuyệt đối về âm sắc, cao độ và ngữ điệu trên toàn bộ 60 từ vựng cốt lõi.
+  - Chuẩn hóa cả file âm thanh khen ngợi `correct-north.mp3` (*"Đúng rồi! Bé giỏi quá!"*) và động viên `try-again-north.mp3` (*"Bé thử lại nhé!"*) theo giọng Hoài My chuẩn Hà Nội.
+- **Quy chuẩn Thử thách ghép hình trong phạm vi bài học (Distractor Pool Constraint):**
+  - Toàn bộ các thẻ đáp án lựa chọn (bao gồm cả đáp án đúng và 2 đáp án gây nhiễu) TUYỆT ĐỐI CHỈ được lấy trong nhóm 10 từ của bài học hiện tại (hoặc 12 từ nếu có thêm tối đa 2 từ ôn tập chuyển tiếp từ bài trước).
+  - Không lấy bất kỳ từ nào từ kho 600 từ chung ngoài bài học, giúp bé tập trung ghi nhớ sâu đúng những từ vừa được học trong bài đó.
+- **Thuật toán Đa dạng hóa Nhóm phân loại đáp án (Category Diversity Algorithm):**
+  - Đáp ứng phản hồi của người dùng: Không bao giờ hiển thị các đáp án cùng một loài hay cùng một nhóm hẹp gây bối rối cho trẻ nhỏ (ví dụ: khi hỏi "Quả na", các đáp án được phân bổ đa dạng rõ rệt như `Quả Na` - thực vật, `Con Chó` - động vật, `Bàn Học` - đồ dùng; khi hỏi "Chim tu hú", các đáp án là `Chim Tu Hú`, `Con Bò/Heo`, `Chiếc Lá`...).
+  - Thuật toán `selectDistractorsForWord` ưu tiên chọn 2 đáp án gây nhiễu từ 2 nhóm danh mục khác nhau (`people`, `animals`, `plants`, `nature`, `objects`, `actions`) và bảo đảm 3 thẻ hình luôn có 3 biểu tượng emoji khác nhau 100%.
+- **Hoàn thiện cấu trúc 6 bài học chuẩn 10 từ/bài theo mức độ ngữ âm:**
+  - *Bài 1 (Cấp 1 - 2 âm Rất dễ):* `ba`, `bà`, `bố`, `mẹ`, `bé`, `bò`, `gà`, `cá`, `lá`, `đá` (10 từ).
+  - *Bài 2 (Cấp 1 - 2 âm Rất dễ):* `vở`, `ngủ`, `đi`, `đau`, `cô`, `na`, `đa`, `bế`, `me`, `lê` (10 từ).
+  - *Bài 3 (Cấp 1 - 2 âm Dễ):* `bè`, `bê`, `cà`, `cờ`, `cỏ`, `cỗ`, `dê`, `bi`, `dù`, `tổ` (10 từ).
+  - *Bài 4 (Cấp 2 - 3 âm Vừa):* `nụ`, `mạ`, `mèo`, `vịt`, `chó`, `hoa`, `cây`, `nắng`, `mưa`, `đèn` (10 từ).
+  - *Bài 5 (Cấp 2 - 3 âm Vừa):* `bút`, `tay`, `mắt`, `chân`, `ăn`, `sau`, `bẻ`, `đỗ`, `hề`, `kẻ` (10 từ).
+  - *Bài 6 (Cấp 3 - 4-5 âm & Từ ghép):* `khế`, `sách`, `miệng`, `uống`, `đánh`, `ca nô`, `ca sĩ`, `bí đỏ`, `đi bộ`, `hồ cá` (10 từ).
+  - *Bài 7 trở đi:* Toàn bộ các từ SGK mở rộng, mỗi bài 10 từ.

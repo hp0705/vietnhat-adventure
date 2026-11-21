@@ -279,6 +279,92 @@ function getPictureDataForWord(word) {
   return { emoji, label: `Từ: ${word}` };
 }
 
+// Phân loại nhóm đối tượng để đa dạng hóa đáp án trắc nghiệm hình ảnh
+function getWordCategory(word) {
+  const p = getPictureDataForWord(word);
+  const label = (p.label || '').toLowerCase();
+  const em = p.emoji || '';
+  
+  if (['👨‍👧', '👵', '👨', '👩‍👦', '👶', '👩‍🏫', '🎤', '🤡'].includes(em) || label.includes('người') || label.includes('bé') || label.includes('cô') || label.includes('hề') || label.includes('ca sĩ') || label.includes('ba') || label.includes('mẹ') || label.includes('bà')) {
+    return 'people';
+  }
+  if (['🐄', '🐱', '🐔', '🐟', '🦆', '🐶', '🐂', '🕊️', '🐐', '🦎', '🐒', '🐠', '🦁', '🐦', '🦔', '🐷'].includes(em) || label.includes('con') || label.includes('chim') || label.includes('vịt') || label.includes('cá') || label.includes('chó') || label.includes('mèo') || label.includes('bò') || label.includes('gà') || label.includes('dê') || label.includes('tê tê') || label.includes('tu hú') || label.includes('le le') || label.includes('kì đà')) {
+    return 'animals';
+  }
+  if (['🌸', '🍃', '🌳', '🌿', '🍐', '🍆', '🌴', '🌽', '🫘', '🎃', '⭐', '🌷', '🌾', '🍇', '🍈', '🍎'].includes(em) || label.includes('hoa') || label.includes('lá') || label.includes('cây') || label.includes('quả') || label.includes('nụ') || label.includes('mạ') || label.includes('bắp') || label.includes('hạt') || label.includes('cỏ') || label.includes('cà') || label.includes('khế') || label.includes('lê') || label.includes('me') || label.includes('na') || label.includes('nho') || label.includes('thị')) {
+    return 'plants';
+  }
+  if (['☀️', '🌧️', '🪨', '⛰️'].includes(em) || label.includes('nắng') || label.includes('mưa') || label.includes('đá') || label.includes('khe') || label.includes('nhũ')) {
+    return 'nature';
+  }
+  if (['💡', '✏️', '📖', '📓', '🪑', '🛋️', '🏡', '🚪', '⚽', '🚗', '🛥️', '🛶', '🇻🇳', '🚩', '🍲', '🔨', '🏛️', '👞', '🧸', '🏯', '📏', '☂️', '🪺', '🥔', '🏋️', '🎀', '🍜', '🥛', '🎹', '🖼️', '🏮', '☕', '🏭', '🧺', '🫗'].includes(em) || label.includes('cái') || label.includes('chiếc') || label.includes('đèn') || label.includes('bút') || label.includes('sách') || label.includes('vở') || label.includes('bàn') || label.includes('xe') || label.includes('cờ') || label.includes('nhà') || label.includes('món') || label.includes('ly') || label.includes('rổ') || label.includes('dù') || label.includes('bi')) {
+    return 'objects';
+  }
+  return 'actions';
+}
+
+// Lựa chọn đáp án gây nhiễu TUYỆT ĐỐI CHỈ TRONG BÀI HỌC HIỆN TẠI (10-12 từ), đa dạng hóa nhóm phân loại
+function selectDistractorsForWord(targetItem, roundQuestions) {
+  const targetWord = targetItem.word;
+  const targetPic = getPictureDataForWord(targetWord);
+  const targetCat = getWordCategory(targetWord);
+
+  // Pool chỉ lấy DUY NHẤT trong bài học hiện tại (10-12 từ)
+  const pool = (roundQuestions || []).filter(x => x.word !== targetWord);
+  
+  // Lọc ra các từ có emoji khác với targetPic.emoji
+  const validCandidates = pool.filter(x => {
+    const pic = getPictureDataForWord(x.word);
+    return pic.emoji !== targetPic.emoji;
+  });
+
+  // Xáo trộn ngẫu nhiên để mỗi lần chơi phong phú
+  const shuffled = [...validCandidates].sort(() => Math.random() - 0.5);
+
+  const chosen = [];
+  const usedEmojis = new Set([targetPic.emoji]);
+  const usedCats = new Set([targetCat]);
+
+  // Vòng 1: Tìm ứng viên thuộc nhóm phân loại KHÁC HOÀN TOÀN với mục tiêu và với nhau
+  // Ví dụ: Mục tiêu là Quả Na (plants) -> chọn Con Chó (animals) và Bàn Học (objects)
+  // Mục tiêu là Chim Tu Hú (animals) -> chọn Con Bò (khác emoji) hoặc Cây Đa (plants), Cái Bàn (objects)
+  for (const cand of shuffled) {
+    if (chosen.length >= 2) break;
+    const pic = getPictureDataForWord(cand.word);
+    const cat = getWordCategory(cand.word);
+    if (!usedEmojis.has(pic.emoji) && !usedCats.has(cat)) {
+      chosen.push(cand);
+      usedEmojis.add(pic.emoji);
+      usedCats.add(cat);
+    }
+  }
+
+  // Vòng 2: Nếu chưa đủ 2, lấy ứng viên khác emoji (dù có thể cùng category nếu bài học ít nhóm)
+  if (chosen.length < 2) {
+    for (const cand of shuffled) {
+      if (chosen.length >= 2) break;
+      if (chosen.some(c => c.id === cand.id)) continue;
+      const pic = getPictureDataForWord(cand.word);
+      if (!usedEmojis.has(pic.emoji)) {
+        chosen.push(cand);
+        usedEmojis.add(pic.emoji);
+      }
+    }
+  }
+
+  // Dự phòng an toàn tuyệt đối nếu bài có quá ít emoji khác nhau
+  if (chosen.length < 2) {
+    for (const cand of shuffled) {
+      if (chosen.length >= 2) break;
+      if (!chosen.some(c => c.id === cand.id)) {
+        chosen.push(cand);
+      }
+    }
+  }
+
+  return chosen.slice(0, 2);
+}
+
 // ==========================================
 // 1.1 LƯU TRỮ TIẾN ĐỘ VĨNH VIỄN TRÊN IPAD (LOCALSTORAGE)
 // ==========================================
@@ -383,31 +469,34 @@ function buildLessons() {
     items: level1.slice(20, 30)
   });
 
-  // Bài 4: 10 từ 3 âm 1 (Vần đôi & Âm cuối đơn giản)
+  // Bài 4: 10 từ (Vần đôi & Thiên nhiên thân thuộc)
+  const l4Items = [...level1.slice(30), ...level2.slice(0, 8)];
   lessons.push({
     id: 'lesson-4',
     lessonIndex: 3,
-    title: 'Bài 4: Nâng lên 3 âm (Vần đôi & Âm cuối 1)',
+    title: 'Bài 4: Nâng lên 3 âm (Vần đôi & Thiên nhiên)',
     level: 'Cấp 2 (3 âm - Vừa)',
-    items: level2.slice(0, 10)
+    items: l4Items
   });
 
-  // Bài 5: 10 từ 3 âm 2 (Cơ thể & Hoạt động)
+  // Bài 5: 10 từ (Cơ thể, Đồ dùng & Hoạt động)
+  const l5Items = level2.slice(8, 18);
   lessons.push({
     id: 'lesson-5',
     lessonIndex: 4,
-    title: 'Bài 5: Nâng lên 3 âm (Cơ thể & Hoạt động 2)',
+    title: 'Bài 5: Nâng lên 3 âm (Cơ thể & Hoạt động)',
     level: 'Cấp 2 (3 âm - Vừa)',
-    items: level2.slice(10, 20)
+    items: l5Items
   });
 
   // Bài 6: 10 từ 4 - 5 âm / vần phức tạp & từ ghép
+  const l6Items = [...level2.slice(18), ...level3];
   lessons.push({
     id: 'lesson-6',
     lessonIndex: 5,
     title: 'Bài 6: Nâng lên 4-5 âm & Từ ghép',
     level: 'Cấp 3 (4-5 âm - Nâng cao)',
-    items: level3.slice(0, 10)
+    items: l6Items
   });
 
   // Bài 7 trở đi: Toàn bộ các từ SGK tiếp theo, mỗi bài 10 từ
@@ -731,7 +820,7 @@ function nextWord() {
 // 5. THỬ THÁCH NHÌN CHỮ CHỌN HÌNH (10 TỪ/BÀI, ĐẠT 8/10 MỚI MỞ KHÓA)
 // ==========================================
 
-// Bắt đầu vòng thử thách 10 câu cho Bài học đang chọn
+// Bắt đầu vòng thử thách 10-12 câu cho Bài học đang chọn
 function startLessonChallenge(lessonIndex) {
   state.currentLessonIndex = lessonIndex;
   const currentLesson = state.lessons[lessonIndex];
@@ -740,21 +829,12 @@ function startLessonChallenge(lessonIndex) {
   // 1. Lấy các từ chuyển tiếp từ bài trước (tối đa 2 từ)
   const carried = [...state.carriedOverWords];
 
-  // 2. Lấy các từ trong bài học hiện tại (loại trừ từ đã có trong carried)
+  // 2. Lấy toàn bộ 10 từ trong bài học hiện tại (loại trừ từ đã có trong carried)
   const lessonItems = currentLesson.items.filter(item => !carried.some(c => c.id === item.id));
 
-  // 3. Kết hợp để đủ 10 câu: carried (tối đa 2) + lessonItems
-  const targetCount = 10;
-  const neededFromLesson = Math.max(0, targetCount - carried.length);
-  const selectedLessonItems = lessonItems.slice(0, neededFromLesson);
-
-  const quizQuestions = [...carried, ...selectedLessonItems];
-  
-  // Dự phòng nếu bài có ít hơn số từ cần thiết: lấy thêm từ kho chung
-  if (quizQuestions.length < targetCount) {
-    const backupPool = currentLesson.items.concat(state.items).filter(x => !quizQuestions.some(q => q.id === x.id));
-    quizQuestions.push(...backupPool.slice(0, targetCount - quizQuestions.length));
-  }
+  // 3. Kết hợp: 10 từ của bài hiện tại + tối đa 2 từ carried = 10 đến 12 câu!
+  // Đảm bảo các đáp án hình ảnh được xào nấu trong cùng nhóm 10-12 từ này
+  const quizQuestions = [...carried, ...lessonItems];
 
   // Khởi tạo trạng thái vòng thử thách
   state.quizRound = {
@@ -771,7 +851,7 @@ function startLessonChallenge(lessonIndex) {
   loadQuizQuestionByIndex(0);
 }
 
-// Nạp câu hỏi theo chỉ mục trong vòng 10 câu
+// Nạp câu hỏi theo chỉ mục trong vòng 10-12 câu
 function loadQuizQuestionByIndex(index) {
   const round = state.quizRound;
   if (!round || index >= round.questions.length) return;
@@ -781,7 +861,7 @@ function loadQuizQuestionByIndex(index) {
   round.firstAttempt = true;
 
   // Cập nhật tiến độ & điểm
-  document.getElementById('quiz-progress').textContent = `${index + 1}/10`;
+  document.getElementById('quiz-progress').textContent = `${index + 1}/${round.questions.length}`;
   document.getElementById('game-score').textContent = round.score;
   document.getElementById('quiz-word-display').textContent = word;
 
@@ -801,10 +881,9 @@ function loadQuizQuestionByIndex(index) {
   feedback.innerHTML = '';
   document.getElementById('btn-next-quiz').classList.add('hidden');
 
-  // Lấy các đáp án gây nhiễu từ các từ khác trong bài học hoặc kho chung
-  const otherItems = round.questions.concat(state.items).filter(x => x.word !== word);
-  const shuffledOthers = [...otherItems].sort(() => Math.random() - 0.5);
-  const distractors = shuffledOthers.slice(0, 2);
+  // Lấy các đáp án gây nhiễu TUYỆT ĐỐI CHỈ TỪ các từ trong bài học hiện tại (10-12 từ)
+  // và đa dạng hóa nhóm phân loại (Quả Na -> Con Chó, Cái Bàn; Chim Tu Hú -> Con Bò, Chiếc Lá)
+  const distractors = selectDistractorsForWord(targetItem, round.questions);
 
   const targetPic = getPictureDataForWord(word);
   const options = [
@@ -828,6 +907,11 @@ function loadQuizQuestionByIndex(index) {
       <span class="pic-emoji">${opt.emoji}</span>
       <span class="pic-label">${opt.label}</span>
     `;
+
+    card.addEventListener('click', () => handlePictureSelect(card, opt));
+    container.appendChild(card);
+  });
+}
 
     card.addEventListener('click', () => handlePictureSelect(card, opt));
     container.appendChild(card);
@@ -922,10 +1006,12 @@ function nextQuizQuestion() {
   }
 }
 
-// Hiển thị bảng tổng kết vòng thử thách (Yêu cầu đạt 8/10 để mở khóa bài tiếp theo)
+// Hiển thị bảng tổng kết vòng thử thách (Yêu cầu đạt 80% câu đúng để mở khóa bài tiếp theo)
 function finishQuizRound() {
   const round = state.quizRound;
-  const isPassed = round.score >= 8;
+  const total = round.questions.length;
+  const passingScore = Math.ceil(total * 0.8);
+  const isPassed = round.score >= passingScore;
   const modal = document.getElementById('quiz-summary-modal');
   if (!modal) return;
   modal.classList.remove('hidden');
@@ -956,7 +1042,7 @@ function finishQuizRound() {
       <div class="summary-card victory">
         <div class="summary-icon">🏆 🌟 🎓</div>
         <h2>XUẤT SẮC QUÁ BÉ ƠI!</h2>
-        <p class="summary-score">Bé đạt <b>${round.score}/10</b> câu đúng!</p>
+        <p class="summary-score">Bé đạt <b>${round.score}/${total}</b> câu đúng!</p>
         <p class="summary-desc">Bé đã hoàn thành xuất sắc và mở khóa <b>Bài ${nextLessonIdx + 1}</b>!</p>
         ${carryMsg}
         <div class="summary-actions">
@@ -975,17 +1061,17 @@ function finishQuizRound() {
       </div>
     `;
 
-    speakVoiceText(`Xuất sắc quá bé ơi! Bé đạt ${round.score} trên 10 câu đúng và mở khóa bài tiếp theo!`);
+    speakVoiceText(`Xuất sắc quá bé ơi! Bé đạt ${round.score} trên ${total} câu đúng và mở khóa bài tiếp theo!`);
   } else {
-    // CHƯA ĐẠT 8/10
+    // CHƯA ĐẠT ĐIỂM YÊU CẦU
     playWrongBuzzer();
 
     modal.innerHTML = `
       <div class="summary-card retry">
         <div class="summary-icon">💪 🐣 🌈</div>
         <h2>CỐ LÊN BÉ YÊU!</h2>
-        <p class="summary-score">Bé đạt <b>${round.score}/10</b> câu đúng.</p>
-        <p class="summary-desc">Bé cần đạt từ <b>8/10</b> câu đúng trở lên để mở khóa Bài tiếp theo. Bé hãy thử lại nhé!</p>
+        <p class="summary-score">Bé đạt <b>${round.score}/${total}</b> câu đúng.</p>
+        <p class="summary-desc">Bé cần đạt ít nhất <b>${passingScore}/${total}</b> câu đúng để mở khóa Bài tiếp theo. Bé hãy thử lại nhé!</p>
         <div class="summary-actions">
           <button id="btn-modal-retry" class="btn-hero">
             🔄 Thử lại ngay nào!
@@ -997,7 +1083,7 @@ function finishQuizRound() {
       </div>
     `;
 
-    speakVoiceText(`Bé đạt ${round.score} trên 10 điểm. Bé thử lại để đạt từ 8 điểm trở lên nhé!`);
+    speakVoiceText(`Bé đạt ${round.score} trên ${total} điểm. Bé thử lại để đạt từ ${passingScore} điểm trở lên nhé!`);
   }
 
   // Gắn sự kiện cho các nút điều hướng trong modal
