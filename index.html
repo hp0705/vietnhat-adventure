@@ -87,6 +87,11 @@
         <div id="lesson-tabs" class="lesson-tabs">
           <!-- Render các nút Bài 1, Bài 2, Bài 3... -->
         </div>
+        <div class="lesson-map-actions">
+          <button id="btn-map-start-quiz" class="btn-challenge-banner">
+            <span>🎯</span> <span id="map-challenge-btn-text">Thử thách ghép hình Bài 1 (10 câu)</span>
+          </button>
+        </div>
       </div>
 
       <div id="island-grid" class="island-grid">
@@ -117,19 +122,13 @@
           </button>
         </div>
 
-        <!-- QUY TRÌNH ĐÁNH VẦN TỪNG BƯỚC (Sound-by-Sound Blending) -->
-        <div class="blending-container">
-          <div class="blending-header">
-            <h3>🧩 Các bước ghép âm từng bước:</h3>
-            <button id="btn-play-all-steps" class="btn-action-small">
-              <span>▶️</span> Cách đánh vần
-            </button>
-          </div>
-
-          <!-- Các thẻ bước đánh vần -->
-          <div id="phonics-steps-wrapper" class="steps-wrapper">
-            <!-- Render động: ví dụ [đờ] -> [a] -> [nhờ] -> [anh] -> [đanh] -> [đanh sắc đánh] -->
-          </div>
+        <!-- NÚT NGHE CÁCH ĐÁNH VẦN (Chỉ 1 nút đọc duy nhất, không hiển thị các bước chữ rườm rà) -->
+        <div class="spelling-bar">
+          <button id="btn-play-all-steps" class="btn-spelling-play" title="Nghe cô đọc cách đánh vần">
+            <span class="icon">▶️</span>
+            <span class="btn-text">Cách đánh vần</span>
+          </button>
+          <span class="spelling-hint">Chạm để nghe cô đọc cách đánh vần</span>
         </div>
 
         <!-- Câu ví dụ minh họa kèm hình ảnh trực quan -->
@@ -166,8 +165,14 @@
       <div class="challenge-card">
         <div class="challenge-header">
           <button id="btn-exit-game" class="btn-back-small">✕ Về trạm học</button>
+          
+          <div class="challenge-meta-group">
+            <span id="quiz-carryover-badge" class="badge-carryover hidden">⭐ Ôn lại từ cũ</span>
+            <span class="quiz-round-tag">Câu <b id="quiz-progress">1/10</b></span>
+          </div>
+
           <div class="score-display">
-            <span>⭐ Ngôi sao: <b id="game-score">0</b></span>
+            <span>⭐ Đúng: <b id="game-score">0</b>/10</span>
           </div>
         </div>
 
@@ -182,6 +187,9 @@
             </button>
           </div>
 
+          <!-- Dấu X màu đỏ hiển thị khi làm sai rồi tự mờ biến mất -->
+          <div id="wrong-x-mark" class="wrong-x-mark">❌</div>
+
           <!-- Lưới các thẻ hình ảnh minh họa cho bé chạm chọn -->
           <div id="picture-options-grid" class="picture-options-grid">
             <!-- Render động 3-4 hình minh họa lớn sinh động -->
@@ -193,6 +201,11 @@
         <div class="challenge-footer">
           <button id="btn-next-quiz" class="btn-hero hidden">Từ tiếp theo ▶</button>
         </div>
+      </div>
+
+      <!-- Bảng tổng kết kết quả thử thách 10 câu (Modal) -->
+      <div id="quiz-summary-modal" class="quiz-summary-modal hidden">
+        <!-- Render động nội dung vượt qua / thử lại -->
       </div>
     </section>
 

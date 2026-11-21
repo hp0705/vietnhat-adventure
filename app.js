@@ -17,11 +17,36 @@ const state = {
   speechRate: 0.75, // Tốc độ vừa chậm cho trẻ 4-6 tuổi
   audioUnlocked: false,
   score: 0,
-  quizCurrentWord: null
+  unlockedLessons: [0], // Bài 1 mở khóa mặc định
+  carriedOverWords: [], // Tối đa 2 từ làm sai chuyển qua bài sau
+  quizRound: null
 };
+
+// Danh sách lời khen ngợi phong phú, hào hứng khi bé trả lời đúng
+const PRAISE_PHRASES = [
+  "Đúng rồi! Bé giỏi quá! 🌟",
+  "Hoan hô bé! Bé thông minh tuyệt vời! 🎉",
+  "Chính xác luôn! Bé đỉnh thật đấy! 🚀",
+  "Bé chọn chuẩn xác rồi! Quá tuyệt! 👏",
+  "Bé thật là siêu nhân học chữ! 🌈",
+  "Đúng rồi bé ơi! Tiếp tục phát huy nhé! 💖",
+  "Tuyệt cú mèo! Bé trả lời xuất sắc! 🐱✨",
+  "Giỏi lắm! Bé nhớ bài rất siêu! 🏆"
+];
+
+// Danh sách lời khích lệ, động viên nhẹ nhàng khi bé chọn chưa đúng
+const ENCOURAGE_PHRASES = [
+  "Bé ơi cố lên, cùng thử lại nhé! 💪",
+  "Chưa chính xác rồi, bé nhìn kỹ lại nào! 👀",
+  "Tiếc quá, bé thử chọn lại lần nữa nhé! 🍀",
+  "Không sao đâu bé yêu, cùng làm lại nào! 💖",
+  "Sắp đúng rồi, bé thử xem hình khác nhé! ✨",
+  "Bé quan sát kỹ chữ và chọn lại nhé! 🧐"
+];
 
 // Hình minh họa sinh động cho từng câu ví dụ
 const exampleIllustrationMap = {
+  // 32 từ khởi đầu
   'ba': '📚👨‍👧', // Ba đọc sách cùng bé
   'bà': '👵✨', // Bà kể chuyện cổ tích
   'bố': '👨🚲', // Bố đưa bé đi chơi
@@ -53,11 +78,59 @@ const exampleIllustrationMap = {
   'đánh': '🥁🎵', // Bé đánh trống rộn ràng
   'bóng': '⚽🥅', // Bé đá bóng
   'đau': '🩹🤕', // Băng dán vết thương
-  'sau': '➡️🚶' // Đi sau một bước
+  'sau': '➡️🚶', // Đi sau một bước
+  'tay': '✋🎨', // Bàn tay vẽ tranh
+  'mắt': '👀✨', // Đôi mắt sáng ngời
+  'miệng': '👄🍎', // Miệng cười tươi
+  'chân': '🦶⚽', // Chân sút bóng
+  'ăn': '🍚🥄', // Bé xúc cơm ăn
+  'uống': '🥛😋', // Bé uống sữa mát
+  'ngủ': '😴🌙', // Bé ngủ say sưa
+  'đi': '🚶🎒', // Bé đi đến trường
+
+  // Các từ SGK phổ biến tiếp theo
+  'cô': '👩‍🏫🌸',
+  'na': '🍈🌿',
+  'cơ': '🚩🇻🇳',
+  'đa': '🌳🏡',
+  'ca nô': '🛥️🌊',
+  'ca sĩ': '🎤🎶',
+  'ca múa': '💃🎵',
+  'bế': '🤱💕',
+  'me': '🌿😋',
+  'lê': '🍐✨',
+  'bè': '🛶🌊',
+  'bê': '🐂🌾',
+  'cà': '🍆🌱',
+  'bồ': '🕊️☁️',
+  'cờ': '🇻🇳⭐',
+  'cỏ': '🌿🌼',
+  'cỗ': '🍲🥢',
+  'cọ': '🌴🌞',
+  'bẻ': '🌽🌻',
+  'dê': '🐐🌿',
+  'đỗ': '🫘🌱',
+  'bi': '🔮✨',
+  'bí đỏ': '🎃🌾',
+  'đi đò': '🛶🌊',
+  'bé bò': '👶🧸',
+  'cố đô': '🏯✨',
+  'đi bộ': '🚶🌳',
+  'hề': '🤡🎈',
+  'khế': '⭐🌿',
+  'khỉ bé': '🐒🍌',
+  'hồ cá': '🐠💦',
+  'dù': '☂️🌧️',
+  'nụ': '🌷🍃',
+  'nơ đỏ': '🎀✨',
+  'tô mì': '🍜🥢',
+  'nho': '🍇🌿',
+  'phở': '🍜🍋'
 };
 
 // Dữ liệu hình ảnh và tên gọi trực quan cho trẻ nhỏ
 const pictureData = {
+  // 32 từ khởi đầu
   'ba': { emoji: '👨‍👧', label: 'Người Ba (Bố)' },
   'bà': { emoji: '👵', label: 'Người Bà' },
   'bố': { emoji: '👨', label: 'Người Bố' },
@@ -72,47 +145,138 @@ const pictureData = {
   'hoa': { emoji: '🌸', label: 'Bông Hoa' },
   'lá': { emoji: '🍃', label: 'Chiếc Lá' },
   'cây': { emoji: '🌳', label: 'Cây Xanh' },
+  'nắng': { emoji: '☀️', label: 'Ánh Nắng' },
+  'mưa': { emoji: '🌧️', label: 'Trời Mưa' },
+  'đá': { emoji: '🪨', label: 'Hòn Đá' },
+  'đèn': { emoji: '💡', label: 'Cái Đèn' },
+  'bút': { emoji: '✏️', label: 'Cây Bút' },
+  'sách': { emoji: '📖', label: 'Cuốn Sách' },
+  'vở': { emoji: '📓', label: 'Quyển Vở' },
+  'tay': { emoji: '✋', label: 'Bàn Tay' },
+  'mắt': { emoji: '👀', label: 'Đôi Mắt' },
+  'miệng': { emoji: '👄', label: 'Cái Miệng' },
+  'chân': { emoji: '🦶', label: 'Bàn Chân' },
+  'ăn': { emoji: '🍚', label: 'Bé Ăn Cơm' },
+  'uống': { emoji: '🥛', label: 'Bé Uống Nước' },
+  'ngủ': { emoji: '😴', label: 'Bé Đi Ngủ' },
   'đánh': { emoji: '🥁', label: 'Đánh Trống' },
+  'đi': { emoji: '🚶', label: 'Đi Bộ' },
+  'đau': { emoji: '🩹', label: 'Vết Đau' },
+  'sau': { emoji: '➡️', label: 'Đi Phía Sau' },
   'bóng': { emoji: '⚽', label: 'Quả Bóng' },
   'xe': { emoji: '🚗', label: 'Chiếc Xe' },
-  'nhà': { emoji: '🏡', label: 'Ngôi Nhà' }
+  'nhà': { emoji: '🏡', label: 'Ngôi Nhà' },
+  'cửa': { emoji: '🚪', label: 'Cánh Cửa' },
+  'bàn': { emoji: '🪑', label: 'Bàn Học' },
+  'ghế': { emoji: '🛋️', label: 'Cái Ghế' },
+
+  // Mở rộng các từ SGK
+  'cô': { emoji: '👩‍🏫', label: 'Cô Giáo' },
+  'na': { emoji: '🍈', label: 'Quả Na' },
+  'cơ': { emoji: '🚩', label: 'Cờ Đỏ' },
+  'đa': { emoji: '🌳', label: 'Cây Đa' },
+  'ca nô': { emoji: '🛥️', label: 'Ca Nô' },
+  'ca sĩ': { emoji: '🎤', label: 'Ca Sĩ' },
+  'ca múa': { emoji: '💃', label: 'Ca Múa' },
+  'bế': { emoji: '🤱', label: 'Bế Bé' },
+  'me': { emoji: '🌿', label: 'Quả Me' },
+  'lê': { emoji: '🍐', label: 'Quả Lê' },
+  'bè': { emoji: '🛶', label: 'Cái Bè' },
+  'bê': { emoji: '🐂', label: 'Con Bê' },
+  'cà': { emoji: '🍆', label: 'Quả Cà' },
+  'bồ': { emoji: '🕊️', label: 'Chim Bồ Câu' },
+  'cờ': { emoji: '🇻🇳', label: 'Lá Cờ' },
+  'cỏ': { emoji: '🌿', label: 'Bãi Cỏ' },
+  'cỗ': { emoji: '🍲', label: 'Mâm Cỗ' },
+  'cọ': { emoji: '🌴', label: 'Cây Cọ' },
+  'bẻ': { emoji: '🌽', label: 'Bẻ Bắp' },
+  'bễ': { emoji: '🔨', label: 'Cái Bễ' },
+  'bệ': { emoji: '🏛️', label: 'Bệ Đá' },
+  'dê': { emoji: '🐐', label: 'Con Dê' },
+  'đỗ': { emoji: '🫘', label: 'Hạt Đỗ' },
+  'bi': { emoji: '🔮', label: 'Viên Bi' },
+  'da bò': { emoji: '👞', label: 'Tấm Da Bò' },
+  'dỗ bé': { emoji: '🧸', label: 'Dỗ Em Bé' },
+  'bí đỏ': { emoji: '🎃', label: 'Quả Bí Đỏ' },
+  'đi đò': { emoji: '🛶', label: 'Đi Con Đò' },
+  'bé bò': { emoji: '👶', label: 'Em Bé Bò' },
+  'cố đô': { emoji: '🏯', label: 'Thành Cố Đô' },
+  'đi bộ': { emoji: '🚶', label: 'Đi Bộ' },
+  'da cá': { emoji: '🐟', label: 'Tấm Da Cá' },
+  'đổ': { emoji: '🫗', label: 'Rót Nước' },
+  'hề': { emoji: '🤡', label: 'Chú Hề' },
+  'kẻ': { emoji: '📏', label: 'Kẻ Vạch' },
+  'khế': { emoji: '⭐', label: 'Quả Khế' },
+  'kì đà': { emoji: '🦎', label: 'Con Kì Đà' },
+  'khe đá': { emoji: '⛰️', label: 'Khe Đá' },
+  'khỉ bé': { emoji: '🐒', label: 'Con Khỉ' },
+  'hồ cá': { emoji: '🐠', label: 'Hồ Nuôi Cá' },
+  'dù': { emoji: '☂️', label: 'Chiếc Dù (Ô)' },
+  'tổ': { emoji: '🪺', label: 'Tổ Chim' },
+  'dữ': { emoji: '🦁', label: 'Hung Dữ' },
+  'củ từ': { emoji: '🥔', label: 'Củ Từ' },
+  'cử tạ': { emoji: '🏋️', label: 'Môn Cử Tạ' },
+  'tu hú': { emoji: '🐦', label: 'Chim Tu Hú' },
+  'tê tê': { emoji: '🦔', label: 'Con Tê Tê' },
+  'nụ': { emoji: '🌷', label: 'Nụ Hoa' },
+  'mạ': { emoji: '🌾', label: 'Cây Mạ Non' },
+  'nơ đỏ': { emoji: '🎀', label: 'Chiếc Nơ Đỏ' },
+  'tô mì': { emoji: '🍜', label: 'Tô Mì Thơm' },
+  'le le': { emoji: '🦆', label: 'Vịt Le Le' },
+  'li': { emoji: '🥛', label: 'Cái Ly (Cốc)' },
+  'nho': { emoji: '🍇', label: 'Chùm Nho' },
+  'pi-a-nô': { emoji: '🎹', label: 'Đàn Pi-a-nô' },
+  'phở': { emoji: '🍜', label: 'Bát Phở' },
+  'thị': { emoji: '🍈', label: 'Quả Thị' },
+  'nhũ đá': { emoji: '🪨', label: 'Nhũ Đá Hang' },
+  'pa-nô': { emoji: '🖼️', label: 'Biển Pa-nô' },
+  'phố cổ': { emoji: '🏮', label: 'Phố Cổ' },
+  'cá thu': { emoji: '🐟', label: 'Con Cá Thu' },
+  'cá mú': { emoji: '🐠', label: 'Con Cá Mú' },
+  'kè đá': { emoji: '🪨', label: 'Bờ Kè Đá' },
+  'cà phê': { emoji: '☕', label: 'Ly Cà Phê' },
+  'cổ thụ': { emoji: '🌳', label: 'Cây Cổ Thụ' },
+  'nhà kho': { emoji: '🏭', label: 'Nhà Kho' },
+  'lư đá': { emoji: '🪨', label: 'Lư Đá' },
+  'rổ': { emoji: '🧺', label: 'Cái Rổ' }
 };
 
 // Emoji dự phòng
 const emojiMap = {
-  'ba': '👨‍👧',
-  'bà': '👵',
-  'bố': '👨',
-  'mẹ': '👩‍👦',
-  'bé': '👶',
-  'bò': '🐄',
-  'mèo': '🐱',
-  'gà': '🐔',
-  'cá': '🐟',
-  'vịt': '🦆',
-  'chó': '🐶',
-  'hoa': '🌸',
-  'lá': '🍃',
-  'cây': '🌳',
-  'nắng': '☀️',
-  'mưa': '🌧️',
-  'đá': '🪨',
-  'đèn': '💡',
-  'bút': '✏️',
-  'sách': '📖',
-  'vở': '📓',
-  'bàn': '🪑',
-  'ghế': '🛋️',
-  'nhà': '🏡',
-  'cửa': '🚪',
-  'cơm': '🍚',
-  'nước': '🥛',
-  'xe': '🚗',
-  'đánh': '🥁',
-  'bóng': '⚽',
-  'đau': '🩹',
-  'sau': '➡️'
+  'ba': '👨‍👧', 'bà': '👵', 'bố': '👨', 'mẹ': '👩‍👦', 'bé': '👶',
+  'bò': '🐄', 'mèo': '🐱', 'gà': '🐔', 'cá': '🐟', 'vịt': '🦆',
+  'chó': '🐶', 'hoa': '🌸', 'lá': '🍃', 'cây': '🌳', 'nắng': '☀️',
+  'mưa': '🌧️', 'đá': '🪨', 'đèn': '💡', 'bút': '✏️', 'sách': '📖',
+  'vở': '📓', 'bàn': '🪑', 'ghế': '🛋️', 'nhà': '🏡', 'cửa': '🚪',
+  'cơm': '🍚', 'nước': '🥛', 'xe': '🚗', 'đánh': '🥁', 'bóng': '⚽',
+  'đau': '🩹', 'sau': '➡️', 'tay': '✋', 'mắt': '👀', 'miệng': '👄',
+  'chân': '🦶', 'ăn': '🍚', 'uống': '🥛', 'ngủ': '😴', 'đi': '🚶'
 };
+
+// Hàm lấy thông tin hình ảnh và tên gọi với cơ chế fallback thông minh (100% từ đều có hình)
+function getPictureDataForWord(word) {
+  if (pictureData[word]) return pictureData[word];
+  
+  // Suy luận thông minh theo từ khóa
+  if (word.includes('cá')) return { emoji: '🐟', label: `Con ${word}` };
+  if (word.includes('bò') || word.includes('bê')) return { emoji: '🐄', label: `Con ${word}` };
+  if (word.includes('chó')) return { emoji: '🐶', label: `Con ${word}` };
+  if (word.includes('mèo')) return { emoji: '🐱', label: `Con ${word}` };
+  if (word.includes('gà')) return { emoji: '🐔', label: `Con ${word}` };
+  if (word.includes('vịt')) return { emoji: '🦆', label: `Con ${word}` };
+  if (word.includes('chim') || word.includes('bồ') || word.includes('tu hú') || word.includes('le le')) return { emoji: '🐦', label: `Con ${word}` };
+  if (word.includes('hoa') || word.includes('nụ')) return { emoji: '🌸', label: `Bông ${word}` };
+  if (word.includes('cây') || word.includes('đa') || word.includes('thụ')) return { emoji: '🌳', label: `Cây ${word}` };
+  if (word.includes('lá') || word.includes('cỏ') || word.includes('mạ')) return { emoji: '🌿', label: word };
+  if (word.includes('quả') || word.includes('khế') || word.includes('na') || word.includes('lê') || word.includes('nho') || word.includes('thị')) return { emoji: '🍎', label: `Quả ${word}` };
+  if (word.includes('xe') || word.includes('ca nô') || word.includes('đò')) return { emoji: '🚗', label: word };
+  if (word.includes('nhà') || word.includes('cố đô') || word.includes('phố')) return { emoji: '🏡', label: word };
+  if (word.includes('đá')) return { emoji: '🪨', label: `Hòn ${word}` };
+  if (word.includes('mì') || word.includes('phở') || word.includes('cơm') || word.includes('cỗ')) return { emoji: '🍜', label: `Món ${word}` };
+
+  const emoji = emojiMap[word] || '🌟';
+  return { emoji, label: `Từ: ${word}` };
+}
 
 // ==========================================
 // 2. KHỞI TẠO ỨNG DỤNG & TẢI DỮ LIỆU
@@ -134,7 +298,6 @@ async function loadVocabularyData() {
     renderIslandMap();
   } catch (err) {
     console.warn('Đang tải dữ liệu dự phòng...', err);
-    // Dữ liệu dự phòng nếu mở trực tiếp bằng file:/// trên máy
     loadFallbackData();
   }
 }
@@ -149,6 +312,7 @@ function buildLessons() {
   // Bài 1: 10 từ khởi đầu 1 (Gia đình & Động vật gần gũi)
   lessons.push({
     id: 'lesson-1',
+    lessonIndex: 0,
     title: 'Bài 1: Gia đình & Động vật gần gũi',
     level: 'Mức 1 (Rất dễ)',
     items: starterItems.slice(0, 10)
@@ -157,6 +321,7 @@ function buildLessons() {
   // Bài 2: 10 từ khởi đầu 2 (Thiên nhiên & Đồ dùng)
   lessons.push({
     id: 'lesson-2',
+    lessonIndex: 1,
     title: 'Bài 2: Thiên nhiên & Đồ dùng',
     level: 'Mức 2 (Dễ)',
     items: starterItems.slice(10, 20)
@@ -165,6 +330,7 @@ function buildLessons() {
   // Bài 3: 12 từ khởi đầu 3 (Ngôi nhà & Hoạt động)
   lessons.push({
     id: 'lesson-3',
+    lessonIndex: 2,
     title: 'Bài 3: Ngôi nhà & Hoạt động',
     level: 'Mức 3 (Vừa)',
     items: starterItems.slice(20, 32)
@@ -178,6 +344,7 @@ function buildLessons() {
     const week = chunk[0]?.source_refs?.[0]?.week || Math.floor(lessonNum / 2);
     lessons.push({
       id: `lesson-${lessonNum}`,
+      lessonIndex: lessonNum - 1,
       title: `Bài ${lessonNum}: Tuần ${week} SGK`,
       level: `Mức ${lessonNum}`,
       items: chunk
@@ -188,17 +355,28 @@ function buildLessons() {
   state.lessons = lessons;
 }
 
-// Render các nút chọn bài học (Lesson tabs)
+// Render các nút chọn bài học (Lesson tabs với trạng thái mở khóa)
 function renderLessonTabs() {
   const container = document.getElementById('lesson-tabs');
   if (!container) return;
   container.innerHTML = '';
 
   state.lessons.forEach((l, idx) => {
+    const isUnlocked = state.unlockedLessons.includes(idx);
     const btn = document.createElement('button');
-    btn.className = `lesson-tab-btn ${idx === state.currentLessonIndex ? 'active' : ''}`;
-    btn.textContent = `Bài ${idx + 1} (${l.items.length} từ)`;
+    btn.className = `lesson-tab-btn ${idx === state.currentLessonIndex ? 'active' : ''} ${!isUnlocked ? 'locked' : ''}`;
+    
+    if (isUnlocked) {
+      btn.textContent = `Bài ${idx + 1} (${l.items.length} từ)`;
+    } else {
+      btn.innerHTML = `🔒 Bài ${idx + 1}`;
+    }
+
     btn.addEventListener('click', () => {
+      if (!isUnlocked) {
+        showToast(`🔒 Bé hãy đạt từ 8/10 điểm ở Bài ${idx} để mở khóa Bài ${idx + 1} nhé!`);
+        return;
+      }
       state.currentLessonIndex = idx;
       renderLessonTabs();
       renderIslandMap();
@@ -209,6 +387,10 @@ function renderLessonTabs() {
   const curLesson = state.lessons[state.currentLessonIndex];
   if (curLesson) {
     document.getElementById('current-lesson-title').textContent = `${curLesson.title} — ${curLesson.level}`;
+    const mapBtnText = document.getElementById('map-challenge-btn-text');
+    if (mapBtnText) {
+      mapBtnText.textContent = `Thử thách ghép hình Bài ${state.currentLessonIndex + 1} (10 câu)`;
+    }
   }
 }
 
@@ -216,60 +398,57 @@ function renderLessonTabs() {
 function setupEventListeners() {
   // 1. Mở khóa âm thanh trên iPad Safari (Bắt buộc tương tác chạm lần đầu)
   const btnStart = document.getElementById('btn-start');
-  btnStart.addEventListener('click', unlockAudioAndStart);
-  btnStart.addEventListener('touchstart', unlockAudioAndStart, { passive: true });
+  if (btnStart) {
+    btnStart.addEventListener('click', unlockAudioAndStart);
+    btnStart.addEventListener('touchstart', unlockAudioAndStart, { passive: true });
+  }
 
   // 2. Điều hướng Header
-  document.getElementById('btn-back').addEventListener('click', () => switchView('view-map'));
-  document.getElementById('btn-dialect-toggle').addEventListener('click', toggleDialect);
-  document.getElementById('btn-sound-toggle').addEventListener('click', toggleSound);
-  document.getElementById('btn-speed-toggle').addEventListener('click', toggleSpeed);
+  document.getElementById('btn-back')?.addEventListener('click', () => switchView('view-map'));
+  document.getElementById('btn-dialect-toggle')?.addEventListener('click', toggleDialect);
+  document.getElementById('btn-sound-toggle')?.addEventListener('click', toggleSound);
+  document.getElementById('btn-speed-toggle')?.addEventListener('click', toggleSpeed);
 
   // 3. Chuyển đổi ngôn ngữ
-  document.getElementById('lang-vi').addEventListener('click', () => {
+  document.getElementById('lang-vi')?.addEventListener('click', () => {
     showToast('Đang chọn: Tiếng Việt 🇻🇳');
   });
-  document.getElementById('lang-ja').addEventListener('click', () => {
+  document.getElementById('lang-ja')?.addEventListener('click', () => {
     showToast('🇯🇵 Phần tiếng Nhật sẽ có trong giai đoạn mở rộng tiếp theo!');
   });
 
-  // 4. Bộ lọc bản đồ
-  document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      e.target.classList.add('active');
-      state.activeFilter = e.target.dataset.filter;
-      renderIslandMap();
-    });
-  });
-
-  // 5. Trạm học từ vựng
-  document.getElementById('btn-play-full').addEventListener('click', () => {
+  // 4. Trạm học từ vựng
+  document.getElementById('btn-play-full')?.addEventListener('click', () => {
     if (state.currentWord) {
       playAudioSrc(getDialectAudio(state.currentWord, 'word'), state.currentWord.word);
     }
   });
 
-  document.getElementById('btn-play-all-steps').addEventListener('click', playAllPhonicsSteps);
+  // 5. NÚT ĐÁNH VẦN DUY NHẤT (Không hiển thị các bước chữ rườm rà)
+  document.getElementById('btn-play-all-steps')?.addEventListener('click', playAllPhonicsSteps);
 
-  document.getElementById('btn-play-example').addEventListener('click', () => {
+  document.getElementById('btn-play-example')?.addEventListener('click', () => {
     if (state.currentWord && state.currentWord.example_vi) {
       playAudioSrc(getDialectAudio(state.currentWord, 'example'), state.currentWord.example_vi);
     }
   });
 
-  document.getElementById('btn-prev-word').addEventListener('click', prevWord);
-  document.getElementById('btn-next-word').addEventListener('click', nextWord);
+  document.getElementById('btn-prev-word')?.addEventListener('click', prevWord);
+  document.getElementById('btn-next-word')?.addEventListener('click', nextWord);
 
-  // 6. Mini Game Thử Thách Nhìn Chữ Chọn Hình
-  document.getElementById('btn-launch-game').addEventListener('click', startQuizGame);
-  document.getElementById('btn-exit-game').addEventListener('click', () => switchView('view-station'));
-  document.getElementById('btn-quiz-listen').addEventListener('click', () => {
-    if (state.quizCurrentWord) {
-      playAudioSrc(getDialectAudio(state.quizCurrentWord, 'word'), state.quizCurrentWord.word);
+  // 6. Mini Game Thử Thách Nhìn Chữ Chọn Hình (10 từ theo bài học)
+  document.getElementById('btn-launch-game')?.addEventListener('click', () => startLessonChallenge(state.currentLessonIndex));
+  document.getElementById('btn-map-start-quiz')?.addEventListener('click', () => startLessonChallenge(state.currentLessonIndex));
+  document.getElementById('btn-exit-game')?.addEventListener('click', () => switchView('view-station'));
+  document.getElementById('btn-quiz-listen')?.addEventListener('click', () => {
+    if (state.quizRound) {
+      const curItem = state.quizRound.questions[state.quizRound.currentIndex];
+      if (curItem) {
+        playAudioSrc(getDialectAudio(curItem, 'word'), curItem.word);
+      }
     }
   });
-  document.getElementById('btn-next-quiz').addEventListener('click', nextQuizQuestion);
+  document.getElementById('btn-next-quiz')?.addEventListener('click', nextQuizQuestion);
 }
 
 // Mở khóa AudioContext trên iPad Safari
@@ -309,6 +488,7 @@ function unlockAudioAndStart() {
 // ==========================================
 function renderIslandMap() {
   const container = document.getElementById('island-grid');
+  if (!container) return;
   container.innerHTML = '';
 
   const currentLesson = state.lessons[state.currentLessonIndex];
@@ -324,7 +504,8 @@ function renderIslandMap() {
     const card = document.createElement('div');
     card.className = `island-node ${isConfirmed ? 'confirmed' : ''}`;
     
-    const icon = emojiMap[item.word] || '🌿';
+    const pic = getPictureDataForWord(item.word);
+    const icon = pic.emoji || '🌿';
     const statusText = isConfirmed ? 'Chơi ngay' : 'Đang duyệt';
     const badgeClass = isConfirmed ? 'ready' : 'pending';
 
@@ -351,7 +532,9 @@ function openWordStation(item) {
   document.getElementById('word-meaning').textContent = item.meaning_vi_child || 'Chờ cập nhật nghĩa';
   document.getElementById('word-topic').textContent = item.topic || 'khám phá';
   document.getElementById('example-text').textContent = `"${item.example_vi || 'Đang cập nhật ví dụ'}"`;
-  document.getElementById('word-emoji').textContent = emojiMap[item.word] || '📖';
+  
+  const pic = getPictureDataForWord(item.word);
+  document.getElementById('word-emoji').textContent = pic.emoji || '📖';
   
   // Cập nhật hình ảnh minh họa cho câu ví dụ
   const exEmoji = document.getElementById('example-emoji');
@@ -361,18 +544,19 @@ function openWordStation(item) {
 
   const isConfirmed = item.phonics && item.phonics.status === 'user_confirmed';
   const badge = document.getElementById('phonics-badge');
-  if (isConfirmed) {
-    badge.textContent = '🌟 Đã duyệt cách ghép vần';
-    badge.className = 'badge-status';
-  } else {
-    badge.textContent = '⏳ Đang chờ thẩm định giáo viên';
-    badge.className = 'badge-status';
-    badge.style.background = '#fef3c7';
-    badge.style.color = '#92400e';
+  if (badge) {
+    if (isConfirmed) {
+      badge.textContent = '🌟 Đã kiểm duyệt';
+      badge.className = 'badge-status ready';
+      badge.style.background = '#dcfce7';
+      badge.style.color = '#15803d';
+    } else {
+      badge.textContent = '⏳ Đang chờ thẩm định giáo viên';
+      badge.className = 'badge-status';
+      badge.style.background = '#fef3c7';
+      badge.style.color = '#92400e';
+    }
   }
-
-  // Render các bước đánh vần
-  renderPhonicsSteps(item);
 
   // Chuyển sang View Station
   switchView('view-station');
@@ -383,74 +567,29 @@ function openWordStation(item) {
   }, 300);
 }
 
-// Render các thẻ bước đánh vần
-function renderPhonicsSteps(item) {
-  const wrapper = document.getElementById('phonics-steps-wrapper');
-  wrapper.innerHTML = '';
-
-  const sequence = (item.phonics && item.phonics.sequence) ? item.phonics.sequence : [];
-
-  if (sequence.length === 0) {
-    wrapper.innerHTML = '<p style="color:#64748b; font-style:italic;">Chuỗi ghép âm đang chờ xác nhận từ giáo viên dạy đọc.</p>';
-    return;
-  }
-
-  sequence.forEach((stepText, index) => {
-    // Thẻ bước
-    const card = document.createElement('div');
-    card.className = 'step-card';
-    card.id = `step-card-${index}`;
-    card.innerHTML = `
-      <span class="step-number">Bước ${index + 1}</span>
-      <span class="step-text">${stepText}</span>
-    `;
-
-    card.addEventListener('click', () => {
-      highlightStep(index);
-      const audioSrc = getDialectAudio(item, 'step', index);
-      playAudioSrc(audioSrc, stepText);
-    });
-
-    wrapper.appendChild(card);
-
-    // Mũi tên liên kết (trừ bước cuối)
-    if (index < sequence.length - 1) {
-      const arrow = document.createElement('span');
-      arrow.className = 'step-arrow';
-      arrow.textContent = '➔';
-      wrapper.appendChild(arrow);
-    }
-  });
-}
-
-// Đọc toàn bộ chuỗi đánh vần lần lượt bằng audio chuẩn với nhịp điệu tự nhiên, nhanh vừa
+// PHÁT ÂM THANH ĐÁNH VẦN DUY NHẤT (Không hiển thị thẻ bước chữ rườm rà)
 async function playAllPhonicsSteps() {
   if (!state.currentWord || !state.currentWord.phonics || !state.currentWord.phonics.sequence) return;
   const seq = state.currentWord.phonics.sequence;
+  const btn = document.getElementById('btn-play-all-steps');
+  if (btn) btn.classList.add('playing');
 
-  for (let i = 0; i < seq.length; i++) {
-    highlightStep(i);
-    const audioSrc = getDialectAudio(state.currentWord, 'step', i);
-    // Tăng tốc độ đọc từng bước lên 1.25x và rút ngắn thời gian nghỉ để chuỗi liền mạch
-    await playAudioSrc(audioSrc, seq[i], 1.25);
-    await waitMs(120);
-  }
+  try {
+    for (let i = 0; i < seq.length; i++) {
+      const audioSrc = getDialectAudio(state.currentWord, 'step', i);
+      // Tốc độ nhanh nhẹn, tự nhiên cho trẻ
+      await playAudioSrc(audioSrc, seq[i], 1.25);
+      await waitMs(120);
+    }
 
-  // Đọc từ hoàn chỉnh cuối cùng
-  await waitMs(180);
-  playAudioSrc(getDialectAudio(state.currentWord, 'word'), state.currentWord.word, 1.0);
-}
-
-function highlightStep(index) {
-  document.querySelectorAll('.step-card').forEach(c => c.classList.remove('active'));
-  const card = document.getElementById(`step-card-${index}`);
-  if (card) {
-    card.classList.add('active');
-    setTimeout(() => card.classList.remove('active'), 1200);
+    // Đọc từ hoàn chỉnh cuối cùng
+    await waitMs(180);
+    await playAudioSrc(getDialectAudio(state.currentWord, 'word'), state.currentWord.word, 1.0);
+  } finally {
+    if (btn) btn.classList.remove('playing');
   }
 }
 
-// Điều hướng từ tiếp / từ trước trong bài học
 function prevWord() {
   const currentLesson = state.lessons[state.currentLessonIndex];
   const list = currentLesson ? currentLesson.items : state.items;
@@ -474,42 +613,91 @@ function nextWord() {
 }
 
 // ==========================================
-// 5. THỬ THÁCH NHÌN CHỮ CHỌN HÌNH (WORD-TO-PICTURE)
+// 5. THỬ THÁCH NHÌN CHỮ CHỌN HÌNH (10 TỪ/BÀI, ĐẠT 8/10 MỚI MỞ KHÓA)
 // ==========================================
-function startQuizGame() {
-  const target = state.currentWord || state.items.find(x => x.phonics?.status === 'user_confirmed') || state.items[0];
-  loadQuizQuestion(target);
+
+// Bắt đầu vòng thử thách 10 câu cho Bài học đang chọn
+function startLessonChallenge(lessonIndex) {
+  state.currentLessonIndex = lessonIndex;
+  const currentLesson = state.lessons[lessonIndex];
+  if (!currentLesson) return;
+
+  // 1. Lấy các từ chuyển tiếp từ bài trước (tối đa 2 từ)
+  const carried = [...state.carriedOverWords];
+
+  // 2. Lấy các từ trong bài học hiện tại (loại trừ từ đã có trong carried)
+  const lessonItems = currentLesson.items.filter(item => !carried.some(c => c.id === item.id));
+
+  // 3. Kết hợp để đủ 10 câu: carried (tối đa 2) + lessonItems
+  const targetCount = 10;
+  const neededFromLesson = Math.max(0, targetCount - carried.length);
+  const selectedLessonItems = lessonItems.slice(0, neededFromLesson);
+
+  const quizQuestions = [...carried, ...selectedLessonItems];
+  
+  // Dự phòng nếu bài có ít hơn số từ cần thiết: lấy thêm từ kho chung
+  if (quizQuestions.length < targetCount) {
+    const backupPool = currentLesson.items.concat(state.items).filter(x => !quizQuestions.some(q => q.id === x.id));
+    quizQuestions.push(...backupPool.slice(0, targetCount - quizQuestions.length));
+  }
+
+  // Khởi tạo trạng thái vòng thử thách
+  state.quizRound = {
+    lessonIndex: lessonIndex,
+    questions: quizQuestions,
+    currentIndex: 0,
+    score: 0,
+    missedWords: [], // Danh sách các từ bé làm sai ở vòng này
+    firstAttempt: true,
+    carriedIds: carried.map(c => c.id) // Để hiển thị badge "Ôn lại"
+  };
+
   switchView('view-game');
+  loadQuizQuestionByIndex(0);
 }
 
-function loadQuizQuestion(targetWordItem) {
-  state.quizCurrentWord = targetWordItem;
-  const word = targetWordItem.word;
+// Nạp câu hỏi theo chỉ mục trong vòng 10 câu
+function loadQuizQuestionByIndex(index) {
+  const round = state.quizRound;
+  if (!round || index >= round.questions.length) return;
 
+  const targetItem = round.questions[index];
+  const word = targetItem.word;
+  round.firstAttempt = true;
+
+  // Cập nhật tiến độ & điểm
+  document.getElementById('quiz-progress').textContent = `${index + 1}/10`;
+  document.getElementById('game-score').textContent = round.score;
   document.getElementById('quiz-word-display').textContent = word;
+
+  // Hiển thị huy hiệu "Ôn lại từ cũ" nếu từ này chuyển tiếp từ bài trước
+  const badgeCarry = document.getElementById('quiz-carryover-badge');
+  if (badgeCarry) {
+    if (round.carriedIds.includes(targetItem.id)) {
+      badgeCarry.classList.remove('hidden');
+    } else {
+      badgeCarry.classList.add('hidden');
+    }
+  }
+
+  // Reset feedback & nút tiếp theo
   const feedback = document.getElementById('quiz-feedback');
   feedback.className = 'quiz-feedback hidden';
   feedback.innerHTML = '';
   document.getElementById('btn-next-quiz').classList.add('hidden');
 
-  // Lấy các đáp án gây nhiễu phù hợp với trẻ (theo yêu cầu: chữ ba -> hình ba, mẹ, bà)
-  const distractorPool = {
-    'ba': ['mẹ', 'bà', 'bé'],
-    'bà': ['ba', 'mẹ', 'bé'],
-    'bé': ['ba', 'bà', 'bò'],
-    'bò': ['mèo', 'gà', 'vịt'],
-    'đánh': ['bóng', 'xe', 'nhà']
-  };
+  // Lấy các đáp án gây nhiễu từ các từ khác trong bài học hoặc kho chung
+  const otherItems = round.questions.concat(state.items).filter(x => x.word !== word);
+  const shuffledOthers = [...otherItems].sort(() => Math.random() - 0.5);
+  const distractors = shuffledOthers.slice(0, 2);
 
-  const pool = distractorPool[word] || ['ba', 'bà', 'bé', 'mèo', 'gà'].filter(w => w !== word);
-  
-  // Chọn 2 từ gây nhiễu
-  const shuffledPool = [...pool].sort(() => Math.random() - 0.5);
-  const distractors = shuffledPool.slice(0, 2);
-
+  const targetPic = getPictureDataForWord(word);
   const options = [
-    { word: word, ...(pictureData[word] || { emoji: emojiMap[word] || '🌿', label: word }), isCorrect: true },
-    ...distractors.map(dw => ({ word: dw, ...(pictureData[dw] || { emoji: emojiMap[dw] || '🌿', label: dw }), isCorrect: false }))
+    { word: word, emoji: targetPic.emoji, label: targetPic.label, isCorrect: true },
+    ...distractors.map(d => {
+      const p = getPictureDataForWord(d.word);
+      return { word: d.word, emoji: p.emoji, label: p.label, isCorrect: false };
+    })
   ];
 
   // Xáo trộn vị trí các thẻ hình
@@ -531,50 +719,68 @@ function loadQuizQuestion(targetWordItem) {
   });
 }
 
+// Xử lý khi bé chạm chọn hình
 function handlePictureSelect(cardElement, option) {
+  const round = state.quizRound;
+  if (!round) return;
+
+  const currentItem = round.questions[round.currentIndex];
   const feedback = document.getElementById('quiz-feedback');
   feedback.classList.remove('hidden');
 
   if (option.isCorrect) {
     // Bé chọn ĐÚNG!
     cardElement.classList.add('correct');
-    feedback.className = 'quiz-feedback success';
-    feedback.innerHTML = `🎉 Đúng rồi! Bé giỏi quá! Chữ <b>"${option.word}"</b> chính là <b>${option.label}</b>!`;
-    
-    state.score += 10;
-    document.getElementById('game-score').textContent = state.score;
 
-    // 1. Phát âm thanh chuông reo chiến thắng vui nhộn
+    if (round.firstAttempt) {
+      round.score++;
+      document.getElementById('game-score').textContent = round.score;
+    }
+
+    // 1. Âm thanh chuông reo chiến thắng vui nhộn
     playChimeSound('correct');
 
-    // 2. Bắn pháo hoa rực rỡ trên màn hình iPad
+    // 2. Bắn pháo hoa rực rỡ
     triggerFireworks();
 
-    // 3. Giọng đọc khen ngợi "Đúng rồi! Bé giỏi quá!" theo giọng đang chọn (Bắc / Nam)
-    const correctAudio = `06-assets/audio/common/correct-${state.currentDialect}.mp3`;
-    setTimeout(() => {
-      playAudioSrc(correctAudio, 'Đúng rồi! Bé giỏi quá!');
-    }, 250);
+    // 3. Lời khen ngợi ngẫu nhiên phong phú
+    const praise = PRAISE_PHRASES[Math.floor(Math.random() * PRAISE_PHRASES.length)];
+    feedback.className = 'quiz-feedback success';
+    feedback.innerHTML = `🎉 ${praise} Chữ <b>"${option.word}"</b> chính là <b>${option.label}</b>!`;
 
-    // Hiện nút chuyển sang từ tiếp theo
-    document.getElementById('btn-next-quiz').classList.remove('hidden');
+    // Giọng đọc lời khen ngợi
+    speakVoiceText(praise);
 
     // Khóa click tạm thời
     document.querySelectorAll('.picture-card').forEach(c => c.style.pointerEvents = 'none');
-  } else {
-    // Bé chọn SAI: Rung thẻ và hướng dẫn nhẹ nhàng
-    cardElement.classList.add('wrong');
-    feedback.className = 'quiz-feedback error';
-    feedback.innerHTML = `💡 Chưa đúng rồi! Đây là <b>${option.label}</b>. Bé nhìn kỹ chữ lại nhé!`;
-    
-    // 1. Âm thanh báo sai nhẹ nhàng thân thiện
-    playChimeSound('wrong');
 
-    // 2. Giọng đọc động viên "Bé thử lại nhé!" theo giọng đang chọn (Bắc / Nam)
-    const tryAgainAudio = `06-assets/audio/common/try-again-${state.currentDialect}.mp3`;
-    setTimeout(() => {
-      playAudioSrc(tryAgainAudio, 'Bé thử lại nhé!');
-    }, 150);
+    // Hiện nút tiếp theo
+    document.getElementById('btn-next-quiz').classList.remove('hidden');
+  } else {
+    // Bé chọn SAI!
+    cardElement.classList.add('wrong');
+
+    // Ghi nhận từ này bị làm sai ở lần đầu
+    if (round.firstAttempt) {
+      if (!round.missedWords.some(w => w.id === currentItem.id)) {
+        round.missedWords.push(currentItem);
+      }
+      round.firstAttempt = false;
+    }
+
+    // 1. ÂM THANH "BÀ BƯ BƯ" HÀI HƯỚC
+    playWrongBuzzer();
+
+    // 2. HIỂN THỊ DẤU X MÀU ĐỎ RỒI MỜ BIẾN MẤT
+    showWrongXMark();
+
+    // 3. Lời khích lệ động viên phong phú
+    const encourage = ENCOURAGE_PHRASES[Math.floor(Math.random() * ENCOURAGE_PHRASES.length)];
+    feedback.className = 'quiz-feedback error';
+    feedback.innerHTML = `💡 ${encourage} Đây là <b>${option.label}</b>. Bé nhìn kỹ chữ lại nhé!`;
+
+    // Giọng đọc lời động viên
+    speakVoiceText(encourage);
 
     setTimeout(() => {
       cardElement.classList.remove('wrong');
@@ -582,23 +788,129 @@ function handlePictureSelect(cardElement, option) {
   }
 }
 
+// Chuyển sang câu hỏi tiếp theo hoặc tổng kết vòng
 function nextQuizQuestion() {
   document.querySelectorAll('.picture-card').forEach(c => c.style.pointerEvents = 'auto');
-  
-  // Lấy các từ đã duyệt
-  const confirmedWords = state.items.filter(x => x.phonics?.status === 'user_confirmed');
-  const pool = confirmedWords.length > 0 ? confirmedWords : state.items.slice(0, 5);
-  
-  // Chọn từ khác với từ hiện tại
-  const nextPool = pool.filter(x => x.word !== state.quizCurrentWord?.word);
-  const nextTarget = nextPool.length > 0 ? nextPool[Math.floor(Math.random() * nextPool.length)] : pool[0];
-  
-  loadQuizQuestion(nextTarget);
+  const round = state.quizRound;
+  if (!round) return;
+
+  round.currentIndex++;
+  if (round.currentIndex < round.questions.length) {
+    loadQuizQuestionByIndex(round.currentIndex);
+  } else {
+    // Hoàn thành cả 10 câu -> Hiện bảng tổng kết
+    finishQuizRound();
+  }
 }
 
-// Hiệu ứng ăn mừng khi hoàn thành
-function confettiEffect() {
-  showToast('🌟 +10 Ngôi sao! Bé giỏi lắm!');
+// Hiển thị bảng tổng kết vòng thử thách (Yêu cầu đạt 8/10 để mở khóa bài tiếp theo)
+function finishQuizRound() {
+  const round = state.quizRound;
+  const isPassed = round.score >= 8;
+  const modal = document.getElementById('quiz-summary-modal');
+  if (!modal) return;
+  modal.classList.remove('hidden');
+
+  const nextLessonIdx = round.lessonIndex + 1;
+
+  if (isPassed) {
+    // VƯỢT QUA BÀI HỌC!
+    if (!state.unlockedLessons.includes(nextLessonIdx) && nextLessonIdx < state.lessons.length) {
+      state.unlockedLessons.push(nextLessonIdx);
+      renderLessonTabs();
+    }
+
+    // Chuyển tối đa 2 từ làm sai sang bài sau để ôn tập
+    state.carriedOverWords = round.missedWords.slice(0, 2);
+
+    triggerFireworks();
+    playChimeSound('correct');
+
+    let carryMsg = '';
+    if (state.carriedOverWords.length > 0) {
+      const wordsStr = state.carriedOverWords.map(w => `<b>"${w.word}"</b>`).join(', ');
+      carryMsg = `<div class="carry-notice">📌 Các từ ${wordsStr} bé sẽ được gặp lại để ôn tập ở bài tiếp theo nhé!</div>`;
+    }
+
+    modal.innerHTML = `
+      <div class="summary-card victory">
+        <div class="summary-icon">🏆 🌟 🎓</div>
+        <h2>XUẤT SẮC QUÁ BÉ ƠI!</h2>
+        <p class="summary-score">Bé đạt <b>${round.score}/10</b> câu đúng!</p>
+        <p class="summary-desc">Bé đã hoàn thành xuất sắc và mở khóa <b>Bài ${nextLessonIdx + 1}</b>!</p>
+        ${carryMsg}
+        <div class="summary-actions">
+          ${nextLessonIdx < state.lessons.length ? `
+            <button id="btn-modal-next-lesson" class="btn-hero pulse">
+              🚀 Khám phá Bài ${nextLessonIdx + 1} ngay
+            </button>
+          ` : ''}
+          <button id="btn-modal-replay" class="btn-secondary">
+            🔄 Chơi lại bài này
+          </button>
+          <button id="btn-modal-map" class="btn-secondary">
+            🗺️ Về bản đồ
+          </button>
+        </div>
+      </div>
+    `;
+
+    speakVoiceText(`Xuất sắc quá bé ơi! Bé đạt ${round.score} trên 10 câu đúng và mở khóa bài tiếp theo!`);
+  } else {
+    // CHƯA ĐẠT 8/10
+    playWrongBuzzer();
+
+    modal.innerHTML = `
+      <div class="summary-card retry">
+        <div class="summary-icon">💪 🐣 🌈</div>
+        <h2>CỐ LÊN BÉ YÊU!</h2>
+        <p class="summary-score">Bé đạt <b>${round.score}/10</b> câu đúng.</p>
+        <p class="summary-desc">Bé cần đạt từ <b>8/10</b> câu đúng trở lên để mở khóa Bài tiếp theo. Bé hãy thử lại nhé!</p>
+        <div class="summary-actions">
+          <button id="btn-modal-retry" class="btn-hero">
+            🔄 Thử lại ngay nào!
+          </button>
+          <button id="btn-modal-map" class="btn-secondary">
+            🗺️ Về bản đồ
+          </button>
+        </div>
+      </div>
+    `;
+
+    speakVoiceText(`Bé đạt ${round.score} trên 10 điểm. Bé thử lại để đạt từ 8 điểm trở lên nhé!`);
+  }
+
+  // Gắn sự kiện cho các nút điều hướng trong modal
+  setTimeout(() => {
+    document.getElementById('btn-modal-next-lesson')?.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      state.currentLessonIndex = nextLessonIdx;
+      renderLessonTabs();
+      renderIslandMap();
+      switchView('view-map');
+    });
+
+    const btnRetry = document.getElementById('btn-modal-retry') || document.getElementById('btn-modal-replay');
+    btnRetry?.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      startLessonChallenge(round.lessonIndex);
+    });
+
+    document.getElementById('btn-modal-map')?.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      switchView('view-map');
+    });
+  }, 100);
+}
+
+// Hiển thị dấu X màu đỏ nổi bật rồi mờ biến mất
+function showWrongXMark() {
+  const x = document.getElementById('wrong-x-mark');
+  if (!x) return;
+  x.classList.add('show');
+  setTimeout(() => {
+    x.classList.remove('show');
+  }, 850);
 }
 
 // ==========================================
@@ -618,7 +930,7 @@ function getAudioContext() {
   return audioCtx;
 }
 
-// Phát âm thanh chuông reo (Đúng) hoặc âm boing nhẹ (Sai)
+// Phát âm thanh chuông reo (Đúng)
 function playChimeSound(type) {
   if (!state.soundEnabled) return;
   const ctx = getAudioContext();
@@ -642,60 +954,210 @@ function playChimeSound(type) {
       osc.start(ctx.currentTime + idx * 0.08);
       osc.stop(ctx.currentTime + idx * 0.08 + 0.5);
     });
-  } else if (type === 'wrong') {
-    // Âm thanh boing nhẹ nhàng, hài hước, khích lệ
-    const osc = ctx.createOscillator();
-    const gain = ctx.createGain();
-    osc.type = 'sine';
-    osc.frequency.setValueAtTime(329.63, ctx.currentTime);
-    osc.frequency.exponentialRampToValueAtTime(220, ctx.currentTime + 0.3);
-
-    gain.gain.setValueAtTime(0.18, ctx.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.35);
-
-    osc.connect(gain);
-    gain.connect(ctx.destination);
-    osc.start(ctx.currentTime);
-    osc.stop(ctx.currentTime + 0.35);
   }
 }
 
-// Bắn pháo hoa rực rỡ Canvas khi làm đúng
+// ÂM THANH "BÀ BƯ BƯ" HÀI HƯỚC KHI BÉ LÀM SAI (3 nốt trầm giảm dần)
+function playWrongBuzzer() {
+  if (!state.soundEnabled) return;
+  const ctx = getAudioContext();
+  if (!ctx) return;
+
+  const notes = [
+    { freq: 240, start: 0.0, dur: 0.22, vol: 0.2 },   // "bà"
+    { freq: 190, start: 0.24, dur: 0.22, vol: 0.22 }, // "bư"
+    { freq: 140, start: 0.48, dur: 0.38, vol: 0.25 }  // "bư" trầm ngân
+  ];
+
+  notes.forEach(n => {
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = 'sawtooth';
+    osc.frequency.setValueAtTime(n.freq, ctx.currentTime + n.start);
+    osc.frequency.exponentialRampToValueAtTime(n.freq * 0.9, ctx.currentTime + n.start + n.dur);
+
+    gain.gain.setValueAtTime(0, ctx.currentTime + n.start);
+    gain.gain.linearRampToValueAtTime(n.vol, ctx.currentTime + n.start + 0.03);
+    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + n.start + n.dur);
+
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    osc.start(ctx.currentTime + n.start);
+    osc.stop(ctx.currentTime + n.start + n.dur + 0.05);
+  });
+}
+
+// Đọc lời khen ngợi hoặc động viên bằng giọng nói
+function speakVoiceText(text) {
+  if (!state.soundEnabled) return;
+  if ('speechSynthesis' in window) {
+    try {
+      window.speechSynthesis.cancel();
+      // Loại bỏ các emoji trước khi đọc
+      const cleanText = text.replace(/[\u{1F300}-\u{1FAFF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]/gu, '').trim();
+      const utt = new SpeechSynthesisUtterance(cleanText);
+      utt.lang = 'vi-VN';
+      utt.rate = 0.9;
+      window.speechSynthesis.speak(utt);
+    } catch (e) {
+      console.warn('Speech synthesis note:', e);
+    }
+  }
+}
+
+// Phát file âm thanh đã thu âm hoặc TTS dự phòng
+function playAudioSrc(audioSrc, fallbackText, rate = 1.0) {
+  return new Promise((resolve) => {
+    if (!state.soundEnabled) return resolve();
+
+    if (currentAudio) {
+      currentAudio.pause();
+      currentAudio.currentTime = 0;
+    }
+
+    if (audioSrc) {
+      const audio = new Audio(audioSrc);
+      currentAudio = audio;
+      audio.playbackRate = rate;
+
+      audio.onended = () => resolve();
+      audio.onerror = () => {
+        fallbackSpeech(fallbackText, resolve, rate);
+      };
+
+      const playPromise = audio.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          fallbackSpeech(fallbackText, resolve, rate);
+        });
+      }
+    } else {
+      fallbackSpeech(fallbackText, resolve, rate);
+    }
+  });
+}
+
+// Dự phòng bằng SpeechSynthesis trên iPad Safari
+function fallbackSpeech(text, resolve, rate = 0.8) {
+  if (!('speechSynthesis' in window) || !state.soundEnabled) {
+    return resolve();
+  }
+
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = 'vi-VN';
+  utterance.rate = rate || state.speechRate;
+
+  utterance.onend = () => resolve();
+  utterance.onerror = () => resolve();
+
+  window.speechSynthesis.speak(utterance);
+}
+
+// Lấy đường dẫn âm thanh tương ứng với giọng đang chọn (Bắc / Nam)
+function getDialectAudio(item, type, stepIndex = 0) {
+  if (!item || !item.audio) return null;
+
+  const dialects = item.audio.dialects;
+  if (dialects && dialects[state.currentDialect]) {
+    const dialectData = dialects[state.currentDialect];
+    if (type === 'word') return dialectData.word_full || null;
+    if (type === 'example') return dialectData.example_sentence || null;
+    if (type === 'step') {
+      return (dialectData.phonics_steps && dialectData.phonics_steps[stepIndex]) || null;
+    }
+  }
+
+  // Fallback cấu trúc cũ
+  if (type === 'word') return item.audio.word_full || null;
+  if (type === 'example') return item.audio.example_sentence || null;
+  if (type === 'step') {
+    return (item.audio.phonics_steps && item.audio.phonics_steps[stepIndex]) || null;
+  }
+
+  return null;
+}
+
+// Bật/tắt giọng đọc Bắc - Nam
+function toggleDialect() {
+  state.currentDialect = state.currentDialect === 'north' ? 'south' : 'north';
+  const label = document.getElementById('dialect-label');
+  if (state.currentDialect === 'north') {
+    label.textContent = 'Miền Bắc';
+    showToast('Đã chuyển sang giọng đọc: Miền Bắc (Hà Nội) 🏙️');
+  } else {
+    label.textContent = 'Miền Nam';
+    showToast('Đã chuyển sang giọng đọc: Miền Nam (Sài Gòn) 🌴');
+  }
+}
+
+// Bật/tắt toàn bộ âm thanh
+function toggleSound() {
+  state.soundEnabled = !state.soundEnabled;
+  const icon = document.getElementById('sound-icon');
+  if (state.soundEnabled) {
+    icon.textContent = '🔊';
+    showToast('Âm thanh: Đã BẬT 🔊');
+  } else {
+    icon.textContent = '🔇';
+    if (currentAudio) currentAudio.pause();
+    if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+    showToast('Âm thanh: Đã TẮT 🔇');
+  }
+}
+
+// Chuyển đổi tốc độ đọc
+function toggleSpeed() {
+  const label = document.getElementById('speed-label');
+  if (state.speechRate === 0.75) {
+    state.speechRate = 0.95;
+    label.textContent = 'Vừa';
+    showToast('Tốc độ đọc: Vừa phải');
+  } else if (state.speechRate === 0.95) {
+    state.speechRate = 0.65;
+    label.textContent = 'Rất chậm';
+    showToast('Tốc độ đọc: Rất chậm cho bé nghe rõ');
+  } else {
+    state.speechRate = 0.75;
+    label.textContent = 'Chậm';
+    showToast('Tốc độ đọc: Chậm chuẩn');
+  }
+}
+
+// ==========================================
+// 7. HIỆU ỨNG PHÁO HOA KHI LÀM ĐÚNG
+// ==========================================
+let fireworksParticles = [];
 let fireworksAnimationId = null;
-const particles = [];
 
 function triggerFireworks() {
   const canvas = document.getElementById('fireworks-canvas');
   if (!canvas) return;
-  const ctx = canvas.getContext('2d');
+
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
+  canvas.classList.add('active');
 
-  const centers = [
-    { x: canvas.width * 0.28, y: canvas.height * 0.4 },
-    { x: canvas.width * 0.5, y: canvas.height * 0.32 },
-    { x: canvas.width * 0.72, y: canvas.height * 0.42 }
-  ];
+  const originX = canvas.width / 2;
+  const originY = canvas.height * 0.45;
 
-  const colors = ['#f59e0b', '#22c55e', '#38bdf8', '#ef4444', '#ec4899', '#a855f7', '#fbbf24', '#ffffff'];
+  const colors = ['#f43f5e', '#3b82f6', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899', '#fde047', '#06b6d4'];
 
-  centers.forEach(c => {
-    for (let i = 0; i < 40; i++) {
-      const angle = Math.random() * Math.PI * 2;
-      const speed = Math.random() * 8 + 3;
-      particles.push({
-        x: c.x,
-        y: c.y,
-        vx: Math.cos(angle) * speed,
-        vy: Math.sin(angle) * speed - 2,
-        size: Math.random() * 6 + 3,
-        color: colors[Math.floor(Math.random() * colors.length)],
-        alpha: 1,
-        decay: Math.random() * 0.018 + 0.012,
-        gravity: 0.15
-      });
-    }
-  });
+  for (let i = 0; i < 90; i++) {
+    const angle = Math.random() * Math.PI * 2;
+    const speed = 4 + Math.random() * 9;
+    fireworksParticles.push({
+      x: originX,
+      y: originY,
+      vx: Math.cos(angle) * speed,
+      vy: Math.sin(angle) * speed - 2.5,
+      radius: 4 + Math.random() * 4,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      alpha: 1,
+      decay: 0.015 + Math.random() * 0.018,
+      gravity: 0.18
+    });
+  }
 
   if (!fireworksAnimationId) {
     animateFireworks();
@@ -706,167 +1168,42 @@ function animateFireworks() {
   const canvas = document.getElementById('fireworks-canvas');
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
+
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  for (let i = particles.length - 1; i >= 0; i--) {
-    const p = particles[i];
+  for (let i = fireworksParticles.length - 1; i >= 0; i--) {
+    const p = fireworksParticles[i];
     p.x += p.vx;
     p.y += p.vy;
     p.vy += p.gravity;
-    p.vx *= 0.98;
     p.alpha -= p.decay;
 
     if (p.alpha <= 0) {
-      particles.splice(i, 1);
+      fireworksParticles.splice(i, 1);
       continue;
     }
 
     ctx.save();
     ctx.globalAlpha = p.alpha;
-    ctx.fillStyle = p.color;
     ctx.beginPath();
-    ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+    ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+    ctx.fillStyle = p.color;
     ctx.fill();
     ctx.restore();
   }
 
-  if (particles.length > 0) {
+  if (fireworksParticles.length > 0) {
     fireworksAnimationId = requestAnimationFrame(animateFireworks);
   } else {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    cancelAnimationFrame(fireworksAnimationId);
     fireworksAnimationId = null;
+    canvas.classList.remove('active');
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
   }
-}
-
-// Lấy file audio theo phương ngữ đang chọn (Bắc / Nam)
-function getDialectAudio(item, type, stepIndex) {
-  if (!item || !item.audio) return null;
-  const dialect = state.currentDialect; // 'north' hoặc 'south'
-  
-  if (item.audio.dialects && item.audio.dialects[dialect]) {
-    const d = item.audio.dialects[dialect];
-    if (type === 'word') return d.word_full;
-    if (type === 'example') return d.example_sentence;
-    if (type === 'step') return d.phonics_steps?.[stepIndex];
-  }
-  
-  // Dự phòng nếu chưa phân tách nhánh
-  if (type === 'word') return item.audio.word_full;
-  if (type === 'example') return item.audio.example_sentence;
-  if (type === 'step') return item.audio.phonics_steps?.[stepIndex];
-  return null;
-}
-
-function toggleDialect() {
-  if (state.currentDialect === 'north') {
-    state.currentDialect = 'south';
-    document.getElementById('dialect-label').textContent = 'Miền Nam';
-    showToast('🌴 Đã chuyển sang: Giọng Miền Nam (Sài Gòn)');
-  } else {
-    state.currentDialect = 'north';
-    document.getElementById('dialect-label').textContent = 'Miền Bắc';
-    showToast('🏛️ Đã chuyển sang: Giọng Miền Bắc (Hà Nội)');
-  }
-
-  // Phát thử từ hiện tại để người dùng cảm nhận ngay giọng mới
-  if (state.currentWord) {
-    playAudioSrc(getDialectAudio(state.currentWord, 'word'), state.currentWord.word);
-  }
-}
-
-function playAudioSrc(src, fallbackText, speedMultiplier = 1.0) {
-  if (!state.soundEnabled) return Promise.resolve();
-
-  if (currentAudio) {
-    try {
-      currentAudio.pause();
-      currentAudio.currentTime = 0;
-    } catch (e) {}
-  }
-
-  // 1. Ưu tiên phát file âm thanh thu âm thật
-  if (src) {
-    return new Promise((resolve) => {
-      const audio = new Audio(src);
-      const baseRate = state.speechRate === 0.75 ? 0.95 : 1.0;
-      audio.playbackRate = baseRate * speedMultiplier;
-      currentAudio = audio;
-      audio.onended = () => resolve();
-      audio.onerror = (err) => {
-        console.warn('Không tải được audio file, chuyển sang giọng máy:', src, err);
-        speakTextAsync(fallbackText).then(resolve);
-      };
-      audio.play().catch(err => {
-        console.warn('Trình duyệt chặn autoplay hoặc lỗi play audio:', err);
-        speakTextAsync(fallbackText).then(resolve);
-      });
-    });
-  } else {
-    // 2. Dự phòng bằng giọng đọc nếu chưa có file thu âm
-    return speakTextAsync(fallbackText);
-  }
-}
-
-function speakText(text) {
-  if (!state.soundEnabled || !text) return;
-
-  if ('speechSynthesis' in window) {
-    window.speechSynthesis.cancel(); // Ngắt âm đang phát nếu có
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'vi-VN';
-    utterance.rate = state.speechRate;
-    utterance.pitch = 1.0;
-
-    // Ưu tiên giọng miền Bắc nếu trình duyệt có sẵn
-    const voices = window.speechSynthesis.getVoices();
-    const viVoice = voices.find(v => v.lang.includes('vi') || v.name.includes('Vietnamese') || v.name.includes('Hanoi'));
-    if (viVoice) utterance.voice = viVoice;
-
-    window.speechSynthesis.speak(utterance);
-  }
-}
-
-function speakTextAsync(text) {
-  return new Promise((resolve) => {
-    if (!state.soundEnabled || !text || !('speechSynthesis' in window)) {
-      resolve();
-      return;
-    }
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'vi-VN';
-    utterance.rate = state.speechRate;
-    utterance.onend = () => resolve();
-    utterance.onerror = () => resolve();
-
-    const voices = window.speechSynthesis.getVoices();
-    const viVoice = voices.find(v => v.lang.includes('vi'));
-    if (viVoice) utterance.voice = viVoice;
-
-    window.speechSynthesis.speak(utterance);
-  });
-}
-
-function toggleSound() {
-  state.soundEnabled = !state.soundEnabled;
-  const icon = document.getElementById('sound-icon');
-  icon.textContent = state.soundEnabled ? '🔊' : '🔇';
-  showToast(state.soundEnabled ? 'Âm thanh: BẬT' : 'Âm thanh: TẮT');
-}
-
-function toggleSpeed() {
-  if (state.speechRate === 0.75) {
-    state.speechRate = 1.0;
-    document.getElementById('speed-label').textContent = 'Vừa';
-  } else {
-    state.speechRate = 0.75;
-    document.getElementById('speed-label').textContent = 'Chậm';
-  }
-  showToast(`Tốc độ đọc: ${document.getElementById('speed-label').textContent}`);
 }
 
 // ==========================================
-// 7. TIỆN ÍCH GIAO DIỆN & ĐIỀU HƯỚNG
+// 8. TIỆN ÍCH GIAO DIỆN & ĐIỀU HƯỚNG
 // ==========================================
 function switchView(viewId) {
   document.querySelectorAll('.view').forEach(v => v.classList.add('hidden'));
@@ -874,15 +1211,18 @@ function switchView(viewId) {
   if (target) target.classList.remove('hidden');
 
   const btnBack = document.getElementById('btn-back');
-  if (viewId === 'view-map') {
-    btnBack.classList.add('hidden');
-  } else {
-    btnBack.classList.remove('hidden');
+  if (btnBack) {
+    if (viewId === 'view-map') {
+      btnBack.classList.add('hidden');
+    } else {
+      btnBack.classList.remove('hidden');
+    }
   }
 }
 
 function showToast(message) {
   const toast = document.getElementById('toast');
+  if (!toast) return;
   toast.textContent = message;
   toast.classList.remove('hidden');
   setTimeout(() => {
@@ -895,10 +1235,9 @@ function waitMs(ms) {
 }
 
 // ==========================================
-// 8. DỮ LIỆU DỰ PHÒNG KHI KHÔNG CÓ SERVER
+// 9. DỮ LIỆU DỰ PHÒNG KHI KHÔNG CÓ SERVER
 // ==========================================
 function loadFallbackData() {
-  // Dự phòng 5 từ đã duyệt chuẩn kèm audio cả 2 miền
   state.items = [
     {
       id: "vi_0001",
@@ -973,9 +1312,9 @@ function loadFallbackData() {
     {
       id: "vi_0005",
       word: "bé",
-      meaning_vi_child: "trẻ nhỏ đáng yêu",
-      example_vi: "Bé đang cười tươi.",
-      topic: "con người",
+      meaning_vi_child: "em nhỏ đáng yêu",
+      example_vi: "Bé cười thật tươi.",
+      topic: "gia đình",
       content_status: "authored_starter",
       phonics: {
         status: "user_confirmed",
@@ -1009,8 +1348,8 @@ function loadFallbackData() {
     {
       id: "vi_0006",
       word: "bò",
-      meaning_vi_child: "con bò ăn cỏ ngoài đồng",
-      example_vi: "Con bò đang ăn cỏ xanh.",
+      meaning_vi_child: "con bò ăn cỏ trên đồng",
+      example_vi: "Con bò gặm cỏ xanh mướt.",
       topic: "động vật",
       content_status: "authored_starter",
       phonics: {

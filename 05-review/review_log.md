@@ -27,3 +27,21 @@
 - Sửa lỗi schema: cập nhật trường cấp cao `phonics.status` cho `vi_0029` ("user_confirmed"), `vi_0031` và `vi_0032` ("editorial_correction").
 - Thêm các bước mẫu vào `02-pronunciation/pronunciation_examples.json`.
 - Thêm script kiểm tra tự động `tests/validate_library.py`.
+
+## v2.3.0 (2026-11-21)
+- **Cải tiến giao diện Trạm học đánh vần:**
+  - Lược bỏ hoàn toàn các thẻ bước chữ rườm rà (Bước 1, Bước 2, Bước 3).
+  - Thay bằng một nút duy nhất `[▶️ Cách đánh vần]`: Bé chạm vào để nghe cô đọc cách đánh vần liền mạch, tự nhiên và dễ tiếp thu cho trẻ 4-6 tuổi.
+- **Quy chuẩn Thử thách ghép hình theo bài học (10 câu/bài):**
+  - Mỗi vòng thử thách gồm chính xác 10 câu hỏi tương ứng với 10 từ của bài học.
+  - Điều kiện qua bài: Bé phải đạt tối thiểu **8/10 câu đúng** (80%) mới hoàn thành và mở khóa Bài tiếp theo.
+  - Các bài học chưa mở khóa hiển thị biểu tượng ổ khóa `🔒` trên thanh lộ trình.
+- **Trải nghiệm âm thanh và hình ảnh tương tác phản hồi (Feedback Loop):**
+  - *Khi bé làm đúng:* Kích hoạt pháo hoa rực rỡ, hợp âm chuông chiến thắng (C5-E5-G5-C6) và ngẫu nhiên 1 trong 8 mẫu lời khen ngợi hào hứng (cả hiển thị và đọc thành tiếng: *"Đúng rồi! Bé giỏi quá! 🌟"*, *"Hoan hô bé! Bé thông minh tuyệt vời! 🎉"*, *"Chính xác luôn! Bé đỉnh thật đấy! 🚀"*, ...).
+  - *Khi bé làm sai:* Phát âm thanh hài hước "bà bư bư" (3 nốt trầm giảm dần), hiển thị dấu `❌` đỏ lớn rung lắc rồi tự động mờ biến mất sau ~800ms, kèm 1 trong 6 mẫu câu động viên nhẹ nhàng (cả hiển thị và đọc: *"Bé ơi cố lên, cùng thử lại nhé! 💪"*, *"Chưa chính xác rồi, bé nhìn kỹ lại nào! 👀"*, ...).
+- **Cơ chế chuyển tiếp từ chưa đúng (Spaced Repetition / Carry-over):**
+  - Tối đa 2 từ làm sai ở bài trước sẽ tự động được chuyển tiếp vào bài sau trong vòng thử thách ghép hình (với huy hiệu `⭐ Ôn lại từ cũ`).
+  - Đảm bảo bé được ôn tập củng cố những từ còn yếu trước khi tiến xa hơn.
+- **Mở rộng cơ sở dữ liệu hình ảnh, emoji và tên gọi trực quan:**
+  - Bổ sung dữ liệu hình ảnh, biểu tượng và nhãn tên gọi cho toàn bộ 32 từ khởi đầu (Bài 1, Bài 2, Bài 3) và hơn 50 từ trong các bài học SGK tiếp theo.
+  - Tích hợp thuật toán suy luận thông minh `getPictureDataForWord` đảm bảo 100% từ vựng đều có hình minh họa sinh động và đáp án gây nhiễu hợp lý.

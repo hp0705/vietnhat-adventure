@@ -358,11 +358,39 @@ html, body {
   font-family: var(--font-family) !important;
 }
 
-.lesson-tab-btn.active {
-  background: linear-gradient(180deg, #0284c7 0%, #0369a1 100%);
-  border-color: #0284c7;
+.lesson-tab-btn.locked {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+  color: #94a3b8;
+  opacity: 0.75;
+}
+
+.lesson-map-actions {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-challenge-banner {
+  background: linear-gradient(180deg, #f97316 0%, #ea580c 100%);
   color: #ffffff;
-  box-shadow: 0 4px 10px rgba(2, 132, 199, 0.35);
+  border: none;
+  padding: 10px 24px;
+  border-radius: var(--radius-full);
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #c2410c, 0 6px 14px rgba(249, 115, 22, 0.35);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-family) !important;
+  transition: all 0.15s ease;
+}
+
+.btn-challenge-banner:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #c2410c;
 }
 
 .lesson-tab-btn:active {
@@ -533,13 +561,54 @@ html, body {
   box-shadow: 0 3px 0 #0369a1;
 }
 
-/* QUY TRÌNH ĐÁNH VẦN TỪNG BƯỚC */
-.blending-container {
-  background: #f0fdf4;
-  border: 2px solid #bbf7d0;
+/* NÚT NGHE CÁCH ĐÁNH VẦN (CHỈ NÚT ĐỌC, KHÔNG HIỂN THỊ CÁC BƯỚC CHỮ RƯỜM RÀ) */
+.spelling-bar {
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  border: 3px solid #86efac;
   border-radius: var(--radius-md);
-  padding: 20px;
+  padding: 16px 20px;
   margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.12);
+}
+
+.btn-spelling-play {
+  background: linear-gradient(180deg, #22c55e 0%, #16a34a 100%);
+  color: var(--white);
+  border: none;
+  padding: 14px 28px;
+  border-radius: var(--radius-full);
+  font-size: 19px;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 5px 0 #15803d, 0 8px 18px rgba(34, 197, 94, 0.35);
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-family) !important;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+
+.btn-spelling-play:active, .btn-spelling-play.playing {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #15803d;
+  background: linear-gradient(180deg, #16a34a 0%, #15803d 100%);
+}
+
+.spelling-hint {
+  font-size: 15px;
+  font-weight: 700;
+  color: #166534;
+  line-height: 1.4;
+}
+
+/* QUY TRÌNH ĐÁNH VẦN DỰ PHÒNG */
+.blending-container {
+  display: none !important;
 }
 
 .blending-header {
@@ -929,6 +998,159 @@ html, body {
 .quiz-feedback.error {
   background: #fee2e2;
   color: #b91c1c;
+}
+
+.challenge-meta-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quiz-round-tag {
+  background: #f1f5f9;
+  border: 2px solid #cbd5e1;
+  padding: 4px 14px;
+  border-radius: var(--radius-full);
+  font-size: 15px;
+  font-weight: 800;
+  color: #0369a1;
+}
+
+.badge-carryover {
+  background: #fef08a;
+  border: 2px solid #eab308;
+  color: #854d0e;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+}
+
+.badge-carryover.hidden {
+  display: none;
+}
+
+/* DẤU X MÀU ĐỎ KHI CHỌN SAI (HIỂN THỊ RỒI MỜ BIẾN MẤT) */
+.wrong-x-mark {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.2);
+  font-size: 120px;
+  color: #ef4444;
+  text-shadow: 0 10px 30px rgba(239, 68, 68, 0.6);
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wrong-x-mark.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.4) rotate(-6deg);
+  animation: shakeX 0.45s ease-in-out;
+}
+
+@keyframes shakeX {
+  0%, 100% { transform: translate(-50%, -50%) scale(1.4) rotate(0deg); }
+  25% { transform: translate(-55%, -50%) scale(1.45) rotate(-12deg); }
+  75% { transform: translate(-45%, -50%) scale(1.45) rotate(12deg); }
+}
+
+/* MODAL BẢNG TỔNG KẾT VÒNG THỬ THÁCH (10 CÂU ĐẠT 8/10 MỚI QUA) */
+.quiz-summary-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 24px;
+}
+
+.quiz-summary-modal.hidden {
+  display: none !important;
+}
+
+.summary-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 36px 32px;
+  text-align: center;
+  max-width: 520px;
+  width: 100%;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  animation: popIn 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.summary-card.victory {
+  border: 5px solid #22c55e;
+}
+
+.summary-card.retry {
+  border: 5px solid #f59e0b;
+}
+
+.summary-icon {
+  font-size: 56px;
+  margin-bottom: 12px;
+}
+
+.summary-card h2 {
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.summary-card.victory h2 {
+  color: #15803d;
+}
+
+.summary-card.retry h2 {
+  color: #b45309;
+}
+
+.summary-score {
+  font-size: 22px;
+  font-weight: 800;
+  color: #334155;
+  margin-bottom: 12px;
+}
+
+.summary-score b {
+  font-size: 32px;
+  color: #0284c7;
+}
+
+.summary-desc {
+  font-size: 16px;
+  color: #475569;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.carry-notice {
+  background: #fef9c3;
+  border: 2px dashed #eab308;
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #854d0e;
+  margin-bottom: 20px;
+}
+
+.summary-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .challenge-footer {
