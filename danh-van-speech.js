@@ -76,7 +76,7 @@
           ttsText,
           audioFile: audioFileName(it.text),
           speed: SPEED[kind] * (hold ? 0.75 : 1),
-          pauseAfter: last && si < syllables.length - 1 ? 900 : (hold ? 950 : PAUSE[kind]),
+          pauseAfter: last && si < syllables.length - 1 ? 900 : (hold ? 1100 : PAUSE[kind]),
         });
       });
     });
@@ -105,19 +105,22 @@
       lang: 'vi-VN',
       rate: 0.8,            // tốc độ gốc của giọng máy (0.1 - 2)
       voiceName: null,
-      ttsOverride: {},      // ví dụ { ach: 'ách ách' } để thử cách đọc khác cho giọng máy
+      ttsOverride: { ach: 'ách' },
       onItem: null,         // callback (item, index) để highlight chữ đang đọc
     }, options || {});
     let runId = 0;
     let currentAudio = null;
     const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-    function playAudio(url) {
+    function playAudio(url, rate) {
       return new Promise((resolve) => {
         if (!url || typeof Audio === 'undefined') return resolve(false);
         try {
           const a = new Audio(url);
           currentAudio = a;
+          if (rate && typeof rate === 'number') {
+            a.playbackRate = Math.max(0.65, Math.min(1.2, rate));
+          }
           a.onended = () => resolve(true);
           a.onerror = () => resolve(false);
           const p = a.play();
@@ -196,23 +199,24 @@
         if (my !== runId) return;
         const it = items[i];
         if (o.onItem) o.onItem(it, i);
+        const stepRate = o.rate * it.speed;
         let ok = false;
         // 1. Kiểm tra ánh xạ audioMap
         if (o.audioMap && o.audioMap[it.text]) {
-          ok = await playAudio(o.audioMap[it.text]);
+          ok = await playAudio(o.audioMap[it.text], stepRate);
         }
         // 2. Kiểm tra trực tiếp theo tên chuỗi âm trong audioBase
         if (!ok && o.audioBase) {
-          ok = await playAudio(o.audioBase + encodeURIComponent(it.text) + '.mp3');
+          ok = await playAudio(o.audioBase + encodeURIComponent(it.text) + '.mp3', stepRate);
         }
         // 3. Kiểm tra theo hex audioFile
         if (!ok && o.audioBase) {
-          ok = await playAudio(o.audioBase + it.audioFile + '.mp3');
+          ok = await playAudio(o.audioBase + it.audioFile + '.mp3', stepRate);
         }
         // 4. Nếu không có file thu: phát âm tiếng Việt chuẩn 100% (giọng vi-VN hoặc Google vi TTS)
         if (!ok) {
           const text = o.ttsOverride[it.text] && it.kind !== 'tone' ? o.ttsOverride[it.text] : it.ttsText;
-          await speakTTS(text, o.rate * it.speed);
+          await speakTTS(text, stepRate);
         }
         if (my !== runId) return;
         await sleep(it.pauseAfter);
