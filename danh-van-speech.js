@@ -24,10 +24,10 @@
   // rime kết thúc bằng âm tắc (c, ch, p, t) rất dễ bị giọng máy nuốt mất => đọc chậm hơn
   const HOLD_FINALS = /(c|ch|p|t)$/;
 
-  // khoảng nghỉ SAU mỗi loại âm (ms)
-  const PAUSE = { consonant: 500, vowel: 450, rime: 800, syllable: 700, tone: 500, word: 1000 };
-  // hệ số tốc độ (nhân với rate gốc). Nhỏ hơn = chậm hơn
-  const SPEED = { consonant: 0.9, vowel: 0.9, rime: 0.8, syllable: 0.85, tone: 0.75, word: 0.85 };
+  // khoảng nghỉ SAU mỗi loại âm (ms) - bóp ngắn lại để nhịp đánh vần dứt khoát, sôi động cho bé
+  const PAUSE = { consonant: 320, vowel: 300, rime: 480, syllable: 420, tone: 320, word: 650 };
+  // hệ số tốc độ (nhân với rate gốc).
+  const SPEED = { consonant: 0.95, vowel: 0.95, rime: 0.9, syllable: 0.95, tone: 0.9, word: 1.0 };
 
   function stripTone(s) { return s.normalize('NFD').replace(STRIP_TONE, '').normalize('NFC'); }
 
@@ -68,15 +68,15 @@
         let kind = it.kind === 'syllable_final' ? 'word' : it.kind;
         let ttsText = it.text;
         if (kind === 'tone') ttsText = 'dấu ' + it.text;
-        // Vần có âm cuối tắc (c, ch, p, t) hoặc vần dài 3 chữ cái (anh, ach, iêng...) cần đọc chậm, kéo dài hơn
+        // Vần có âm cuối tắc (c, ch, p, t) hoặc vần dài 3 chữ cái (anh, ach, iêng...) cần đọc chậm, kéo dài hơn một chút
         const hold = kind === 'rime' && (HOLD_FINALS.test(it.text) || [...it.text].length >= 3 || /(nh|ng)$/.test(it.text));
         items.push({
           text: it.text,
           kind,
           ttsText,
           audioFile: audioFileName(it.text),
-          speed: SPEED[kind] * (hold ? 0.75 : 1),
-          pauseAfter: last && si < syllables.length - 1 ? 900 : (hold ? 1100 : PAUSE[kind]),
+          speed: SPEED[kind] * (hold ? 0.85 : 1),
+          pauseAfter: last && si < syllables.length - 1 ? 550 : (hold ? 650 : PAUSE[kind]),
         });
       });
     });
@@ -103,7 +103,7 @@
       audioBase: null,      // ví dụ '06-assets/audio/spelling/steps/'; null = chỉ dùng giọng máy
       audioMap: null,       // map ánh xạ chuỗi âm -> đường dẫn file âm thanh thật
       lang: 'vi-VN',
-      rate: 0.8,            // tốc độ gốc của giọng máy (0.1 - 2)
+      rate: 1.1,            // tốc độ chuẩn nhanh hơn (+0.35 từ 0.75 lên 1.1) cho nhịp đánh vần dứt khoát
       voiceName: null,
       ttsOverride: { ach: 'ách' },
       onItem: null,         // callback (item, index) để highlight chữ đang đọc
@@ -119,7 +119,7 @@
           const a = new Audio(url);
           currentAudio = a;
           if (rate && typeof rate === 'number') {
-            a.playbackRate = Math.max(0.65, Math.min(1.2, rate));
+            a.playbackRate = Math.max(0.75, Math.min(1.4, rate));
           }
           a.onended = () => resolve(true);
           a.onerror = () => resolve(false);

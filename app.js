@@ -49,7 +49,7 @@ function getDanhVanPlayer() {
     danhVanPlayer = DanhVanSpeech.createPlayer({
       audioBase: '06-assets/audio/spelling/steps/',
       audioMap: state.spellingStepAudioMap || {},
-      rate: state.speechRate || 0.75,
+      rate: state.speechRate || 1.1,
       onItem: (item, index) => {
         highlightSpellingStep(item, index);
       }
