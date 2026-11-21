@@ -48,11 +48,14 @@ function getDanhVanPlayer() {
   if (!danhVanPlayer && typeof DanhVanSpeech !== 'undefined' && DanhVanSpeech.createPlayer) {
     danhVanPlayer = DanhVanSpeech.createPlayer({
       audioBase: '06-assets/audio/spelling/steps/',
+      audioMap: state.spellingStepAudioMap || {},
       rate: state.speechRate || 0.75,
       onItem: (item, index) => {
         highlightSpellingStep(item, index);
       }
     });
+  } else if (danhVanPlayer && state.spellingStepAudioMap && danhVanPlayer.setAudioMap) {
+    danhVanPlayer.setAudioMap(state.spellingStepAudioMap);
   }
   return danhVanPlayer;
 }
@@ -673,6 +676,9 @@ async function loadLibraryData() {
     const resStepMap = await fetch('./01-vocabulary/spelling_step_audio_map.json');
     if (resStepMap.ok) {
       state.spellingStepAudioMap = await resStepMap.json();
+      if (danhVanPlayer && danhVanPlayer.setAudioMap) {
+        danhVanPlayer.setAudioMap(state.spellingStepAudioMap);
+      }
     }
   } catch (e) {}
 

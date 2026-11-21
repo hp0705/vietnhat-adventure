@@ -40,13 +40,21 @@
 <script src="danh-van-speech.js"></script>
 <script>
   const $ = (id) => document.getElementById(id);
+  let audioMap = {};
+  fetch('01-vocabulary/spelling_step_audio_map.json')
+    .then((r) => r.json())
+    .then((data) => { audioMap = data; })
+    .catch(() => {});
+
   function loadVoices() {
-    const vs = speechSynthesis.getVoices().filter((v) => v.lang.toLowerCase().startsWith('vi'));
-    $('voice').innerHTML = vs.length
-      ? vs.map((v) => `<option>${v.name}</option>`).join('')
-      : '<option value="">(máy này chưa có giọng tiếng Việt)</option>';
+    const vs = ('speechSynthesis' in window) ? speechSynthesis.getVoices().filter((v) => v.lang && v.lang.toLowerCase().startsWith('vi')) : [];
+    $('voice').innerHTML = '<option value="__google__">Google TTS tiếng Việt chuẩn 100% (Khuyên dùng)</option>' +
+      vs.map((v) => `<option value="${v.name}">${v.name} (${v.lang})</option>`).join('');
   }
-  speechSynthesis.onvoiceschanged = loadVoices; loadVoices();
+  if ('speechSynthesis' in window) {
+    speechSynthesis.onvoiceschanged = loadVoices;
+    loadVoices();
+  }
   $('rate').oninput = () => { $('rv').textContent = $('rate').value; };
 
   let player;
@@ -60,8 +68,10 @@
     const word = $('word').value.trim();
     render(DanhVanSpeech.planWord(word));
     player = DanhVanSpeech.createPlayer({
+      audioBase: '06-assets/audio/spelling/steps/',
+      audioMap: audioMap,
       rate: parseFloat($('rate').value),
-      voiceName: $('voice').value || null,
+      voiceName: $('voice').value || '__google__',
       ttsOverride: ov,
       onItem: (it, i) => {
         document.querySelectorAll('#seq span').forEach((s) => s.classList.remove('on'));

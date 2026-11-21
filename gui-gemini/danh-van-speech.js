@@ -100,7 +100,8 @@
 
   function createPlayer(options) {
     const o = Object.assign({
-      audioBase: null,      // ví dụ '06-assets/audio/'; null = chỉ dùng giọng máy
+      audioBase: null,      // ví dụ '06-assets/audio/spelling/steps/'; null = chỉ dùng giọng máy
+      audioMap: null,       // map ánh xạ chuỗi âm -> đường dẫn file âm thanh thật
       lang: 'vi-VN',
       rate: 0.8,            // tốc độ gốc của giọng máy (0.1 - 2)
       voiceName: null,
@@ -113,35 +114,78 @@
 
     function playAudio(url) {
       return new Promise((resolve) => {
+        if (!url || typeof Audio === 'undefined') return resolve(false);
+        try {
+          const a = new Audio(url);
+          currentAudio = a;
+          a.onended = () => resolve(true);
+          a.onerror = () => resolve(false);
+          const p = a.play();
+          if (p && p.catch) p.catch(() => resolve(false));
+        } catch (e) {
+          resolve(false);
+        }
+      });
+    }
+
+    // Luôn phát âm chuẩn tiếng Việt 100%, TUYỆT ĐỐI KHÔNG DÙNG GIỌNG TIẾNG ANH
+    function speakTTS(text, rate) {
+      return new Promise((resolve) => {
+        const synth = root.speechSynthesis;
+        let viVoice = null;
+        if (synth && synth.getVoices) {
+          const voices = synth.getVoices();
+          if (o.voiceName && o.voiceName !== '__google__') {
+            viVoice = voices.find((x) => x.name === o.voiceName);
+          }
+          if (!viVoice && o.voiceName !== '__google__') {
+            viVoice = voices.find((x) => x.lang && x.lang.toLowerCase().startsWith('vi'));
+          }
+        }
+
+        // Nếu máy có sẵn giọng tiếng Việt chính thức trong hệ thống:
+        if (synth && viVoice) {
+          try {
+            const u = new SpeechSynthesisUtterance(text);
+            u.voice = viVoice;
+            u.lang = viVoice.lang || o.lang || 'vi-VN';
+            u.rate = Math.max(0.1, Math.min(2, rate));
+            u.onend = () => resolve(true);
+            u.onerror = () => fallbackGoogleTTS(text, resolve);
+            synth.speak(u);
+            return;
+          } catch (e) {
+            // fallback nếu lỗi
+          }
+        }
+
+        // Nếu máy không có giọng tiếng Việt (máy tính Windows, trình duyệt thiếu voice vi-VN):
+        // KHÔNG cho speechSynthesis dùng giọng tiếng Anh mặc định (David/Zira) đọc tiếng Việt!
+        // Thay vào đó chuyển phát Google Translate TTS stream chuẩn tiếng Việt 100%:
+        fallbackGoogleTTS(text, resolve);
+      });
+    }
+
+    function fallbackGoogleTTS(text, resolve) {
+      if (typeof Audio === 'undefined') return resolve(false);
+      try {
+        const clean = text.replace(/[\u{1F300}-\u{1FAFF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]/gu, '').trim();
+        const url = 'https://translate.google.com/translate_tts?ie=UTF-8&tl=vi&client=tw-ob&q=' + encodeURIComponent(clean);
         const a = new Audio(url);
         currentAudio = a;
         a.onended = () => resolve(true);
         a.onerror = () => resolve(false);
-        a.play().catch(() => resolve(false));
-      });
-    }
-
-    function speakTTS(text, rate) {
-      return new Promise((resolve) => {
-        const synth = root.speechSynthesis;
-        if (!synth) return resolve(false);
-        const u = new SpeechSynthesisUtterance(text);
-        u.lang = o.lang;
-        u.rate = Math.max(0.1, Math.min(2, rate));
-        if (o.voiceName) {
-          const v = synth.getVoices().find((x) => x.name === o.voiceName);
-          if (v) u.voice = v;
-        }
-        u.onend = () => resolve(true);
-        u.onerror = () => resolve(false);
-        synth.speak(u);
-      });
+        const p = a.play();
+        if (p && p.catch) p.catch(() => resolve(false));
+      } catch (e) {
+        resolve(false);
+      }
     }
 
     function stop() {
       runId++;
       if (root.speechSynthesis) root.speechSynthesis.cancel();
-      if (currentAudio) { try { currentAudio.pause(); } catch (e) { /* bỏ qua */ } }
+      if (currentAudio) { try { currentAudio.pause(); currentAudio.currentTime = 0; } catch (e) { /* bỏ qua */ } }
     }
 
     async function say(word) {
@@ -153,7 +197,19 @@
         const it = items[i];
         if (o.onItem) o.onItem(it, i);
         let ok = false;
-        if (o.audioBase) ok = await playAudio(o.audioBase + it.audioFile + '.mp3');
+        // 1. Kiểm tra ánh xạ audioMap
+        if (o.audioMap && o.audioMap[it.text]) {
+          ok = await playAudio(o.audioMap[it.text]);
+        }
+        // 2. Kiểm tra trực tiếp theo tên chuỗi âm trong audioBase
+        if (!ok && o.audioBase) {
+          ok = await playAudio(o.audioBase + encodeURIComponent(it.text) + '.mp3');
+        }
+        // 3. Kiểm tra theo hex audioFile
+        if (!ok && o.audioBase) {
+          ok = await playAudio(o.audioBase + it.audioFile + '.mp3');
+        }
+        // 4. Nếu không có file thu: phát âm tiếng Việt chuẩn 100% (giọng vi-VN hoặc Google vi TTS)
         if (!ok) {
           const text = o.ttsOverride[it.text] && it.kind !== 'tone' ? o.ttsOverride[it.text] : it.ttsText;
           await speakTTS(text, o.rate * it.speed);
@@ -167,7 +223,11 @@
       o.rate = Math.max(0.1, Math.min(2, r));
     }
 
-    return { say, stop, setRate };
+    function setAudioMap(m) {
+      o.audioMap = m;
+    }
+
+    return { say, stop, setRate, setAudioMap };
   }
 
   const api = { planWord, planSyllable, neededAudio, audioFileName, createPlayer };
