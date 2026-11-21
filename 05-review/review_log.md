@@ -45,3 +45,23 @@
 - **Mở rộng cơ sở dữ liệu hình ảnh, emoji và tên gọi trực quan:**
   - Bổ sung dữ liệu hình ảnh, biểu tượng và nhãn tên gọi cho toàn bộ 32 từ khởi đầu (Bài 1, Bài 2, Bài 3) và hơn 50 từ trong các bài học SGK tiếp theo.
   - Tích hợp thuật toán suy luận thông minh `getPictureDataForWord` đảm bảo 100% từ vựng đều có hình minh họa sinh động và đáp án gây nhiễu hợp lý.
+
+## v2.4.0 (2026-11-21)
+- **Khắc phục triệt để lỗi phát âm tiếng Anh trên iPad ở Nhật/nước ngoài:**
+  - Nguyên nhân: iPadOS không cài sẵn giọng đọc tiếng Việt theo mặc định ở các khu vực ngoài Việt Nam, dẫn tới việc `SpeechSynthesis` tự động fallback sang giọng robot tiếng Anh làm sai lệch hoàn toàn ngữ âm tiếng Việt.
+  - Giải pháp: Loại bỏ hoàn toàn sự phụ thuộc vào Web Speech API của iPad. Thay thế 100% bằng file âm thanh MP3 người thật đã tạo sẵn trong repo và stream âm thanh tiếng Việt từ Google Translate TTS.
+  - Khi bé bấm Đúng: Luôn phát file âm thanh thu âm giọng người thật `correct-[dialect].mp3` (*"Đúng rồi! Bé giỏi quá!"*).
+  - Khi bé bấm Sai: Luôn phát file âm thanh thu âm giọng người thật `try-again-[dialect].mp3` (*"Bé thử lại nhé!"*) kết hợp âm thanh hài hước "bà bư bư" và dấu X đỏ.
+- **Hoàn thiện đầy đủ cách đọc và chuỗi đánh vần cho 60 từ vựng cốt lõi:**
+  - Nâng tổng số từ được kiểm duyệt và có chuỗi đánh vần hoàn chỉnh (`user_confirmed`) từ 5 từ lên **60 từ vựng**.
+  - Mỗi từ đều có: chuỗi ghép vần từng bước, nghĩa ngắn gọn cho trẻ, câu ví dụ sinh động, hình ảnh minh họa emoji và nhãn tiếng Việt rõ ràng.
+- **Cấu trúc lại lộ trình bài học theo độ phức tạp ngữ âm (2 âm ➔ 3 âm ➔ 4-5 âm):**
+  - *Bài 1 (Cấp 1 - 2 âm):* `ba`, `bà`, `bố`, `mẹ`, `bé`, `bò`, `cá`, `gà`, `đi`, `đá` (từ ghép 2 âm cơ bản nhất).
+  - *Bài 2 (Cấp 1 - 2 âm):* `lá`, `cô`, `na`, `đa`, `me`, `lê`, `bè`, `bê`, `cà`, `cờ` (từ ghép 2 âm thiên nhiên, cây cối).
+  - *Bài 3 (Cấp 1 - 2 âm):* `cỏ`, `dê`, `nụ`, `mạ`, `dù`, `tổ`, `bi`, `vở`, `ngủ`, `đau` (từ ghép 2 âm mở rộng).
+  - *Bài 4 (Cấp 2 - 3 âm):* `mèo`, `chó`, `vịt`, `hoa`, `cây`, `mưa`, `nắng`, `đèn`, `bút`, `tay` (vần đôi và âm cuối đơn giản 1).
+  - *Bài 5 (Cấp 2 - 3 âm):* `mắt`, `chân`, `bế`, `ăn`, `sau`, `khế`, `hề`, `kẻ`, `đỗ`, `bẻ` (vần đôi và âm cuối đơn giản 2).
+  - *Bài 6 (Cấp 3 - 4-5 âm & Từ ghép):* `đánh`, `sách`, `cỗ`, `miệng`, `uống`, `ca nô`, `ca sĩ`, `bí đỏ`, `đi bộ`, `hồ cá`.
+  - *Bài 7 trở đi:* Toàn bộ các từ trích xuất từ SGK Tiếng Việt 1.
+- **Tạo và lưu trữ hơn 700 file âm thanh MP3 trong repo:**
+  - Sinh đầy đủ file đọc từ, câu ví dụ và từng bước đánh vần cho cả 2 phương ngữ miền Bắc (Hà Nội) và miền Nam (Sài Gòn).

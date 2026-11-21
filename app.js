@@ -304,49 +304,81 @@ async function loadVocabularyData() {
 
 // Xây dựng lộ trình bài học: mỗi bài ~10 từ theo mức độ dễ đến khó
 function buildLessons() {
-  const starterItems = state.items.filter(x => x.content_status === 'authored_starter');
+  const authored = state.items.filter(x => x.content_status === 'authored_starter');
   const sgkItems = state.items.filter(x => x.content_status !== 'authored_starter');
+
+  // Phân loại nghiêm ngặt theo tiến trình sư phạm:
+  // Cấp 1 (2 âm/vần đơn giản) -> Cấp 2 (3 âm/vần đôi) -> Cấp 3 (4-5 âm & từ ghép)
+  const level1 = authored.filter(x => x.phonics?.complexity === '2_am');
+  const level2 = authored.filter(x => x.phonics?.complexity === '3_am');
+  const level3 = authored.filter(x => x.phonics?.complexity === '4_5_am');
 
   const lessons = [];
 
-  // Bài 1: 10 từ khởi đầu 1 (Gia đình & Động vật gần gũi)
+  // Bài 1: 10 từ 2 âm cơ bản 1 (Gia đình & Động vật gần gũi)
   lessons.push({
     id: 'lesson-1',
     lessonIndex: 0,
-    title: 'Bài 1: Gia đình & Động vật gần gũi',
-    level: 'Mức 1 (Rất dễ)',
-    items: starterItems.slice(0, 10)
+    title: 'Bài 1: Ghép 2 âm cơ bản (Gia đình & Động vật)',
+    level: 'Cấp 1 (2 âm - Rất dễ)',
+    items: level1.slice(0, 10)
   });
 
-  // Bài 2: 10 từ khởi đầu 2 (Thiên nhiên & Đồ dùng)
+  // Bài 2: 10 từ 2 âm cơ bản 2 (Thiên nhiên & Cây cối)
   lessons.push({
     id: 'lesson-2',
     lessonIndex: 1,
-    title: 'Bài 2: Thiên nhiên & Đồ dùng',
-    level: 'Mức 2 (Dễ)',
-    items: starterItems.slice(10, 20)
+    title: 'Bài 2: Ghép 2 âm cơ bản (Thiên nhiên & Cây cối)',
+    level: 'Cấp 1 (2 âm - Dễ)',
+    items: level1.slice(10, 20)
   });
 
-  // Bài 3: 12 từ khởi đầu 3 (Ngôi nhà & Hoạt động)
+  // Bài 3: 10 từ 2 âm cơ bản 3 (Sinh hoạt & Đồ dùng)
   lessons.push({
     id: 'lesson-3',
     lessonIndex: 2,
-    title: 'Bài 3: Ngôi nhà & Hoạt động',
-    level: 'Mức 3 (Vừa)',
-    items: starterItems.slice(20, 32)
+    title: 'Bài 3: Ghép 2 âm mở rộng (Đồ dùng & Sinh hoạt)',
+    level: 'Cấp 1 (2 âm - Dễ)',
+    items: level1.slice(20, 30)
   });
 
-  // Bài 4 đến Bài 63: Chia toàn bộ 600 từ SGK, mỗi bài ~10 từ từ dễ đến nâng cao
+  // Bài 4: 10 từ 3 âm 1 (Vần đôi & Âm cuối đơn giản)
+  lessons.push({
+    id: 'lesson-4',
+    lessonIndex: 3,
+    title: 'Bài 4: Nâng lên 3 âm (Vần đôi & Âm cuối 1)',
+    level: 'Cấp 2 (3 âm - Vừa)',
+    items: level2.slice(0, 10)
+  });
+
+  // Bài 5: 10 từ 3 âm 2 (Cơ thể & Hoạt động)
+  lessons.push({
+    id: 'lesson-5',
+    lessonIndex: 4,
+    title: 'Bài 5: Nâng lên 3 âm (Cơ thể & Hoạt động 2)',
+    level: 'Cấp 2 (3 âm - Vừa)',
+    items: level2.slice(10, 20)
+  });
+
+  // Bài 6: 10 từ 4 - 5 âm / vần phức tạp & từ ghép
+  lessons.push({
+    id: 'lesson-6',
+    lessonIndex: 5,
+    title: 'Bài 6: Nâng lên 4-5 âm & Từ ghép',
+    level: 'Cấp 3 (4-5 âm - Nâng cao)',
+    items: level3.slice(0, 10)
+  });
+
+  // Bài 7 trở đi: Toàn bộ các từ SGK tiếp theo, mỗi bài 10 từ
   const chunkSize = 10;
-  let lessonNum = 4;
+  let lessonNum = 7;
   for (let i = 0; i < sgkItems.length; i += chunkSize) {
     const chunk = sgkItems.slice(i, i + chunkSize);
-    const week = chunk[0]?.source_refs?.[0]?.week || Math.floor(lessonNum / 2);
     lessons.push({
       id: `lesson-${lessonNum}`,
       lessonIndex: lessonNum - 1,
-      title: `Bài ${lessonNum}: Tuần ${week} SGK`,
-      level: `Mức ${lessonNum}`,
+      title: `Bài ${lessonNum}: Luyện đọc SGK`,
+      level: `Cấp ${lessonNum} (Mở rộng)`,
       items: chunk
     });
     lessonNum++;
@@ -569,22 +601,25 @@ function openWordStation(item) {
 
 // PHÁT ÂM THANH ĐÁNH VẦN DUY NHẤT (Không hiển thị thẻ bước chữ rườm rà)
 async function playAllPhonicsSteps() {
-  if (!state.currentWord || !state.currentWord.phonics || !state.currentWord.phonics.sequence) return;
-  const seq = state.currentWord.phonics.sequence;
+  if (!state.currentWord) return;
+  const wordItem = state.currentWord;
+  const seq = (wordItem.phonics && wordItem.phonics.sequence && wordItem.phonics.sequence.length > 0)
+    ? wordItem.phonics.sequence
+    : [wordItem.word];
+
   const btn = document.getElementById('btn-play-all-steps');
   if (btn) btn.classList.add('playing');
 
   try {
     for (let i = 0; i < seq.length; i++) {
-      const audioSrc = getDialectAudio(state.currentWord, 'step', i);
-      // Tốc độ nhanh nhẹn, tự nhiên cho trẻ
+      const audioSrc = getDialectAudio(wordItem, 'step', i);
       await playAudioSrc(audioSrc, seq[i], 1.25);
-      await waitMs(120);
+      await waitMs(140);
     }
 
     // Đọc từ hoàn chỉnh cuối cùng
     await waitMs(180);
-    await playAudioSrc(getDialectAudio(state.currentWord, 'word'), state.currentWord.word, 1.0);
+    await playAudioSrc(getDialectAudio(wordItem, 'word'), wordItem.word, 1.0);
   } finally {
     if (btn) btn.classList.remove('playing');
   }
@@ -743,13 +778,14 @@ function handlePictureSelect(cardElement, option) {
     // 2. Bắn pháo hoa rực rỡ
     triggerFireworks();
 
-    // 3. Lời khen ngợi ngẫu nhiên phong phú
+    // 3. Phát giọng người thật khen ngợi "Đúng rồi! Bé giỏi quá!" (không bị robot tiếng Anh)
+    const correctAudio = `06-assets/audio/common/correct-${state.currentDialect}.mp3`;
+    playAudioSrc(correctAudio, 'Đúng rồi! Bé giỏi quá!');
+
+    // Lời khen ngợi phong phú hiển thị trên màn hình
     const praise = PRAISE_PHRASES[Math.floor(Math.random() * PRAISE_PHRASES.length)];
     feedback.className = 'quiz-feedback success';
     feedback.innerHTML = `🎉 ${praise} Chữ <b>"${option.word}"</b> chính là <b>${option.label}</b>!`;
-
-    // Giọng đọc lời khen ngợi
-    speakVoiceText(praise);
 
     // Khóa click tạm thời
     document.querySelectorAll('.picture-card').forEach(c => c.style.pointerEvents = 'none');
@@ -774,13 +810,16 @@ function handlePictureSelect(cardElement, option) {
     // 2. HIỂN THỊ DẤU X MÀU ĐỎ RỒI MỜ BIẾN MẤT
     showWrongXMark();
 
-    // 3. Lời khích lệ động viên phong phú
+    // 3. Phát giọng người thật động viên "Bé thử lại nhé!" (không bị robot tiếng Anh)
+    const tryAgainAudio = `06-assets/audio/common/try-again-${state.currentDialect}.mp3`;
+    setTimeout(() => {
+      playAudioSrc(tryAgainAudio, 'Bé thử lại nhé!');
+    }, 450);
+
+    // Lời khích lệ hiển thị trên màn hình
     const encourage = ENCOURAGE_PHRASES[Math.floor(Math.random() * ENCOURAGE_PHRASES.length)];
     feedback.className = 'quiz-feedback error';
     feedback.innerHTML = `💡 ${encourage} Đây là <b>${option.label}</b>. Bé nhìn kỹ chữ lại nhé!`;
-
-    // Giọng đọc lời động viên
-    speakVoiceText(encourage);
 
     setTimeout(() => {
       cardElement.classList.remove('wrong');
@@ -989,23 +1028,19 @@ function playWrongBuzzer() {
 
 // Đọc lời khen ngợi hoặc động viên bằng giọng nói
 function speakVoiceText(text) {
-  if (!state.soundEnabled) return;
-  if ('speechSynthesis' in window) {
-    try {
-      window.speechSynthesis.cancel();
-      // Loại bỏ các emoji trước khi đọc
-      const cleanText = text.replace(/[\u{1F300}-\u{1FAFF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]/gu, '').trim();
-      const utt = new SpeechSynthesisUtterance(cleanText);
-      utt.lang = 'vi-VN';
-      utt.rate = 0.9;
-      window.speechSynthesis.speak(utt);
-    } catch (e) {
-      console.warn('Speech synthesis note:', e);
-    }
+  if (!state.soundEnabled || !text) return;
+  try {
+    const clean = text.replace(/[\u{1F300}-\u{1FAFF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]/gu, '').trim();
+    const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=vi&client=tw-ob&q=${encodeURIComponent(clean)}`;
+    const audio = new Audio(url);
+    currentAudio = audio;
+    audio.play().catch(() => {});
+  } catch (e) {
+    console.warn('speakVoiceText note:', e);
   }
 }
 
-// Phát file âm thanh đã thu âm hoặc TTS dự phòng
+// Phát file âm thanh đã thu âm hoặc truyền phát Google Translate TTS chuẩn tiếng Việt
 function playAudioSrc(audioSrc, fallbackText, rate = 1.0) {
   return new Promise((resolve) => {
     if (!state.soundEnabled) return resolve();
@@ -1022,36 +1057,38 @@ function playAudioSrc(audioSrc, fallbackText, rate = 1.0) {
 
       audio.onended = () => resolve();
       audio.onerror = () => {
-        fallbackSpeech(fallbackText, resolve, rate);
+        fallbackSpeech(fallbackText, resolve);
       };
 
       const playPromise = audio.play();
       if (playPromise !== undefined) {
         playPromise.catch(() => {
-          fallbackSpeech(fallbackText, resolve, rate);
+          fallbackSpeech(fallbackText, resolve);
         });
       }
     } else {
-      fallbackSpeech(fallbackText, resolve, rate);
+      fallbackSpeech(fallbackText, resolve);
     }
   });
 }
 
-// Dự phòng bằng SpeechSynthesis trên iPad Safari
-function fallbackSpeech(text, resolve, rate = 0.8) {
-  if (!('speechSynthesis' in window) || !state.soundEnabled) {
-    return resolve();
+// Phát âm tiếng Việt chuẩn 100% bằng Google Translate TTS MP3 stream (loại bỏ triệt để robot tiếng Anh trên iPad)
+function fallbackSpeech(text, resolve) {
+  if (!text || !state.soundEnabled) return resolve();
+  try {
+    const clean = text.replace(/[\u{1F300}-\u{1FAFF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]/gu, '').trim();
+    const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=vi&client=tw-ob&q=${encodeURIComponent(clean)}`;
+    const audio = new Audio(url);
+    currentAudio = audio;
+    audio.onended = () => resolve();
+    audio.onerror = () => resolve();
+    const p = audio.play();
+    if (p !== undefined) {
+      p.catch(() => resolve());
+    }
+  } catch (e) {
+    resolve();
   }
-
-  window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = 'vi-VN';
-  utterance.rate = rate || state.speechRate;
-
-  utterance.onend = () => resolve();
-  utterance.onerror = () => resolve();
-
-  window.speechSynthesis.speak(utterance);
 }
 
 // Lấy đường dẫn âm thanh tương ứng với giọng đang chọn (Bắc / Nam)
