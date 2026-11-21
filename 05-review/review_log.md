@@ -99,3 +99,11 @@
   - *Bài 5 (Cấp 2 - 3 âm Vừa):* `bút`, `tay`, `mắt`, `chân`, `ăn`, `sau`, `bẻ`, `đỗ`, `hề`, `kẻ` (10 từ).
   - *Bài 6 (Cấp 3 - 4-5 âm & Từ ghép):* `khế`, `sách`, `miệng`, `uống`, `đánh`, `ca nô`, `ca sĩ`, `bí đỏ`, `đi bộ`, `hồ cá` (10 từ).
   - *Bài 7 trở đi:* Toàn bộ các từ SGK mở rộng, mỗi bài 10 từ.
+
+## v2.6.1 (2026-11-21)
+- **Đồng bộ tuyệt đối 100% giữa âm thanh phát ra và chữ hiển thị khi khen ngợi/động viên:**
+  - Khắc phục lỗi chữ hiển thị một đằng, âm thanh phát một nẻo trong Thử thách ghép hình.
+  - Tạo riêng 8 file âm thanh chuẩn Bắc (`praise_0.mp3` - `praise_7.mp3`) cho 8 mẫu lời khen ngợi khi bé làm đúng.
+  - Tạo riêng 6 file âm thanh chuẩn Bắc (`encourage_0.mp3` - `encourage_5.mp3`) cho 6 mẫu lời động viên khi bé làm sai.
+  - Khi bé bấm đúng: chọn ngẫu nhiên 1 trong 8 cặp lời khen; âm thanh đọc chính xác từng từ chữ hiển thị trên màn hình.
+  - Khi bé bấm sai: chọn ngẫu nhiên 1 trong 6 cặp lời động viên; âm thanh đọc chính xác từng từ chữ hiển thị trên màn hình.

@@ -23,26 +23,26 @@ const state = {
   unlockAllMode: true // Mặc định tự do chọn bất kỳ bài học nào trên iPad
 };
 
-// Danh sách lời khen ngợi phong phú, hào hứng khi bé trả lời đúng
-const PRAISE_PHRASES = [
-  "Đúng rồi! Bé giỏi quá! 🌟",
-  "Hoan hô bé! Bé thông minh tuyệt vời! 🎉",
-  "Chính xác luôn! Bé đỉnh thật đấy! 🚀",
-  "Bé chọn chuẩn xác rồi! Quá tuyệt! 👏",
-  "Bé thật là siêu nhân học chữ! 🌈",
-  "Đúng rồi bé ơi! Tiếp tục phát huy nhé! 💖",
-  "Tuyệt cú mèo! Bé trả lời xuất sắc! 🐱✨",
-  "Giỏi lắm! Bé nhớ bài rất siêu! 🏆"
+// Danh sách lời khen ngợi phong phú: ĐỒNG NHẤT 100% GIỮA ÂM THANH VÀ CHỮ HIỂN THỊ
+const PRAISE_ITEMS = [
+  { text: "Đúng rồi! Bé giỏi quá!", display: "Đúng rồi! Bé giỏi quá! 🌟", audio: "06-assets/audio/common/praise_0.mp3" },
+  { text: "Hoan hô bé! Bé thông minh tuyệt vời!", display: "Hoan hô bé! Bé thông minh tuyệt vời! 🎉", audio: "06-assets/audio/common/praise_1.mp3" },
+  { text: "Chính xác rồi! Bé tuyệt vời quá!", display: "Chính xác rồi! Bé tuyệt vời quá! 🚀", audio: "06-assets/audio/common/praise_2.mp3" },
+  { text: "Bé chọn chuẩn xác rồi! Quá tuyệt vời!", display: "Bé chọn chuẩn xác rồi! Quá tuyệt vời! 👏", audio: "06-assets/audio/common/praise_3.mp3" },
+  { text: "Bé chăm ngoan và giỏi quá!", display: "Bé chăm ngoan và giỏi quá! 🌈", audio: "06-assets/audio/common/praise_4.mp3" },
+  { text: "Đúng rồi bé ơi! Bé làm tốt lắm!", display: "Đúng rồi bé ơi! Bé làm tốt lắm! 💖", audio: "06-assets/audio/common/praise_5.mp3" },
+  { text: "Bé trả lời xuất sắc quá!", display: "Bé trả lời xuất sắc quá! 🐱✨", audio: "06-assets/audio/common/praise_6.mp3" },
+  { text: "Giỏi lắm! Bé nhớ bài rất tốt!", display: "Giỏi lắm! Bé nhớ bài rất tốt! 🏆", audio: "06-assets/audio/common/praise_7.mp3" }
 ];
 
-// Danh sách lời khích lệ, động viên nhẹ nhàng khi bé chọn chưa đúng
-const ENCOURAGE_PHRASES = [
-  "Bé ơi cố lên, cùng thử lại nhé! 💪",
-  "Chưa chính xác rồi, bé nhìn kỹ lại nào! 👀",
-  "Tiếc quá, bé thử chọn lại lần nữa nhé! 🍀",
-  "Không sao đâu bé yêu, cùng làm lại nào! 💖",
-  "Sắp đúng rồi, bé thử xem hình khác nhé! ✨",
-  "Bé quan sát kỹ chữ và chọn lại nhé! 🧐"
+// Danh sách lời khích lệ nhẹ nhàng: ĐỒNG NHẤT 100% GIỮA ÂM THANH VÀ CHỮ HIỂN THỊ
+const ENCOURAGE_ITEMS = [
+  { text: "Bé cố lên, thử lại lần nữa nào!", display: "Bé cố lên, thử lại lần nữa nào! 💪", audio: "06-assets/audio/common/encourage_0.mp3" },
+  { text: "Bé nhìn kỹ lại nhé!", display: "Bé nhìn kỹ lại nhé! 👀", audio: "06-assets/audio/common/encourage_1.mp3" },
+  { text: "Tiếc quá, bé thử chọn lại lần nữa nhé!", display: "Tiếc quá, bé thử chọn lại lần nữa nhé! 🍀", audio: "06-assets/audio/common/encourage_2.mp3" },
+  { text: "Không sao đâu bé yêu, cùng làm lại nào!", display: "Không sao đâu bé yêu, cùng làm lại nào! 💖", audio: "06-assets/audio/common/encourage_3.mp3" },
+  { text: "Gần đúng rồi, bé thử lại nào!", display: "Gần đúng rồi, bé thử lại nào! ✨", audio: "06-assets/audio/common/encourage_4.mp3" },
+  { text: "Bé nhìn kỹ chữ và chọn lại nhé!", display: "Bé nhìn kỹ chữ và chọn lại nhé! 🧐", audio: "06-assets/audio/common/encourage_5.mp3" }
 ];
 
 // Hình minh họa sinh động cho từng câu ví dụ
@@ -937,14 +937,13 @@ function handlePictureSelect(cardElement, option) {
     // 2. Bắn pháo hoa rực rỡ
     triggerFireworks();
 
-    // 3. Phát giọng người thật khen ngợi "Đúng rồi! Bé giỏi quá!" (không bị robot tiếng Anh)
-    const correctAudio = `06-assets/audio/common/correct-${state.currentDialect}.mp3`;
-    playAudioSrc(correctAudio, 'Đúng rồi! Bé giỏi quá!');
+    // 3. Phát giọng người thật khen ngợi ĐỒNG NHẤT 100% VỚI CHỮ HIỂN THỊ
+    const praiseItem = PRAISE_ITEMS[Math.floor(Math.random() * PRAISE_ITEMS.length)];
+    playAudioSrc(praiseItem.audio, praiseItem.text);
 
-    // Lời khen ngợi phong phú hiển thị trên màn hình
-    const praise = PRAISE_PHRASES[Math.floor(Math.random() * PRAISE_PHRASES.length)];
+    // Lời khen ngợi hiển thị đồng nhất
     feedback.className = 'quiz-feedback success';
-    feedback.innerHTML = `🎉 ${praise} Chữ <b>"${option.word}"</b> chính là <b>${option.label}</b>!`;
+    feedback.innerHTML = `🎉 ${praiseItem.display} Chữ <b>"${option.word}"</b> chính là <b>${option.label}</b>!`;
 
     // Khóa click tạm thời
     document.querySelectorAll('.picture-card').forEach(c => c.style.pointerEvents = 'none');
@@ -969,16 +968,15 @@ function handlePictureSelect(cardElement, option) {
     // 2. HIỂN THỊ DẤU X MÀU ĐỎ RỒI MỜ BIẾN MẤT
     showWrongXMark();
 
-    // 3. Phát giọng người thật động viên "Bé thử lại nhé!" (không bị robot tiếng Anh)
-    const tryAgainAudio = `06-assets/audio/common/try-again-${state.currentDialect}.mp3`;
+    // 3. Phát giọng người thật động viên ĐỒNG NHẤT 100% VỚI CHỮ HIỂN THỊ
+    const encourageItem = ENCOURAGE_ITEMS[Math.floor(Math.random() * ENCOURAGE_ITEMS.length)];
     setTimeout(() => {
-      playAudioSrc(tryAgainAudio, 'Bé thử lại nhé!');
+      playAudioSrc(encourageItem.audio, encourageItem.text);
     }, 450);
 
-    // Lời khích lệ hiển thị trên màn hình
-    const encourage = ENCOURAGE_PHRASES[Math.floor(Math.random() * ENCOURAGE_PHRASES.length)];
+    // Lời khích lệ hiển thị đồng nhất
     feedback.className = 'quiz-feedback error';
-    feedback.innerHTML = `💡 ${encourage} Đây là <b>${option.label}</b>. Bé nhìn kỹ chữ lại nhé!`;
+    feedback.innerHTML = `💡 ${encourageItem.display} Đây là <b>${option.label}</b>. Bé nhìn kỹ chữ lại nhé!`;
 
     setTimeout(() => {
       cardElement.classList.remove('wrong');
