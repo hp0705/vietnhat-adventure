@@ -65,3 +65,17 @@
   - *Bài 7 trở đi:* Toàn bộ các từ trích xuất từ SGK Tiếng Việt 1.
 - **Tạo và lưu trữ hơn 700 file âm thanh MP3 trong repo:**
   - Sinh đầy đủ file đọc từ, câu ví dụ và từng bước đánh vần cho cả 2 phương ngữ miền Bắc (Hà Nội) và miền Nam (Sài Gòn).
+
+## v2.5.0 (2026-11-21)
+- **Đồng nhất duy nhất một giọng đọc chuẩn Bắc (Hà Nội):**
+  - Xử lý triệt để tình trạng lẫn lộn giọng đọc giữa các bước đánh vần (như từ `lá`): toàn bộ các bước đánh vần, từ và câu ví dụ được chuẩn hóa 100% bằng giọng nữ giáo viên chuẩn Hà Nội (`vi-VN-HoaiMyNeural`).
+  - Gỡ bỏ hoàn toàn thư mục audio miền Nam (`south-saigon`) theo chỉ đạo của người dùng, giúp giảm 50% dung lượng repository (tổng dung lượng audio chỉ còn ~4.6 MB), nạp cực nhanh trên iPad Safari.
+  - Thay nút chuyển đổi phương ngữ trên thanh điều hướng bằng huy hiệu cố định: `🎙️ Chuẩn Hà Nội`.
+- **Lưu trữ dữ liệu tiến độ vĩnh viễn trên iPad bằng `localStorage`:**
+  - Tích hợp cơ chế tự động đồng bộ trạng thái học tập vào `window.localStorage` của iPad Safari với khóa `vietnhat_adventure_progress_v1`.
+  - Lưu trữ: danh sách các bài đã mở khóa, bài học hiện tại, điểm số, các từ chuyển tiếp ôn tập, và chế độ học tập.
+  - Khi tắt máy, tắt nguồn iPad hoặc đóng tab Safari, ngày mai mở lại bé sẽ tiếp tục đúng vị trí bài học đã đạt được mà không bao giờ bị quay lại Bài 1.
+- **Bổ sung chế độ phụ huynh: "Tự do chọn mọi bài học" (Free Exploration Mode):**
+  - Mặc định kích hoạt chế độ tự do: Phụ huynh và bé có thể tự do bấm chọn bất kỳ bài học nào (Bài 1, Bài 2, Bài 3, ...) mà không bị khóa bài.
+  - Tích hợp nút chuyển đổi trực quan `[🔓 Tự do chọn bài]` / `[🔒 Học theo lộ trình qua bài]` ngay cạnh tiêu đề bài học.
+  - Bổ sung nút `[🔄 Đặt lại]` để phụ huynh reset tiến độ về Bài 1 bất cứ lúc nào.

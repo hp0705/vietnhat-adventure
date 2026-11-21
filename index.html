@@ -54,10 +54,10 @@
     </div>
 
     <div class="header-right">
-      <!-- Nút chuyển đổi giọng đọc Bắc / Nam -->
-      <button id="btn-dialect-toggle" class="nav-btn dialect-btn" title="Chuyển đổi Giọng miền Bắc / Giọng miền Nam">
-        <span class="icon">🗣️</span> <b id="dialect-label">Miền Bắc</b>
-      </button>
+      <!-- Huy hiệu giọng đọc chuẩn Bắc (Hà Nội) -->
+      <div class="nav-badge-dialect" title="Giọng đọc chuẩn tiếng Việt Hà Nội">
+        <span class="icon">🎙️</span> <b id="dialect-label">Chuẩn Hà Nội</b>
+      </div>
       <!-- Điều khiển âm thanh độc lập -->
       <button id="btn-sound-toggle" class="nav-btn icon-only" title="Bật/Tắt âm thanh">
         <span id="sound-icon">🔊</span>
@@ -81,8 +81,18 @@
       <!-- Thanh chọn Bài học (chia 10 từ/bài từ dễ đến khó) -->
       <div class="lesson-picker-container">
         <div class="lesson-picker-header">
-          <span class="lesson-badge">Lộ trình học tập</span>
-          <h3 id="current-lesson-title">Bài 1: Gia đình & Động vật gần gũi</h3>
+          <div class="picker-title-group">
+            <span class="lesson-badge">Lộ trình học tập</span>
+            <h3 id="current-lesson-title">Bài 1: Ghép 2 âm cơ bản (Gia đình & Động vật)</h3>
+          </div>
+          <div class="picker-mode-controls">
+            <button id="btn-toggle-unlock-all" class="btn-mode-toggle active" title="Bật/Tắt chế độ tự do chọn bài học">
+              <span id="mode-toggle-icon">🔓</span> <span id="mode-toggle-label">Tự do chọn bài</span>
+            </button>
+            <button id="btn-reset-progress" class="btn-reset-small" title="Bắt đầu lại tiến độ từ Bài 1">
+              <span>🔄</span> Đặt lại
+            </button>
+          </div>
         </div>
         <div id="lesson-tabs" class="lesson-tabs">
           <!-- Render các nút Bài 1, Bài 2, Bài 3... -->

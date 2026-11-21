@@ -19,7 +19,8 @@ const state = {
   score: 0,
   unlockedLessons: [0], // Bài 1 mở khóa mặc định
   carriedOverWords: [], // Tối đa 2 từ làm sai chuyển qua bài sau
-  quizRound: null
+  quizRound: null,
+  unlockAllMode: true // Mặc định tự do chọn bất kỳ bài học nào trên iPad
 };
 
 // Danh sách lời khen ngợi phong phú, hào hứng khi bé trả lời đúng
@@ -279,6 +280,42 @@ function getPictureDataForWord(word) {
 }
 
 // ==========================================
+// 1.1 LƯU TRỮ TIẾN ĐỘ VĨNH VIỄN TRÊN IPAD (LOCALSTORAGE)
+// ==========================================
+const STORAGE_KEY = 'vietnhat_adventure_progress_v1';
+
+function saveProgressToStorage() {
+  try {
+    const data = {
+      unlockedLessons: state.unlockedLessons,
+      currentLessonIndex: state.currentLessonIndex,
+      score: state.score,
+      unlockAllMode: state.unlockAllMode,
+      carriedOverIds: (state.carriedOverWords || []).map(w => w.id)
+    };
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  } catch (e) {
+    console.warn('Storage save note:', e);
+  }
+}
+
+function loadProgressFromStorage() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) {
+      const data = JSON.parse(raw);
+      if (Array.isArray(data.unlockedLessons)) state.unlockedLessons = data.unlockedLessons;
+      if (typeof data.currentLessonIndex === 'number') state.currentLessonIndex = data.currentLessonIndex;
+      if (typeof data.score === 'number') state.score = data.score;
+      if (typeof data.unlockAllMode === 'boolean') state.unlockAllMode = data.unlockAllMode;
+      state._savedCarriedIds = data.carriedOverIds || [];
+    }
+  } catch (e) {
+    console.warn('Storage load note:', e);
+  }
+}
+
+// ==========================================
 // 2. KHỞI TẠO ỨNG DỤNG & TẢI DỮ LIỆU
 // ==========================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -289,10 +326,14 @@ document.addEventListener('DOMContentLoaded', () => {
 // Tải dữ liệu từ vocabulary_vi_v2.json
 async function loadVocabularyData() {
   try {
+    loadProgressFromStorage();
     const response = await fetch('./01-vocabulary/vocabulary_vi_v2.json');
     if (!response.ok) throw new Error('Không thể tải file JSON');
     const data = await response.json();
     state.items = data.items || [];
+    if (state._savedCarriedIds && state._savedCarriedIds.length > 0) {
+      state.carriedOverWords = state.items.filter(x => state._savedCarriedIds.includes(x.id));
+    }
     buildLessons();
     renderLessonTabs();
     renderIslandMap();
@@ -394,7 +435,7 @@ function renderLessonTabs() {
   container.innerHTML = '';
 
   state.lessons.forEach((l, idx) => {
-    const isUnlocked = state.unlockedLessons.includes(idx);
+    const isUnlocked = state.unlockAllMode || state.unlockedLessons.includes(idx);
     const btn = document.createElement('button');
     btn.className = `lesson-tab-btn ${idx === state.currentLessonIndex ? 'active' : ''} ${!isUnlocked ? 'locked' : ''}`;
     
@@ -410,6 +451,7 @@ function renderLessonTabs() {
         return;
       }
       state.currentLessonIndex = idx;
+      saveProgressToStorage();
       renderLessonTabs();
       renderIslandMap();
     });
@@ -424,6 +466,24 @@ function renderLessonTabs() {
       mapBtnText.textContent = `Thử thách ghép hình Bài ${state.currentLessonIndex + 1} (10 câu)`;
     }
   }
+
+  // Cập nhật giao diện nút Bật/Tắt chế độ tự do chọn bài
+  const btnToggle = document.getElementById('btn-toggle-unlock-all');
+  if (btnToggle) {
+    if (state.unlockAllMode) {
+      btnToggle.className = 'btn-mode-toggle active';
+      const icon = document.getElementById('mode-toggle-icon');
+      const label = document.getElementById('mode-toggle-label');
+      if (icon) icon.textContent = '🔓';
+      if (label) label.textContent = 'Tự do chọn bài: BẬT';
+    } else {
+      btnToggle.className = 'btn-mode-toggle';
+      const icon = document.getElementById('mode-toggle-icon');
+      const label = document.getElementById('mode-toggle-label');
+      if (icon) icon.textContent = '🔒';
+      if (label) label.textContent = 'Mở khóa từng bài';
+    }
+  }
 }
 
 // Thiết lập các sự kiện giao diện
@@ -435,9 +495,29 @@ function setupEventListeners() {
     btnStart.addEventListener('touchstart', unlockAudioAndStart, { passive: true });
   }
 
+  // 1.2 Bật/Tắt chế độ tự do chọn bài học & Đặt lại tiến độ
+  document.getElementById('btn-toggle-unlock-all')?.addEventListener('click', () => {
+    state.unlockAllMode = !state.unlockAllMode;
+    saveProgressToStorage();
+    renderLessonTabs();
+    showToast(state.unlockAllMode
+      ? 'Đã BẬT: Bé có thể tự do chọn bất kỳ bài học nào! 🔓'
+      : 'Đã BẬT: Chế độ học theo lộ trình (đạt 8/10 để qua bài) 🔒');
+  });
+
+  document.getElementById('btn-reset-progress')?.addEventListener('click', () => {
+    state.unlockedLessons = [0];
+    state.currentLessonIndex = 0;
+    state.score = 0;
+    state.carriedOverWords = [];
+    saveProgressToStorage();
+    renderLessonTabs();
+    renderIslandMap();
+    showToast('Đã đặt lại tiến độ học tập từ Bài 1! 🌟');
+  });
+
   // 2. Điều hướng Header
   document.getElementById('btn-back')?.addEventListener('click', () => switchView('view-map'));
-  document.getElementById('btn-dialect-toggle')?.addEventListener('click', toggleDialect);
   document.getElementById('btn-sound-toggle')?.addEventListener('click', toggleSound);
   document.getElementById('btn-speed-toggle')?.addEventListener('click', toggleSpeed);
 
@@ -858,6 +938,7 @@ function finishQuizRound() {
       state.unlockedLessons.push(nextLessonIdx);
       renderLessonTabs();
     }
+    saveProgressToStorage();
 
     // Chuyển tối đa 2 từ làm sai sang bài sau để ôn tập
     state.carriedOverWords = round.missedWords.slice(0, 2);

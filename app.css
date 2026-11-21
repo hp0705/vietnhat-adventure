@@ -316,8 +316,74 @@ html, body {
 .lesson-picker-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
+}
+
+.picker-title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.picker-mode-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-mode-toggle {
+  background: #f1f5f9;
+  border: 2px solid #cbd5e1;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 800;
+  color: #334155;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-family) !important;
+  transition: all 0.15s ease;
+}
+
+.btn-mode-toggle.active {
+  background: #e0f2fe;
+  border-color: #0284c7;
+  color: #0369a1;
+}
+
+.btn-reset-small {
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 700;
+  color: #64748b;
+  cursor: pointer;
+  font-family: var(--font-family) !important;
+}
+
+.btn-reset-small:active {
+  background: #e2e8f0;
+}
+
+.nav-badge-dialect {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 44px;
+  padding: 0 14px;
+  background: #ecfdf5;
+  border: 2px solid #a7f3d0;
+  border-radius: var(--radius-full);
+  font-size: 14px;
+  font-weight: 800;
+  color: #065f46;
 }
 
 .lesson-badge {
