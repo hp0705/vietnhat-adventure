@@ -3,32 +3,27 @@
     "06-assets/audio/spelling/examples/sp_0001.mp3": {
       "id": "sp_0001",
       "kind": "example",
-      "text": "Bé tô tranh bằng sáp màu.",
-      "trusted_existing": true
+      "text": "Bé Mây tô tranh bằng sáp màu."
     },
     "06-assets/audio/spelling/examples/sp_0002.mp3": {
       "id": "sp_0002",
       "kind": "example",
-      "text": "Bé nhìn ngọn tháp cao.",
-      "trusted_existing": true
+      "text": "Bé Mây nhìn ngọn tháp cao."
     },
     "06-assets/audio/spelling/examples/sp_0003.mp3": {
       "id": "sp_0003",
       "kind": "example",
-      "text": "Bé xem xiếc ở rạp.",
-      "trusted_existing": true
+      "text": "Bé Mây xem xiếc ở rạp."
     },
     "06-assets/audio/spelling/examples/sp_0004.mp3": {
       "id": "sp_0004",
       "kind": "example",
-      "text": "Bé đánh trống.",
-      "trusted_existing": true
+      "text": "Bé Mây đánh trống."
     },
     "06-assets/audio/spelling/examples/sp_0005.mp3": {
       "id": "sp_0005",
       "kind": "example",
-      "text": "Bé mở sách.",
-      "trusted_existing": true
+      "text": "Bé Mây mở sách."
     },
     "06-assets/audio/spelling/examples/sp_0006.mp3": {
       "id": "sp_0006",
@@ -45,38 +40,32 @@
     "06-assets/audio/spelling/examples/sp_0008.mp3": {
       "id": "sp_0008",
       "kind": "example",
-      "text": "Bé bị đau tay.",
-      "trusted_existing": true
+      "text": "Bé Mây bị đau tay."
     },
     "06-assets/audio/spelling/examples/sp_0009.mp3": {
       "id": "sp_0009",
       "kind": "example",
-      "text": "Bé đứng sau mẹ.",
-      "trusted_existing": true
+      "text": "Bé Mây đứng sau mẹ."
     },
     "06-assets/audio/spelling/examples/sp_0010.mp3": {
       "id": "sp_0010",
       "kind": "example",
-      "text": "Bé đeo cặp đến lớp.",
-      "trusted_existing": true
+      "text": "Bé Mây đeo cặp đến lớp."
     },
     "06-assets/audio/spelling/examples/sp_0011.mp3": {
       "id": "sp_0011",
       "kind": "example",
-      "text": "Bé gặp bà ở sân.",
-      "trusted_existing": true
+      "text": "Bé Mây gặp bà ở sân."
     },
     "06-assets/audio/spelling/examples/sp_0012.mp3": {
       "id": "sp_0012",
       "kind": "example",
-      "text": "Bé lắp ghép đồ chơi.",
-      "trusted_existing": true
+      "text": "Bé Mây lắp ghép đồ chơi."
     },
     "06-assets/audio/spelling/examples/sp_0013.mp3": {
       "id": "sp_0013",
       "kind": "example",
-      "text": "Bé tập viết chữ.",
-      "trusted_existing": true
+      "text": "Bé Mây tập viết chữ."
     },
     "06-assets/audio/spelling/examples/sp_0014.mp3": {
       "id": "sp_0014",
@@ -87,26 +76,22 @@
     "06-assets/audio/spelling/examples/sp_0015.mp3": {
       "id": "sp_0015",
       "kind": "example",
-      "text": "Bé gấp thuyền giấy.",
-      "trusted_existing": true
+      "text": "Bé Mây gấp thuyền giấy."
     },
     "06-assets/audio/spelling/examples/sp_0016.mp3": {
       "id": "sp_0016",
       "kind": "example",
-      "text": "Bé xỏ dép đi chơi.",
-      "trusted_existing": true
+      "text": "Bé Mây xỏ dép đi chơi."
     },
     "06-assets/audio/spelling/examples/sp_0017.mp3": {
       "id": "sp_0017",
       "kind": "example",
-      "text": "Mẹ cài kẹp lên tóc bé.",
-      "trusted_existing": true
+      "text": "Mẹ cài kẹp lên tóc Bé Mây."
     },
     "06-assets/audio/spelling/examples/sp_0018.mp3": {
       "id": "sp_0018",
       "kind": "example",
-      "text": "Bé ghép hình con mèo.",
-      "trusted_existing": true
+      "text": "Bé Mây ghép hình con mèo."
     },
     "06-assets/audio/spelling/examples/sp_0019.mp3": {
       "id": "sp_0019",
@@ -123,20 +108,17 @@
     "06-assets/audio/spelling/examples/sp_0021.mp3": {
       "id": "sp_0021",
       "kind": "example",
-      "text": "Bé xếp hàng vào lớp.",
-      "trusted_existing": true
+      "text": "Bé Mây xếp hàng vào lớp."
     },
     "06-assets/audio/spelling/examples/sp_0022.mp3": {
       "id": "sp_0022",
       "kind": "example",
-      "text": "Bé đến lớp kịp giờ.",
-      "trusted_existing": true
+      "text": "Bé Mây đến lớp kịp giờ."
     },
     "06-assets/audio/spelling/examples/sp_0023.mp3": {
       "id": "sp_0023",
       "kind": "example",
-      "text": "Bé vỗ tay theo nhịp.",
-      "trusted_existing": true
+      "text": "Bé Mây vỗ tay theo nhịp."
     },
     "06-assets/audio/spelling/examples/sp_0024.mp3": {
       "id": "sp_0024",
@@ -159,14 +141,12 @@
     "06-assets/audio/spelling/examples/sp_0027.mp3": {
       "id": "sp_0027",
       "kind": "example",
-      "text": "Bé góp tiền vào heo đất.",
-      "trusted_existing": true
+      "text": "Bé Mây góp tiền vào heo đất."
     },
     "06-assets/audio/spelling/examples/sp_0028.mp3": {
       "id": "sp_0028",
       "kind": "example",
-      "text": "Bé cất bút vào hộp.",
-      "trusted_existing": true
+      "text": "Bé Mây cất bút vào hộp."
     },
     "06-assets/audio/spelling/examples/sp_0029.mp3": {
       "id": "sp_0029",
@@ -201,8 +181,7 @@
     "06-assets/audio/spelling/examples/sp_0034.mp3": {
       "id": "sp_0034",
       "kind": "example",
-      "text": "Bé ăn súp gà.",
-      "trusted_existing": true
+      "text": "Bé Mây ăn súp gà."
     },
     "06-assets/audio/spelling/examples/sp_0035.mp3": {
       "id": "sp_0035",
@@ -213,8 +192,7 @@
     "06-assets/audio/spelling/examples/sp_0036.mp3": {
       "id": "sp_0036",
       "kind": "example",
-      "text": "Bé ôm búp bê.",
-      "trusted_existing": true
+      "text": "Bé Mây ôm búp bê."
     },
     "06-assets/audio/spelling/examples/sp_0037.mp3": {
       "id": "sp_0037",
@@ -237,8 +215,7 @@
     "06-assets/audio/spelling/examples/sp_0040.mp3": {
       "id": "sp_0040",
       "kind": "example",
-      "text": "Bé thích ăn kem.",
-      "trusted_existing": true
+      "text": "Bé Mây thích ăn kem."
     },
     "06-assets/audio/spelling/examples/sp_0041.mp3": {
       "id": "sp_0041",
@@ -261,20 +238,17 @@
     "06-assets/audio/spelling/examples/sp_0044.mp3": {
       "id": "sp_0044",
       "kind": "example",
-      "text": "Bé viết thử vào giấy nháp.",
-      "trusted_existing": true
+      "text": "Bé Mây viết thử vào giấy nháp."
     },
     "06-assets/audio/spelling/examples/sp_0045.mp3": {
       "id": "sp_0045",
       "kind": "example",
-      "text": "Cô hỏi, bé đáp thật to.",
-      "trusted_existing": true
+      "text": "Cô hỏi, Bé Mây đáp thật to."
     },
     "06-assets/audio/spelling/examples/sp_0046.mp3": {
       "id": "sp_0046",
       "kind": "example",
-      "text": "Bé lắp ráp đồ chơi.",
-      "trusted_existing": true
+      "text": "Bé Mây lắp ráp đồ chơi."
     },
     "06-assets/audio/spelling/examples/sp_0047.mp3": {
       "id": "sp_0047",
@@ -285,14 +259,12 @@
     "06-assets/audio/spelling/examples/sp_0048.mp3": {
       "id": "sp_0048",
       "kind": "example",
-      "text": "Bé đậy nắp hộp lại.",
-      "trusted_existing": true
+      "text": "Bé Mây đậy nắp hộp lại."
     },
     "06-assets/audio/spelling/examples/sp_0049.mp3": {
       "id": "sp_0049",
       "kind": "example",
-      "text": "Mẹ đắp chăn cho bé ngủ.",
-      "trusted_existing": true
+      "text": "Mẹ đắp chăn cho Bé Mây ngủ."
     },
     "06-assets/audio/spelling/examples/sp_0050.mp3": {
       "id": "sp_0050",
@@ -303,8 +275,7 @@
     "06-assets/audio/spelling/examples/sp_0051.mp3": {
       "id": "sp_0051",
       "kind": "example",
-      "text": "Bé chắp tay chào ông bà.",
-      "trusted_existing": true
+      "text": "Bé Mây chắp tay chào ông bà."
     },
     "06-assets/audio/spelling/examples/sp_0052.mp3": {
       "id": "sp_0052",
@@ -321,14 +292,12 @@
     "06-assets/audio/spelling/examples/sp_0054.mp3": {
       "id": "sp_0054",
       "kind": "example",
-      "text": "Mẹ hấp bánh cho bé.",
-      "trusted_existing": true
+      "text": "Mẹ hấp bánh cho Bé Mây."
     },
     "06-assets/audio/spelling/examples/sp_0055.mp3": {
       "id": "sp_0055",
       "kind": "example",
-      "text": "Bé nấp sau cây khi chơi trốn tìm.",
-      "trusted_existing": true
+      "text": "Bé Mây nấp sau cây khi chơi trốn tìm."
     },
     "06-assets/audio/spelling/examples/sp_0056.mp3": {
       "id": "sp_0056",
@@ -339,20 +308,17 @@
     "06-assets/audio/spelling/examples/sp_0057.mp3": {
       "id": "sp_0057",
       "kind": "example",
-      "text": "Bé gập sách lại.",
-      "trusted_existing": true
+      "text": "Bé Mây gập sách lại."
     },
     "06-assets/audio/spelling/examples/sp_0058.mp3": {
       "id": "sp_0058",
       "kind": "example",
-      "text": "Bé đi cẩn thận kẻo vấp.",
-      "trusted_existing": true
+      "text": "Bé Mây đi cẩn thận kẻo vấp."
     },
     "06-assets/audio/spelling/examples/sp_0059.mp3": {
       "id": "sp_0059",
       "kind": "example",
-      "text": "Em bé chập chững bước đi.",
-      "trusted_existing": true
+      "text": "Bé Mây chập chững bước đi."
     },
     "06-assets/audio/spelling/examples/sp_0060.mp3": {
       "id": "sp_0060",
@@ -381,20 +347,17 @@
     "06-assets/audio/spelling/examples/sp_0064.mp3": {
       "id": "sp_0064",
       "kind": "example",
-      "text": "Bé chép bài vào vở.",
-      "trusted_existing": true
+      "text": "Bé Mây chép bài vào vở."
     },
     "06-assets/audio/spelling/examples/sp_0065.mp3": {
       "id": "sp_0065",
       "kind": "example",
-      "text": "Mẹ ép cam cho bé.",
-      "trusted_existing": true
+      "text": "Mẹ ép cam cho Bé Mây."
     },
     "06-assets/audio/spelling/examples/sp_0066.mp3": {
       "id": "sp_0066",
       "kind": "example",
-      "text": "Bé khép cửa thật nhẹ.",
-      "trusted_existing": true
+      "text": "Bé Mây khép cửa thật nhẹ."
     },
     "06-assets/audio/spelling/examples/sp_0067.mp3": {
       "id": "sp_0067",
@@ -411,8 +374,7 @@
     "06-assets/audio/spelling/examples/sp_0069.mp3": {
       "id": "sp_0069",
       "kind": "example",
-      "text": "Nhà bé về quê vào dịp lễ.",
-      "trusted_existing": true
+      "text": "Nhà Bé Mây về quê vào dịp lễ."
     },
     "06-assets/audio/spelling/examples/sp_0070.mp3": {
       "id": "sp_0070",
@@ -429,14 +391,12 @@
     "06-assets/audio/spelling/examples/sp_0072.mp3": {
       "id": "sp_0072",
       "kind": "example",
-      "text": "Bé nộp bài cho cô.",
-      "trusted_existing": true
+      "text": "Bé Mây nộp bài cho cô."
     },
     "06-assets/audio/spelling/examples/sp_0073.mp3": {
       "id": "sp_0073",
       "kind": "example",
-      "text": "Bé gộp lại các hộp bút.",
-      "trusted_existing": true
+      "text": "Bé Mây gộp lại các hộp bút."
     },
     "06-assets/audio/spelling/examples/sp_0074.mp3": {
       "id": "sp_0074",
@@ -453,8 +413,7 @@
     "06-assets/audio/spelling/examples/sp_0076.mp3": {
       "id": "sp_0076",
       "kind": "example",
-      "text": "Bé hớp nước từng ngụm nhỏ.",
-      "trusted_existing": true
+      "text": "Bé Mây hớp nước từng ngụm nhỏ."
     },
     "06-assets/audio/spelling/examples/sp_0077.mp3": {
       "id": "sp_0077",
@@ -465,14 +424,12 @@
     "06-assets/audio/spelling/examples/sp_0078.mp3": {
       "id": "sp_0078",
       "kind": "example",
-      "text": "Bố chụp ảnh cho bé.",
-      "trusted_existing": true
+      "text": "Bố chụp ảnh cho Bé Mây."
     },
     "06-assets/audio/spelling/examples/sp_0079.mp3": {
       "id": "sp_0079",
       "kind": "example",
-      "text": "Bé chui vào túp lều nhỏ.",
-      "trusted_existing": true
+      "text": "Bé Mây chui vào túp lều nhỏ."
     },
     "06-assets/audio/spelling/examples/sp_0080.mp3": {
       "id": "sp_0080",
@@ -483,14 +440,12 @@
     "06-assets/audio/spelling/examples/sp_0081.mp3": {
       "id": "sp_0081",
       "kind": "example",
-      "text": "Bé rửa tay cho sạch.",
-      "trusted_existing": true
+      "text": "Bé Mây rửa tay cho sạch."
     },
     "06-assets/audio/spelling/examples/sp_0082.mp3": {
       "id": "sp_0082",
       "kind": "example",
-      "text": "Nhà bé có khách đến chơi.",
-      "trusted_existing": true
+      "text": "Nhà Bé Mây có khách đến chơi."
     },
     "06-assets/audio/spelling/examples/sp_0083.mp3": {
       "id": "sp_0083",
@@ -501,20 +456,17 @@
     "06-assets/audio/spelling/examples/sp_0084.mp3": {
       "id": "sp_0084",
       "kind": "example",
-      "text": "Bé ăn thạch rau câu.",
-      "trusted_existing": true
+      "text": "Bé Mây ăn thạch rau câu."
     },
     "06-assets/audio/spelling/examples/sp_0085.mp3": {
       "id": "sp_0085",
       "kind": "example",
-      "text": "Bé đứng sau vạch kẻ.",
-      "trusted_existing": true
+      "text": "Bé Mây đứng sau vạch kẻ."
     },
     "06-assets/audio/spelling/examples/sp_0086.mp3": {
       "id": "sp_0086",
       "kind": "example",
-      "text": "Bé thấy bạch tuộc ở thủy cung.",
-      "trusted_existing": true
+      "text": "Bé Mây thấy bạch tuộc ở thủy cung."
     },
     "06-assets/audio/spelling/examples/sp_0087.mp3": {
       "id": "sp_0087",
@@ -525,14 +477,12 @@
     "06-assets/audio/spelling/examples/sp_0088.mp3": {
       "id": "sp_0088",
       "kind": "example",
-      "text": "Bé chơi xích đu ở sân.",
-      "trusted_existing": true
+      "text": "Bé Mây chơi xích đu ở sân."
     },
     "06-assets/audio/spelling/examples/sp_0089.mp3": {
       "id": "sp_0089",
       "kind": "example",
-      "text": "Lớp bé diễn vở kịch.",
-      "trusted_existing": true
+      "text": "Lớp Bé Mây diễn vở kịch."
     },
     "06-assets/audio/spelling/examples/sp_0090.mp3": {
       "id": "sp_0090",
@@ -543,8 +493,7 @@
     "06-assets/audio/spelling/examples/sp_0091.mp3": {
       "id": "sp_0091",
       "kind": "example",
-      "text": "Anh dắt bé đi học.",
-      "trusted_existing": true
+      "text": "Anh dắt Bé Mây đi học."
     },
     "06-assets/audio/spelling/examples/sp_0092.mp3": {
       "id": "sp_0092",
@@ -555,14 +504,12 @@
     "06-assets/audio/spelling/examples/sp_0093.mp3": {
       "id": "sp_0093",
       "kind": "example",
-      "text": "Mẹ làm bánh cho bé.",
-      "trusted_existing": true
+      "text": "Mẹ làm bánh cho Bé Mây."
     },
     "06-assets/audio/spelling/examples/sp_0094.mp3": {
       "id": "sp_0094",
       "kind": "example",
-      "text": "Bé ăn canh rau với cơm.",
-      "trusted_existing": true
+      "text": "Bé Mây ăn canh rau với cơm."
     },
     "06-assets/audio/spelling/examples/sp_0095.mp3": {
       "id": "sp_0095",
@@ -573,8 +520,7 @@
     "06-assets/audio/spelling/examples/sp_0096.mp3": {
       "id": "sp_0096",
       "kind": "example",
-      "text": "Bé vẽ tranh tặng mẹ.",
-      "trusted_existing": true
+      "text": "Bé Mây vẽ tranh tặng mẹ."
     },
     "06-assets/audio/spelling/examples/sp_0097.mp3": {
       "id": "sp_0097",
@@ -597,14 +543,12 @@
     "06-assets/audio/spelling/examples/sp_0100.mp3": {
       "id": "sp_0100",
       "kind": "example",
-      "text": "Trời lạnh, bé mặc áo ấm.",
-      "trusted_existing": true
+      "text": "Trời lạnh, Bé Mây mặc áo ấm."
     },
     "06-assets/audio/spelling/examples/sp_0101.mp3": {
       "id": "sp_0101",
       "kind": "example",
-      "text": "Bé ăn nhiều rau để khỏe mạnh.",
-      "trusted_existing": true
+      "text": "Bé Mây ăn nhiều rau để khỏe mạnh."
     },
     "06-assets/audio/spelling/examples/sp_0102.mp3": {
       "id": "sp_0102",
@@ -627,8 +571,7 @@
     "06-assets/audio/spelling/examples/sp_0105.mp3": {
       "id": "sp_0105",
       "kind": "example",
-      "text": "Bé tô màu bức tranh.",
-      "trusted_existing": true
+      "text": "Bé Mây tô màu bức tranh."
     },
     "06-assets/audio/spelling/examples/sp_0106.mp3": {
       "id": "sp_0106",
@@ -639,8 +582,7 @@
     "06-assets/audio/spelling/examples/sp_0107.mp3": {
       "id": "sp_0107",
       "kind": "example",
-      "text": "Bé lau bàn giúp mẹ.",
-      "trusted_existing": true
+      "text": "Bé Mây lau bàn giúp mẹ."
     },
     "06-assets/audio/spelling/examples/sp_0108.mp3": {
       "id": "sp_0108",
@@ -651,8 +593,7 @@
     "06-assets/audio/spelling/examples/sp_0109.mp3": {
       "id": "sp_0109",
       "kind": "example",
-      "text": "Bé xếp sáu viên gạch.",
-      "trusted_existing": true
+      "text": "Bé Mây xếp sáu viên gạch."
     },
     "06-assets/audio/spelling/examples/sp_0110.mp3": {
       "id": "sp_0110",
@@ -681,8 +622,7 @@
     "06-assets/audio/spelling/examples/sp_0114.mp3": {
       "id": "sp_0114",
       "kind": "example",
-      "text": "Bé nhìn bằng đôi mắt.",
-      "trusted_existing": true
+      "text": "Bé Mây nhìn bằng đôi mắt."
     },
     "06-assets/audio/spelling/examples/sp_0115.mp3": {
       "id": "sp_0115",
@@ -699,8 +639,7 @@
     "06-assets/audio/spelling/examples/sp_0117.mp3": {
       "id": "sp_0117",
       "kind": "example",
-      "text": "Nhà bé đón Tết.",
-      "trusted_existing": true
+      "text": "Nhà Bé Mây đón Tết."
     },
     "06-assets/audio/spelling/examples/sp_0118.mp3": {
       "id": "sp_0118",
@@ -711,8 +650,7 @@
     "06-assets/audio/spelling/examples/sp_0119.mp3": {
       "id": "sp_0119",
       "kind": "example",
-      "text": "Bé cầm bút viết chữ.",
-      "trusted_existing": true
+      "text": "Bé Mây cầm bút viết chữ."
     },
     "06-assets/audio/spelling/examples/sp_0120.mp3": {
       "id": "sp_0120",
@@ -723,8 +661,7 @@
     "06-assets/audio/spelling/examples/sp_0121.mp3": {
       "id": "sp_0121",
       "kind": "example",
-      "text": "Bé làm việc tốt.",
-      "trusted_existing": true
+      "text": "Bé Mây làm việc tốt."
     },
     "06-assets/audio/spelling/examples/sp_0122.mp3": {
       "id": "sp_0122",
@@ -735,8 +672,7 @@
     "06-assets/audio/spelling/examples/sp_0123.mp3": {
       "id": "sp_0123",
       "kind": "example",
-      "text": "Bé viết tên mình.",
-      "trusted_existing": true
+      "text": "Bé Mây viết tên mình."
     },
     "06-assets/audio/spelling/examples/sp_0124.mp3": {
       "id": "sp_0124",
@@ -747,26 +683,22 @@
     "06-assets/audio/spelling/examples/sp_0125.mp3": {
       "id": "sp_0125",
       "kind": "example",
-      "text": "Bé tự mặc áo.",
-      "trusted_existing": true
+      "text": "Bé Mây tự mặc áo."
     },
     "06-assets/audio/spelling/examples/sp_0126.mp3": {
       "id": "sp_0126",
       "kind": "example",
-      "text": "Bé bước lên bậc thang.",
-      "trusted_existing": true
+      "text": "Bé Mây bước lên bậc thang."
     },
     "06-assets/audio/spelling/examples/sp_0127.mp3": {
       "id": "sp_0127",
       "kind": "example",
-      "text": "Mẹ buộc tóc cho bé.",
-      "trusted_existing": true
+      "text": "Mẹ buộc tóc cho Bé Mây."
     },
     "06-assets/audio/spelling/examples/sp_0128.mp3": {
       "id": "sp_0128",
       "kind": "example",
-      "text": "Bé đọc sách mỗi tối.",
-      "trusted_existing": true
+      "text": "Bé Mây đọc sách mỗi tối."
     },
     "06-assets/audio/spelling/examples/sp_0129.mp3": {
       "id": "sp_0129",
@@ -789,26 +721,22 @@
     "06-assets/audio/spelling/examples/sp_0132.mp3": {
       "id": "sp_0132",
       "kind": "example",
-      "text": "Bé uống nước.",
-      "trusted_existing": true
+      "text": "Bé Mây uống nước."
     },
     "06-assets/audio/spelling/examples/sp_0133.mp3": {
       "id": "sp_0133",
       "kind": "example",
-      "text": "Bé uống thuốc khi ốm.",
-      "trusted_existing": true
+      "text": "Bé Mây uống thuốc khi ốm."
     },
     "06-assets/audio/spelling/examples/sp_0134.mp3": {
       "id": "sp_0134",
       "kind": "example",
-      "text": "Bé thích ăn cam.",
-      "trusted_existing": true
+      "text": "Bé Mây thích ăn cam."
     },
     "06-assets/audio/spelling/examples/sp_0135.mp3": {
       "id": "sp_0135",
       "kind": "example",
-      "text": "Bé làm bài tập.",
-      "trusted_existing": true
+      "text": "Bé Mây làm bài tập."
     },
     "06-assets/audio/spelling/examples/sp_0136.mp3": {
       "id": "sp_0136",
@@ -825,14 +753,12 @@
     "06-assets/audio/spelling/examples/sp_0138.mp3": {
       "id": "sp_0138",
       "kind": "example",
-      "text": "Bé ăn kem que.",
-      "trusted_existing": true
+      "text": "Bé Mây ăn kem que."
     },
     "06-assets/audio/spelling/examples/sp_0139.mp3": {
       "id": "sp_0139",
       "kind": "example",
-      "text": "Đêm đến, bé đi ngủ.",
-      "trusted_existing": true
+      "text": "Đêm đến, Bé Mây đi ngủ."
     },
     "06-assets/audio/spelling/examples/sp_0140.mp3": {
       "id": "sp_0140",
@@ -861,38 +787,32 @@
     "06-assets/audio/spelling/examples/sp_0144.mp3": {
       "id": "sp_0144",
       "kind": "example",
-      "text": "Bé ngồi vào bàn học.",
-      "trusted_existing": true
+      "text": "Bé Mây ngồi vào bàn học."
     },
     "06-assets/audio/spelling/examples/sp_0145.mp3": {
       "id": "sp_0145",
       "kind": "example",
-      "text": "Bé lau tay bằng khăn.",
-      "trusted_existing": true
+      "text": "Bé Mây lau tay bằng khăn."
     },
     "06-assets/audio/spelling/examples/sp_0146.mp3": {
       "id": "sp_0146",
       "kind": "example",
-      "text": "Bé chơi ở sân.",
-      "trusted_existing": true
+      "text": "Bé Mây chơi ở sân."
     },
     "06-assets/audio/spelling/examples/sp_0147.mp3": {
       "id": "sp_0147",
       "kind": "example",
-      "text": "Bé bật đèn.",
-      "trusted_existing": true
+      "text": "Bé Mây bật đèn."
     },
     "06-assets/audio/spelling/examples/sp_0148.mp3": {
       "id": "sp_0148",
       "kind": "example",
-      "text": "Mèo nằm bên bé.",
-      "trusted_existing": true
+      "text": "Mèo nằm bên Bé Mây."
     },
     "06-assets/audio/spelling/examples/sp_0149.mp3": {
       "id": "sp_0149",
       "kind": "example",
-      "text": "Bé đếm đến chín.",
-      "trusted_existing": true
+      "text": "Bé Mây đếm đến chín."
     },
     "06-assets/audio/spelling/examples/sp_0150.mp3": {
       "id": "sp_0150",
@@ -903,8 +823,7 @@
     "06-assets/audio/spelling/examples/sp_0151.mp3": {
       "id": "sp_0151",
       "kind": "example",
-      "text": "Nhà bé có bốn người.",
-      "trusted_existing": true
+      "text": "Nhà Bé Mây có bốn người."
     },
     "06-assets/audio/spelling/examples/sp_0152.mp3": {
       "id": "sp_0152",
@@ -915,14 +834,12 @@
     "06-assets/audio/spelling/examples/sp_0153.mp3": {
       "id": "sp_0153",
       "kind": "example",
-      "text": "Bé chơi với cún.",
-      "trusted_existing": true
+      "text": "Bé Mây chơi với cún."
     },
     "06-assets/audio/spelling/examples/sp_0154.mp3": {
       "id": "sp_0154",
       "kind": "example",
-      "text": "Buổi sáng, bé đánh răng.",
-      "trusted_existing": true
+      "text": "Buổi sáng, Bé Mây đánh răng."
     },
     "06-assets/audio/spelling/examples/sp_0155.mp3": {
       "id": "sp_0155",
@@ -933,26 +850,22 @@
     "06-assets/audio/spelling/examples/sp_0156.mp3": {
       "id": "sp_0156",
       "kind": "example",
-      "text": "Nhà bé ở tầng hai.",
-      "trusted_existing": true
+      "text": "Nhà Bé Mây ở tầng hai."
     },
     "06-assets/audio/spelling/examples/sp_0157.mp3": {
       "id": "sp_0157",
       "kind": "example",
-      "text": "Bé xúc cát bằng xẻng.",
-      "trusted_existing": true
+      "text": "Bé Mây xúc cát bằng xẻng."
     },
     "06-assets/audio/spelling/examples/sp_0158.mp3": {
       "id": "sp_0158",
       "kind": "example",
-      "text": "Bé đá bóng ở sân.",
-      "trusted_existing": true
+      "text": "Bé Mây đá bóng ở sân."
     },
     "06-assets/audio/spelling/examples/sp_0159.mp3": {
       "id": "sp_0159",
       "kind": "example",
-      "text": "Bé hái bông hoa.",
-      "trusted_existing": true
+      "text": "Bé Mây hái bông hoa."
     },
     "06-assets/audio/spelling/examples/sp_0160.mp3": {
       "id": "sp_0160",
@@ -975,20 +888,17 @@
     "06-assets/audio/spelling/examples/sp_0163.mp3": {
       "id": "sp_0163",
       "kind": "example",
-      "text": "Bé đứng dậy chào cô.",
-      "trusted_existing": true
+      "text": "Bé Mây đứng dậy chào cô."
     },
     "06-assets/audio/spelling/examples/sp_0164.mp3": {
       "id": "sp_0164",
       "kind": "example",
-      "text": "Bé có hai bàn tay.",
-      "trusted_existing": true
+      "text": "Bé Mây có hai bàn tay."
     },
     "06-assets/audio/spelling/examples/sp_0165.mp3": {
       "id": "sp_0165",
       "kind": "example",
-      "text": "Bé nghe bằng tai.",
-      "trusted_existing": true
+      "text": "Bé Mây nghe bằng tai."
     },
     "06-assets/audio/spelling/examples/sp_0166.mp3": {
       "id": "sp_0166",
@@ -1005,32 +915,27 @@
     "06-assets/audio/spelling/examples/sp_0168.mp3": {
       "id": "sp_0168",
       "kind": "example",
-      "text": "Bé chơi với bạn.",
-      "trusted_existing": true
+      "text": "Bé Mây chơi với bạn."
     },
     "06-assets/audio/spelling/examples/sp_0169.mp3": {
       "id": "sp_0169",
       "kind": "example",
-      "text": "Bé rất vui.",
-      "trusted_existing": true
+      "text": "Bé Mây rất vui."
     },
     "06-assets/audio/spelling/examples/sp_0170.mp3": {
       "id": "sp_0170",
       "kind": "example",
-      "text": "Bé leo núi cùng bố.",
-      "trusted_existing": true
+      "text": "Bé Mây leo núi cùng bố."
     },
     "06-assets/audio/spelling/examples/sp_0171.mp3": {
       "id": "sp_0171",
       "kind": "example",
-      "text": "Bé gửi thư cho bà.",
-      "trusted_existing": true
+      "text": "Bé Mây gửi thư cho bà."
     },
     "06-assets/audio/spelling/examples/sp_0172.mp3": {
       "id": "sp_0172",
       "kind": "example",
-      "text": "Bé cười thật tươi.",
-      "trusted_existing": true
+      "text": "Bé Mây cười thật tươi."
     },
     "06-assets/audio/spelling/examples/sp_0173.mp3": {
       "id": "sp_0173",
@@ -1041,8 +946,7 @@
     "06-assets/audio/spelling/examples/sp_0174.mp3": {
       "id": "sp_0174",
       "kind": "example",
-      "text": "Bé rửa tay sạch.",
-      "trusted_existing": true
+      "text": "Bé Mây rửa tay sạch."
     },
     "06-assets/audio/spelling/examples/sp_0175.mp3": {
       "id": "sp_0175",
@@ -1065,8 +969,7 @@
     "06-assets/audio/spelling/examples/sp_0178.mp3": {
       "id": "sp_0178",
       "kind": "example",
-      "text": "Bé ngồi ở đây.",
-      "trusted_existing": true
+      "text": "Bé Mây ngồi ở đây."
     },
     "06-assets/audio/spelling/examples/sp_0179.mp3": {
       "id": "sp_0179",
@@ -1083,8 +986,7 @@
     "06-assets/audio/spelling/examples/sp_0181.mp3": {
       "id": "sp_0181",
       "kind": "example",
-      "text": "Bé nhảy dây ở sân.",
-      "trusted_existing": true
+      "text": "Bé Mây nhảy dây ở sân."
     },
     "06-assets/audio/spelling/examples/sp_0182.mp3": {
       "id": "sp_0182",
@@ -1101,8 +1003,7 @@
     "06-assets/audio/spelling/examples/sp_0184.mp3": {
       "id": "sp_0184",
       "kind": "example",
-      "text": "Bé mặc áo ấm.",
-      "trusted_existing": true
+      "text": "Bé Mây mặc áo ấm."
     },
     "06-assets/audio/spelling/examples/sp_0185.mp3": {
       "id": "sp_0185",
@@ -1125,8 +1026,7 @@
     "06-assets/audio/spelling/examples/sp_0188.mp3": {
       "id": "sp_0188",
       "kind": "example",
-      "text": "Bé chào cô giáo.",
-      "trusted_existing": true
+      "text": "Bé Mây chào cô giáo."
     },
     "06-assets/audio/spelling/examples/sp_0189.mp3": {
       "id": "sp_0189",
@@ -1137,8 +1037,7 @@
     "06-assets/audio/spelling/examples/sp_0190.mp3": {
       "id": "sp_0190",
       "kind": "example",
-      "text": "Bé nhận kẹo từ bà.",
-      "trusted_existing": true
+      "text": "Bé Mây nhận kẹo từ bà."
     },
     "06-assets/audio/spelling/examples/sp_0191.mp3": {
       "id": "sp_0191",
@@ -1173,8 +1072,7 @@
     "06-assets/audio/spelling/examples/sp_0196.mp3": {
       "id": "sp_0196",
       "kind": "example",
-      "text": "Bé đội mũ lên đầu.",
-      "trusted_existing": true
+      "text": "Bé Mây đội mũ lên đầu."
     },
     "06-assets/audio/spelling/examples/sp_0197.mp3": {
       "id": "sp_0197",
@@ -1197,8 +1095,7 @@
     "06-assets/audio/spelling/examples/sp_0200.mp3": {
       "id": "sp_0200",
       "kind": "example",
-      "text": "Bé chui vào lều.",
-      "trusted_existing": true
+      "text": "Bé Mây chui vào lều."
     },
     "06-assets/audio/spelling/examples/sp_0201.mp3": {
       "id": "sp_0201",
@@ -1209,8 +1106,7 @@
     "06-assets/audio/spelling/examples/sp_0202.mp3": {
       "id": "sp_0202",
       "kind": "example",
-      "text": "Bé níu tay mẹ.",
-      "trusted_existing": true
+      "text": "Bé Mây níu tay mẹ."
     },
     "06-assets/audio/spelling/examples/sp_0203.mp3": {
       "id": "sp_0203",
@@ -1221,8 +1117,7 @@
     "06-assets/audio/spelling/examples/sp_0204.mp3": {
       "id": "sp_0204",
       "kind": "example",
-      "text": "Trời nắng, bé đội mũ.",
-      "trusted_existing": true
+      "text": "Trời nắng, Bé Mây đội mũ."
     },
     "06-assets/audio/spelling/examples/sp_0205.mp3": {
       "id": "sp_0205",
@@ -1245,8 +1140,7 @@
     "06-assets/audio/spelling/examples/sp_0208.mp3": {
       "id": "sp_0208",
       "kind": "example",
-      "text": "Bé đáp: Vâng ạ!",
-      "trusted_existing": true
+      "text": "Bé Mây đáp: Vâng ạ!"
     },
     "06-assets/audio/spelling/examples/sp_0209.mp3": {
       "id": "sp_0209",
@@ -1263,14 +1157,12 @@
     "06-assets/audio/spelling/examples/sp_0211.mp3": {
       "id": "sp_0211",
       "kind": "example",
-      "text": "Ông kể chuyện cho bé nghe.",
-      "trusted_existing": true
+      "text": "Ông kể chuyện cho Bé Mây nghe."
     },
     "06-assets/audio/spelling/examples/sp_0212.mp3": {
       "id": "sp_0212",
       "kind": "example",
-      "text": "Bé đi học cùng bạn.",
-      "trusted_existing": true
+      "text": "Bé Mây đi học cùng bạn."
     },
     "06-assets/audio/spelling/examples/sp_0213.mp3": {
       "id": "sp_0213",
@@ -1281,14 +1173,12 @@
     "06-assets/audio/spelling/examples/sp_0214.mp3": {
       "id": "sp_0214",
       "kind": "example",
-      "text": "Bé nghe tiếng chim hót.",
-      "trusted_existing": true
+      "text": "Bé Mây nghe tiếng chim hót."
     },
     "06-assets/audio/spelling/examples/sp_0215.mp3": {
       "id": "sp_0215",
       "kind": "example",
-      "text": "Bé há miệng ăn cơm.",
-      "trusted_existing": true
+      "text": "Bé Mây há miệng ăn cơm."
     },
     "06-assets/audio/spelling/examples/sp_0216.mp3": {
       "id": "sp_0216",
@@ -1299,8 +1189,7 @@
     "06-assets/audio/spelling/examples/sp_0217.mp3": {
       "id": "sp_0217",
       "kind": "example",
-      "text": "Bé uống sữa.",
-      "trusted_existing": true
+      "text": "Bé Mây uống sữa."
     },
     "06-assets/audio/spelling/examples/sp_0218.mp3": {
       "id": "sp_0218",
@@ -1329,44 +1218,37 @@
     "06-assets/audio/spelling/examples/sp_0222.mp3": {
       "id": "sp_0222",
       "kind": "example",
-      "text": "Bé đến trường mỗi ngày.",
-      "trusted_existing": true
+      "text": "Bé Mây đến trường mỗi ngày."
     },
     "06-assets/audio/spelling/examples/sp_0223.mp3": {
       "id": "sp_0223",
       "kind": "example",
-      "text": "Mẹ thương bé.",
-      "trusted_existing": true
+      "text": "Mẹ thương Bé Mây."
     },
     "06-assets/audio/spelling/examples/sp_0224.mp3": {
       "id": "sp_0224",
       "kind": "example",
-      "text": "Bé vẽ một hình tròn.",
-      "trusted_existing": true
+      "text": "Bé Mây vẽ một hình tròn."
     },
     "06-assets/audio/spelling/examples/sp_0225.mp3": {
       "id": "sp_0225",
       "kind": "example",
-      "text": "Em bé rất xinh.",
-      "trusted_existing": true
+      "text": "Bé Mây rất xinh."
     },
     "06-assets/audio/spelling/examples/sp_0226.mp3": {
       "id": "sp_0226",
       "kind": "example",
-      "text": "Bé bị bệnh nên nghỉ học.",
-      "trusted_existing": true
+      "text": "Bé Mây bị bệnh nên nghỉ học."
     },
     "06-assets/audio/spelling/examples/sp_0227.mp3": {
       "id": "sp_0227",
       "kind": "example",
-      "text": "Bé chịu khó học bài.",
-      "trusted_existing": true
+      "text": "Bé Mây chịu khó học bài."
     },
     "06-assets/audio/spelling/examples/sp_0228.mp3": {
       "id": "sp_0228",
       "kind": "example",
-      "text": "Bé thả diều ngoài đồng.",
-      "trusted_existing": true
+      "text": "Bé Mây thả diều ngoài đồng."
     },
     "06-assets/audio/spelling/examples/sp_0229.mp3": {
       "id": "sp_0229",
@@ -2763,7 +2645,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0001/example.mp3": {
       "id": "vi_0001",
       "kind": "example",
-      "text": "Ba đọc sách cho bé nghe."
+      "text": "Ba đọc sách cho Bé Mây nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0001/word.mp3": {
       "id": "vi_0001",
@@ -2773,7 +2655,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0002/example.mp3": {
       "id": "vi_0002",
       "kind": "example",
-      "text": "Bà kể chuyện cổ tích cho bé."
+      "text": "Bà kể chuyện cổ tích cho Bé Mây."
     },
     "06-assets/audio/vi/north-hanoi/vi_0002/word.mp3": {
       "id": "vi_0002",
@@ -2783,7 +2665,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0003/example.mp3": {
       "id": "vi_0003",
       "kind": "example",
-      "text": "Bố đưa bé đi chơi công viên."
+      "text": "Bố đưa Bé Mây đi chơi công viên."
     },
     "06-assets/audio/vi/north-hanoi/vi_0003/word.mp3": {
       "id": "vi_0003",
@@ -2793,7 +2675,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0004/example.mp3": {
       "id": "vi_0004",
       "kind": "example",
-      "text": "Mẹ ôm bé vào lòng ấm áp."
+      "text": "Mẹ ôm Bé Mây vào lòng ấm áp."
     },
     "06-assets/audio/vi/north-hanoi/vi_0004/word.mp3": {
       "id": "vi_0004",
@@ -2803,7 +2685,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0005/example.mp3": {
       "id": "vi_0005",
       "kind": "example",
-      "text": "Bé cười tươi khi nhìn thấy mẹ."
+      "text": "Bé Mây cười tươi khi nhìn thấy mẹ."
     },
     "06-assets/audio/vi/north-hanoi/vi_0005/word.mp3": {
       "id": "vi_0005",
@@ -2863,7 +2745,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0011/example.mp3": {
       "id": "vi_0011",
       "kind": "example",
-      "text": "Chú chó cưng vẫy đuôi mừng bé về."
+      "text": "Chú chó cưng vẫy đuôi mừng Bé Mây về."
     },
     "06-assets/audio/vi/north-hanoi/vi_0011/word.mp3": {
       "id": "vi_0011",
@@ -2933,7 +2815,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0018/example.mp3": {
       "id": "vi_0018",
       "kind": "example",
-      "text": "Bé bật đèn bàn để chuẩn bị học bài."
+      "text": "Bé Mây bật đèn bàn để chuẩn bị học bài."
     },
     "06-assets/audio/vi/north-hanoi/vi_0018/word.mp3": {
       "id": "vi_0018",
@@ -2943,7 +2825,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0019/example.mp3": {
       "id": "vi_0019",
       "kind": "example",
-      "text": "Bé cầm bút vẽ ngôi nhà mơ ước."
+      "text": "Bé Mây cầm bút vẽ ngôi nhà mơ ước."
     },
     "06-assets/audio/vi/north-hanoi/vi_0019/word.mp3": {
       "id": "vi_0019",
@@ -2953,7 +2835,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0020/example.mp3": {
       "id": "vi_0020",
       "kind": "example",
-      "text": "Bé lật từng trang sách khám phá thế giới."
+      "text": "Bé Mây lật từng trang sách khám phá thế giới."
     },
     "06-assets/audio/vi/north-hanoi/vi_0020/word.mp3": {
       "id": "vi_0020",
@@ -2963,7 +2845,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0021/example.mp3": {
       "id": "vi_0021",
       "kind": "example",
-      "text": "Bé giữ gìn quyển vở tập viết sạch đẹp."
+      "text": "Bé Mây giữ gìn quyển vở tập viết sạch đẹp."
     },
     "06-assets/audio/vi/north-hanoi/vi_0021/word.mp3": {
       "id": "vi_0021",
@@ -2993,7 +2875,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0024/example.mp3": {
       "id": "vi_0024",
       "kind": "example",
-      "text": "Bé mở miệng xinh đọc bài to rõ ràng."
+      "text": "Bé Mây mở miệng xinh đọc bài to rõ ràng."
     },
     "06-assets/audio/vi/north-hanoi/vi_0024/word.mp3": {
       "id": "vi_0024",
@@ -3003,7 +2885,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0025/example.mp3": {
       "id": "vi_0025",
       "kind": "example",
-      "text": "Đôi chân bé thoăn thoắt chạy trên sân."
+      "text": "Đôi chân Bé Mây thoăn thoắt chạy trên sân."
     },
     "06-assets/audio/vi/north-hanoi/vi_0025/word.mp3": {
       "id": "vi_0025",
@@ -3013,7 +2895,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0026/example.mp3": {
       "id": "vi_0026",
       "kind": "example",
-      "text": "Bé tự giác ngồi vào bàn ăn cơm."
+      "text": "Bé Mây tự giác ngồi vào bàn ăn cơm."
     },
     "06-assets/audio/vi/north-hanoi/vi_0026/word.mp3": {
       "id": "vi_0026",
@@ -3023,7 +2905,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0027/example.mp3": {
       "id": "vi_0027",
       "kind": "example",
-      "text": "Bé uống sữa ấm trước khi đi ngủ."
+      "text": "Bé Mây uống sữa ấm trước khi đi ngủ."
     },
     "06-assets/audio/vi/north-hanoi/vi_0027/word.mp3": {
       "id": "vi_0027",
@@ -3033,7 +2915,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0028/example.mp3": {
       "id": "vi_0028",
       "kind": "example",
-      "text": "Bé ngủ ngoan trong vòng tay của mẹ."
+      "text": "Bé Mây ngủ ngoan trong vòng tay của mẹ."
     },
     "06-assets/audio/vi/north-hanoi/vi_0028/word.mp3": {
       "id": "vi_0028",
@@ -3043,7 +2925,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0030/example.mp3": {
       "id": "vi_0030",
       "kind": "example",
-      "text": "Bé nắm tay ba đi dạo."
+      "text": "Bé Mây nắm tay ba đi dạo."
     },
     "06-assets/audio/vi/north-hanoi/vi_0030/word.mp3": {
       "id": "vi_0030",
@@ -3053,7 +2935,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0031/example.mp3": {
       "id": "vi_0031",
       "kind": "example",
-      "text": "Bé ngã bị đau nhưng không khóc nhè."
+      "text": "Bé Mây ngã bị đau nhưng không khóc nhè."
     },
     "06-assets/audio/vi/north-hanoi/vi_0031/word.mp3": {
       "id": "vi_0031",
@@ -3063,7 +2945,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0033/example.mp3": {
       "id": "vi_0033",
       "kind": "example",
-      "text": "Cô giáo mỉm cười đón bé vào lớp."
+      "text": "Cô giáo mỉm cười đón Bé Mây vào lớp."
     },
     "06-assets/audio/vi/north-hanoi/vi_0033/word.mp3": {
       "id": "vi_0033",
@@ -3073,7 +2955,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0034/example.mp3": {
       "id": "vi_0034",
       "kind": "example",
-      "text": "Mẹ mua cho bé quả na thơm ngọt."
+      "text": "Mẹ mua cho Bé Mây quả na thơm ngọt."
     },
     "06-assets/audio/vi/north-hanoi/vi_0034/word.mp3": {
       "id": "vi_0034",
@@ -3113,7 +2995,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0040/example.mp3": {
       "id": "vi_0040",
       "kind": "example",
-      "text": "Mẹ bế em bé dạo chơi trong vườn."
+      "text": "Mẹ bế Bé Mây dạo chơi trong vườn."
     },
     "06-assets/audio/vi/north-hanoi/vi_0040/word.mp3": {
       "id": "vi_0040",
@@ -3123,7 +3005,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0042/example.mp3": {
       "id": "vi_0042",
       "kind": "example",
-      "text": "Quả lê thơm mát bé ăn rất thích."
+      "text": "Quả lê thơm mát Bé Mây ăn rất thích."
     },
     "06-assets/audio/vi/north-hanoi/vi_0042/word.mp3": {
       "id": "vi_0042",
@@ -3153,7 +3035,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0048/example.mp3": {
       "id": "vi_0048",
       "kind": "example",
-      "text": "Bé ngồi chơi trên bãi cỏ xanh mát."
+      "text": "Bé Mây ngồi chơi trên bãi cỏ xanh mát."
     },
     "06-assets/audio/vi/north-hanoi/vi_0048/word.mp3": {
       "id": "vi_0048",
@@ -3173,7 +3055,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0056/example.mp3": {
       "id": "vi_0056",
       "kind": "example",
-      "text": "Bé chơi bắn bi tròn lấp lánh cùng bạn."
+      "text": "Bé Mây chơi bắn bi tròn lấp lánh cùng bạn."
     },
     "06-assets/audio/vi/north-hanoi/vi_0056/word.mp3": {
       "id": "vi_0056",
@@ -3203,7 +3085,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0063/example.mp3": {
       "id": "vi_0063",
       "kind": "example",
-      "text": "Mỗi sớm ông và bé cùng nhau đi bộ quanh hồ."
+      "text": "Mỗi sớm ông và Bé Mây cùng nhau đi bộ quanh hồ."
     },
     "06-assets/audio/vi/north-hanoi/vi_0063/word.mp3": {
       "id": "vi_0063",
@@ -3243,7 +3125,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0073/example.mp3": {
       "id": "vi_0073",
       "kind": "example",
-      "text": "Bé cầm chiếc dù xinh xắn khi trời mưa."
+      "text": "Bé Mây cầm chiếc dù xinh xắn khi trời mưa."
     },
     "06-assets/audio/vi/north-hanoi/vi_0073/word.mp3": {
       "id": "vi_0073",
@@ -3283,7 +3165,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0082/example.mp3": {
       "id": "vi_0082",
       "kind": "example",
-      "text": "Bé cài chiếc nơ đỏ xinh xắn đi học."
+      "text": "Bé Mây cài chiếc nơ đỏ xinh xắn đi học."
     },
     "06-assets/audio/vi/north-hanoi/vi_0082/word.mp3": {
       "id": "vi_0082",
@@ -3293,7 +3175,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0083/example.mp3": {
       "id": "vi_0083",
       "kind": "example",
-      "text": "Mẹ nấu cho bé tô mì thơm lừng."
+      "text": "Mẹ nấu cho Bé Mây tô mì thơm lừng."
     },
     "06-assets/audio/vi/north-hanoi/vi_0083/word.mp3": {
       "id": "vi_0083",
@@ -3343,7 +3225,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0099/example.mp3": {
       "id": "vi_0099",
       "kind": "example",
-      "text": "Bé nhặt cục đá nhỏ xếp thành hình tròn."
+      "text": "Bé Mây nhặt cục đá nhỏ xếp thành hình tròn."
     },
     "06-assets/audio/vi/north-hanoi/vi_0099/word.mp3": {
       "id": "vi_0099",
@@ -3353,7 +3235,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0100/example.mp3": {
       "id": "vi_0100",
       "kind": "example",
-      "text": "Bé giúp mẹ xếp rau sạch vào chiếc rổ tre."
+      "text": "Bé Mây giúp mẹ xếp rau sạch vào chiếc rổ tre."
     },
     "06-assets/audio/vi/north-hanoi/vi_0100/word.mp3": {
       "id": "vi_0100",
@@ -3363,7 +3245,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0101/example.mp3": {
       "id": "vi_0101",
       "kind": "example",
-      "text": "Bé nhặt được chiếc vỏ sò xinh xắn trên bãi cát."
+      "text": "Bé Mây nhặt được chiếc vỏ sò xinh xắn trên bãi cát."
     },
     "06-assets/audio/vi/north-hanoi/vi_0101/word.mp3": {
       "id": "vi_0101",
@@ -3383,7 +3265,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0103/example.mp3": {
       "id": "vi_0103",
       "kind": "example",
-      "text": "Chiếc xe đạp nhỏ chở bé đi chơi."
+      "text": "Chiếc xe đạp nhỏ chở Bé Mây đi chơi."
     },
     "06-assets/audio/vi/north-hanoi/vi_0103/word.mp3": {
       "id": "vi_0103",
@@ -3403,7 +3285,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0111/example.mp3": {
       "id": "vi_0111",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"che ô\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"che ô\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0111/word.mp3": {
       "id": "vi_0111",
@@ -3413,7 +3295,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0117/example.mp3": {
       "id": "vi_0117",
       "kind": "example",
-      "text": "Mẹ luộc bắp ngô thơm phức cho bé ăn."
+      "text": "Mẹ luộc bắp ngô thơm phức cho Bé Mây ăn."
     },
     "06-assets/audio/vi/north-hanoi/vi_0117/word.mp3": {
       "id": "vi_0117",
@@ -3423,7 +3305,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0118/example.mp3": {
       "id": "vi_0118",
       "kind": "example",
-      "text": "Bé giữ gìn nhà ga sạch sẽ và gọn gàng mỗi ngày."
+      "text": "Bé Mây giữ gìn nhà ga sạch sẽ và gọn gàng mỗi ngày."
     },
     "06-assets/audio/vi/north-hanoi/vi_0118/word.mp3": {
       "id": "vi_0118",
@@ -3443,7 +3325,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0124/example.mp3": {
       "id": "vi_0124",
       "kind": "example",
-      "text": "Bé dùng que gỗ xếp thành ngôi nhà nhỏ."
+      "text": "Bé Mây dùng que gỗ xếp thành ngôi nhà nhỏ."
     },
     "06-assets/audio/vi/north-hanoi/vi_0124/word.mp3": {
       "id": "vi_0124",
@@ -3463,7 +3345,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0131/example.mp3": {
       "id": "vi_0131",
       "kind": "example",
-      "text": "Bé vui vẻ cùng các bạn ru ngủ thật say mê."
+      "text": "Bé Mây vui vẻ cùng các bạn ru ngủ thật say mê."
     },
     "06-assets/audio/vi/north-hanoi/vi_0131/word.mp3": {
       "id": "vi_0131",
@@ -3473,7 +3355,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0132/example.mp3": {
       "id": "vi_0132",
       "kind": "example",
-      "text": "Bé giữ gìn ghế gỗ sạch sẽ và gọn gàng mỗi ngày."
+      "text": "Bé Mây giữ gìn ghế gỗ sạch sẽ và gọn gàng mỗi ngày."
     },
     "06-assets/audio/vi/north-hanoi/vi_0132/word.mp3": {
       "id": "vi_0132",
@@ -3483,7 +3365,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0134/example.mp3": {
       "id": "vi_0134",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"ví da\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"ví da\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0134/word.mp3": {
       "id": "vi_0134",
@@ -3493,7 +3375,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0136/example.mp3": {
       "id": "vi_0136",
       "kind": "example",
-      "text": "Mẹ ép cây mía ngọt cho bé ly nước mát."
+      "text": "Mẹ ép cây mía ngọt cho Bé Mây ly nước mát."
     },
     "06-assets/audio/vi/north-hanoi/vi_0136/word.mp3": {
       "id": "vi_0136",
@@ -3503,7 +3385,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0141/example.mp3": {
       "id": "vi_0141",
       "kind": "example",
-      "text": "Chú cua nhỏ giơ đôi càng chào bé."
+      "text": "Chú cua nhỏ giơ đôi càng chào Bé Mây."
     },
     "06-assets/audio/vi/north-hanoi/vi_0141/word.mp3": {
       "id": "vi_0141",
@@ -3543,7 +3425,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0145/example.mp3": {
       "id": "vi_0145",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"cà chua\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"cà chua\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0145/word.mp3": {
       "id": "vi_0145",
@@ -3553,7 +3435,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0146/example.mp3": {
       "id": "vi_0146",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"nô đùa\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"nô đùa\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0146/word.mp3": {
       "id": "vi_0146",
@@ -3563,7 +3445,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0147/example.mp3": {
       "id": "vi_0147",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"dưa lê\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"dưa lê\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0147/word.mp3": {
       "id": "vi_0147",
@@ -3573,7 +3455,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0150/example.mp3": {
       "id": "vi_0150",
       "kind": "example",
-      "text": "Bé ngồi ngoan trên chiếc ghế tựa học bài."
+      "text": "Bé Mây ngồi ngoan trên chiếc ghế tựa học bài."
     },
     "06-assets/audio/vi/north-hanoi/vi_0150/word.mp3": {
       "id": "vi_0150",
@@ -3583,7 +3465,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0162/example.mp3": {
       "id": "vi_0162",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"mưa gió\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"mưa gió\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0162/word.mp3": {
       "id": "vi_0162",
@@ -3593,7 +3475,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0163/example.mp3": {
       "id": "vi_0163",
       "kind": "example",
-      "text": "Bé giữ gìn bàn là sạch sẽ và gọn gàng mỗi ngày."
+      "text": "Bé Mây giữ gìn bàn là sạch sẽ và gọn gàng mỗi ngày."
     },
     "06-assets/audio/vi/north-hanoi/vi_0163/word.mp3": {
       "id": "vi_0163",
@@ -3633,7 +3515,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0176/example.mp3": {
       "id": "vi_0176",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"lạc đà\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"lạc đà\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0176/word.mp3": {
       "id": "vi_0176",
@@ -3653,7 +3535,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0182/example.mp3": {
       "id": "vi_0182",
       "kind": "example",
-      "text": "Bé giữ gìn sách vở sạch sẽ và gọn gàng mỗi ngày."
+      "text": "Bé Mây giữ gìn sách vở sạch sẽ và gọn gàng mỗi ngày."
     },
     "06-assets/audio/vi/north-hanoi/vi_0182/word.mp3": {
       "id": "vi_0182",
@@ -3663,7 +3545,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0185/example.mp3": {
       "id": "vi_0185",
       "kind": "example",
-      "text": "Bé giữ gìn nhà sàn sạch sẽ và gọn gàng mỗi ngày."
+      "text": "Bé Mây giữ gìn nhà sàn sạch sẽ và gọn gàng mỗi ngày."
     },
     "06-assets/audio/vi/north-hanoi/vi_0185/word.mp3": {
       "id": "vi_0185",
@@ -3673,7 +3555,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0190/example.mp3": {
       "id": "vi_0190",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"sạch sẽ\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"sạch sẽ\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0190/word.mp3": {
       "id": "vi_0190",
@@ -3683,7 +3565,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0191/example.mp3": {
       "id": "vi_0191",
       "kind": "example",
-      "text": "Bé yêu thích ngắm nhìn gà mái tung tăng ngoài sân."
+      "text": "Bé Mây yêu thích ngắm nhìn gà mái tung tăng ngoài sân."
     },
     "06-assets/audio/vi/north-hanoi/vi_0191/word.mp3": {
       "id": "vi_0191",
@@ -3713,7 +3595,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0197/example.mp3": {
       "id": "vi_0197",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"chào cờ\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"chào cờ\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0197/word.mp3": {
       "id": "vi_0197",
@@ -3773,7 +3655,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0221/example.mp3": {
       "id": "vi_0221",
       "kind": "example",
-      "text": "Chú vẹt đuôi dài cất tiếng chào bé."
+      "text": "Chú vẹt đuôi dài cất tiếng chào Bé Mây."
     },
     "06-assets/audio/vi/north-hanoi/vi_0221/word.mp3": {
       "id": "vi_0221",
@@ -3783,7 +3665,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0232/example.mp3": {
       "id": "vi_0232",
       "kind": "example",
-      "text": "Bé giữ gìn đèn pin sạch sẽ và gọn gàng mỗi ngày."
+      "text": "Bé Mây giữ gìn đèn pin sạch sẽ và gọn gàng mỗi ngày."
     },
     "06-assets/audio/vi/north-hanoi/vi_0232/word.mp3": {
       "id": "vi_0232",
@@ -3803,7 +3685,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0236/example.mp3": {
       "id": "vi_0236",
       "kind": "example",
-      "text": "Bé yêu thích ngắm nhìn đàn vịt tung tăng ngoài sân."
+      "text": "Bé Mây yêu thích ngắm nhìn đàn vịt tung tăng ngoài sân."
     },
     "06-assets/audio/vi/north-hanoi/vi_0236/word.mp3": {
       "id": "vi_0236",
@@ -3823,7 +3705,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0251/example.mp3": {
       "id": "vi_0251",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"cà rốt\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"cà rốt\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0251/word.mp3": {
       "id": "vi_0251",
@@ -3833,7 +3715,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0256/example.mp3": {
       "id": "vi_0256",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"con lợn\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"con lợn\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0256/word.mp3": {
       "id": "vi_0256",
@@ -3853,7 +3735,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0258/example.mp3": {
       "id": "vi_0258",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"cơn mưa\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"cơn mưa\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0258/word.mp3": {
       "id": "vi_0258",
@@ -3863,7 +3745,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0263/example.mp3": {
       "id": "vi_0263",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"nốt nhạc\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"nốt nhạc\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0263/word.mp3": {
       "id": "vi_0263",
@@ -3873,7 +3755,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0268/example.mp3": {
       "id": "vi_0268",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"áo thun\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"áo thun\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0268/word.mp3": {
       "id": "vi_0268",
@@ -3883,7 +3765,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0269/example.mp3": {
       "id": "vi_0269",
       "kind": "example",
-      "text": "Bé giữ gìn bút chì sạch sẽ và gọn gàng mỗi ngày."
+      "text": "Bé Mây giữ gìn bút chì sạch sẽ và gọn gàng mỗi ngày."
     },
     "06-assets/audio/vi/north-hanoi/vi_0269/word.mp3": {
       "id": "vi_0269",
@@ -3893,7 +3775,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0271/example.mp3": {
       "id": "vi_0271",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"cún con\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"cún con\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0271/word.mp3": {
       "id": "vi_0271",
@@ -3903,7 +3785,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0275/example.mp3": {
       "id": "vi_0275",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"bờ biển\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"bờ biển\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0275/word.mp3": {
       "id": "vi_0275",
@@ -3913,7 +3795,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0277/example.mp3": {
       "id": "vi_0277",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"cô tiên\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"cô tiên\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0277/word.mp3": {
       "id": "vi_0277",
@@ -3923,7 +3805,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0279/example.mp3": {
       "id": "vi_0279",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"viên phấn\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"viên phấn\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0279/word.mp3": {
       "id": "vi_0279",
@@ -3933,7 +3815,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0293/example.mp3": {
       "id": "vi_0293",
       "kind": "example",
-      "text": "Bé yêu thích ngắm nhìn bún bò tung tăng ngoài sân."
+      "text": "Bé Mây yêu thích ngắm nhìn bún bò tung tăng ngoài sân."
     },
     "06-assets/audio/vi/north-hanoi/vi_0293/word.mp3": {
       "id": "vi_0293",
@@ -3943,7 +3825,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0297/example.mp3": {
       "id": "vi_0297",
       "kind": "example",
-      "text": "Bé vui vẻ cùng các bạn viết bài thật say mê."
+      "text": "Bé Mây vui vẻ cùng các bạn viết bài thật say mê."
     },
     "06-assets/audio/vi/north-hanoi/vi_0297/word.mp3": {
       "id": "vi_0297",
@@ -3953,7 +3835,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0299/example.mp3": {
       "id": "vi_0299",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"con vượn\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"con vượn\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0299/word.mp3": {
       "id": "vi_0299",
@@ -3963,7 +3845,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0306/example.mp3": {
       "id": "vi_0306",
       "kind": "example",
-      "text": "Bé giữ gìn cặp da sạch sẽ và gọn gàng mỗi ngày."
+      "text": "Bé Mây giữ gìn cặp da sạch sẽ và gọn gàng mỗi ngày."
     },
     "06-assets/audio/vi/north-hanoi/vi_0306/word.mp3": {
       "id": "vi_0306",
@@ -3973,7 +3855,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0307/example.mp3": {
       "id": "vi_0307",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"bồn tắm\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"bồn tắm\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0307/word.mp3": {
       "id": "vi_0307",
@@ -3983,7 +3865,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0311/example.mp3": {
       "id": "vi_0311",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"ấm trà\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"ấm trà\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0311/word.mp3": {
       "id": "vi_0311",
@@ -4003,7 +3885,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0314/example.mp3": {
       "id": "vi_0314",
       "kind": "example",
-      "text": "Bé vui vẻ cùng các bạn tập múa thật say mê."
+      "text": "Bé Mây vui vẻ cùng các bạn tập múa thật say mê."
     },
     "06-assets/audio/vi/north-hanoi/vi_0314/word.mp3": {
       "id": "vi_0314",
@@ -4013,7 +3895,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0317/example.mp3": {
       "id": "vi_0317",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"que kem\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"que kem\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0317/word.mp3": {
       "id": "vi_0317",
@@ -4033,7 +3915,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0320/example.mp3": {
       "id": "vi_0320",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"dép lê\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"dép lê\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0320/word.mp3": {
       "id": "vi_0320",
@@ -4043,7 +3925,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0322/example.mp3": {
       "id": "vi_0322",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"lễ phép\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"lễ phép\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0322/word.mp3": {
       "id": "vi_0322",
@@ -4053,7 +3935,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0325/example.mp3": {
       "id": "vi_0325",
       "kind": "example",
-      "text": "Bé vui vẻ cùng các bạn gấp chăn thật say mê."
+      "text": "Bé Mây vui vẻ cùng các bạn gấp chăn thật say mê."
     },
     "06-assets/audio/vi/north-hanoi/vi_0325/word.mp3": {
       "id": "vi_0325",
@@ -4063,7 +3945,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0327/example.mp3": {
       "id": "vi_0327",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"khu vườn\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"khu vườn\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0327/word.mp3": {
       "id": "vi_0327",
@@ -4073,7 +3955,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0332/example.mp3": {
       "id": "vi_0332",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"tập đếm\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"tập đếm\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0332/word.mp3": {
       "id": "vi_0332",
@@ -4083,7 +3965,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0334/example.mp3": {
       "id": "vi_0334",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"sắp xếp\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"sắp xếp\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0334/word.mp3": {
       "id": "vi_0334",
@@ -4093,7 +3975,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0335/example.mp3": {
       "id": "vi_0335",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"con nhím\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"con nhím\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0335/word.mp3": {
       "id": "vi_0335",
@@ -4113,7 +3995,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0339/example.mp3": {
       "id": "vi_0339",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"trốn tìm\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"trốn tìm\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0339/word.mp3": {
       "id": "vi_0339",
@@ -4123,7 +4005,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0340/example.mp3": {
       "id": "vi_0340",
       "kind": "example",
-      "text": "Bé yêu thích ngắm nhìn gà chíp tung tăng ngoài sân."
+      "text": "Bé Mây yêu thích ngắm nhìn gà chíp tung tăng ngoài sân."
     },
     "06-assets/audio/vi/north-hanoi/vi_0340/word.mp3": {
       "id": "vi_0340",
@@ -4133,7 +4015,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0347/example.mp3": {
       "id": "vi_0347",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"con tôm\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"con tôm\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0347/word.mp3": {
       "id": "vi_0347",
@@ -4143,7 +4025,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0348/example.mp3": {
       "id": "vi_0348",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"hộp sữa\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"hộp sữa\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0348/word.mp3": {
       "id": "vi_0348",
@@ -4153,7 +4035,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0359/example.mp3": {
       "id": "vi_0359",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"nấm rơm\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"nấm rơm\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0359/word.mp3": {
       "id": "vi_0359",
@@ -4163,7 +4045,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0364/example.mp3": {
       "id": "vi_0364",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"tia chớp\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"tia chớp\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0364/word.mp3": {
       "id": "vi_0364",
@@ -4173,7 +4055,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0372/example.mp3": {
       "id": "vi_0372",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"con bướm\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"con bướm\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0372/word.mp3": {
       "id": "vi_0372",
@@ -4183,7 +4065,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0394/example.mp3": {
       "id": "vi_0394",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"mặc áo\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"mặc áo\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0394/word.mp3": {
       "id": "vi_0394",
@@ -4203,7 +4085,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0411/example.mp3": {
       "id": "vi_0411",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"sóng biển\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"sóng biển\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0411/word.mp3": {
       "id": "vi_0411",
@@ -4213,7 +4095,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0412/example.mp3": {
       "id": "vi_0412",
       "kind": "example",
-      "text": "Bé vui vẻ cùng các bạn học vẽ thật say mê."
+      "text": "Bé Mây vui vẻ cùng các bạn học vẽ thật say mê."
     },
     "06-assets/audio/vi/north-hanoi/vi_0412/word.mp3": {
       "id": "vi_0412",
@@ -4223,7 +4105,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0421/example.mp3": {
       "id": "vi_0421",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"dòng sông\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"dòng sông\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0421/word.mp3": {
       "id": "vi_0421",
@@ -4233,7 +4115,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0422/example.mp3": {
       "id": "vi_0422",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"con ốc\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"con ốc\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0422/word.mp3": {
       "id": "vi_0422",
@@ -4243,7 +4125,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0423/example.mp3": {
       "id": "vi_0423",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"công viên\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"công viên\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0423/word.mp3": {
       "id": "vi_0423",
@@ -4253,7 +4135,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0428/example.mp3": {
       "id": "vi_0428",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"bông cúc\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"bông cúc\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0428/word.mp3": {
       "id": "vi_0428",
@@ -4263,7 +4145,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0429/example.mp3": {
       "id": "vi_0429",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"trung thu\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"trung thu\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0429/word.mp3": {
       "id": "vi_0429",
@@ -4273,7 +4155,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0448/example.mp3": {
       "id": "vi_0448",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"tập thể dục\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"tập thể dục\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0448/word.mp3": {
       "id": "vi_0448",
@@ -4283,7 +4165,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0449/example.mp3": {
       "id": "vi_0449",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"con ngỗng\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"con ngỗng\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0449/word.mp3": {
       "id": "vi_0449",
@@ -4293,7 +4175,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0456/example.mp3": {
       "id": "vi_0456",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"đồng ruộng\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"đồng ruộng\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0456/word.mp3": {
       "id": "vi_0456",
@@ -4303,7 +4185,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0458/example.mp3": {
       "id": "vi_0458",
       "kind": "example",
-      "text": "Bé soi gương chải tóc gọn gàng đi học."
+      "text": "Bé Mây soi gương chải tóc gọn gàng đi học."
     },
     "06-assets/audio/vi/north-hanoi/vi_0458/word.mp3": {
       "id": "vi_0458",
@@ -4313,7 +4195,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0459/example.mp3": {
       "id": "vi_0459",
       "kind": "example",
-      "text": "Bé giữ gìn thước kẻ sạch sẽ và gọn gàng mỗi ngày."
+      "text": "Bé Mây giữ gìn thước kẻ sạch sẽ và gọn gàng mỗi ngày."
     },
     "06-assets/audio/vi/north-hanoi/vi_0459/word.mp3": {
       "id": "vi_0459",
@@ -4323,7 +4205,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0460/example.mp3": {
       "id": "vi_0460",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"hướng dương\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"hướng dương\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0460/word.mp3": {
       "id": "vi_0460",
@@ -4333,7 +4215,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0464/example.mp3": {
       "id": "vi_0464",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"bập bênh\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"bập bênh\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0464/word.mp3": {
       "id": "vi_0464",
@@ -4343,7 +4225,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0465/example.mp3": {
       "id": "vi_0465",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"con ếch\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"con ếch\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0465/word.mp3": {
       "id": "vi_0465",
@@ -4353,7 +4235,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0467/example.mp3": {
       "id": "vi_0467",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"bệnh viện\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"bệnh viện\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0467/word.mp3": {
       "id": "vi_0467",
@@ -4363,7 +4245,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0469/example.mp3": {
       "id": "vi_0469",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"máy tính\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"máy tính\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0469/word.mp3": {
       "id": "vi_0469",
@@ -4373,7 +4255,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0470/example.mp3": {
       "id": "vi_0470",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"tờ lịch\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"tờ lịch\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0470/word.mp3": {
       "id": "vi_0470",
@@ -4383,7 +4265,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0474/example.mp3": {
       "id": "vi_0474",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"xích đu\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"xích đu\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0474/word.mp3": {
       "id": "vi_0474",
@@ -4393,7 +4275,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0478/example.mp3": {
       "id": "vi_0478",
       "kind": "example",
-      "text": "Bé giữ gìn rước đèn sạch sẽ và gọn gàng mỗi ngày."
+      "text": "Bé Mây giữ gìn rước đèn sạch sẽ và gọn gàng mỗi ngày."
     },
     "06-assets/audio/vi/north-hanoi/vi_0478/word.mp3": {
       "id": "vi_0478",
@@ -4403,7 +4285,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0482/example.mp3": {
       "id": "vi_0482",
       "kind": "example",
-      "text": "Bé vui vẻ cùng các bạn nhảy dây thật say mê."
+      "text": "Bé Mây vui vẻ cùng các bạn nhảy dây thật say mê."
     },
     "06-assets/audio/vi/north-hanoi/vi_0482/word.mp3": {
       "id": "vi_0482",
@@ -4413,7 +4295,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0483/example.mp3": {
       "id": "vi_0483",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"đám mây\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"đám mây\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0483/word.mp3": {
       "id": "vi_0483",
@@ -4423,7 +4305,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0490/example.mp3": {
       "id": "vi_0490",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"kéo co\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"kéo co\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0490/word.mp3": {
       "id": "vi_0490",
@@ -4443,7 +4325,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0496/example.mp3": {
       "id": "vi_0496",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"con cừu\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"con cừu\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0496/word.mp3": {
       "id": "vi_0496",
@@ -4453,7 +4335,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0499/example.mp3": {
       "id": "vi_0499",
       "kind": "example",
-      "text": "Bé yêu thích ngắm nhìn con voi tung tăng ngoài sân."
+      "text": "Bé Mây yêu thích ngắm nhìn con voi tung tăng ngoài sân."
     },
     "06-assets/audio/vi/north-hanoi/vi_0499/word.mp3": {
       "id": "vi_0499",
@@ -4473,7 +4355,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0501/example.mp3": {
       "id": "vi_0501",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"con dơi\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"con dơi\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0501/word.mp3": {
       "id": "vi_0501",
@@ -4483,7 +4365,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0504/example.mp3": {
       "id": "vi_0504",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"bơi lội\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"bơi lội\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0504/word.mp3": {
       "id": "vi_0504",
@@ -4493,7 +4375,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0511/example.mp3": {
       "id": "vi_0511",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"chơi cờ\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"chơi cờ\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0511/word.mp3": {
       "id": "vi_0511",
@@ -4503,7 +4385,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0512/example.mp3": {
       "id": "vi_0512",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"đồi núi\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"đồi núi\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0512/word.mp3": {
       "id": "vi_0512",
@@ -4513,7 +4395,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0513/example.mp3": {
       "id": "vi_0513",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"gửi thư\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"gửi thư\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0513/word.mp3": {
       "id": "vi_0513",
@@ -4523,7 +4405,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0514/example.mp3": {
       "id": "vi_0514",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"túi xách\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"túi xách\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0514/word.mp3": {
       "id": "vi_0514",
@@ -4553,7 +4435,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0522/example.mp3": {
       "id": "vi_0522",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"con ruồi\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"con ruồi\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0522/word.mp3": {
       "id": "vi_0522",
@@ -4573,7 +4455,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0526/example.mp3": {
       "id": "vi_0526",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"con hươu\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"con hươu\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0526/word.mp3": {
       "id": "vi_0526",
@@ -4583,7 +4465,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0528/example.mp3": {
       "id": "vi_0528",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"siêu thị\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"siêu thị\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0528/word.mp3": {
       "id": "vi_0528",
@@ -4593,7 +4475,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0529/example.mp3": {
       "id": "vi_0529",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"yêu thương\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"yêu thương\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0529/word.mp3": {
       "id": "vi_0529",
@@ -4613,7 +4495,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0545/example.mp3": {
       "id": "vi_0545",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"hoạt hình\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"hoạt hình\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0545/word.mp3": {
       "id": "vi_0545",
@@ -4623,7 +4505,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0548/example.mp3": {
       "id": "vi_0548",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"vải thiều\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"vải thiều\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0548/word.mp3": {
       "id": "vi_0548",
@@ -4653,7 +4535,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0568/example.mp3": {
       "id": "vi_0568",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"mùa xuân\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"mùa xuân\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0568/word.mp3": {
       "id": "vi_0568",
@@ -4673,7 +4555,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0575/example.mp3": {
       "id": "vi_0575",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"huýt sáo\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"huýt sáo\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0575/word.mp3": {
       "id": "vi_0575",
@@ -4683,7 +4565,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0584/example.mp3": {
       "id": "vi_0584",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"kể chuyện\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"kể chuyện\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0584/word.mp3": {
       "id": "vi_0584",
@@ -4693,7 +4575,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0586/example.mp3": {
       "id": "vi_0586",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"bóng chuyền\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"bóng chuyền\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0586/word.mp3": {
       "id": "vi_0586",
@@ -4703,7 +4585,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0597/example.mp3": {
       "id": "vi_0597",
       "kind": "example",
-      "text": "Bé đọc to và rõ ràng từ \"áo khoác\" cho cô giáo nghe."
+      "text": "Bé Mây đọc to và rõ ràng từ \"áo khoác\" cho cô giáo nghe."
     },
     "06-assets/audio/vi/north-hanoi/vi_0597/word.mp3": {
       "id": "vi_0597",
@@ -4733,7 +4615,7 @@
     "06-assets/audio/vi/north-hanoi/vi_0626/example.mp3": {
       "id": "vi_0626",
       "kind": "example",
-      "text": "Bé vui vẻ cùng các bạn điện thoại thật say mê."
+      "text": "Bé Mây vui vẻ cùng các bạn điện thoại thật say mê."
     },
     "06-assets/audio/vi/north-hanoi/vi_0626/word.mp3": {
       "id": "vi_0626",
