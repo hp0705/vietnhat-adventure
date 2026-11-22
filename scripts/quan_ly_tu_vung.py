@@ -5,6 +5,7 @@ Công cụ 1-Click đồng bộ, kiểm tra và cập nhật lộ trình từ v�
 2. Tự động cập nhật ánh xạ âm thanh vào spelling_step_audio_map.json.
 3. Tự động phát hiện và tải các âm còn thiếu bằng Google Translate TTS / edge_tts.
 4. Chạy kiểm tra toàn diện và in báo cáo rõ ràng.
+5. Kiểm tra lộ trình 5 nhóm (path_group) và file bảng vần rhyme_charts_vi_v1.json.
 
 Cách dùng:
     python scripts/quan_ly_tu_vung.py
@@ -70,6 +71,62 @@ def format_phonics(word):
         "spelling_rule": rule
     }
 
+
+def check_lo_trinh_va_bang_van():
+    """Kiểm tra lộ trình 5 nhóm + file bảng vần. Trả về danh sách lỗi (rỗng = đạt)."""
+    errors = []
+    with open('01-vocabulary/vocabulary_vi_v2.json', 'r', encoding='utf-8') as f:
+        items = json.load(f).get('items', [])
+
+    def n_chars(s):
+        return len(unicodedata.normalize('NFC', s))
+
+    def expected_group(word):
+        syl = word.split()
+        n, m = len(syl), max(n_chars(x) for x in syl)
+        if n == 1 and m <= 2: return 1
+        if n == 2 and m <= 2: return 2
+        if n == 1 and m == 3: return 3
+        if n == 2 and m <= 3: return 4
+        return 5
+
+    last = 0
+    for it in items:
+        g = it.get('path_group')
+        if g not in (1, 2, 3, 4, 5):
+            errors.append(f"[lộ trình] '{it['word']}' thiếu/sai path_group")
+            continue
+        if g < last:
+            errors.append(f"[lộ trình] '{it['word']}' (nhóm {g}) đứng sau nhóm {last}: sai thứ tự")
+        last = max(last, g)
+        if g != expected_group(it['word']):
+            errors.append(f"[lộ trình] '{it['word']}' ghi nhóm {g} nhưng theo quy tắc là nhóm {expected_group(it['word'])}")
+    ids = [it['id'] for it in items]
+    if len(ids) != len(set(ids)):
+        errors.append("[lộ trình] có id bị trùng")
+
+    path = '01-vocabulary/rhyme_charts_vi_v1.json'
+    if os.path.exists(path):
+        with open(path, 'r', encoding='utf-8') as f:
+            charts = json.load(f).get('charts', [])
+        marks = {'sắc': '\u0301', 'nặng': '\u0323'}
+        for c in charts:
+            if len(c.get('rows', [])) != 2:
+                errors.append(f"[bảng vần] vần {c.get('rhyme')}: phải đúng 2 hàng")
+            for r in c.get('rows', []):
+                if len(r.get('words', [])) != 2:
+                    errors.append(f"[bảng vần] vần {c.get('rhyme')} hàng {r.get('tone')}: phải đúng 2 từ")
+                mk = marks.get(r.get('tone'))
+                for w in [r.get('rhyme_form', '')] + [x['word'] for x in r.get('words', [])]:
+                    if not w.endswith(r.get('rhyme_form', '#')) or (mk and mk not in unicodedata.normalize('NFD', w)):
+                        errors.append(f"[bảng vần] '{w}' không đúng vần/thanh ({c.get('rhyme')}, {r.get('tone')})")
+                for x in r.get('words', []):
+                    if x['onset'] + r['rhyme_form'] != x['word']:
+                        errors.append(f"[bảng vần] '{x['word']}': onset '{x['onset']}' không khớp")
+    else:
+        print("      (chưa có rhyme_charts_vi_v1.json, bỏ qua kiểm tra bảng vần)")
+    return errors
+
 def sync_all():
     print("==================================================")
     print("  HỆ THỐNG ĐỒNG BỘ & QUẢN LÝ TỪ VỰNG TIẾNG VIỆT   ")
@@ -130,7 +187,7 @@ def sync_all():
         if os.path.exists(kp) and os.path.getsize(kp) > 500:
             step_map[kw] = kp
 
-    # 5. Kiểm tra các âm còn thiếu trong Function 2 và 100 từ đầu Function 1
+    # 5. Kiểm tra các âm còn thiếu trong Function 2 và TOÀN BỘ từ Function 1 (lộ trình đã đổi, không còn "100 từ đầu")
     missing_tokens = []
     for it in sp_data.get('items', []):
         for s in plan_word(it['word']):
@@ -139,7 +196,7 @@ def sync_all():
             if not p or not os.path.exists(p) or os.path.getsize(p) < 500:
                 if tok not in missing_tokens:
                     missing_tokens.append(tok)
-    for it in vocab_data.get('items', [])[:100]:
+    for it in vocab_data.get('items', []):
         for s in plan_word(it['word']):
             tok = s['text']
             p = step_map.get(tok)
@@ -172,13 +229,26 @@ def sync_all():
     res_gold = subprocess.run([sys.executable, 'scripts/run_all_tests.py'], capture_output=True, text=True)
     res_audit = subprocess.run([sys.executable, 'scripts/run_python_audit.py'], capture_output=True, text=True)
     
+    n_vocab = len(vocab_data.get('items', []))
+    n_sp = len(sp_data.get('items', []))
     if "ALL 34/34 TESTS PASSED" in res_gold.stdout and "TOÀN BỘ DỮ LIỆU ĐẠT CHUẨN 100%" in res_audit.stdout:
         print("      ✅ 34/34 Golden cases đạt chuẩn 100%!")
-        print("      ✅ 745 từ vựng đạt chuẩn kiểm toán 100% (0 lỗi)!")
+        print(f"      ✅ {n_vocab + n_sp} từ vựng ({n_vocab} Học từ mới + {n_sp} Tập đánh vần) đạt chuẩn kiểm toán 100% (0 lỗi)!")
     else:
         print("      ⚠️ Chi tiết kết quả kiểm tra:")
         print(res_gold.stdout)
         print(res_audit.stdout)
+        print(f"      ℹ️ Kho từ hiện có {n_vocab} từ Học từ mới + {n_sp} từ Tập đánh vần = {n_vocab + n_sp}.")
+        print("      ℹ️ Nếu lỗi chỉ là SỐ LƯỢNG từ (trước đây là 745), cần sửa con số trong scripts/run_python_audit.py.")
+
+    print("[5/5] Kiểm tra lộ trình 5 nhóm và bảng vần...")
+    errs = check_lo_trinh_va_bang_van()
+    if errs:
+        print(f"      ⚠️ {len(errs)} lỗi:")
+        for e in errs[:30]:
+            print("       -", e)
+    else:
+        print("      ✅ Lộ trình 5 nhóm và bảng vần đạt chuẩn.")
 
     print("\n✅ HOÀN THÀNH ĐỒNG BỘ DỮ LIỆU THÀNH CÔNG!")
 
