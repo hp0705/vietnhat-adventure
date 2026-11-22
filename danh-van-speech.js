@@ -25,9 +25,9 @@
   const HOLD_FINALS = /(c|ch|p|t)$/;
 
   // khoảng nghỉ SAU mỗi loại âm (ms) - bóp ngắn lại để nhịp đánh vần dứt khoát, sôi động cho bé
-  const PAUSE = { consonant: 150, vowel: 150, rime: 200, syllable: 180, tone: 150, word: 300 };
+  const PAUSE = { consonant: 80, vowel: 80, rime: 110, syllable: 100, tone: 80, word: 180 };
   // hệ số tốc độ (nhân với rate gốc)
-  const SPEED = { consonant: 1.15, vowel: 1.15, rime: 1.1, syllable: 1.15, tone: 1.1, word: 1.15 };
+  const SPEED = { consonant: 1.25, vowel: 1.25, rime: 1.2, syllable: 1.25, tone: 1.2, word: 1.25 };
 
   function stripTone(s) { return s.normalize('NFD').replace(STRIP_TONE, '').normalize('NFC'); }
 
@@ -76,7 +76,7 @@
           ttsText,
           audioFile: audioFileName(it.text),
           speed: SPEED[kind] * (hold ? 0.95 : 1),
-          pauseAfter: last && si < syllables.length - 1 ? 320 : (hold ? 250 : PAUSE[kind]),
+          pauseAfter: last && si < syllables.length - 1 ? 180 : (hold ? 130 : PAUSE[kind]),
         });
       });
     });
@@ -103,7 +103,7 @@
       audioBase: null,      // ví dụ '06-assets/audio/spelling/steps/'; null = chỉ dùng giọng máy
       audioMap: null,       // map ánh xạ chuỗi âm -> đường dẫn file âm thanh thật
       lang: 'vi-VN',
-      rate: 1.15,           // tốc độ chuẩn nhanh hơn, dứt khoát, sôi động cho bé
+      rate: 1.25,           // tốc độ chuẩn nhanh hơn, dứt khoát, sôi động cho bé
       voiceName: null,
       ttsOverride: { ach: 'ách' },
       onItem: null,         // callback (item, index) để highlight chữ đang đọc

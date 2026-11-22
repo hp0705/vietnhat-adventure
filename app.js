@@ -50,7 +50,7 @@ function getDanhVanPlayer() {
     danhVanPlayer = DanhVanSpeech.createPlayer({
       audioBase: '06-assets/audio/spelling/steps/',
       audioMap: state.spellingStepAudioMap || {},
-      rate: state.speechRate || 1.15,
+      rate: state.speechRate || 1.25,
       onItem: (item, index) => {
         highlightSpellingStep(item, index);
       }
@@ -133,12 +133,12 @@ async function playTokenList(tokens, containerSelector, btnEl) {
         audioUrl = '06-assets/audio/spelling/steps/' + encodeURIComponent(tok.text) + '.mp3';
       }
 
-      const rate = state.speechRate || 1.15;
+      const rate = state.speechRate || 1.25;
       await playAudioSrc(audioUrl, tok.text, rate);
 
       if (myRunId !== activePlaySeqRunId) return;
       // Khoảng nghỉ bóp ngắn lại để nhịp đánh vần dứt khoát, sôi động, bé không bị chán
-      const pause = tok.pauseAfter ? Math.min(tok.pauseAfter, 180) : 140;
+      const pause = tok.pauseAfter ? Math.min(tok.pauseAfter, 100) : 80;
       await new Promise((r) => setTimeout(r, pause));
     }
   } finally {
@@ -155,11 +155,6 @@ function renderSpellingSequence(word) {
   if (typeof DanhVanSpeech !== 'undefined' && DanhVanSpeech.planWord) {
     try {
       const plan = DanhVanSpeech.planWord(word);
-      if (state.activeModule === 'spelling' && state.currentWord) {
-        const { wordTokens } = splitSpellingTokens(state.currentWord, plan);
-        container.innerHTML = wordTokens.map((p, i) => `<span id="sp-token-${i}" class="sp-token">${p.text}</span>`).join(' ');
-        return;
-      }
       container.innerHTML = plan.map((p, i) => `<span id="sp-token-${i}" class="sp-token">${p.text}</span>`).join(' ');
       return;
     } catch (e) {
@@ -1823,21 +1818,7 @@ async function playAllPhonicsSteps() {
     window.speechSynthesis.cancel();
   }
 
-  // A4. Nếu ở chế độ "Tập đánh vần": chỉ đọc PHẦN TỪ và làm sáng chip phần từ tương ứng
-  if (state.activeModule === 'spelling') {
-    if (typeof DanhVanSpeech !== 'undefined' && DanhVanSpeech.planWord) {
-      try {
-        const plan = DanhVanSpeech.planWord(word);
-        const { wordTokens } = splitSpellingTokens(state.currentWord, plan);
-        await playTokenList(wordTokens, '#spelling-seq', btn);
-      } catch (e) {
-        console.warn('playAllPhonicsSteps spelling error:', e);
-      }
-    }
-    return;
-  }
-
-  // Ở chế độ "Học từ mới": giữ nguyên cách hoạt động cũ
+  // Phát âm toàn bộ chuỗi đánh vần chuẩn cho CẢ Tập đánh vần và Học từ mới
   if (btn) btn.classList.add('playing');
   try {
     if (player) {
