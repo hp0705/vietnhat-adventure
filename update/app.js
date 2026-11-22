@@ -434,9 +434,336 @@ const emojiMap = {
   'chân': '🦶', 'ăn': '🍚', 'uống': '🥛', 'ngủ': '😴', 'đi': '🚶'
 };
 
+// Hình minh họa cho TOÀN BỘ từ trong "Học từ mới" (mỗi từ 1 emoji riêng, không trùng nhau trong cùng bài).
+// Muốn đổi hình của 1 từ: sửa emoji/label ở dòng của từ đó.
+const vocabPictureData = {
+  "ba": { emoji: "👨‍👧", label: "Ba" },
+  "bà": { emoji: "👵", label: "Bà" },
+  "bố": { emoji: "👨", label: "Bố" },
+  "mẹ": { emoji: "👩‍👦", label: "Mẹ" },
+  "bé": { emoji: "👶", label: "Bé" },
+  "bò": { emoji: "🐄", label: "Con bò" },
+  "gà": { emoji: "🐔", label: "Con gà" },
+  "cá": { emoji: "🐟", label: "Con cá" },
+  "lá": { emoji: "🍃", label: "Chiếc lá" },
+  "đá": { emoji: "🪨", label: "Hòn đá" },
+  "vở": { emoji: "📓", label: "Quyển vở" },
+  "ăn": { emoji: "🍚", label: "Ăn cơm" },
+  "đi": { emoji: "🚶", label: "Đi" },
+  "cô": { emoji: "👩‍🏫", label: "Cô giáo" },
+  "na": { emoji: "🍏", label: "Quả na" },
+  "đa": { emoji: "🌳", label: "Cây đa" },
+  "bế": { emoji: "🤱", label: "Bế em bé" },
+  "lê": { emoji: "🍐", label: "Quả lê" },
+  "cà": { emoji: "🍆", label: "Quả cà" },
+  "cờ": { emoji: "🚩", label: "Lá cờ" },
+  "cỏ": { emoji: "🌿", label: "Cây cỏ" },
+  "dê": { emoji: "🐐", label: "Con dê" },
+  "bi": { emoji: "🔵", label: "Viên bi" },
+  "hề": { emoji: "🤡", label: "Chú hề" },
+  "dù": { emoji: "☂️", label: "Cái dù" },
+  "tổ": { emoji: "🐣", label: "Tổ chim" },
+  "rổ": { emoji: "🧺", label: "Chiếc rổ" },
+  "sò": { emoji: "🐚", label: "Con sò" },
+  "ve": { emoji: "🦗", label: "Con ve" },
+  "xe": { emoji: "🚗", label: "Chiếc xe" },
+  "ca nô": { emoji: "🚤", label: "Ca nô" },
+  "ca sĩ": { emoji: "🎤", label: "Ca sĩ" },
+  "bí đỏ": { emoji: "🎃", label: "Bí đỏ" },
+  "đi bộ": { emoji: "🚶‍♀️", label: "Đi bộ" },
+  "đi đò": { emoji: "🛶", label: "Đi đò" },
+  "hồ cá": { emoji: "🐠", label: "Hồ cá" },
+  "tu hú": { emoji: "🐦", label: "Tu hú" },
+  "tê tê": { emoji: "🦔", label: "Tê tê" },
+  "nơ đỏ": { emoji: "🎀", label: "Nơ đỏ" },
+  "tô mì": { emoji: "🍝", label: "Tô mì" },
+  "le le": { emoji: "🐤", label: "Le le" },
+  "ví da": { emoji: "👛", label: "Ví da" },
+  "mèo": { emoji: "🐱", label: "Con mèo" },
+  "vịt": { emoji: "🦆", label: "Con vịt" },
+  "chó": { emoji: "🐶", label: "Con chó" },
+  "hoa": { emoji: "🌸", label: "Bông hoa" },
+  "cây": { emoji: "🌲", label: "Cây xanh" },
+  "mưa": { emoji: "🌧️", label: "Cơn mưa" },
+  "đèn": { emoji: "💡", label: "Chiếc đèn" },
+  "bút": { emoji: "🖊️", label: "Cây bút" },
+  "tay": { emoji: "✋", label: "Bàn tay" },
+  "mắt": { emoji: "👀", label: "Đôi mắt" },
+  "ngủ": { emoji: "😴", label: "Đi ngủ" },
+  "đau": { emoji: "🤕", label: "Đau bụng" },
+  "khế": { emoji: "⭐", label: "Quả khế" },
+  "nho": { emoji: "🍇", label: "Chùm nho" },
+  "phở": { emoji: "🍲", label: "Bát phở" },
+  "tre": { emoji: "🎋", label: "Cây tre" },
+  "ngô": { emoji: "🌽", label: "Bắp ngô" },
+  "quả": { emoji: "🍎", label: "Quả" },
+  "que": { emoji: "🥢", label: "Que gỗ" },
+  "quạ": { emoji: "🐦‍⬛", label: "Con quạ" },
+  "mía": { emoji: "🌾", label: "Cây mía" },
+  "cua": { emoji: "🦀", label: "Con cua" },
+  "búa": { emoji: "🔨", label: "Chiếc búa" },
+  "dừa": { emoji: "🥥", label: "Quả dừa" },
+  "ghế": { emoji: "🪑", label: "Chiếc ghế" },
+  "sen": { emoji: "🌺", label: "Bông sen" },
+  "vẹt": { emoji: "🦜", label: "Con vẹt" },
+  "cà phê": { emoji: "☕", label: "Cà phê" },
+  "cục đá": { emoji: "🧊", label: "Cục đá" },
+  "che ô": { emoji: "🌂", label: "Che ô" },
+  "nhà ga": { emoji: "🚉", label: "Nhà ga" },
+  "ru ngủ": { emoji: "🌙", label: "Ru ngủ" },
+  "ghế gỗ": { emoji: "💺", label: "Ghế gỗ" },
+  "nô đùa": { emoji: "🧒", label: "Nô đùa" },
+  "dưa lê": { emoji: "🍈", label: "Dưa lê" },
+  "mưa gió": { emoji: "🌬️", label: "Mưa gió" },
+  "bàn là": { emoji: "👔", label: "Bàn là" },
+  "quả cam": { emoji: "🍊", label: "Quả cam" },
+  "xe đạp": { emoji: "🚲", label: "Xe đạp" },
+  "lạc đà": { emoji: "🐪", label: "Lạc đà" },
+  "nhà sàn": { emoji: "🛖", label: "Nhà sàn" },
+  "gà mái": { emoji: "🥚", label: "Gà mái" },
+  "máy bay": { emoji: "✈️", label: "Máy bay" },
+  "lái xe": { emoji: "🚘", label: "Lái xe" },
+  "rau cải": { emoji: "🥬", label: "Rau cải" },
+  "cái cân": { emoji: "⚖️", label: "Cái cân" },
+  "quả mận": { emoji: "🍑", label: "Quả mận" },
+  "đèn pin": { emoji: "🔦", label: "Đèn pin" },
+  "quả mít": { emoji: "🍈", label: "Quả mít" },
+  "đàn vịt": { emoji: "🦆", label: "Đàn vịt" },
+  "nón lá": { emoji: "👒", label: "Nón lá" },
+  "cà rốt": { emoji: "🥕", label: "Cà rốt" },
+  "con lợn": { emoji: "🐷", label: "Con lợn" },
+  "quả ớt": { emoji: "🌶️", label: "Quả ớt" },
+  "cơn mưa": { emoji: "☔", label: "Cơn mưa" },
+  "bút chì": { emoji: "✏️", label: "Bút chì" },
+  "cún con": { emoji: "🐕", label: "Cún con" },
+  "bún bò": { emoji: "🍜", label: "Bún bò" },
+  "cặp da": { emoji: "🎒", label: "Cặp da" },
+  "bồn tắm": { emoji: "🛁", label: "Bồn tắm" },
+  "ấm trà": { emoji: "🍵", label: "Ấm trà" },
+  "cá mập": { emoji: "🦈", label: "Cá mập" },
+  "tập múa": { emoji: "💃", label: "Tập múa" },
+  "que kem": { emoji: "🍦", label: "Que kem" },
+  "dép lê": { emoji: "🩴", label: "Dép lê" },
+  "tập đếm": { emoji: "🔢", label: "Tập đếm" },
+  "sắp xếp": { emoji: "🗂️", label: "Sắp xếp" },
+  "con tôm": { emoji: "🦐", label: "Con tôm" },
+  "hộp sữa": { emoji: "🥛", label: "Hộp sữa" },
+  "nấm rơm": { emoji: "🍄", label: "Nấm rơm" },
+  "mặc áo": { emoji: "👚", label: "Mặc áo" },
+  "học vẽ": { emoji: "🎨", label: "Học vẽ" },
+  "con ốc": { emoji: "🐌", label: "Con ốc" },
+  "con ếch": { emoji: "🐸", label: "Con ếch" },
+  "đám mây": { emoji: "☁️", label: "Đám mây" },
+  "kéo co": { emoji: "🪢", label: "Kéo co" },
+  "cái lều": { emoji: "⛺", label: "Cái lều" },
+  "con cừu": { emoji: "🐑", label: "Con cừu" },
+  "con voi": { emoji: "🐘", label: "Con voi" },
+  "con dơi": { emoji: "🦇", label: "Con dơi" },
+  "bơi lội": { emoji: "🏊", label: "Bơi lội" },
+  "đồi núi": { emoji: "⛰️", label: "Đồi núi" },
+  "gửi thư": { emoji: "✉️", label: "Gửi thư" },
+  "toa tàu": { emoji: "🚃", label: "Toa tàu" },
+  "nắng": { emoji: "☀️", label: "Ánh nắng" },
+  "sách": { emoji: "📖", label: "Cuốn sách" },
+  "miệng": { emoji: "👄", label: "Cái miệng" },
+  "chân": { emoji: "🦶", label: "Bàn chân" },
+  "uống": { emoji: "🥤", label: "Uống nước" },
+  "ngựa": { emoji: "🐎", label: "Con ngựa" },
+  "gương": { emoji: "🪞", label: "Chiếc gương" },
+  "cà chua": { emoji: "🍅", label: "Cà chua" },
+  "lá bàng": { emoji: "🍂", label: "Lá bàng" },
+  "quả chanh": { emoji: "🍋", label: "Quả chanh" },
+  "sách vở": { emoji: "📚", label: "Sách vở" },
+  "sạch sẽ": { emoji: "🧼", label: "Sạch sẽ" },
+  "chào cờ": { emoji: "🇻🇳", label: "Chào cờ" },
+  "cái chăn": { emoji: "🛌", label: "Cái chăn" },
+  "nốt nhạc": { emoji: "🎵", label: "Nốt nhạc" },
+  "áo thun": { emoji: "👕", label: "Áo thun" },
+  "bờ biển": { emoji: "🏖️", label: "Bờ biển" },
+  "cô tiên": { emoji: "🧚", label: "Cô tiên" },
+  "viên phấn": { emoji: "🖍️", label: "Viên phấn" },
+  "viết bài": { emoji: "✍️", label: "Viết bài" },
+  "con vượn": { emoji: "🐒", label: "Con vượn" },
+  "cá chép": { emoji: "🎏", label: "Cá chép" },
+  "lễ phép": { emoji: "🙇", label: "Lễ phép" },
+  "gấp chăn": { emoji: "🛏️", label: "Gấp chăn" },
+  "khu vườn": { emoji: "🌷", label: "Khu vườn" },
+  "con nhím": { emoji: "🦔", label: "Con nhím" },
+  "xem phim": { emoji: "🎬", label: "Xem phim" },
+  "trốn tìm": { emoji: "🙈", label: "Trốn tìm" },
+  "gà chíp": { emoji: "🐥", label: "Gà chíp" },
+  "tia chớp": { emoji: "⚡", label: "Tia chớp" },
+  "con bướm": { emoji: "🦋", label: "Con bướm" },
+  "quả bóng": { emoji: "⚽", label: "Quả bóng" },
+  "sóng biển": { emoji: "🌊", label: "Sóng biển" },
+  "dòng sông": { emoji: "🏞️", label: "Dòng sông" },
+  "công viên": { emoji: "🎡", label: "Công viên" },
+  "bông cúc": { emoji: "🌼", label: "Bông cúc" },
+  "trung thu": { emoji: "🥮", label: "Trung thu" },
+  "con ngỗng": { emoji: "🦢", label: "Con ngỗng" },
+  "đồng ruộng": { emoji: "🌾", label: "Đồng ruộng" },
+  "thước kẻ": { emoji: "📏", label: "Thước kẻ" },
+  "hướng dương": { emoji: "🌻", label: "Hướng dương" },
+  "bập bênh": { emoji: "🎢", label: "Bập bênh" },
+  "bệnh viện": { emoji: "🏥", label: "Bệnh viện" },
+  "máy tính": { emoji: "💻", label: "Máy tính" },
+  "tờ lịch": { emoji: "📅", label: "Tờ lịch" },
+  "xích đu": { emoji: "🎠", label: "Xích đu" },
+  "rước đèn": { emoji: "🏮", label: "Rước đèn" },
+  "nhảy dây": { emoji: "🤸", label: "Nhảy dây" },
+  "cái chổi": { emoji: "🧹", label: "Cái chổi" },
+  "chơi cờ": { emoji: "♟️", label: "Chơi cờ" },
+  "túi xách": { emoji: "👜", label: "Túi xách" },
+  "quả bưởi": { emoji: "🍊", label: "Quả bưởi" },
+  "tưới cây": { emoji: "🪴", label: "Tưới cây" },
+  "con ruồi": { emoji: "🪰", label: "Con ruồi" },
+  "cánh diều": { emoji: "🪁", label: "Cánh diều" },
+  "con hươu": { emoji: "🦌", label: "Con hươu" },
+  "siêu thị": { emoji: "🛒", label: "Siêu thị" },
+  "yêu thương": { emoji: "❤️", label: "Yêu thương" },
+  "hoạt hình": { emoji: "📺", label: "Hoạt hình" },
+  "vải thiều": { emoji: "🍒", label: "Vải thiều" },
+  "hoan hô": { emoji: "🎉", label: "Hoan hô" },
+  "khoai lang": { emoji: "🍠", label: "Khoai lang" },
+  "quả xoài": { emoji: "🥭", label: "Quả xoài" },
+  "điện thoại": { emoji: "📱", label: "Điện thoại" },
+  "kể chuyện": { emoji: "🗣️", label: "Kể chuyện" },
+  "bóng chuyền": { emoji: "🏐", label: "Bóng chuyền" },
+  "mùa xuân": { emoji: "🌸", label: "Mùa xuân" },
+  "áo khoác": { emoji: "🧥", label: "Áo khoác" },
+  "xe buýt": { emoji: "🚌", label: "Xe buýt" },
+  "huýt sáo": { emoji: "😗", label: "Huýt sáo" },
+  "tập thể dục": { emoji: "🏋️", label: "Tập thể dục" },
+  "xe cứu hoả": { emoji: "🚒", label: "Xe cứu hoả" },
+};
+
 // Hàm lấy thông tin hình ảnh và tên gọi với cơ chế fallback thông minh (100% từ đều có hình)
+// Hình minh hoạ (emoji) cho các từ Tập đánh vần mở rộng (chỉ dùng khi từ chưa có trong pictureData)
+const spellingExtraPictures = {
+  'mắt': { emoji: '👀', label: 'Đôi Mắt' },
+  'bát': { emoji: '🥣', label: 'Cái Bát' },
+  'đất': { emoji: '🌱', label: 'Đất Trồng Cây' },
+  'Tết': { emoji: '🧧', label: 'Ngày Tết' },
+  'mít': { emoji: '🍈', label: 'Quả Mít' },
+  'bút': { emoji: '🖊️', label: 'Cái Bút' },
+  'ngọt': { emoji: '🍬', label: 'Vị Ngọt' },
+  'tốt': { emoji: '👍', label: 'Việc Tốt' },
+  'ớt': { emoji: '🌶️', label: 'Quả Ớt' },
+  'viết': { emoji: '✍️', label: 'Viết Chữ' },
+  'bác': { emoji: '👨‍🦳', label: 'Bác' },
+  'mặc': { emoji: '🧥', label: 'Mặc Áo' },
+  'bậc': { emoji: '🪜', label: 'Bậc Thang' },
+  'tóc': { emoji: '💇', label: 'Mái Tóc' },
+  'đọc': { emoji: '📖', label: 'Đọc Sách' },
+  'ốc': { emoji: '🐌', label: 'Con Ốc' },
+  'cúc': { emoji: '🌼', label: 'Hoa Cúc' },
+  'mực': { emoji: '🦑', label: 'Con Mực' },
+  'nước': { emoji: '💧', label: 'Nước' },
+  'thuốc': { emoji: '💊', label: 'Viên Thuốc' },
+  'cam': { emoji: '🍊', label: 'Quả Cam' },
+  'làm': { emoji: '🙌', label: 'Làm Việc' },
+  'năm': { emoji: '📅', label: 'Một Năm' },
+  'nấm': { emoji: '🍄', label: 'Cây Nấm' },
+  'kem': { emoji: '🍦', label: 'Cây Kem' },
+  'đêm': { emoji: '🌃', label: 'Ban Đêm' },
+  'chim': { emoji: '🐦', label: 'Con Chim' },
+  'tôm': { emoji: '🦐', label: 'Con Tôm' },
+  'cơm': { emoji: '🍚', label: 'Bát Cơm' },
+  'thơm': { emoji: '🌸', label: 'Mùi Thơm' },
+  'bàn': { emoji: '🪑', label: 'Cái Bàn' },
+  'khăn': { emoji: '🧣', label: 'Chiếc Khăn' },
+  'sân': { emoji: '🏡', label: 'Sân Nhà' },
+  'đèn': { emoji: '💡', label: 'Bóng Đèn' },
+  'bên': { emoji: '↔️', label: 'Bên Cạnh' },
+  'chín': { emoji: '9️⃣', label: 'Số Chín' },
+  'con': { emoji: '🐱', label: 'Con Mèo' },
+  'bốn': { emoji: '4️⃣', label: 'Số Bốn' },
+  'sơn': { emoji: '🎨', label: 'Sơn Tường' },
+  'cún': { emoji: '🐶', label: 'Chú Cún' },
+  'sáng': { emoji: '🌅', label: 'Buổi Sáng' },
+  'trăng': { emoji: '🌕', label: 'Mặt Trăng' },
+  'tầng': { emoji: '🏢', label: 'Tầng Nhà' },
+  'xẻng': { emoji: '⛏️', label: 'Cái Xẻng' },
+  'bóng': { emoji: '⚽', label: 'Quả Bóng' },
+  'bông': { emoji: '🌺', label: 'Bông Hoa' },
+  'thùng': { emoji: '🪣', label: 'Cái Thùng' },
+  'rừng': { emoji: '🌲', label: 'Khu Rừng' },
+  'bảng': { emoji: '📋', label: 'Cái Bảng' },
+  'đứng': { emoji: '🧍', label: 'Bé Đứng' },
+  'hai': { emoji: '2️⃣', label: 'Số Hai' },
+  'tai': { emoji: '👂', label: 'Cái Tai' },
+  'voi': { emoji: '🐘', label: 'Con Voi' },
+  'nồi': { emoji: '🍲', label: 'Cái Nồi' },
+  'chơi': { emoji: '🧸', label: 'Chơi Đùa' },
+  'vui': { emoji: '😊', label: 'Vui Vẻ' },
+  'núi': { emoji: '⛰️', label: 'Ngọn Núi' },
+  'gửi': { emoji: '✉️', label: 'Gửi Thư' },
+  'cười': { emoji: '😄', label: 'Bé Cười' },
+  'đuôi': { emoji: '🐕', label: 'Cái Đuôi' },
+  'tay': { emoji: '✋', label: 'Bàn Tay' },
+  'bay': { emoji: '🕊️', label: 'Chim Bay' },
+  'máy': { emoji: '⚙️', label: 'Cái Máy' },
+  'cây': { emoji: '🌳', label: 'Cái Cây' },
+  'đây': { emoji: '📍', label: 'Ở Đây' },
+  'mây': { emoji: '☁️', label: 'Đám Mây' },
+  'ngày': { emoji: '☀️', label: 'Ban Ngày' },
+  'dây': { emoji: '🧶', label: 'Sợi Dây' },
+  'gậy': { emoji: '🦯', label: 'Cái Gậy' },
+  'chảy': { emoji: '🚰', label: 'Nước Chảy' },
+  'áo': { emoji: '👕', label: 'Cái Áo' },
+  'sao': { emoji: '⭐', label: 'Ngôi Sao' },
+  'rào': { emoji: '🚧', label: 'Hàng Rào' },
+  'cao': { emoji: '📏', label: 'Cao' },
+  'chào': { emoji: '👋', label: 'Chào Hỏi' },
+  'mèo': { emoji: '🐱', label: 'Con Mèo' },
+  'kẹo': { emoji: '🍬', label: 'Viên Kẹo' },
+  'heo': { emoji: '🐷', label: 'Con Heo' },
+  'treo': { emoji: '🖼️', label: 'Treo Tranh' },
+  'bao': { emoji: '🌾', label: 'Bao Gạo' },
+  'trâu': { emoji: '🐃', label: 'Con Trâu' },
+  'sâu': { emoji: '🐛', label: 'Con Sâu' },
+  'đầu': { emoji: '👦', label: 'Cái Đầu' },
+  'câu': { emoji: '🎣', label: 'Câu Cá' },
+  'cầu': { emoji: '🌉', label: 'Cây Cầu' },
+  'kêu': { emoji: '🐓', label: 'Gà Kêu' },
+  'lều': { emoji: '⛺', label: 'Cái Lều' },
+  'sếu': { emoji: '🦩', label: 'Chim Sếu' },
+  'níu': { emoji: '🤝', label: 'Níu Tay' },
+  'địu': { emoji: '🍼', label: 'Địu Em Bé' },
+  'nắng': { emoji: '☀️', label: 'Trời Nắng' },
+  'thang': { emoji: '🪜', label: 'Cái Thang' },
+  'vàng': { emoji: '🟡', label: 'Màu Vàng' },
+  'măng': { emoji: '🎋', label: 'Măng Tre' },
+  'vâng': { emoji: '🙋', label: 'Vâng Ạ' },
+  'ong': { emoji: '🐝', label: 'Con Ong' },
+  'lồng': { emoji: '🐤', label: 'Lồng Chim' },
+  'ông': { emoji: '👴', label: 'Ông' },
+  'cùng': { emoji: '👫', label: 'Cùng Bạn' },
+  'trứng': { emoji: '🥚', label: 'Quả Trứng' },
+  'tiếng': { emoji: '🔊', label: 'Tiếng Chim' },
+  'miệng': { emoji: '👄', label: 'Cái Miệng' },
+  'chuông': { emoji: '🔔', label: 'Cái Chuông' },
+  'uống': { emoji: '🥛', label: 'Uống Sữa' },
+  'vuông': { emoji: '🟦', label: 'Hình Vuông' },
+  'đường': { emoji: '🛣️', label: 'Con Đường' },
+  'hương': { emoji: '🌿', label: 'Mùi Hương' },
+  'sương': { emoji: '💦', label: 'Giọt Sương' },
+  'trường': { emoji: '🏫', label: 'Trường Học' },
+  'thương': { emoji: '🥰', label: 'Yêu Thương' },
+  'hình': { emoji: '⭕', label: 'Hình Tròn' },
+  'xinh': { emoji: '🌷', label: 'Xinh Xắn' },
+  'bệnh': { emoji: '🤒', label: 'Bị Bệnh' },
+  'chịu': { emoji: '💪', label: 'Chịu Khó' },
+  'diều': { emoji: '🪁', label: 'Cái Diều' },
+  'cứu': { emoji: '🚒', label: 'Cứu Hoả' },
+  'hươu': { emoji: '🦌', label: 'Con Hươu' }
+};
+
 function getPictureDataForWord(word) {
+  // "Học từ mới": ưu tiên bảng hình riêng đã duyệt cho từng từ
+  if (state.activeModule !== 'spelling' && vocabPictureData[word]) return vocabPictureData[word];
   if (pictureData[word]) return pictureData[word];
+  if (state.activeModule === 'spelling' && spellingExtraPictures[word]) return spellingExtraPictures[word];
   
   // Suy luận thông minh theo từ khóa
   if (word.includes('cá')) return { emoji: '🐟', label: `Con ${word}` };
@@ -571,6 +898,8 @@ function selectDistractorsForWord(targetItem, roundQuestions) {
 // 1.1 LƯU TRỮ TIẾN ĐỘ VĨNH VIỄN TRÊN IPAD (LOCALSTORAGE)
 // ==========================================
 const STORAGE_KEY = 'vietnhat_adventure_progress_v1';
+// Đổi số này mỗi khi thay đổi lộ trình "Học từ mới" để tiến độ cũ của bé tự về Bài 1 (không bị lệch bài).
+const VOCAB_LAYOUT_VERSION = 'v3-curated-198';
 
 function saveProgressToStorage() {
   try {
@@ -589,6 +918,7 @@ function saveProgressToStorage() {
       activeModule: state.activeModule,
       unlockAllMode: state.unlockAllMode,
       score: state.score,
+      vocabLayout: VOCAB_LAYOUT_VERSION,
       vocabProgress: {
         unlockedLessons: state.vocabProgress.unlockedLessons,
         currentLessonIndex: state.vocabProgress.currentLessonIndex,
@@ -615,7 +945,7 @@ function loadProgressFromStorage() {
       if (data.score !== undefined) state.score = data.score;
       if (data.activeModule) state.activeModule = data.activeModule;
 
-      if (data.vocabProgress) {
+      if (data.vocabProgress && data.vocabLayout === VOCAB_LAYOUT_VERSION) {
         state.vocabProgress = {
           unlockedLessons: Array.isArray(data.vocabProgress.unlockedLessons) ? data.vocabProgress.unlockedLessons : [0],
           currentLessonIndex: typeof data.vocabProgress.currentLessonIndex === 'number' ? data.vocabProgress.currentLessonIndex : 0,
@@ -745,64 +1075,46 @@ function buildVocabLessons() {
   state.vocabLessons = lessons;
 }
 
-// Xây dựng lộ trình Tập đánh vần (Function 2 - 7 Bài học theo họ vần)
+// Xây dựng lộ trình Tập đánh vần: mỗi bài = 1 âm cuối, ~10 từ đại diện cho các vần khác nhau.
+// Từ nào thuộc bài nào do trường "lesson_key" (và thứ tự "path_order") trong spelling_practice_vi_v1.json quyết định.
+// Từ có lesson_key = null là kho dự phòng, chưa đưa vào bài. Thứ tự bài = thứ tự trong mảng "groups" dưới đây.
 function buildSpellingLessons() {
-  const lessonConfigs = [
-    {
-      id: 'spel-1',
-      title: 'Bài 1: Vần ap & ăp (Âm cuối P)',
-      rimes: ['ap', 'ăp'],
-      level: 'Cơ bản - Âm cuối p'
-    },
-    {
-      id: 'spel-2',
-      title: 'Bài 2: Vần âp & ep (Âm cuối P)',
-      rimes: ['âp', 'ep'],
-      level: 'Cơ bản - Âm cuối p'
-    },
-    {
-      id: 'spel-3',
-      title: 'Bài 3: Vần êp, ip & op (Âm cuối P)',
-      rimes: ['êp', 'ip', 'op'],
-      level: 'Nâng cao - Âm cuối p'
-    },
-    {
-      id: 'spel-4',
-      title: 'Bài 4: Vần ôp, ơp & up (Âm cuối P)',
-      rimes: ['ôp', 'ơp', 'up'],
-      level: 'Nâng cao - Âm cuối p'
-    },
-    {
-      id: 'spel-5',
-      title: 'Bài 5: Vần ach, êch & ich (Âm cuối CH)',
-      rimes: ['ach', 'êch', 'ich'],
-      level: 'Mở rộng - Âm cuối ch'
-    },
-    {
-      id: 'spel-6',
-      title: 'Bài 6: Vần anh (Âm cuối NH)',
-      rimes: ['anh'],
-      level: 'Mở rộng - Âm cuối nh'
-    },
-    {
-      id: 'spel-7',
-      title: 'Bài 7: Vần au (Âm cuối U)',
-      rimes: ['au'],
-      level: 'Mở rộng - Âm cuối u'
-    }
+  const groups = [
+    { key: 'p', name: 'Âm cuối P', level: 'Cơ bản - Âm cuối p' },
+    { key: 'ch', name: 'Âm cuối CH', level: 'Cơ bản - Âm cuối ch' },
+    { key: 'nh', name: 'Âm cuối NH', level: 'Cơ bản - Âm cuối nh' },
+    { key: 'u', name: 'Âm cuối U', level: 'Cơ bản - Âm cuối u' },
+    { key: 'ng1', name: 'Âm cuối NG (1) - nhóm a, ă, â, e', level: 'Mở rộng - Âm cuối ng' },
+    { key: 'ng2', name: 'Âm cuối NG (2) - nhóm o, ô, u, ư', level: 'Mở rộng - Âm cuối ng' },
+    { key: 'ng3', name: 'Âm cuối NG (3) - nhóm vần đôi iê, uô, ươ', level: 'Mở rộng - Âm cuối ng' },
+    { key: 't', name: 'Âm cuối T', level: 'Mở rộng - Âm cuối t' },
+    { key: 'c', name: 'Âm cuối C', level: 'Mở rộng - Âm cuối c' },
+    { key: 'm', name: 'Âm cuối M', level: 'Mở rộng - Âm cuối m' },
+    { key: 'n', name: 'Âm cuối N', level: 'Mở rộng - Âm cuối n' },
+    { key: 'i', name: 'Âm cuối I', level: 'Nâng cao - Âm cuối i' },
+    { key: 'y', name: 'Âm cuối Y', level: 'Nâng cao - Âm cuối y' },
+    { key: 'o', name: 'Âm cuối O', level: 'Nâng cao - Âm cuối o' }
   ];
-
-  state.spellingLessons = lessonConfigs.map((cfg, idx) => {
-    const lessonItems = state.spellingItems.filter(it => cfg.rimes.includes(it.rhyme_family));
-    return {
-      id: cfg.id,
-      lessonIndex: idx,
-      title: cfg.title,
-      level: cfg.level,
-      rimes: cfg.rimes,
-      items: lessonItems
-    };
+  const lessons = [];
+  groups.forEach(g => {
+    const list = state.spellingItems
+      .filter(it => it.lesson_key === g.key)
+      .sort((a, b) => (a.path_order || 0) - (b.path_order || 0));
+    if (list.length === 0) return;
+    const rimesIn = [];
+    list.forEach(it => { if (!rimesIn.includes(it.rhyme_family)) rimesIn.push(it.rhyme_family); });
+    const rimeText = rimesIn.length > 6 ? rimesIn.slice(0, 6).join(', ') + '...' : rimesIn.join(', ');
+    const num = lessons.length + 1;
+    lessons.push({
+      id: `spel-${num}`,
+      lessonIndex: num - 1,
+      title: `Bài ${num}: ${g.name} - Vần ${rimeText}`,
+      level: g.level,
+      rimes: rimesIn,
+      items: list
+    });
   });
+  state.spellingLessons = lessons;
 }
 
 // Áp dụng dữ liệu của module đang kích hoạt
