@@ -836,6 +836,218 @@ html, body {
   border: 2px solid #f59e0b;
 }
 
+/* ==========================================
+   Ô VẦN Ở TRÊN CÙNG THẺ TỪ (PHẦN A)
+   ========================================== */
+.spelling-rhyme-box {
+  background: #f8fafc;
+  border: 2px dashed #cbd5e1;
+  border-radius: var(--radius-md);
+  padding: 12px 18px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.rhyme-header-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.rhyme-title-group {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.rhyme-label-small {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #64748b;
+  letter-spacing: 0.5px;
+}
+.rhyme-main-text {
+  font-size: 38px;
+  font-weight: 900;
+  color: #dc2626;
+  line-height: 1;
+}
+.btn-open-chart {
+  margin-left: auto;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e293b;
+  background: #ffffff;
+  border: 2px solid #cbd5e1;
+  border-radius: 20px;
+  padding: 6px 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.btn-open-chart:hover {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+}
+.btn-open-chart:active {
+  transform: translateY(1px);
+}
+.rhyme-seq {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+.rhyme-seq .sp-token {
+  font-size: 17px;
+  padding: 4px 10px;
+}
+
+/* ==========================================
+   BẢNG VẦN (RHYME CHART - PHẦN B)
+   ========================================== */
+.rhyme-chart-card {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.chart-title-tag {
+  font-size: 15px;
+  font-weight: 800;
+  color: #0f172a;
+  background: #f1f5f9;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+.rhyme-chart-main {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #ffffff;
+  border: 3px solid #e2e8f0;
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+@media (max-width: 600px) {
+  .rhyme-chart-main {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+.rhyme-big-pillar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  background: #fef2f2;
+  border: 2px dashed #fca5a5;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.rhyme-big-pillar:hover {
+  background: #fee2e2;
+  transform: scale(1.03);
+}
+.chart-rhyme-red {
+  font-size: 46px;
+  font-weight: 900;
+  color: #dc2626;
+  line-height: 1;
+}
+.chart-arrow {
+  font-size: 32px;
+  font-weight: 900;
+  color: #dc2626;
+}
+.chart-rows-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex-grow: 1;
+}
+.chart-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  background: #f8fafc;
+  border-radius: var(--radius-md);
+  border: 1px solid #e2e8f0;
+}
+.chart-cell {
+  min-height: 48px;
+  min-width: 58px;
+  padding: 6px 12px;
+  font-size: 22px;
+  font-weight: 800;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.15s ease;
+}
+.chart-cell:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.chart-cell:active, .chart-cell.active {
+  background: #ffd54f !important;
+  border-color: #f59e0b !important;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.45);
+}
+.chart-cell-rhyme-form {
+  background: #fef3c7;
+  color: #b45309;
+  border: 2px solid #fde68a;
+  font-size: 24px;
+  font-weight: 900;
+}
+.onset-blue {
+  color: #2563eb;
+}
+.rime-black {
+  color: #0f172a;
+}
+.chart-footer-caption {
+  margin-top: 20px;
+  padding: 14px 20px;
+  background: #f1f5f9;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.chart-caption-emoji {
+  font-size: 28px;
+}
+.chart-caption-text {
+  font-size: 20px;
+  font-weight: 800;
+  color: #334155;
+  text-transform: lowercase;
+}
+
 /* QUY TRÌNH ĐÁNH VẦN DỰ PHÒNG */
 .blending-container {
   display: none !important;

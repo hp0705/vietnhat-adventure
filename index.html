@@ -145,6 +145,24 @@
           <span id="phonics-badge" class="badge-status">🌟 Đã kiểm duyệt</span>
         </div>
 
+        <!-- Ô VẦN (CHỈ HIỆN Ở TẬP ĐÁNH VẦN - PHẦN A) -->
+        <div id="spelling-rhyme-box" class="spelling-rhyme-box" style="display: none;">
+          <div class="rhyme-header-row">
+            <div class="rhyme-title-group">
+              <span class="rhyme-label-small">VẦN</span>
+              <span id="rhyme-display" class="rhyme-main-text">âp</span>
+            </div>
+            <button id="btn-play-rhyme" class="btn-play-round" title="Nghe cô đọc cách đánh vần riêng vần này" style="width: 52px; height: 52px; font-size: 22px;">
+              <span>🔊</span>
+            </button>
+            <button id="btn-open-rhyme-chart" class="btn-open-chart" title="Xem bảng vần">
+              📋 Bảng vần
+            </button>
+          </div>
+          <!-- Hàng chip nhỏ hiển thị cách đánh vần vần: â - pờ - âp -->
+          <div id="rhyme-seq" class="rhyme-seq" aria-live="polite"></div>
+        </div>
+
         <!-- Từ mục tiêu và hình ảnh minh họa -->
         <div class="word-hero-box">
           <div id="word-image-container" class="word-illustration">
@@ -195,6 +213,35 @@
           <button id="btn-next-word" class="btn-secondary" title="Xem từ sau">
             <span class="btn-nav-text">Từ sau</span> <span class="btn-nav-icon">▶</span>
           </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- GIAO DIỆN BẢNG VẦN (MÔ PHỎNG TRANG SÁCH GIẤY - PHẦN B) -->
+    <section id="view-rhyme-chart" class="view hidden">
+      <div class="station-card rhyme-chart-card">
+        <div class="chart-header">
+          <button id="btn-back-from-chart" class="btn-back-small">← Quay lại</button>
+          <span class="chart-title-tag">📖 BẢNG VẦN</span>
+        </div>
+
+        <div class="rhyme-chart-main">
+          <!-- Vần to màu đỏ chỉ mũi tên sang bảng -->
+          <div class="rhyme-big-pillar" id="chart-big-rhyme-btn" title="Chạm để nghe đánh vần vần">
+            <span id="chart-big-rhyme" class="chart-rhyme-red">âp</span>
+            <span class="chart-arrow">→</span>
+          </div>
+
+          <!-- Bảng 2 hàng sắc & nặng -->
+          <div id="chart-rows-container" class="chart-rows-container">
+            <!-- Render động 2 hàng -->
+          </div>
+        </div>
+
+        <!-- Chú thích & tranh minh họa dưới bảng -->
+        <div class="chart-footer-caption">
+          <span id="chart-caption-emoji" class="chart-caption-emoji">📝</span>
+          <span id="chart-caption-text" class="chart-caption-text">bài tập</span>
         </div>
       </div>
     </section>

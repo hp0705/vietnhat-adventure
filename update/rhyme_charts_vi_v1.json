@@ -1,0 +1,509 @@
+{
+  "project": "Viet Nhat Adventure",
+  "module": "rhyme_charts",
+  "version": "1.0",
+  "source": "Bảng vần trong sách giấy (trang 64, 67)",
+  "note": "Vần kết thúc bằng p/ch chỉ có 2 thanh: sắc và nặng. Mỗi dòng: rhyme_form là vần có dấu, words là phụ âm đầu + vần.",
+  "charts": [
+    {
+      "rhyme": "ap",
+      "final": "p",
+      "picture_caption": "sáp màu",
+      "rows": [
+        {
+          "tone": "sắc",
+          "rhyme_form": "áp",
+          "words": [
+            {
+              "word": "cáp",
+              "onset": "c"
+            },
+            {
+              "word": "đáp",
+              "onset": "đ"
+            },
+            {
+              "word": "nháp",
+              "onset": "nh"
+            },
+            {
+              "word": "pháp",
+              "onset": "ph"
+            },
+            {
+              "word": "tháp",
+              "onset": "th"
+            },
+            {
+              "word": "ráp",
+              "onset": "r"
+            }
+          ]
+        },
+        {
+          "tone": "nặng",
+          "rhyme_form": "ạp",
+          "words": [
+            {
+              "word": "cạp",
+              "onset": "c"
+            },
+            {
+              "word": "đạp",
+              "onset": "đ"
+            },
+            {
+              "word": "hạp",
+              "onset": "h"
+            },
+            {
+              "word": "sạp",
+              "onset": "s"
+            },
+            {
+              "word": "rạp",
+              "onset": "r"
+            },
+            {
+              "word": "tạp",
+              "onset": "t"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rhyme": "ăp",
+      "final": "p",
+      "picture_caption": "cặp sách",
+      "rows": [
+        {
+          "tone": "sắc",
+          "rhyme_form": "ắp",
+          "words": [
+            {
+              "word": "bắp",
+              "onset": "b"
+            },
+            {
+              "word": "cắp",
+              "onset": "c"
+            },
+            {
+              "word": "đắp",
+              "onset": "đ"
+            },
+            {
+              "word": "gắp",
+              "onset": "g"
+            },
+            {
+              "word": "lắp",
+              "onset": "l"
+            },
+            {
+              "word": "nắp",
+              "onset": "n"
+            }
+          ]
+        },
+        {
+          "tone": "nặng",
+          "rhyme_form": "ặp",
+          "words": [
+            {
+              "word": "cặp",
+              "onset": "c"
+            },
+            {
+              "word": "chặp",
+              "onset": "ch"
+            },
+            {
+              "word": "gặp",
+              "onset": "g"
+            },
+            {
+              "word": "lặp",
+              "onset": "l"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rhyme": "âp",
+      "final": "p",
+      "picture_caption": "bài tập",
+      "rows": [
+        {
+          "tone": "sắc",
+          "rhyme_form": "ấp",
+          "words": [
+            {
+              "word": "bấp",
+              "onset": "b"
+            },
+            {
+              "word": "cấp",
+              "onset": "c"
+            },
+            {
+              "word": "chấp",
+              "onset": "ch"
+            },
+            {
+              "word": "gấp",
+              "onset": "g"
+            },
+            {
+              "word": "hấp",
+              "onset": "h"
+            },
+            {
+              "word": "lấp",
+              "onset": "l"
+            }
+          ]
+        },
+        {
+          "tone": "nặng",
+          "rhyme_form": "ập",
+          "words": [
+            {
+              "word": "bập",
+              "onset": "b"
+            },
+            {
+              "word": "cập",
+              "onset": "c"
+            },
+            {
+              "word": "đập",
+              "onset": "đ"
+            },
+            {
+              "word": "gập",
+              "onset": "g"
+            },
+            {
+              "word": "thập",
+              "onset": "th"
+            },
+            {
+              "word": "lập",
+              "onset": "l"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rhyme": "ep",
+      "final": "p",
+      "picture_caption": "đôi dép",
+      "rows": [
+        {
+          "tone": "sắc",
+          "rhyme_form": "ép",
+          "words": [
+            {
+              "word": "bép",
+              "onset": "b"
+            },
+            {
+              "word": "dép",
+              "onset": "d"
+            },
+            {
+              "word": "ghép",
+              "onset": "gh"
+            },
+            {
+              "word": "kép",
+              "onset": "k"
+            },
+            {
+              "word": "lép",
+              "onset": "l"
+            },
+            {
+              "word": "mép",
+              "onset": "m"
+            }
+          ]
+        },
+        {
+          "tone": "nặng",
+          "rhyme_form": "ẹp",
+          "words": [
+            {
+              "word": "bẹp",
+              "onset": "b"
+            },
+            {
+              "word": "đẹp",
+              "onset": "đ"
+            },
+            {
+              "word": "hẹp",
+              "onset": "h"
+            },
+            {
+              "word": "kẹp",
+              "onset": "k"
+            },
+            {
+              "word": "nẹp",
+              "onset": "n"
+            },
+            {
+              "word": "xẹp",
+              "onset": "x"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rhyme": "êp",
+      "final": "p",
+      "picture_caption": "bếp ga",
+      "rows": [
+        {
+          "tone": "sắc",
+          "rhyme_form": "ếp",
+          "words": [
+            {
+              "word": "bếp",
+              "onset": "b"
+            },
+            {
+              "word": "nếp",
+              "onset": "n"
+            },
+            {
+              "word": "sếp",
+              "onset": "s"
+            },
+            {
+              "word": "thếp",
+              "onset": "th"
+            },
+            {
+              "word": "xếp",
+              "onset": "x"
+            }
+          ]
+        },
+        {
+          "tone": "nặng",
+          "rhyme_form": "ệp",
+          "words": [
+            {
+              "word": "rệp",
+              "onset": "r"
+            },
+            {
+              "word": "tệp",
+              "onset": "t"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rhyme": "ach",
+      "final": "ch",
+      "picture_caption": "cuốn sách",
+      "rows": [
+        {
+          "tone": "sắc",
+          "rhyme_form": "ách",
+          "words": [
+            {
+              "word": "bách",
+              "onset": "b"
+            },
+            {
+              "word": "cách",
+              "onset": "c"
+            },
+            {
+              "word": "hách",
+              "onset": "h"
+            },
+            {
+              "word": "lách",
+              "onset": "l"
+            },
+            {
+              "word": "mách",
+              "onset": "m"
+            },
+            {
+              "word": "nách",
+              "onset": "n"
+            }
+          ]
+        },
+        {
+          "tone": "nặng",
+          "rhyme_form": "ạch",
+          "words": [
+            {
+              "word": "bạch",
+              "onset": "b"
+            },
+            {
+              "word": "cạch",
+              "onset": "c"
+            },
+            {
+              "word": "gạch",
+              "onset": "g"
+            },
+            {
+              "word": "hạch",
+              "onset": "h"
+            },
+            {
+              "word": "lạch",
+              "onset": "l"
+            },
+            {
+              "word": "mạch",
+              "onset": "m"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rhyme": "êch",
+      "final": "ch",
+      "picture_caption": "con ếch",
+      "rows": [
+        {
+          "tone": "sắc",
+          "rhyme_form": "ếch",
+          "words": [
+            {
+              "word": "hếch",
+              "onset": "h"
+            },
+            {
+              "word": "lếch",
+              "onset": "l"
+            },
+            {
+              "word": "nghếch",
+              "onset": "ngh"
+            },
+            {
+              "word": "thếch",
+              "onset": "th"
+            },
+            {
+              "word": "xếch",
+              "onset": "x"
+            }
+          ]
+        },
+        {
+          "tone": "nặng",
+          "rhyme_form": "ệch",
+          "words": [
+            {
+              "word": "bệch",
+              "onset": "b"
+            },
+            {
+              "word": "kệch",
+              "onset": "k"
+            },
+            {
+              "word": "lệch",
+              "onset": "l"
+            },
+            {
+              "word": "chệch",
+              "onset": "ch"
+            },
+            {
+              "word": "nghệch",
+              "onset": "ngh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rhyme": "ich",
+      "final": "ch",
+      "picture_caption": "chim chích",
+      "rows": [
+        {
+          "tone": "sắc",
+          "rhyme_form": "ích",
+          "words": [
+            {
+              "word": "bích",
+              "onset": "b"
+            },
+            {
+              "word": "đích",
+              "onset": "đ"
+            },
+            {
+              "word": "mích",
+              "onset": "m"
+            },
+            {
+              "word": "phích",
+              "onset": "ph"
+            },
+            {
+              "word": "tích",
+              "onset": "t"
+            },
+            {
+              "word": "thích",
+              "onset": "th"
+            }
+          ]
+        },
+        {
+          "tone": "nặng",
+          "rhyme_form": "ịch",
+          "words": [
+            {
+              "word": "bịch",
+              "onset": "b"
+            },
+            {
+              "word": "dịch",
+              "onset": "d"
+            },
+            {
+              "word": "địch",
+              "onset": "đ"
+            },
+            {
+              "word": "hịch",
+              "onset": "h"
+            },
+            {
+              "word": "mịch",
+              "onset": "m"
+            },
+            {
+              "word": "lịch",
+              "onset": "l"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

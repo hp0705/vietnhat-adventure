@@ -1,0 +1,288 @@
+{
+  "project": "Viet Nhat Adventure",
+  "module": "rhyme_charts",
+  "version": "1.1",
+  "note": "Mỗi vần: đúng 2 hàng (sắc, nặng), mỗi hàng đúng 2 từ gần gũi đời sống của bé. Bản đầy đủ theo sách: rhyme_charts_vi_v1_FULL_tham_khao.json (KHÔNG nạp vào app).",
+  "charts": [
+    {
+      "rhyme": "ap",
+      "picture_caption": "sáp màu",
+      "picture_emoji": "🖍️",
+      "rows": [
+        {
+          "tone": "sắc",
+          "rhyme_form": "áp",
+          "words": [
+            {
+              "word": "sáp",
+              "onset": "s"
+            },
+            {
+              "word": "tháp",
+              "onset": "th"
+            }
+          ]
+        },
+        {
+          "tone": "nặng",
+          "rhyme_form": "ạp",
+          "words": [
+            {
+              "word": "rạp",
+              "onset": "r"
+            },
+            {
+              "word": "sạp",
+              "onset": "s"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rhyme": "ăp",
+      "picture_caption": "cặp sách",
+      "picture_emoji": "🎒",
+      "rows": [
+        {
+          "tone": "sắc",
+          "rhyme_form": "ắp",
+          "words": [
+            {
+              "word": "bắp",
+              "onset": "b"
+            },
+            {
+              "word": "lắp",
+              "onset": "l"
+            }
+          ]
+        },
+        {
+          "tone": "nặng",
+          "rhyme_form": "ặp",
+          "words": [
+            {
+              "word": "cặp",
+              "onset": "c"
+            },
+            {
+              "word": "gặp",
+              "onset": "g"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rhyme": "âp",
+      "picture_caption": "bài tập",
+      "picture_emoji": "📝",
+      "rows": [
+        {
+          "tone": "sắc",
+          "rhyme_form": "ấp",
+          "words": [
+            {
+              "word": "gấp",
+              "onset": "g"
+            },
+            {
+              "word": "hấp",
+              "onset": "h"
+            }
+          ]
+        },
+        {
+          "tone": "nặng",
+          "rhyme_form": "ập",
+          "words": [
+            {
+              "word": "tập",
+              "onset": "t"
+            },
+            {
+              "word": "đập",
+              "onset": "đ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rhyme": "ep",
+      "picture_caption": "đôi dép",
+      "picture_emoji": "🩴",
+      "rows": [
+        {
+          "tone": "sắc",
+          "rhyme_form": "ép",
+          "words": [
+            {
+              "word": "dép",
+              "onset": "d"
+            },
+            {
+              "word": "ghép",
+              "onset": "gh"
+            }
+          ]
+        },
+        {
+          "tone": "nặng",
+          "rhyme_form": "ẹp",
+          "words": [
+            {
+              "word": "đẹp",
+              "onset": "đ"
+            },
+            {
+              "word": "kẹp",
+              "onset": "k"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rhyme": "êp",
+      "picture_caption": "bếp ga",
+      "picture_emoji": "🔥",
+      "rows": [
+        {
+          "tone": "sắc",
+          "rhyme_form": "ếp",
+          "words": [
+            {
+              "word": "bếp",
+              "onset": "b"
+            },
+            {
+              "word": "xếp",
+              "onset": "x"
+            }
+          ]
+        },
+        {
+          "tone": "nặng",
+          "rhyme_form": "ệp",
+          "words": [
+            {
+              "word": "rệp",
+              "onset": "r"
+            },
+            {
+              "word": "tệp",
+              "onset": "t"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rhyme": "ach",
+      "picture_caption": "cuốn sách",
+      "picture_emoji": "📖",
+      "rows": [
+        {
+          "tone": "sắc",
+          "rhyme_form": "ách",
+          "words": [
+            {
+              "word": "sách",
+              "onset": "s"
+            },
+            {
+              "word": "khách",
+              "onset": "kh"
+            }
+          ]
+        },
+        {
+          "tone": "nặng",
+          "rhyme_form": "ạch",
+          "words": [
+            {
+              "word": "gạch",
+              "onset": "g"
+            },
+            {
+              "word": "bạch",
+              "onset": "b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rhyme": "êch",
+      "picture_caption": "con ếch",
+      "picture_emoji": "🐸",
+      "rows": [
+        {
+          "tone": "sắc",
+          "rhyme_form": "ếch",
+          "words": [
+            {
+              "word": "hếch",
+              "onset": "h"
+            },
+            {
+              "word": "xếch",
+              "onset": "x"
+            }
+          ]
+        },
+        {
+          "tone": "nặng",
+          "rhyme_form": "ệch",
+          "words": [
+            {
+              "word": "lệch",
+              "onset": "l"
+            },
+            {
+              "word": "bệch",
+              "onset": "b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rhyme": "ich",
+      "picture_caption": "chim chích",
+      "picture_emoji": "🐦",
+      "rows": [
+        {
+          "tone": "sắc",
+          "rhyme_form": "ích",
+          "words": [
+            {
+              "word": "thích",
+              "onset": "th"
+            },
+            {
+              "word": "đích",
+              "onset": "đ"
+            }
+          ]
+        },
+        {
+          "tone": "nặng",
+          "rhyme_form": "ịch",
+          "words": [
+            {
+              "word": "lịch",
+              "onset": "l"
+            },
+            {
+              "word": "bịch",
+              "onset": "b"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

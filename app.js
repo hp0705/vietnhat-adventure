@@ -12,6 +12,7 @@ const state = {
   spellingItems: [],
   vocabLessons: [],
   spellingLessons: [],
+  rhymeCharts: [],
   spellingStepAudioMap: {},
   items: [],
   lessons: [],
@@ -60,12 +61,104 @@ function getDanhVanPlayer() {
   return danhVanPlayer;
 }
 
+// A1. QUY TẮC CẮT CHUỖI ĐÁNH VẦN THÀNH PHẦN VẦN VÀ PHẦN TỪ (PHẦN A)
+function splitSpellingTokens(item, tokens) {
+  if (!item || !tokens || !tokens.length) {
+    return { rhymeTokens: [], wordTokens: tokens || [] };
+  }
+  const rime = (item.phonics?.rime?.written || item.rhyme_family || '').trim().toLowerCase();
+  const getText = (t) => (typeof t === 'string' ? t : t.text).trim().toLowerCase();
+  const k = tokens.findIndex((t) => getText(t) === rime);
+
+  if (k === -1) {
+    console.warn(`splitSpellingTokens: Không tìm thấy vị trí vần k cho từ "${item.word}" (vần "${rime}")`);
+    return { rhymeTokens: [], wordTokens: tokens };
+  }
+
+  // Từ có phụ âm đầu -> bỏ qua token âm đầu ở vị trí 0 (startIdx = 1)
+  // Từ không có phụ âm đầu -> lấy từ vị trí 0 (startIdx = 0)
+  const hasOnset = Boolean(item.phonics?.onset?.written || item.phonics?.onset?.sound_spelling);
+  const startIdx = hasOnset ? 1 : 0;
+
+  const rhymeTokens = tokens.slice(startIdx, k + 1);
+  const wordTokens = tokens.slice(k + 1);
+  return { rhymeTokens, wordTokens };
+}
+
+let activePlaySeqRunId = 0;
+
+// PHÁT DANH SÁCH ÂM THEO CHUỖI KÈM SÁNG CHIP ĐỒNG BỘ (DÙNG CHO Ô VẦN VÀ TỪ)
+async function playTokenList(tokens, containerSelector, btnEl) {
+  if (!tokens || !tokens.length) return;
+  activePlaySeqRunId++;
+  const myRunId = activePlaySeqRunId;
+
+  // Dừng mọi âm thanh đang đọc trước đó
+  const player = getDanhVanPlayer();
+  if (player) player.stop();
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+  }
+  if (chartAudio) {
+    chartAudio.pause();
+    chartAudio.currentTime = 0;
+    chartAudio = null;
+  }
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+  }
+
+  if (btnEl) btnEl.classList.add('playing');
+  const chipEls = document.querySelectorAll(`${containerSelector} .sp-token`);
+
+  try {
+    for (let i = 0; i < tokens.length; i++) {
+      if (myRunId !== activePlaySeqRunId) return;
+      const tok = tokens[i];
+
+      // Highlight chip hiện tại
+      chipEls.forEach((el, idx) => {
+        if (idx === i) {
+          el.classList.add('active');
+          el.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        } else {
+          el.classList.remove('active');
+        }
+      });
+
+      // Lấy file âm thanh từ spellingStepAudioMap hoặc fallback
+      let audioUrl = state.spellingStepAudioMap && state.spellingStepAudioMap[tok.text];
+      if (!audioUrl) {
+        audioUrl = '06-assets/audio/spelling/steps/' + encodeURIComponent(tok.text) + '.mp3';
+      }
+
+      const rate = state.speechRate || 1.1;
+      await playAudioSrc(audioUrl, tok.text, rate);
+
+      if (myRunId !== activePlaySeqRunId) return;
+      const pause = tok.pauseAfter || 350;
+      await new Promise((r) => setTimeout(r, pause));
+    }
+  } finally {
+    if (myRunId === activePlaySeqRunId) {
+      if (btnEl) btnEl.classList.remove('playing');
+      chipEls.forEach((el) => el.classList.remove('active'));
+    }
+  }
+}
+
 function renderSpellingSequence(word) {
   const container = document.getElementById('spelling-seq');
   if (!container) return;
   if (typeof DanhVanSpeech !== 'undefined' && DanhVanSpeech.planWord) {
     try {
       const plan = DanhVanSpeech.planWord(word);
+      if (state.activeModule === 'spelling' && state.currentWord) {
+        const { wordTokens } = splitSpellingTokens(state.currentWord, plan);
+        container.innerHTML = wordTokens.map((p, i) => `<span id="sp-token-${i}" class="sp-token">${p.text}</span>`).join(' ');
+        return;
+      }
       container.innerHTML = plan.map((p, i) => `<span id="sp-token-${i}" class="sp-token">${p.text}</span>`).join(' ');
       return;
     } catch (e) {
@@ -85,6 +178,172 @@ function highlightSpellingStep(item, index) {
       el.classList.remove('active');
     }
   });
+}
+
+// A2 & B2. CẬP NHẬT Ô VẦN VÀ NÚT BẢNG VẦN
+function updateRhymeBox(item) {
+  const rhymeBox = document.getElementById('spelling-rhyme-box');
+  const rhymeDisplay = document.getElementById('rhyme-display');
+  const rhymeSeq = document.getElementById('rhyme-seq');
+  const chartBtn = document.getElementById('btn-open-rhyme-chart');
+  if (!rhymeBox || !item) return;
+
+  if (state.activeModule !== 'spelling') {
+    rhymeBox.style.display = 'none';
+    if (chartBtn) chartBtn.style.display = 'none';
+    return;
+  }
+
+  rhymeBox.style.display = 'block';
+  const rime = (item.phonics?.rime?.written || item.rhyme_family || '').trim();
+  if (rhymeDisplay) rhymeDisplay.textContent = rime;
+
+  if (typeof DanhVanSpeech !== 'undefined' && DanhVanSpeech.planWord) {
+    try {
+      const plan = DanhVanSpeech.planWord(item.word);
+      const { rhymeTokens } = splitSpellingTokens(item, plan);
+      if (rhymeSeq) {
+        rhymeSeq.innerHTML = rhymeTokens.map((p, i) => `<span id="rhyme-token-${i}" class="sp-token">${p.text}</span>`).join(' ');
+      }
+    } catch (e) {
+      console.warn('updateRhymeBox planWord error:', e);
+      if (rhymeSeq) rhymeSeq.innerHTML = '';
+    }
+  }
+
+  // B2. Hiện/ẩn nút "Bảng vần" nếu có dữ liệu tương ứng trong rhymeCharts
+  const rimeLower = rime.toLowerCase();
+  const hasChart = state.rhymeCharts && state.rhymeCharts.some(c => (c.rhyme || '').toLowerCase() === rimeLower);
+  if (chartBtn) {
+    chartBtn.style.display = hasChart ? 'inline-flex' : 'none';
+  }
+}
+
+// A3. PHÁT ÂM THANH Ô VẦN (CHỈ ĐỌC CHUỖI VẦN: â - pờ - âp)
+async function playRhymeSequence(item) {
+  if (!item) item = state.currentWord;
+  if (!item) return;
+  const btn = document.getElementById('btn-play-rhyme');
+  if (typeof DanhVanSpeech !== 'undefined' && DanhVanSpeech.planWord) {
+    try {
+      const plan = DanhVanSpeech.planWord(item.word);
+      const { rhymeTokens } = splitSpellingTokens(item, plan);
+      await playTokenList(rhymeTokens, '#rhyme-seq', btn);
+    } catch (e) {
+      console.warn('playRhymeSequence error:', e);
+    }
+  }
+}
+
+// PHẦN B: MÀN HÌNH BẢNG VẦN (RHYME CHART)
+function formatChartWord(w, rhymeForm) {
+  const wordText = (typeof w === 'string' ? w : w.word || '').trim();
+  let onset = '';
+  if (typeof w === 'object' && w.onset) {
+    onset = w.onset;
+  } else {
+    const item = (state.spellingItems || []).find(x => x.word.toLowerCase() === wordText.toLowerCase()) ||
+                 (state.vocabItems || []).find(x => x.word.toLowerCase() === wordText.toLowerCase());
+    if (item && item.phonics?.onset?.written) {
+      onset = item.phonics.onset.written;
+    } else if (rhymeForm && wordText.toLowerCase().endsWith(rhymeForm.toLowerCase())) {
+      onset = wordText.slice(0, wordText.length - rhymeForm.length);
+    }
+  }
+  const rimePart = wordText.slice(onset.length);
+  return `<span class="onset-blue">${onset}</span><span class="rime-black">${rimePart}</span>`;
+}
+
+let chartAudio = null;
+async function playChartWord(text, cellEl) {
+  if (!text) return;
+  // Dừng mọi âm thanh trước đó
+  const player = getDanhVanPlayer();
+  if (player) player.stop();
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+  }
+  if (chartAudio) {
+    chartAudio.pause();
+    chartAudio.currentTime = 0;
+    chartAudio = null;
+  }
+  if (chartAudio) {
+    chartAudio.pause();
+    chartAudio.currentTime = 0;
+    chartAudio = null;
+  }
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+  }
+
+  // Làm sáng ô được click
+  document.querySelectorAll('.chart-cell').forEach(c => c.classList.remove('active'));
+  if (cellEl) cellEl.classList.add('active');
+
+  try {
+    const item = (state.spellingItems || []).find(x => x.word.toLowerCase() === text.toLowerCase()) ||
+                 (state.vocabItems || []).find(x => x.word.toLowerCase() === text.toLowerCase());
+    const audioUrl = item ? getDialectAudio(item, 'word') : null;
+    await playAudioSrc(audioUrl, text);
+  } finally {
+    if (cellEl) cellEl.classList.remove('active');
+  }
+}
+
+function openRhymeChart(rime) {
+  if (!rime) {
+    const cur = state.currentWord;
+    rime = cur?.phonics?.rime?.written || cur?.rhyme_family || '';
+  }
+  const rimeLower = (rime || '').trim().toLowerCase();
+  const chart = (state.rhymeCharts || []).find(c => (c.rhyme || '').toLowerCase() === rimeLower);
+  if (!chart) {
+    showToast(`Chưa có bảng vần cho vần -${rime}`);
+    return;
+  }
+
+  const bigRhymeEl = document.getElementById('chart-big-rhyme');
+  if (bigRhymeEl) bigRhymeEl.textContent = chart.rhyme;
+
+  const rowsContainer = document.getElementById('chart-rows-container');
+  if (rowsContainer) {
+    rowsContainer.innerHTML = '';
+    (chart.rows || []).forEach(row => {
+      const rowDiv = document.createElement('div');
+      rowDiv.className = 'chart-row';
+
+      // Ô đầu dòng: chữ vần có dấu (ví dụ: ấp, ập)
+      const formCell = document.createElement('div');
+      formCell.className = 'chart-cell chart-cell-rhyme-form';
+      formCell.textContent = row.rhyme_form;
+      formCell.title = `Chạm để nghe: ${row.rhyme_form}`;
+      formCell.addEventListener('click', () => playChartWord(row.rhyme_form, formCell));
+      rowDiv.appendChild(formCell);
+
+      // Các ô từ tiếp theo
+      (row.words || []).forEach(w => {
+        const wordText = typeof w === 'string' ? w : w.word;
+        const wordCell = document.createElement('div');
+        wordCell.className = 'chart-cell chart-cell-word';
+        wordCell.innerHTML = formatChartWord(w, row.rhyme_form);
+        wordCell.title = `Chạm để nghe: ${wordText}`;
+        wordCell.addEventListener('click', () => playChartWord(wordText, wordCell));
+        rowDiv.appendChild(wordCell);
+      });
+
+      rowsContainer.appendChild(rowDiv);
+    });
+  }
+
+  // Chú thích & emoji dưới bảng
+  const captionText = document.getElementById('chart-caption-text');
+  const captionEmoji = document.getElementById('chart-caption-emoji');
+  if (captionText) captionText.textContent = chart.picture_caption || '';
+  if (captionEmoji) captionEmoji.textContent = chart.picture_emoji || '📖';
+
+  switchView('view-rhyme-chart');
 }
 
 // Danh sách lời khen ngợi phong phú dành riêng cho Bé Mây: ĐỒNG NHẤT 100% GIỮA ÂM THANH VÀ CHỮ HIỂN THỊ
@@ -434,8 +693,213 @@ const emojiMap = {
   'chân': '🦶', 'ăn': '🍚', 'uống': '🥛', 'ngủ': '😴', 'đi': '🚶'
 };
 
+// Hình minh họa cho TOÀN BỘ từ trong "Học từ mới" (mỗi từ 1 emoji riêng, không trùng nhau trong cùng bài).
+// Muốn đổi hình của 1 từ: sửa emoji/label ở dòng của từ đó.
+const vocabPictureData = {
+  "ba": { emoji: "👨‍👧", label: "Ba" },
+  "bà": { emoji: "👵", label: "Bà" },
+  "bố": { emoji: "👨", label: "Bố" },
+  "mẹ": { emoji: "👩‍👦", label: "Mẹ" },
+  "bé": { emoji: "👶", label: "Bé" },
+  "bò": { emoji: "🐄", label: "Con bò" },
+  "gà": { emoji: "🐔", label: "Con gà" },
+  "cá": { emoji: "🐟", label: "Con cá" },
+  "lá": { emoji: "🍃", label: "Chiếc lá" },
+  "đá": { emoji: "🪨", label: "Hòn đá" },
+  "vở": { emoji: "📓", label: "Quyển vở" },
+  "ăn": { emoji: "🍚", label: "Ăn cơm" },
+  "đi": { emoji: "🚶", label: "Đi" },
+  "cô": { emoji: "👩‍🏫", label: "Cô giáo" },
+  "na": { emoji: "🍏", label: "Quả na" },
+  "đa": { emoji: "🌳", label: "Cây đa" },
+  "bế": { emoji: "🤱", label: "Bế em bé" },
+  "lê": { emoji: "🍐", label: "Quả lê" },
+  "cà": { emoji: "🍆", label: "Quả cà" },
+  "cờ": { emoji: "🚩", label: "Lá cờ" },
+  "cỏ": { emoji: "🌿", label: "Cây cỏ" },
+  "dê": { emoji: "🐐", label: "Con dê" },
+  "bi": { emoji: "🔵", label: "Viên bi" },
+  "hề": { emoji: "🤡", label: "Chú hề" },
+  "dù": { emoji: "☂️", label: "Cái dù" },
+  "tổ": { emoji: "🐣", label: "Tổ chim" },
+  "rổ": { emoji: "🧺", label: "Chiếc rổ" },
+  "sò": { emoji: "🐚", label: "Con sò" },
+  "ve": { emoji: "🦗", label: "Con ve" },
+  "xe": { emoji: "🚗", label: "Chiếc xe" },
+  "ca nô": { emoji: "🚤", label: "Ca nô" },
+  "ca sĩ": { emoji: "🎤", label: "Ca sĩ" },
+  "bí đỏ": { emoji: "🎃", label: "Bí đỏ" },
+  "đi bộ": { emoji: "🚶‍♀️", label: "Đi bộ" },
+  "đi đò": { emoji: "🛶", label: "Đi đò" },
+  "hồ cá": { emoji: "🐠", label: "Hồ cá" },
+  "tu hú": { emoji: "🐦", label: "Tu hú" },
+  "tê tê": { emoji: "🦔", label: "Tê tê" },
+  "nơ đỏ": { emoji: "🎀", label: "Nơ đỏ" },
+  "tô mì": { emoji: "🍝", label: "Tô mì" },
+  "le le": { emoji: "🐤", label: "Le le" },
+  "ví da": { emoji: "👛", label: "Ví da" },
+  "mèo": { emoji: "🐱", label: "Con mèo" },
+  "vịt": { emoji: "🦆", label: "Con vịt" },
+  "chó": { emoji: "🐶", label: "Con chó" },
+  "hoa": { emoji: "🌸", label: "Bông hoa" },
+  "cây": { emoji: "🌲", label: "Cây xanh" },
+  "mưa": { emoji: "🌧️", label: "Cơn mưa" },
+  "đèn": { emoji: "💡", label: "Chiếc đèn" },
+  "bút": { emoji: "🖊️", label: "Cây bút" },
+  "tay": { emoji: "✋", label: "Bàn tay" },
+  "mắt": { emoji: "👀", label: "Đôi mắt" },
+  "ngủ": { emoji: "😴", label: "Đi ngủ" },
+  "đau": { emoji: "🤕", label: "Đau bụng" },
+  "khế": { emoji: "⭐", label: "Quả khế" },
+  "nho": { emoji: "🍇", label: "Chùm nho" },
+  "phở": { emoji: "🍲", label: "Bát phở" },
+  "tre": { emoji: "🎋", label: "Cây tre" },
+  "ngô": { emoji: "🌽", label: "Bắp ngô" },
+  "quả": { emoji: "🍎", label: "Quả" },
+  "que": { emoji: "🥢", label: "Que gỗ" },
+  "quạ": { emoji: "🐦‍⬛", label: "Con quạ" },
+  "mía": { emoji: "🌾", label: "Cây mía" },
+  "cua": { emoji: "🦀", label: "Con cua" },
+  "búa": { emoji: "🔨", label: "Chiếc búa" },
+  "dừa": { emoji: "🥥", label: "Quả dừa" },
+  "ghế": { emoji: "🪑", label: "Chiếc ghế" },
+  "sen": { emoji: "🌺", label: "Bông sen" },
+  "vẹt": { emoji: "🦜", label: "Con vẹt" },
+  "cà phê": { emoji: "☕", label: "Cà phê" },
+  "cục đá": { emoji: "🧊", label: "Cục đá" },
+  "che ô": { emoji: "🌂", label: "Che ô" },
+  "nhà ga": { emoji: "🚉", label: "Nhà ga" },
+  "ru ngủ": { emoji: "🌙", label: "Ru ngủ" },
+  "ghế gỗ": { emoji: "💺", label: "Ghế gỗ" },
+  "nô đùa": { emoji: "🧒", label: "Nô đùa" },
+  "dưa lê": { emoji: "🍈", label: "Dưa lê" },
+  "mưa gió": { emoji: "🌬️", label: "Mưa gió" },
+  "bàn là": { emoji: "👔", label: "Bàn là" },
+  "quả cam": { emoji: "🍊", label: "Quả cam" },
+  "xe đạp": { emoji: "🚲", label: "Xe đạp" },
+  "lạc đà": { emoji: "🐪", label: "Lạc đà" },
+  "nhà sàn": { emoji: "🛖", label: "Nhà sàn" },
+  "gà mái": { emoji: "🥚", label: "Gà mái" },
+  "máy bay": { emoji: "✈️", label: "Máy bay" },
+  "lái xe": { emoji: "🚘", label: "Lái xe" },
+  "rau cải": { emoji: "🥬", label: "Rau cải" },
+  "cái cân": { emoji: "⚖️", label: "Cái cân" },
+  "quả mận": { emoji: "🍑", label: "Quả mận" },
+  "đèn pin": { emoji: "🔦", label: "Đèn pin" },
+  "quả mít": { emoji: "🍈", label: "Quả mít" },
+  "đàn vịt": { emoji: "🦆", label: "Đàn vịt" },
+  "nón lá": { emoji: "👒", label: "Nón lá" },
+  "cà rốt": { emoji: "🥕", label: "Cà rốt" },
+  "con lợn": { emoji: "🐷", label: "Con lợn" },
+  "quả ớt": { emoji: "🌶️", label: "Quả ớt" },
+  "cơn mưa": { emoji: "☔", label: "Cơn mưa" },
+  "bút chì": { emoji: "✏️", label: "Bút chì" },
+  "cún con": { emoji: "🐕", label: "Cún con" },
+  "bún bò": { emoji: "🍜", label: "Bún bò" },
+  "cặp da": { emoji: "🎒", label: "Cặp da" },
+  "bồn tắm": { emoji: "🛁", label: "Bồn tắm" },
+  "ấm trà": { emoji: "🍵", label: "Ấm trà" },
+  "cá mập": { emoji: "🦈", label: "Cá mập" },
+  "tập múa": { emoji: "💃", label: "Tập múa" },
+  "que kem": { emoji: "🍦", label: "Que kem" },
+  "dép lê": { emoji: "🩴", label: "Dép lê" },
+  "tập đếm": { emoji: "🔢", label: "Tập đếm" },
+  "sắp xếp": { emoji: "🗂️", label: "Sắp xếp" },
+  "con tôm": { emoji: "🦐", label: "Con tôm" },
+  "hộp sữa": { emoji: "🥛", label: "Hộp sữa" },
+  "nấm rơm": { emoji: "🍄", label: "Nấm rơm" },
+  "mặc áo": { emoji: "👚", label: "Mặc áo" },
+  "học vẽ": { emoji: "🎨", label: "Học vẽ" },
+  "con ốc": { emoji: "🐌", label: "Con ốc" },
+  "con ếch": { emoji: "🐸", label: "Con ếch" },
+  "đám mây": { emoji: "☁️", label: "Đám mây" },
+  "kéo co": { emoji: "🪢", label: "Kéo co" },
+  "cái lều": { emoji: "⛺", label: "Cái lều" },
+  "con cừu": { emoji: "🐑", label: "Con cừu" },
+  "con voi": { emoji: "🐘", label: "Con voi" },
+  "con dơi": { emoji: "🦇", label: "Con dơi" },
+  "bơi lội": { emoji: "🏊", label: "Bơi lội" },
+  "đồi núi": { emoji: "⛰️", label: "Đồi núi" },
+  "gửi thư": { emoji: "✉️", label: "Gửi thư" },
+  "toa tàu": { emoji: "🚃", label: "Toa tàu" },
+  "nắng": { emoji: "☀️", label: "Ánh nắng" },
+  "sách": { emoji: "📖", label: "Cuốn sách" },
+  "miệng": { emoji: "👄", label: "Cái miệng" },
+  "chân": { emoji: "🦶", label: "Bàn chân" },
+  "uống": { emoji: "🥤", label: "Uống nước" },
+  "ngựa": { emoji: "🐎", label: "Con ngựa" },
+  "gương": { emoji: "🪞", label: "Chiếc gương" },
+  "cà chua": { emoji: "🍅", label: "Cà chua" },
+  "lá bàng": { emoji: "🍂", label: "Lá bàng" },
+  "quả chanh": { emoji: "🍋", label: "Quả chanh" },
+  "sách vở": { emoji: "📚", label: "Sách vở" },
+  "sạch sẽ": { emoji: "🧼", label: "Sạch sẽ" },
+  "chào cờ": { emoji: "🇻🇳", label: "Chào cờ" },
+  "cái chăn": { emoji: "🛌", label: "Cái chăn" },
+  "nốt nhạc": { emoji: "🎵", label: "Nốt nhạc" },
+  "áo thun": { emoji: "👕", label: "Áo thun" },
+  "bờ biển": { emoji: "🏖️", label: "Bờ biển" },
+  "cô tiên": { emoji: "🧚", label: "Cô tiên" },
+  "viên phấn": { emoji: "🖍️", label: "Viên phấn" },
+  "viết bài": { emoji: "✍️", label: "Viết bài" },
+  "con vượn": { emoji: "🐒", label: "Con vượn" },
+  "cá chép": { emoji: "🎏", label: "Cá chép" },
+  "lễ phép": { emoji: "🙇", label: "Lễ phép" },
+  "gấp chăn": { emoji: "🛏️", label: "Gấp chăn" },
+  "khu vườn": { emoji: "🌷", label: "Khu vườn" },
+  "con nhím": { emoji: "🦔", label: "Con nhím" },
+  "xem phim": { emoji: "🎬", label: "Xem phim" },
+  "trốn tìm": { emoji: "🙈", label: "Trốn tìm" },
+  "gà chíp": { emoji: "🐥", label: "Gà chíp" },
+  "tia chớp": { emoji: "⚡", label: "Tia chớp" },
+  "con bướm": { emoji: "🦋", label: "Con bướm" },
+  "quả bóng": { emoji: "⚽", label: "Quả bóng" },
+  "sóng biển": { emoji: "🌊", label: "Sóng biển" },
+  "dòng sông": { emoji: "🏞️", label: "Dòng sông" },
+  "công viên": { emoji: "🎡", label: "Công viên" },
+  "bông cúc": { emoji: "🌼", label: "Bông cúc" },
+  "trung thu": { emoji: "🥮", label: "Trung thu" },
+  "con ngỗng": { emoji: "🦢", label: "Con ngỗng" },
+  "đồng ruộng": { emoji: "🌾", label: "Đồng ruộng" },
+  "thước kẻ": { emoji: "📏", label: "Thước kẻ" },
+  "hướng dương": { emoji: "🌻", label: "Hướng dương" },
+  "bập bênh": { emoji: "🎢", label: "Bập bênh" },
+  "bệnh viện": { emoji: "🏥", label: "Bệnh viện" },
+  "máy tính": { emoji: "💻", label: "Máy tính" },
+  "tờ lịch": { emoji: "📅", label: "Tờ lịch" },
+  "xích đu": { emoji: "🎠", label: "Xích đu" },
+  "rước đèn": { emoji: "🏮", label: "Rước đèn" },
+  "nhảy dây": { emoji: "🤸", label: "Nhảy dây" },
+  "cái chổi": { emoji: "🧹", label: "Cái chổi" },
+  "chơi cờ": { emoji: "♟️", label: "Chơi cờ" },
+  "túi xách": { emoji: "👜", label: "Túi xách" },
+  "quả bưởi": { emoji: "🍊", label: "Quả bưởi" },
+  "tưới cây": { emoji: "🪴", label: "Tưới cây" },
+  "con ruồi": { emoji: "🪰", label: "Con ruồi" },
+  "cánh diều": { emoji: "🪁", label: "Cánh diều" },
+  "con hươu": { emoji: "🦌", label: "Con hươu" },
+  "siêu thị": { emoji: "🛒", label: "Siêu thị" },
+  "yêu thương": { emoji: "❤️", label: "Yêu thương" },
+  "hoạt hình": { emoji: "📺", label: "Hoạt hình" },
+  "vải thiều": { emoji: "🍒", label: "Vải thiều" },
+  "hoan hô": { emoji: "🎉", label: "Hoan hô" },
+  "khoai lang": { emoji: "🍠", label: "Khoai lang" },
+  "quả xoài": { emoji: "🥭", label: "Quả xoài" },
+  "điện thoại": { emoji: "📱", label: "Điện thoại" },
+  "kể chuyện": { emoji: "🗣️", label: "Kể chuyện" },
+  "bóng chuyền": { emoji: "🏐", label: "Bóng chuyền" },
+  "mùa xuân": { emoji: "🌸", label: "Mùa xuân" },
+  "áo khoác": { emoji: "🧥", label: "Áo khoác" },
+  "xe buýt": { emoji: "🚌", label: "Xe buýt" },
+  "huýt sáo": { emoji: "😗", label: "Huýt sáo" },
+  "tập thể dục": { emoji: "🏋️", label: "Tập thể dục" },
+  "xe cứu hoả": { emoji: "🚒", label: "Xe cứu hoả" },
+};
+
 // Hàm lấy thông tin hình ảnh và tên gọi với cơ chế fallback thông minh (100% từ đều có hình)
 function getPictureDataForWord(word) {
+  // "Học từ mới": ưu tiên bảng hình riêng đã duyệt cho từng từ
+  if (state.activeModule !== 'spelling' && vocabPictureData[word]) return vocabPictureData[word];
   if (pictureData[word]) return pictureData[word];
   
   // Suy luận thông minh theo từ khóa
@@ -571,6 +1035,8 @@ function selectDistractorsForWord(targetItem, roundQuestions) {
 // 1.1 LƯU TRỮ TIẾN ĐỘ VĨNH VIỄN TRÊN IPAD (LOCALSTORAGE)
 // ==========================================
 const STORAGE_KEY = 'vietnhat_adventure_progress_v1';
+// Đổi số này mỗi khi thay đổi lộ trình "Học từ mới" để tiến độ cũ của bé tự về Bài 1 (không bị lệch bài).
+const VOCAB_LAYOUT_VERSION = 'v3-curated-198';
 
 function saveProgressToStorage() {
   try {
@@ -589,6 +1055,7 @@ function saveProgressToStorage() {
       activeModule: state.activeModule,
       unlockAllMode: state.unlockAllMode,
       score: state.score,
+      vocabLayout: VOCAB_LAYOUT_VERSION,
       vocabProgress: {
         unlockedLessons: state.vocabProgress.unlockedLessons,
         currentLessonIndex: state.vocabProgress.currentLessonIndex,
@@ -615,7 +1082,7 @@ function loadProgressFromStorage() {
       if (data.score !== undefined) state.score = data.score;
       if (data.activeModule) state.activeModule = data.activeModule;
 
-      if (data.vocabProgress) {
+      if (data.vocabProgress && data.vocabLayout === VOCAB_LAYOUT_VERSION) {
         state.vocabProgress = {
           unlockedLessons: Array.isArray(data.vocabProgress.unlockedLessons) ? data.vocabProgress.unlockedLessons : [0],
           currentLessonIndex: typeof data.vocabProgress.currentLessonIndex === 'number' ? data.vocabProgress.currentLessonIndex : 0,
@@ -682,6 +1149,18 @@ async function loadLibraryData() {
     }
   } catch (e) {}
 
+  // 3.1 Tải dữ liệu Bảng vần (Rhyme Charts - Phần B)
+  try {
+    const resRhymeCharts = await fetch('./01-vocabulary/rhyme_charts_vi_v1.json');
+    if (resRhymeCharts.ok) {
+      const dataRc = await resRhymeCharts.json();
+      state.rhymeCharts = dataRc.charts || [];
+    }
+  } catch (e) {
+    console.warn('Lỗi tải dữ liệu rhyme_charts_vi_v1.json:', e);
+    state.rhymeCharts = [];
+  }
+
   // Nếu cả hai rỗng, nạp fallback
   if (state.vocabItems.length === 0) {
     loadFallbackData();
@@ -704,112 +1183,43 @@ async function loadLibraryData() {
   applyActiveModule(state.activeModule || 'vocab');
 }
 
-// Xây dựng lộ trình Học từ mới (Function 1 - 63 Bài học bao phủ trọn vẹn 632 từ vựng SGK)
+// Xây dựng lộ trình Học từ mới: các từ đã được xếp sẵn trong vocabulary_vi_v2.json theo 5 nhóm (trường "path_group").
+// Muốn đổi thứ tự học: chỉ cần đổi vị trí từ trong file JSON (trong cùng nhóm). Mỗi bài tối đa 10 từ, không trộn nhóm.
 function buildVocabLessons() {
-  const itemMap = new Map();
-  state.vocabItems.forEach(it => itemMap.set(it.id, it));
-
-  const old60Ids = [
-    'vi_0001', 'vi_0002', 'vi_0003', 'vi_0004', 'vi_0005', 'vi_0006', 'vi_0007', 'vi_0008', 'vi_0009', 'vi_0010',
-    'vi_0011', 'vi_0012', 'vi_0013', 'vi_0014', 'vi_0015', 'vi_0016', 'vi_0017', 'vi_0018', 'vi_0019', 'vi_0020',
-    'vi_0021', 'vi_0022', 'vi_0023', 'vi_0024', 'vi_0025', 'vi_0026', 'vi_0027', 'vi_0028', 'vi_0029', 'vi_0030',
-    'vi_0031', 'vi_0032', 'vi_0033', 'vi_0034', 'vi_0036', 'vi_0037', 'vi_0038', 'vi_0040', 'vi_0041', 'vi_0042',
-    'vi_0043', 'vi_0044', 'vi_0045', 'vi_0047', 'vi_0048', 'vi_0049', 'vi_0051', 'vi_0054', 'vi_0055', 'vi_0056',
-    'vi_0059', 'vi_0063', 'vi_0066', 'vi_0067', 'vi_0068', 'vi_0072', 'vi_0073', 'vi_0074', 'vi_0080', 'vi_0081'
-  ];
-
-  const lessons = [];
-  lessons.push({
-    id: 'lesson-1',
-    lessonIndex: 0,
-    title: 'Bài 1: Ghép 2 âm cơ bản (Gia đình & Động vật)',
-    level: 'Cấp 1 (2 âm - Rất dễ)',
-    items: old60Ids.slice(0, 10).map(id => itemMap.get(id)).filter(Boolean)
-  });
-  lessons.push({
-    id: 'lesson-2',
-    lessonIndex: 1,
-    title: 'Bài 2: Ghép 2 âm cơ bản (Thiên nhiên & Cây cối)',
-    level: 'Cấp 1 (2 âm - Dễ)',
-    items: old60Ids.slice(10, 20).map(id => itemMap.get(id)).filter(Boolean)
-  });
-  lessons.push({
-    id: 'lesson-3',
-    lessonIndex: 2,
-    title: 'Bài 3: Ghép 2 âm mở rộng (Đồ dùng & Sinh hoạt)',
-    level: 'Cấp 1 (2 âm - Dễ)',
-    items: old60Ids.slice(20, 30).map(id => itemMap.get(id)).filter(Boolean)
-  });
-  lessons.push({
-    id: 'lesson-4',
-    lessonIndex: 3,
-    title: 'Bài 4: Nâng lên 3 âm (Vần đôi & Thiên nhiên)',
-    level: 'Cấp 2 (3 âm - Vừa)',
-    items: old60Ids.slice(30, 40).map(id => itemMap.get(id)).filter(Boolean)
-  });
-  lessons.push({
-    id: 'lesson-5',
-    lessonIndex: 4,
-    title: 'Bài 5: Nâng lên 3 âm (Cơ thể & Hoạt động)',
-    level: 'Cấp 2 (3 âm - Vừa)',
-    items: old60Ids.slice(40, 50).map(id => itemMap.get(id)).filter(Boolean)
-  });
-  lessons.push({
-    id: 'lesson-6',
-    lessonIndex: 5,
-    title: 'Bài 6: Nâng lên 4-5 âm & Từ ghép',
-    level: 'Cấp 3 (4-5 âm - Nâng cao)',
-    items: old60Ids.slice(50, 60).map(id => itemMap.get(id)).filter(Boolean)
-  });
-
-  // Bài 7 (10 từ ghép & động thực vật)
-  const b7Ids = ['vi_0078', 'vi_0079', 'vi_0082', 'vi_0083', 'vi_0084', 'vi_0085', 'vi_0086', 'vi_0088', 'vi_0089', 'vi_0092'];
-  const b7Items = b7Ids.map(id => itemMap.get(id)).filter(Boolean);
-  lessons.push({
-    id: 'lesson-7',
-    lessonIndex: 6,
-    title: 'Bài 7: Từ ghép & Động thực vật quanh bé',
-    level: 'Cấp 3 (Mở rộng & Nâng cao)',
-    items: b7Items
-  });
-
-  // Bài 8 (10 từ thế giới tự nhiên & đời sống)
-  const b8Ids = ['vi_0093', 'vi_0094', 'vi_0095', 'vi_0096', 'vi_0099', 'vi_0100', 'vi_0101', 'vi_0102', 'vi_0107', 'vi_0109'];
-  const b8Items = b8Ids.map(id => itemMap.get(id)).filter(Boolean);
-  lessons.push({
-    id: 'lesson-8',
-    lessonIndex: 7,
-    title: 'Bài 8: Thế giới tự nhiên & Đời sống quanh bé',
-    level: 'Cấp 3 (Mở rộng & Nâng cao)',
-    items: b8Items
-  });
-
-  // Toàn bộ các từ vựng còn lại được chia vào Bài 9 đến Bài 63 (Trọn vẹn 63 Bài học SGK)
-  const usedIds = new Set([...old60Ids, ...b7Ids, ...b8Ids]);
-  const remaining = state.vocabItems.filter(x => !usedIds.has(x.id));
-
+  const groupInfo = {
+    1: { name: 'Từ 1 tiếng, 2 chữ cái', level: 'Nhóm 1 - Rất dễ' },
+    2: { name: 'Từ đôi, mỗi tiếng 2 chữ cái', level: 'Nhóm 2 - Rất dễ' },
+    3: { name: 'Từ 1 tiếng, 3 chữ cái', level: 'Nhóm 3 - Dễ' },
+    4: { name: 'Từ đôi, mỗi tiếng 2-3 chữ cái', level: 'Nhóm 4 - Vừa' },
+    5: { name: 'Từ dài hơn', level: 'Nhóm 5 - Nâng cao' }
+  };
   const chunkSize = 10;
-  let lessonNum = 9;
-  let i = 0;
-  while (i < remaining.length) {
-    let chunk;
-    // Nếu gần cuối còn sót lại ít hơn 5 từ, gom vào Bài 63 để tạo đúng tròn 63 bài học
-    if (i + chunkSize >= remaining.length - 4 && i + chunkSize < remaining.length) {
-      chunk = remaining.slice(i);
-      i = remaining.length;
-    } else {
-      chunk = remaining.slice(i, i + chunkSize);
-      i += chunkSize;
+  const lessons = [];
+  let lessonNum = 1;
+
+  [1, 2, 3, 4, 5].forEach(g => {
+    const list = state.vocabItems.filter(x => (x.path_group || 5) === g);
+    let i = 0;
+    while (i < list.length) {
+      let chunk;
+      // Nếu phần dư cuối nhóm ít hơn 5 từ thì gom vào bài cuối của nhóm
+      if (list.length - (i + chunkSize) > 0 && list.length - (i + chunkSize) < 5) {
+        chunk = list.slice(i);
+        i = list.length;
+      } else {
+        chunk = list.slice(i, i + chunkSize);
+        i += chunkSize;
+      }
+      lessons.push({
+        id: `lesson-${lessonNum}`,
+        lessonIndex: lessonNum - 1,
+        title: `Bài ${lessonNum}: ${groupInfo[g].name}`,
+        level: groupInfo[g].level,
+        items: chunk
+      });
+      lessonNum++;
     }
-    lessons.push({
-      id: `lesson-${lessonNum}`,
-      lessonIndex: lessonNum - 1,
-      title: `Bài ${lessonNum}: Luyện đọc SGK (${chunk.length} từ)`,
-      level: `Cấp ${Math.min(5, Math.floor((lessonNum - 1) / 12) + 1)} (SGK Lớp 1)`,
-      items: chunk
-    });
-    lessonNum++;
-  }
+  });
 
   state.vocabLessons = lessons;
 }
@@ -1037,7 +1447,14 @@ function setupEventListeners() {
   });
 
   // 2. Điều hướng Header
-  document.getElementById('btn-back')?.addEventListener('click', () => switchView('view-map'));
+  document.getElementById('btn-back')?.addEventListener('click', () => {
+    const chartView = document.getElementById('view-rhyme-chart');
+    if (chartView && !chartView.classList.contains('hidden')) {
+      switchView('view-station');
+    } else {
+      switchView('view-map');
+    }
+  });
   document.getElementById('btn-sound-toggle')?.addEventListener('click', toggleSound);
   document.getElementById('btn-speed-toggle')?.addEventListener('click', toggleSpeed);
 
@@ -1052,12 +1469,39 @@ function setupEventListeners() {
   // 4. Trạm học từ vựng
   document.getElementById('btn-play-full')?.addEventListener('click', () => {
     if (state.currentWord) {
-      playAudioSrc(getDialectAudio(state.currentWord, 'word'), state.currentWord.word);
+      playWordWithHint(state.currentWord);
     }
   });
 
   // 5. NÚT ĐÁNH VẦN DUY NHẤT (Không hiển thị các bước chữ rườm rà)
   document.getElementById('btn-play-all-steps')?.addEventListener('click', playAllPhonicsSteps);
+
+  // 5.1 Nút phát âm vần & mở Bảng vần (PHẦN A & B)
+  document.getElementById('btn-play-rhyme')?.addEventListener('click', () => {
+    if (state.currentWord) playRhymeSequence(state.currentWord);
+  });
+  document.getElementById('btn-open-rhyme-chart')?.addEventListener('click', () => {
+    if (state.currentWord) {
+      const rime = state.currentWord.phonics?.rime?.written || state.currentWord.rhyme_family;
+      openRhymeChart(rime);
+    }
+  });
+  document.getElementById('chart-big-rhyme-btn')?.addEventListener('click', () => {
+    if (state.currentWord) playRhymeSequence(state.currentWord);
+  });
+  document.getElementById('btn-back-from-chart')?.addEventListener('click', () => {
+    switchView('view-station');
+  });
+
+  // Phím Esc quay lại thẻ từ khi đang ở Bảng vần
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      const chartView = document.getElementById('view-rhyme-chart');
+      if (chartView && !chartView.classList.contains('hidden')) {
+        switchView('view-station');
+      }
+    }
+  });
 
   document.getElementById('btn-play-example')?.addEventListener('click', () => {
     if (state.currentWord && state.currentWord.example_vi) {
@@ -1173,10 +1617,12 @@ function openWordStation(item) {
   const player = getDanhVanPlayer();
   if (player) player.stop();
   renderSpellingSequence(item.word);
+  updateRhymeBox(item);
 
   // Cập nhật thông tin giao diện
   document.getElementById('word-display').textContent = item.word;
-  const meaningText = item.meaning_vi_child || item.meaning_vi || 'Chờ cập nhật nghĩa';
+  const hint = getWordHint(item);
+  const meaningText = hint || item.meaning_vi_child || item.meaning_vi || 'Chờ cập nhật nghĩa';
   document.getElementById('word-meaning').textContent = meaningText;
   document.getElementById('word-topic').textContent = item.topic || 'khám phá';
   document.getElementById('example-text').textContent = `"${item.example_vi || 'Đang cập nhật ví dụ'}"`;
@@ -1216,8 +1662,24 @@ function openWordStation(item) {
 
   // Đọc từ chào mừng bằng file thu âm chuẩn của giọng đang chọn
   setTimeout(() => {
-    playAudioSrc(getDialectAudio(item, 'word'), item.word);
+    playWordWithHint(item);
   }, 300);
+}
+
+// Cụm gợi nghĩa (vd: "na" -> "quả na"). Chỉ dùng ở "Học từ mới", chỉ khi khác chính từ đó.
+function getWordHint(item) {
+  if (state.activeModule === 'spelling' || !item) return '';
+  const h = (item.cum_tu_goi_nghia || '').trim();
+  return h && h.toLowerCase() !== item.word.toLowerCase() ? h : '';
+}
+
+// Đọc từ trước, sau đó đọc cụm gợi nghĩa (nếu có): "na" ... "quả na"
+async function playWordWithHint(item) {
+  await playAudioSrc(getDialectAudio(item, 'word'), item.word);
+  const hint = getWordHint(item);
+  if (hint && state.currentWord && state.currentWord.id === item.id) {
+    await playAudioSrc(null, hint);
+  }
 }
 
 // PHÁT ÂM THANH ĐÁNH VẦN DÙNG CHUNG DUY NHẤT (R3)
@@ -1225,7 +1687,6 @@ async function playAllPhonicsSteps() {
   if (!state.currentWord) return;
   const word = state.currentWord.word;
   const btn = document.getElementById('btn-play-all-steps');
-  if (btn) btn.classList.add('playing');
 
   // Đảm bảo dừng mọi âm thanh trước đó
   const player = getDanhVanPlayer();
@@ -1234,10 +1695,31 @@ async function playAllPhonicsSteps() {
     currentAudio.pause();
     currentAudio.currentTime = 0;
   }
+  if (chartAudio) {
+    chartAudio.pause();
+    chartAudio.currentTime = 0;
+    chartAudio = null;
+  }
   if ('speechSynthesis' in window) {
     window.speechSynthesis.cancel();
   }
 
+  // A4. Nếu ở chế độ "Tập đánh vần": chỉ đọc PHẦN TỪ và làm sáng chip phần từ tương ứng
+  if (state.activeModule === 'spelling') {
+    if (typeof DanhVanSpeech !== 'undefined' && DanhVanSpeech.planWord) {
+      try {
+        const plan = DanhVanSpeech.planWord(word);
+        const { wordTokens } = splitSpellingTokens(state.currentWord, plan);
+        await playTokenList(wordTokens, '#spelling-seq', btn);
+      } catch (e) {
+        console.warn('playAllPhonicsSteps spelling error:', e);
+      }
+    }
+    return;
+  }
+
+  // Ở chế độ "Học từ mới": giữ nguyên cách hoạt động cũ
+  if (btn) btn.classList.add('playing');
   try {
     if (player) {
       await player.say(word);
@@ -1894,6 +2376,11 @@ function switchView(viewId) {
   if (currentAudio) {
     currentAudio.pause();
     currentAudio.currentTime = 0;
+  }
+  if (chartAudio) {
+    chartAudio.pause();
+    chartAudio.currentTime = 0;
+    chartAudio = null;
   }
   if ('speechSynthesis' in window) {
     window.speechSynthesis.cancel();
