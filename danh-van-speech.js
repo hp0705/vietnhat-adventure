@@ -25,9 +25,9 @@
   const HOLD_FINALS = /(c|ch|p|t)$/;
 
   // khoảng nghỉ SAU mỗi loại âm (ms) - bóp ngắn lại để nhịp đánh vần dứt khoát, sôi động cho bé
-  const PAUSE = { consonant: 320, vowel: 300, rime: 480, syllable: 420, tone: 320, word: 650 };
-  // hệ số tốc độ (nhân với rate gốc).
-  const SPEED = { consonant: 0.95, vowel: 0.95, rime: 0.9, syllable: 0.95, tone: 0.9, word: 1.0 };
+  const PAUSE = { consonant: 150, vowel: 150, rime: 200, syllable: 180, tone: 150, word: 300 };
+  // hệ số tốc độ (nhân với rate gốc)
+  const SPEED = { consonant: 1.15, vowel: 1.15, rime: 1.1, syllable: 1.15, tone: 1.1, word: 1.15 };
 
   function stripTone(s) { return s.normalize('NFD').replace(STRIP_TONE, '').normalize('NFC'); }
 
@@ -75,8 +75,8 @@
           kind,
           ttsText,
           audioFile: audioFileName(it.text),
-          speed: SPEED[kind] * (hold ? 0.85 : 1),
-          pauseAfter: last && si < syllables.length - 1 ? 550 : (hold ? 650 : PAUSE[kind]),
+          speed: SPEED[kind] * (hold ? 0.95 : 1),
+          pauseAfter: last && si < syllables.length - 1 ? 320 : (hold ? 250 : PAUSE[kind]),
         });
       });
     });
@@ -103,7 +103,7 @@
       audioBase: null,      // ví dụ '06-assets/audio/spelling/steps/'; null = chỉ dùng giọng máy
       audioMap: null,       // map ánh xạ chuỗi âm -> đường dẫn file âm thanh thật
       lang: 'vi-VN',
-      rate: 1.1,            // tốc độ chuẩn nhanh hơn (+0.35 từ 0.75 lên 1.1) cho nhịp đánh vần dứt khoát
+      rate: 1.15,           // tốc độ chuẩn nhanh hơn, dứt khoát, sôi động cho bé
       voiceName: null,
       ttsOverride: { ach: 'ách' },
       onItem: null,         // callback (item, index) để highlight chữ đang đọc
@@ -142,7 +142,9 @@
             viVoice = voices.find((x) => x.name === o.voiceName);
           }
           if (!viVoice && o.voiceName !== '__google__') {
-            viVoice = voices.find((x) => x.lang && x.lang.toLowerCase().startsWith('vi'));
+            // Ưu tiên giọng Bắc / Hà Nội (HoaiMy, NamMinh, Hanoi, North)
+            viVoice = voices.find((x) => x.lang && x.lang.toLowerCase().startsWith('vi') && /(HoaiMy|NamMinh|Hanoi|North)/i.test(x.name)) ||
+                      voices.find((x) => x.lang && x.lang.toLowerCase().startsWith('vi'));
           }
         }
 

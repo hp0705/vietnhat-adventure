@@ -36,6 +36,19 @@ def check_and_fetch_google_tts(word, target_path):
     os.makedirs(os.path.dirname(target_path), exist_ok=True)
     if os.path.exists(target_path) and os.path.getsize(target_path) > 1000:
         return True
+    # Ưu tiên giọng chuẩn Hà Nội qua edge-tts (vi-VN-HoaiMyNeural)
+    try:
+        import asyncio, edge_tts
+        norm = word.strip()
+        utt = f"{norm}."
+        async def _synth():
+            comm = edge_tts.Communicate(utt, 'vi-VN-HoaiMyNeural', rate='+15%')
+            await comm.save(target_path)
+        asyncio.run(_synth())
+        if os.path.exists(target_path) and os.path.getsize(target_path) > 500:
+            return True
+    except Exception:
+        pass
     try:
         url = 'https://translate.google.com/translate_tts?ie=UTF-8&tl=vi&client=tw-ob&q=' + urllib.parse.quote(word)
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})

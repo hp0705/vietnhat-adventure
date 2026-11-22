@@ -21,7 +21,7 @@ const state = {
   currentWord: null,
   currentDialect: 'north', // 'north' (Bắc - Hà Nội) hoặc 'south' (Nam - Sài Gòn)
   soundEnabled: true,
-  speechRate: 0.75, // Tốc độ vừa chậm cho trẻ 4-6 tuổi
+  speechRate: 1.15, // Tốc độ chuẩn dứt khoát, sôi động cho bé
   audioUnlocked: false,
   score: 0,
   unlockedLessons: [0], // Bài 1 mở khóa mặc định
@@ -50,7 +50,7 @@ function getDanhVanPlayer() {
     danhVanPlayer = DanhVanSpeech.createPlayer({
       audioBase: '06-assets/audio/spelling/steps/',
       audioMap: state.spellingStepAudioMap || {},
-      rate: state.speechRate || 1.1,
+      rate: state.speechRate || 1.15,
       onItem: (item, index) => {
         highlightSpellingStep(item, index);
       }
@@ -133,11 +133,12 @@ async function playTokenList(tokens, containerSelector, btnEl) {
         audioUrl = '06-assets/audio/spelling/steps/' + encodeURIComponent(tok.text) + '.mp3';
       }
 
-      const rate = state.speechRate || 1.1;
+      const rate = state.speechRate || 1.15;
       await playAudioSrc(audioUrl, tok.text, rate);
 
       if (myRunId !== activePlaySeqRunId) return;
-      const pause = tok.pauseAfter || 350;
+      // Khoảng nghỉ bóp ngắn lại để nhịp đánh vần dứt khoát, sôi động, bé không bị chán
+      const pause = tok.pauseAfter ? Math.min(tok.pauseAfter, 180) : 140;
       await new Promise((r) => setTimeout(r, pause));
     }
   } finally {
@@ -2287,14 +2288,37 @@ function playAudioSrc(audioSrc, fallbackText, rate = 1.0) {
   });
 }
 
-// Phát âm tiếng Việt chuẩn 100% bằng Google Translate TTS MP3 stream (loại bỏ triệt để robot tiếng Anh trên iPad)
+// Phát âm tiếng Việt chuẩn giọng Bắc (Hà Nội)
 function fallbackSpeech(text, resolve) {
   if (!text || !state.soundEnabled) return resolve();
+
+  // 1. Thử dùng Web Speech API với giọng Hà Nội nếu có
+  if ('speechSynthesis' in window) {
+    const synth = window.speechSynthesis;
+    const voices = synth.getVoices ? synth.getVoices() : [];
+    const northVoice = voices.find(v => v.lang && v.lang.toLowerCase().startsWith('vi') && /(HoaiMy|NamMinh|Hanoi|North)/i.test(v.name));
+    const viVoice = northVoice || voices.find(v => v.lang && v.lang.toLowerCase().startsWith('vi'));
+    if (viVoice) {
+      try {
+        const u = new SpeechSynthesisUtterance(text);
+        u.voice = viVoice;
+        u.lang = viVoice.lang || 'vi-VN';
+        u.rate = state.speechRate || 1.15;
+        u.onend = () => resolve();
+        u.onerror = () => resolve();
+        synth.speak(u);
+        return;
+      } catch (e) {}
+    }
+  }
+
+  // 2. Fallback stream
   try {
     const clean = text.replace(/[\u{1F300}-\u{1FAFF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]/gu, '').trim();
     const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=vi&client=tw-ob&q=${encodeURIComponent(clean)}`;
     const audio = new Audio(url);
     currentAudio = audio;
+    audio.playbackRate = state.speechRate || 1.15;
     audio.onended = () => resolve();
     audio.onerror = () => resolve();
     const p = audio.play();
@@ -2387,18 +2411,18 @@ function toggleSound() {
 // Chuyển đổi tốc độ đọc
 function toggleSpeed() {
   const label = document.getElementById('speed-label');
-  if (state.speechRate === 0.75) {
-    state.speechRate = 0.95;
-    label.textContent = 'Vừa';
-    showToast('Tốc độ đọc: Vừa phải');
-  } else if (state.speechRate === 0.95) {
-    state.speechRate = 0.65;
-    label.textContent = 'Rất chậm';
-    showToast('Tốc độ đọc: Rất chậm cho bé nghe rõ');
+  if (state.speechRate <= 1.0) {
+    state.speechRate = 1.15;
+    label.textContent = 'Chuẩn';
+    showToast('Tốc độ đọc: Chuẩn dứt khoát 🌟');
+  } else if (state.speechRate <= 1.15) {
+    state.speechRate = 1.35;
+    label.textContent = 'Nhanh';
+    showToast('Tốc độ đọc: Nhanh sôi động 🚀');
   } else {
-    state.speechRate = 0.75;
+    state.speechRate = 0.95;
     label.textContent = 'Chậm';
-    showToast('Tốc độ đọc: Chậm chuẩn');
+    showToast('Tốc độ đọc: Chậm rõ ràng 🐢');
   }
   const player = getDanhVanPlayer();
   if (player && player.setRate) {
