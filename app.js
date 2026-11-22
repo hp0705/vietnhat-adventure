@@ -1959,10 +1959,13 @@ function loadQuizQuestionByIndex(index) {
   shuffledOptions.forEach(opt => {
     const card = document.createElement('div');
     card.className = 'picture-card';
+    // Chỉ hiện HÌNH (không hiện chữ) để bé phải tự đọc chữ rồi mới chọn hình.
+    // Tên đồ vật (opt.label) vẫn giữ trong dữ liệu để báo kết quả sau khi bé chọn.
     card.innerHTML = `
       <span class="pic-emoji">${opt.emoji}</span>
-      <span class="pic-label">${opt.label}</span>
     `;
+    card.setAttribute('role', 'button');
+    card.setAttribute('aria-label', opt.label);
 
     card.addEventListener('click', () => handlePictureSelect(card, opt));
     container.appendChild(card);
