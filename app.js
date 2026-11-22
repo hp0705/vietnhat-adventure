@@ -2351,7 +2351,7 @@ function getDialectAudio(item, type, stepIndex = 0, stepText = null) {
       return item.audio?.word_full || (item.id ? `06-assets/audio/spelling/words/${item.id}.mp3` : null);
     }
     if (type === 'example') {
-      return item.audio?.example_sentence || null;
+      return item.audio?.example_sentence || (item.id ? `06-assets/audio/spelling/examples/${item.id}.mp3` : null);
     }
     if (type === 'step') {
       return null;
@@ -2359,21 +2359,25 @@ function getDialectAudio(item, type, stepIndex = 0, stepText = null) {
   }
 
   // Function 1: Học từ mới
-  if (!item.audio) return null;
+  if (!item.audio) {
+    if (type === 'word') return item.id ? `06-assets/audio/vi/north-hanoi/${item.id}/word.mp3` : null;
+    if (type === 'example') return item.id ? `06-assets/audio/vi/north-hanoi/${item.id}/example.mp3` : null;
+    return null;
+  }
 
   const dialects = item.audio.dialects;
   if (dialects && dialects[state.currentDialect]) {
     const dialectData = dialects[state.currentDialect];
-    if (type === 'word') return dialectData.word_full || null;
-    if (type === 'example') return dialectData.example_sentence || null;
+    if (type === 'word' && dialectData.word_full) return dialectData.word_full;
+    if (type === 'example' && dialectData.example_sentence) return dialectData.example_sentence;
     if (type === 'step') {
       return (dialectData.phonics_steps && dialectData.phonics_steps[stepIndex]) || null;
     }
   }
 
   // Fallback cấu trúc cũ
-  if (type === 'word') return item.audio.word_full || null;
-  if (type === 'example') return item.audio.example_sentence || null;
+  if (type === 'word') return item.audio.word_full || (item.id ? `06-assets/audio/vi/north-hanoi/${item.id}/word.mp3` : null);
+  if (type === 'example') return item.audio.example_sentence || (item.id ? `06-assets/audio/vi/north-hanoi/${item.id}/example.mp3` : null);
   if (type === 'step') {
     return (item.audio.phonics_steps && item.audio.phonics_steps[stepIndex]) || null;
   }

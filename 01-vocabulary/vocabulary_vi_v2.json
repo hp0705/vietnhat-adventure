@@ -2057,10 +2057,16 @@
         "spelling_rule": "xờ - e - xe"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0103/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0103/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0103/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0103/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -2407,10 +2413,16 @@
         "spelling_rule": "đờ - i - đi | đờ - o - đo - huyền - đò | đi đò"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0060/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0060/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0060/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0060/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -2896,10 +2908,16 @@
         "spelling_rule": "vờ - i - vi - sắc - ví | dờ - a - da | ví da"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0134/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0134/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0134/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0134/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -4036,10 +4054,16 @@
         "spelling_rule": "ngờ - ô - ngô"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0117/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0117/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0117/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0117/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -4090,10 +4114,16 @@
         "spelling_rule": "quờ - a - qua - hỏi - quả"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0123/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0123/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0123/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0123/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -4142,10 +4172,16 @@
         "spelling_rule": "quờ - e - que"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0124/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0124/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0124/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0124/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -4196,10 +4232,16 @@
         "spelling_rule": "quờ - a - qua - nặng - quạ"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0127/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0127/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0127/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0127/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -4254,10 +4296,16 @@
         "spelling_rule": "mờ - i - a - ia - mờ - ia - mia - sắc - mía"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0136/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0136/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0136/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0136/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -4310,10 +4358,16 @@
         "spelling_rule": "cờ - u - a - ua - cờ - ua - cua"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0141/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0141/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0141/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0141/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -4368,10 +4422,16 @@
         "spelling_rule": "bờ - u - a - ua - bờ - ua - bua - sắc - búa"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0143/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0143/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0143/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0143/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -4426,10 +4486,16 @@
         "spelling_rule": "dờ - ư - a - ưa - dờ - ưa - dưa - huyền - dừa"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0144/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0144/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0144/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0144/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -4480,10 +4546,16 @@
         "spelling_rule": "gờ - ê - ghê - sắc - ghế"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0150/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0150/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0150/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0150/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -4536,10 +4608,16 @@
         "spelling_rule": "sờ - e - nờ - en - sờ - en - sen"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0220/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0220/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0220/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0220/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -4594,10 +4672,16 @@
         "spelling_rule": "vờ - e - tờ - et - vờ - et - vet - nặng - vẹt"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0221/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0221/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0221/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0221/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -4729,13 +4813,13 @@
         "complexity": "15_am"
       },
       "audio": {
-        "word_full": null,
-        "example_sentence": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0099/word.mp3",
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0099/example.mp3",
         "phonics_steps": [],
         "dialects": {
           "north": {
-            "word_full": null,
-            "example_sentence": null,
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0099/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0099/example.mp3",
             "phonics_steps": []
           }
         }
@@ -4789,10 +4873,16 @@
         "spelling_rule": "chờ - e - che | ô | che ô"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0111/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0111/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0111/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0111/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -4847,10 +4937,16 @@
         "spelling_rule": "nhờ - a - nha - huyền - nhà | gờ - a - ga | nhà ga"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0118/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0118/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0118/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0118/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -4905,10 +5001,16 @@
         "spelling_rule": "rờ - u - ru | ngờ - u - ngu - hỏi - ngủ | ru ngủ"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0131/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0131/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0131/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0131/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -4965,10 +5067,16 @@
         "spelling_rule": "gờ - ê - ghê - sắc - ghế | gờ - ô - gô - ngã - gỗ | ghế gỗ"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0132/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0132/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0132/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0132/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5027,10 +5135,16 @@
         "spelling_rule": "nờ - ô - nô | đờ - u - a - ua - đờ - ua - đua - huyền - đùa | nô đùa"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0146/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0146/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0146/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0146/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5087,10 +5201,16 @@
         "spelling_rule": "dờ - ư - a - ưa - dờ - ưa - dưa | lờ - ê - lê | dưa lê"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0147/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0147/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0147/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0147/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5149,10 +5269,16 @@
         "spelling_rule": "mờ - ư - a - ưa - mờ - ưa - mưa | giờ - o - gio - sắc - gió | mưa gió"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0162/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0162/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0162/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0162/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5213,10 +5339,16 @@
         "spelling_rule": "bờ - a - nờ - an - bờ - an - ban - huyền - bàn | lờ - a - la - huyền - là | bàn là"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0163/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0163/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0163/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0163/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5275,10 +5407,16 @@
         "spelling_rule": "quờ - a - qua - hỏi - quả | cờ - a - mờ - am - cờ - am - cam | quả cam"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0167/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0167/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0167/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0167/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5337,10 +5475,16 @@
         "spelling_rule": "xờ - e - xe | đờ - a - pờ - ap - đờ - ap - đap - nặng - đạp | xe đạp"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0168/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0168/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0168/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0168/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5401,10 +5545,16 @@
         "spelling_rule": "lờ - a - cờ - ac - lờ - ac - lac - nặng - lạc | đờ - a - đa - huyền - đà | lạc đà"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0176/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0176/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0176/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0176/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5465,10 +5615,16 @@
         "spelling_rule": "nhờ - a - nha - huyền - nhà | sờ - a - nờ - an - sờ - an - san - huyền - sàn | nhà sàn"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0185/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0185/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0185/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0185/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5529,10 +5685,16 @@
         "spelling_rule": "gờ - a - ga - huyền - gà | mờ - a - i - ai - mờ - ai - mai - sắc - mái | gà mái"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0191/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0191/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0191/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0191/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5595,10 +5757,16 @@
         "spelling_rule": "mờ - a - y - ay - mờ - ay - may - sắc - máy | bờ - a - y - ay - bờ - ay - bay | máy bay"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0194/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0194/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0194/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0194/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5657,10 +5825,16 @@
         "spelling_rule": "lờ - a - i - ai - lờ - ai - lai - sắc - lái | xờ - e - xe | lái xe"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0195/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0195/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0195/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0195/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5723,10 +5897,16 @@
         "spelling_rule": "rờ - a - u - au - rờ - au - rau | cờ - a - i - ai - cờ - ai - cai - hỏi - cải | rau cải"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0200/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0200/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0200/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0200/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5789,10 +5969,16 @@
         "spelling_rule": "cờ - a - i - ai - cờ - ai - cai - sắc - cái | cờ - â - nờ - ân - cờ - ân - cân | cái cân"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0209/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0209/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0209/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0209/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5853,10 +6039,16 @@
         "spelling_rule": "quờ - a - qua - hỏi - quả | mờ - â - nờ - ân - mờ - ân - mân - nặng - mận | quả mận"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0211/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0211/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0211/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0211/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5919,10 +6111,16 @@
         "spelling_rule": "đờ - e - nờ - en - đờ - en - đen - huyền - đèn | pờ - i - nờ - in - pờ - in - pin | đèn pin"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0232/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0232/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0232/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0232/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -5983,10 +6181,16 @@
         "spelling_rule": "quờ - a - qua - hỏi - quả | mờ - i - tờ - it - mờ - it - mit - sắc - mít | quả mít"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0233/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0233/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0233/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0233/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -6051,10 +6255,16 @@
         "spelling_rule": "đờ - a - nờ - an - đờ - an - đan - huyền - đàn | vờ - i - tờ - it - vờ - it - vit - nặng - vịt | đàn vịt"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0236/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0236/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0236/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0236/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -6115,10 +6325,16 @@
         "spelling_rule": "nờ - o - nờ - on - nờ - on - non - sắc - nón | lờ - a - la - sắc - lá | nón lá"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0238/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0238/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0238/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0238/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -6179,10 +6395,16 @@
         "spelling_rule": "cờ - a - ca - huyền - cà | rờ - ô - tờ - ôt - rờ - ôt - rôt - sắc - rốt | cà rốt"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0251/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0251/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0251/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0251/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -6245,10 +6467,16 @@
         "spelling_rule": "cờ - o - nờ - on - cờ - on - con | lờ - ơ - nờ - ơn - lờ - ơn - lơn - nặng - lợn | con lợn"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0256/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0256/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0256/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0256/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -6305,10 +6533,16 @@
         "spelling_rule": "quờ - a - qua - hỏi - quả | ơ - tờ - ơt - sắc - ớt | quả ớt"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0257/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0257/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0257/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0257/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -6369,10 +6603,16 @@
         "spelling_rule": "cờ - ơ - nờ - ơn - cờ - ơn - cơn | mờ - ư - a - ưa - mờ - ưa - mưa | cơn mưa"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0258/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0258/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0258/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0258/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -6433,10 +6673,16 @@
         "spelling_rule": "bờ - u - tờ - ut - bờ - ut - but - sắc - bút | chờ - i - chi - huyền - chì | bút chì"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0269/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0269/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0269/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0269/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -6499,10 +6745,16 @@
         "spelling_rule": "cờ - u - nờ - un - cờ - un - cun - sắc - cún | cờ - o - nờ - on - cờ - on - con | cún con"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0271/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0271/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0271/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0271/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -6563,10 +6815,16 @@
         "spelling_rule": "bờ - u - nờ - un - bờ - un - bun - sắc - bún | bờ - o - bo - huyền - bò | bún bò"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0293/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0293/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0293/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0293/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -6625,10 +6883,16 @@
         "spelling_rule": "cờ - ă - pờ - ăp - cờ - ăp - căp - nặng - cặp | dờ - a - da | cặp da"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0306/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0306/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0306/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0306/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -6693,10 +6957,16 @@
         "spelling_rule": "bờ - ô - nờ - ôn - bờ - ôn - bôn - huyền - bồn | tờ - ă - mờ - ăm - tờ - ăm - tăm - sắc - tắm | bồn tắm"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0307/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0307/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0307/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0307/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -6753,10 +7023,16 @@
         "spelling_rule": "â - mờ - âm - sắc - ấm | trờ - a - tra - huyền - trà | ấm trà"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0311/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0311/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0311/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0311/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -6817,10 +7093,16 @@
         "spelling_rule": "cờ - a - ca - sắc - cá | mờ - â - pờ - âp - mờ - âp - mâp - nặng - mập | cá mập"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0312/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0312/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0312/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0312/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -6885,10 +7167,16 @@
         "spelling_rule": "tờ - â - pờ - âp - tờ - âp - tâp - nặng - tập | mờ - u - a - ua - mờ - ua - mua - sắc - múa | tập múa"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0314/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0314/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0314/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0314/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -6945,10 +7233,16 @@
         "spelling_rule": "quờ - e - que | cờ - e - mờ - em - cờ - em - kem | que kem"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0317/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0317/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0317/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0317/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -7007,10 +7301,16 @@
         "spelling_rule": "dờ - e - pờ - ep - dờ - ep - dep - sắc - dép | lờ - ê - lê | dép lê"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0320/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0320/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0320/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0320/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -7075,10 +7375,16 @@
         "spelling_rule": "tờ - â - pờ - âp - tờ - âp - tâp - nặng - tập | đờ - ê - mờ - êm - đờ - êm - đêm - sắc - đếm | tập đếm"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0332/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0332/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0332/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0332/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -7143,10 +7449,16 @@
         "spelling_rule": "sờ - ă - pờ - ăp - sờ - ăp - săp - sắc - sắp | xờ - ê - pờ - êp - xờ - êp - xêp - sắc - xếp | sắp xếp"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0334/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0334/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0334/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0334/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -7207,10 +7519,16 @@
         "spelling_rule": "cờ - o - nờ - on - cờ - on - con | tờ - ô - mờ - ôm - tờ - ôm - tôm | con tôm"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0347/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0347/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0347/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0347/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -7275,10 +7593,16 @@
         "spelling_rule": "hờ - ô - pờ - ôp - hờ - ôp - hôp - nặng - hộp | sờ - ư - a - ưa - sờ - ưa - sưa - ngã - sữa | hộp sữa"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0348/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0348/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0348/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0348/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -7341,10 +7665,16 @@
         "spelling_rule": "nờ - â - mờ - âm - nờ - âm - nâm - sắc - nấm | rờ - ơ - mờ - ơm - rờ - ơm - rơm | nấm rơm"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0359/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0359/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0359/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0359/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -7405,10 +7735,16 @@
         "spelling_rule": "mờ - ă - cờ - ăc - mờ - ăc - măc - nặng - mặc | a - o - ao - sắc - áo | mặc áo"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0394/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0394/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0394/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0394/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -7469,10 +7805,16 @@
         "spelling_rule": "hờ - o - cờ - oc - hờ - oc - hoc - nặng - học | vờ - e - ve - ngã - vẽ | học vẽ"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0412/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0412/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0412/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0412/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -7531,10 +7873,16 @@
         "spelling_rule": "cờ - o - nờ - on - cờ - on - con | ô - cờ - ôc - sắc - ốc | con ốc"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0422/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0422/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0422/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0422/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -7593,10 +7941,16 @@
         "spelling_rule": "cờ - o - nờ - on - cờ - on - con | ê - chờ - êch - sắc - ếch | con ếch"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0465/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0465/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0465/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0465/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -7659,10 +8013,16 @@
         "spelling_rule": "đờ - a - mờ - am - đờ - am - đam - sắc - đám | mờ - â - y - ây - mờ - ây - mây | đám mây"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0483/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0483/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0483/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0483/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -7721,10 +8081,16 @@
         "spelling_rule": "cờ - e - o - eo - cờ - eo - keo - sắc - kéo | cờ - o - co | kéo co"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0490/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0490/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0490/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0490/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -7789,10 +8155,16 @@
         "spelling_rule": "cờ - a - i - ai - cờ - ai - cai - sắc - cái | lờ - ê - u - êu - lờ - êu - lêu - huyền - lều | cái lều"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0492/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0492/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0492/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0492/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -7855,10 +8227,16 @@
         "spelling_rule": "cờ - o - nờ - on - cờ - on - con | cờ - ư - u - ưu - cờ - ưu - cưu - huyền - cừu | con cừu"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0496/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0496/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0496/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0496/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -7919,10 +8297,16 @@
         "spelling_rule": "cờ - o - nờ - on - cờ - on - con | vờ - o - i - oi - vờ - oi - voi | con voi"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0499/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0499/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0499/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0499/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -7983,10 +8367,16 @@
         "spelling_rule": "cờ - o - nờ - on - cờ - on - con | dờ - ơ - i - ơi - dờ - ơi - dơi | con dơi"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0501/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0501/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0501/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0501/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -8049,10 +8439,16 @@
         "spelling_rule": "bờ - ơ - i - ơi - bờ - ơi - bơi | lờ - ô - i - ôi - lờ - ôi - lôi - nặng - lội | bơi lội"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0504/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0504/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0504/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0504/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -8117,10 +8513,16 @@
         "spelling_rule": "đờ - ô - i - ôi - đờ - ôi - đôi - huyền - đồi | nờ - u - i - ui - nờ - ui - nui - sắc - núi | đồi núi"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0512/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0512/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0512/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0512/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -8179,10 +8581,16 @@
         "spelling_rule": "gờ - ư - i - ưi - gờ - ưi - gưi - hỏi - gửi | thờ - ư - thư | gửi thư"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0513/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0513/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0513/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0513/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -8245,10 +8653,16 @@
         "spelling_rule": "tờ - o - a - oa - tờ - oa - toa | tờ - a - u - au - tờ - au - tau - huyền - tàu | toa tàu"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0551/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0551/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0551/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0551/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -8636,10 +9050,16 @@
         "spelling_rule": "ngờ - ư - a - ưa - ngờ - ưa - ngưa - nặng - ngựa"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0142/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0142/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0142/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0142/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -8694,10 +9114,16 @@
         "spelling_rule": "gờ - ư - ơ - ươ - ngờ - ương - gờ - ương - gương"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0458/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0458/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0458/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0458/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -8756,10 +9182,16 @@
         "spelling_rule": "cờ - a - ca - huyền - cà | chờ - u - a - ua - chờ - ua - chua | cà chua"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0145/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0145/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0145/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0145/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -8820,10 +9252,16 @@
         "spelling_rule": "lờ - a - la - sắc - lá | bờ - a - ngờ - ang - bờ - ang - bang - huyền - bàng | lá bàng"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0173/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0173/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0173/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0173/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -8882,10 +9320,16 @@
         "spelling_rule": "quờ - a - qua - hỏi - quả | chờ - a - nhờ - anh - chờ - anh - chanh | quả chanh"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0179/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0179/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0179/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0179/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -8946,10 +9390,16 @@
         "spelling_rule": "sờ - a - chờ - ach - sờ - ach - sach - sắc - sách | vờ - ơ - vơ - hỏi - vở | sách vở"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0182/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0182/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0182/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0182/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -9010,10 +9460,16 @@
         "spelling_rule": "sờ - a - chờ - ach - sờ - ach - sach - nặng - sạch | sờ - e - se - ngã - sẽ | sạch sẽ"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0190/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0190/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0190/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0190/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -9074,10 +9530,16 @@
         "spelling_rule": "chờ - a - o - ao - chờ - ao - chao - huyền - chào | cờ - ơ - cơ - huyền - cờ | chào cờ"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0197/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0197/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0197/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0197/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -9140,10 +9602,16 @@
         "spelling_rule": "cờ - a - i - ai - cờ - ai - cai - sắc - cái | chờ - ă - nờ - ăn - chờ - ăn - chăn | cái chăn"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0203/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0203/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0203/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0203/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -9208,10 +9676,16 @@
         "spelling_rule": "nờ - ô - tờ - ôt - nờ - ôt - nôt - sắc - nốt | nhờ - a - cờ - ac - nhờ - ac - nhac - nặng - nhạc | nốt nhạc"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0263/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0263/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0263/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0263/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -9270,10 +9744,16 @@
         "spelling_rule": "a - o - ao - sắc - áo | thờ - u - nờ - un - thờ - un - thun | áo thun"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0268/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0268/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0268/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0268/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -9336,10 +9816,16 @@
         "spelling_rule": "bờ - ơ - bơ - huyền - bờ | bờ - i - ê - iê - nờ - iên - bờ - iên - biên - hỏi - biển | bờ biển"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0275/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0275/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0275/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0275/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -9398,10 +9884,16 @@
         "spelling_rule": "cờ - ô - cô | tờ - i - ê - iê - nờ - iên - tờ - iên - tiên | cô tiên"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0277/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0277/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0277/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0277/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -9466,10 +9958,16 @@
         "spelling_rule": "vờ - i - ê - iê - nờ - iên - vờ - iên - viên | phờ - â - nờ - ân - phờ - ân - phân - sắc - phấn | viên phấn"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0279/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0279/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0279/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0279/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -9536,10 +10034,16 @@
         "spelling_rule": "vờ - i - ê - iê - tờ - iêt - vờ - iêt - viêt - sắc - viết | bờ - a - i - ai - bờ - ai - bai - huyền - bài | viết bài"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0297/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0297/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0297/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0297/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -9604,10 +10108,16 @@
         "spelling_rule": "cờ - o - nờ - on - cờ - on - con | vờ - ư - ơ - ươ - nờ - ươn - vờ - ươn - vươn - nặng - vượn | con vượn"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0299/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0299/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0299/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0299/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -9668,10 +10178,16 @@
         "spelling_rule": "cờ - a - ca - sắc - cá | chờ - e - pờ - ep - chờ - ep - chep - sắc - chép | cá chép"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0318/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0318/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0318/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0318/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -9732,10 +10248,16 @@
         "spelling_rule": "lờ - ê - lê - ngã - lễ | phờ - e - pờ - ep - phờ - ep - phep - sắc - phép | lễ phép"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0322/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0322/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0322/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0322/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -9798,10 +10320,16 @@
         "spelling_rule": "gờ - â - pờ - âp - gờ - âp - gâp - sắc - gấp | chờ - ă - nờ - ăn - chờ - ăn - chăn | gấp chăn"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0325/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0325/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0325/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0325/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -9862,10 +10390,16 @@
         "spelling_rule": "khờ - u - khu | vờ - ư - ơ - ươ - nờ - ươn - vờ - ươn - vươn - huyền - vườn | khu vườn"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0327/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0327/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0327/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0327/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -9928,10 +10462,16 @@
         "spelling_rule": "cờ - o - nờ - on - cờ - on - con | nhờ - i - mờ - im - nhờ - im - nhim - sắc - nhím | con nhím"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0335/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0335/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0335/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0335/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -9992,10 +10532,16 @@
         "spelling_rule": "xờ - e - mờ - em - xờ - em - xem | phờ - i - mờ - im - phờ - im - phim | xem phim"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0337/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0337/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0337/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0337/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -10060,10 +10606,16 @@
         "spelling_rule": "trờ - ô - nờ - ôn - trờ - ôn - trôn - sắc - trốn | tờ - i - mờ - im - tờ - im - tim - huyền - tìm | trốn tìm"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0339/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0339/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0339/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0339/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -10124,10 +10676,16 @@
         "spelling_rule": "gờ - a - ga - huyền - gà | chờ - i - pờ - ip - chờ - ip - chip - sắc - chíp | gà chíp"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0340/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0340/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0340/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0340/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -10190,10 +10748,16 @@
         "spelling_rule": "tờ - i - a - ia - tờ - ia - tia | chờ - ơ - pờ - ơp - chờ - ơp - chơp - sắc - chớp | tia chớp"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0364/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0364/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0364/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0364/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -10258,10 +10822,16 @@
         "spelling_rule": "cờ - o - nờ - on - cờ - on - con | bờ - ư - ơ - ươ - mờ - ươm - bờ - ươm - bươm - sắc - bướm | con bướm"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0372/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0372/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0372/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0372/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -10322,10 +10892,16 @@
         "spelling_rule": "quờ - a - qua - hỏi - quả | bờ - o - ngờ - ong - bờ - ong - bong - sắc - bóng | quả bóng"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0409/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0409/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0409/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0409/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -10392,10 +10968,16 @@
         "spelling_rule": "sờ - o - ngờ - ong - sờ - ong - song - sắc - sóng | bờ - i - ê - iê - nờ - iên - bờ - iên - biên - hỏi - biển | sóng biển"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0411/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0411/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0411/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0411/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -10458,10 +11040,16 @@
         "spelling_rule": "dờ - o - ngờ - ong - dờ - ong - dong - huyền - dòng | sờ - ô - ngờ - ông - sờ - ông - sông | dòng sông"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0421/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0421/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0421/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0421/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -10524,10 +11112,16 @@
         "spelling_rule": "cờ - ô - ngờ - ông - cờ - ông - công | vờ - i - ê - iê - nờ - iên - vờ - iên - viên | công viên"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0423/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0423/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0423/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0423/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -10590,10 +11184,16 @@
         "spelling_rule": "bờ - ô - ngờ - ông - bờ - ông - bông | cờ - u - cờ - uc - cờ - uc - cuc - sắc - cúc | bông cúc"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0428/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0428/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0428/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0428/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -10650,10 +11250,16 @@
         "spelling_rule": "trờ - u - ngờ - ung - trờ - ung - trung | thờ - u - thu | trung thu"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0429/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0429/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0429/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0429/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -10716,10 +11322,16 @@
         "spelling_rule": "cờ - o - nờ - on - cờ - on - con | ngờ - ô - ngờ - ông - ngờ - ông - ngông - ngã - ngỗng | con ngỗng"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0449/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0449/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0449/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0449/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -10786,10 +11398,16 @@
         "spelling_rule": "đờ - ô - ngờ - ông - đờ - ông - đông - huyền - đồng | rờ - u - ô - uô - ngờ - uông - rờ - uông - ruông - nặng - ruộng | đồng ruộng"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0456/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0456/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0456/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0456/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -10852,10 +11470,16 @@
         "spelling_rule": "thờ - ư - ơ - ươ - cờ - ươc - thờ - ươc - thươc - sắc - thước | cờ - e - ke - hỏi - kẻ | thước kẻ"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0459/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0459/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0459/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0459/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -10922,10 +11546,16 @@
         "spelling_rule": "hờ - ư - ơ - ươ - ngờ - ương - hờ - ương - hương - sắc - hướng | dờ - ư - ơ - ươ - ngờ - ương - dờ - ương - dương | hướng dương"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0460/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0460/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0460/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0460/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -10988,10 +11618,16 @@
         "spelling_rule": "bờ - â - pờ - âp - bờ - âp - bâp - nặng - bập | bờ - ê - nhờ - ênh - bờ - ênh - bênh | bập bênh"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0464/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0464/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0464/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0464/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -11058,10 +11694,16 @@
         "spelling_rule": "bờ - ê - nhờ - ênh - bờ - ênh - bênh - nặng - bệnh | vờ - i - ê - iê - nờ - iên - vờ - iên - viên - nặng - viện | bệnh viện"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0467/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0467/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0467/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0467/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -11126,10 +11768,16 @@
         "spelling_rule": "mờ - a - y - ay - mờ - ay - may - sắc - máy | tờ - i - nhờ - inh - tờ - inh - tinh - sắc - tính | máy tính"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0469/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0469/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0469/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0469/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -11190,10 +11838,16 @@
         "spelling_rule": "tờ - ơ - tơ - huyền - tờ | lờ - i - chờ - ich - lờ - ich - lich - nặng - lịch | tờ lịch"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0470/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0470/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0470/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0470/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -11252,10 +11906,16 @@
         "spelling_rule": "xờ - i - chờ - ich - xờ - ich - xich - sắc - xích | đờ - u - đu | xích đu"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0474/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0474/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0474/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0474/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -11322,10 +11982,16 @@
         "spelling_rule": "rờ - ư - ơ - ươ - cờ - ươc - rờ - ươc - rươc - sắc - rước | đờ - e - nờ - en - đờ - en - đen - huyền - đèn | rước đèn"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0478/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0478/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0478/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0478/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -11388,10 +12054,16 @@
         "spelling_rule": "nhờ - a - y - ay - nhờ - ay - nhay - hỏi - nhảy | dờ - â - y - ây - dờ - ây - dây | nhảy dây"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0482/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0482/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0482/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0482/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -11456,10 +12128,16 @@
         "spelling_rule": "cờ - a - i - ai - cờ - ai - cai - sắc - cái | chờ - ô - i - ôi - chờ - ôi - chôi - hỏi - chổi | cái chổi"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0500/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0500/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0500/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0500/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -11518,10 +12196,16 @@
         "spelling_rule": "chờ - ơ - i - ơi - chờ - ơi - chơi | cờ - ơ - cơ - huyền - cờ | chơi cờ"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0511/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0511/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0511/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0511/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -11586,10 +12270,16 @@
         "spelling_rule": "tờ - u - i - ui - tờ - ui - tui - sắc - túi | xờ - a - chờ - ach - xờ - ach - xach - sắc - xách | túi xách"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0514/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0514/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0514/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0514/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -11652,10 +12342,16 @@
         "spelling_rule": "quờ - a - qua - hỏi - quả | bờ - ư - ơ - ươ - i - ươi - bờ - ươi - bươi - hỏi - bưởi | quả bưởi"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0519/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0519/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0519/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0519/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -11720,10 +12416,16 @@
         "spelling_rule": "tờ - ư - ơ - ươ - i - ươi - tờ - ươi - tươi - sắc - tưới | cờ - â - y - ây - cờ - ây - cây | tưới cây"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0521/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0521/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0521/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0521/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -11788,10 +12490,16 @@
         "spelling_rule": "cờ - o - nờ - on - cờ - on - con | rờ - u - ô - uô - i - uôi - rờ - uôi - ruôi - huyền - ruồi | con ruồi"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0522/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0522/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0522/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0522/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -11858,10 +12566,16 @@
         "spelling_rule": "cờ - a - nhờ - anh - cờ - anh - canh - sắc - cánh | dờ - i - ê - iê - u - iêu - dờ - iêu - diêu - huyền - diều | cánh diều"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0524/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0524/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0524/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0524/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -11924,10 +12638,16 @@
         "spelling_rule": "cờ - o - nờ - on - cờ - on - con | hờ - ư - ơ - ươ - u - ươu - hờ - ươu - hươu | con hươu"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0526/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0526/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0526/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0526/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -11988,10 +12708,16 @@
         "spelling_rule": "sờ - i - ê - iê - u - iêu - sờ - iêu - siêu | thờ - i - thi - nặng - thị | siêu thị"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0528/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0528/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0528/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0528/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -12052,10 +12778,16 @@
         "spelling_rule": "y - ê - yê - u - yêu | thờ - ư - ơ - ươ - ngờ - ương - thờ - ương - thương | yêu thương"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0529/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0529/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0529/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0529/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -12122,10 +12854,16 @@
         "spelling_rule": "hờ - o - a - oa - tờ - oat - hờ - oat - hoat - nặng - hoạt | hờ - i - nhờ - inh - hờ - inh - hinh - huyền - hình | hoạt hình"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0545/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0545/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0545/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0545/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -12192,10 +12930,16 @@
         "spelling_rule": "vờ - a - i - ai - vờ - ai - vai - hỏi - vải | thờ - i - ê - iê - u - iêu - thờ - iêu - thiêu - huyền - thiều | vải thiều"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0548/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0548/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0548/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0548/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -12254,10 +12998,16 @@
         "spelling_rule": "hờ - o - a - oa - nờ - oan - hờ - oan - hoan | hờ - ô - hô | hoan hô"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0553/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0553/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0553/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0553/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -12320,10 +13070,16 @@
         "spelling_rule": "khờ - o - a - oa - i - oai - khờ - oai - khoai | lờ - a - ngờ - ang - lờ - ang - lang | khoai lang"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0621/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0621/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0621/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0621/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -12386,10 +13142,16 @@
         "spelling_rule": "quờ - a - qua - hỏi - quả | xờ - o - a - oa - i - oai - xờ - oai - xoai - huyền - xoài | quả xoài"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0624/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0624/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0624/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0624/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -12458,10 +13220,16 @@
         "spelling_rule": "đờ - i - ê - iê - nờ - iên - đờ - iên - điên - nặng - điện | thờ - o - a - oa - i - oai - thờ - oai - thoai - nặng - thoại | điện thoại"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0626/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0626/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0626/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0626/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -12526,10 +13294,16 @@
         "spelling_rule": "cờ - ê - kê - hỏi - kể | chờ - u - y - uy - ê - uyê - nờ - uyên - chờ - uyên - chuyên - nặng - chuyện | kể chuyện"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0584/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0584/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0584/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0584/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -12598,10 +13372,16 @@
         "spelling_rule": "bờ - o - ngờ - ong - bờ - ong - bong - sắc - bóng | chờ - u - y - uy - ê - uyê - nờ - uyên - chờ - uyên - chuyên - huyền - chuyền | bóng chuyền"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0586/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0586/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0586/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0586/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -12666,10 +13446,16 @@
         "spelling_rule": "mờ - u - a - ua - mờ - ua - mua - huyền - mùa | xờ - u - â - uâ - nờ - uân - xờ - uân - xuân | mùa xuân"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0568/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0568/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0568/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0568/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -12732,10 +13518,16 @@
         "spelling_rule": "a - o - ao - sắc - áo | khờ - o - a - oa - cờ - oac - khờ - oac - khoac - sắc - khoác | áo khoác"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0597/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0597/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0597/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0597/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -12796,10 +13588,16 @@
         "spelling_rule": "xờ - e - xe | bờ - u - y - uy - tờ - uyt - bờ - uyt - buyt - sắc - buýt | xe buýt"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0573/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0573/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0573/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0573/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -12866,10 +13664,16 @@
         "spelling_rule": "hờ - u - y - uy - tờ - uyt - hờ - uyt - huyt - sắc - huýt | sờ - a - o - ao - sờ - ao - sao - sắc - sáo | huýt sáo"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0575/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0575/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0575/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0575/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -12939,10 +13743,16 @@
         "spelling_rule": "tờ - â - pờ - âp - tờ - âp - tâp - nặng - tập | thờ - ê - thê - hỏi - thể | dờ - u - cờ - uc - dờ - uc - duc - nặng - dục | tập thể dục"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0448/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0448/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0448/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0448/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",
@@ -13010,10 +13820,16 @@
         "spelling_rule": "xờ - e - xe | cờ - ư - u - ưu - cờ - ưu - cưu - sắc - cứu | hờ - o - a - oa - hờ - oa - hoa - hỏi - hoả | xe cứu hoả"
       },
       "audio": {
-        "word_full": null,
+        "word_full": "06-assets/audio/vi/north-hanoi/vi_0535/word.mp3",
         "phonics_steps": [],
-        "example_sentence": null,
-        "voice_profile": "adult_native_northern_clear_moderately_slow"
+        "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0535/example.mp3",
+        "voice_profile": "adult_native_northern_clear_moderately_slow",
+        "dialects": {
+          "north": {
+            "word_full": "06-assets/audio/vi/north-hanoi/vi_0535/word.mp3",
+            "example_sentence": "06-assets/audio/vi/north-hanoi/vi_0535/example.mp3"
+          }
+        }
       },
       "image": {
         "status": "not_created",

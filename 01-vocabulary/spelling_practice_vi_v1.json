@@ -4507,9 +4507,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0001.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0001.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0001.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0001.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0001.mp3"
       },
       "image": {
         "status": "not_created",
@@ -4629,9 +4631,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0002.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0002.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0002.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0002.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0002.mp3"
       },
       "image": {
         "status": "not_created",
@@ -4751,9 +4755,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0003.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0003.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0003.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0003.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0003.mp3"
       },
       "image": {
         "status": "not_created",
@@ -4871,9 +4877,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0042.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0042.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0042.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0042.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0042.mp3"
       },
       "image": {
         "status": "not_created",
@@ -4991,9 +4999,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0043.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0043.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0043.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0043.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0043.mp3"
       },
       "image": {
         "status": "not_created",
@@ -5108,9 +5118,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0044.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0044.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0044.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0044.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0044.mp3"
       },
       "image": {
         "status": "not_created",
@@ -5226,9 +5238,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0045.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0045.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0045.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0045.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0045.mp3"
       },
       "image": {
         "status": "not_created",
@@ -5347,9 +5361,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0046.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0046.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0046.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0046.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0046.mp3"
       },
       "image": {
         "status": "not_created",
@@ -5472,9 +5488,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0010.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0010.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0010.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0010.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0010.mp3"
       },
       "image": {
         "status": "not_created",
@@ -5597,9 +5615,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0011.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0011.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0011.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0011.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0011.mp3"
       },
       "image": {
         "status": "not_created",
@@ -5720,9 +5740,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0012.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0012.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0012.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0012.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0012.mp3"
       },
       "image": {
         "status": "not_created",
@@ -5841,9 +5863,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0047.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0047.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0047.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0047.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0047.mp3"
       },
       "image": {
         "status": "not_created",
@@ -5962,9 +5986,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0048.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0048.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0048.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0048.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0048.mp3"
       },
       "image": {
         "status": "not_created",
@@ -6083,9 +6109,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0049.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0049.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0049.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0049.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0049.mp3"
       },
       "image": {
         "status": "not_created",
@@ -6204,9 +6232,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0050.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0050.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0050.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0050.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0050.mp3"
       },
       "image": {
         "status": "not_created",
@@ -6327,9 +6357,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0051.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0051.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0051.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0051.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0051.mp3"
       },
       "image": {
         "status": "not_created",
@@ -6447,9 +6479,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0052.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0052.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0052.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0052.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0052.mp3"
       },
       "image": {
         "status": "not_created",
@@ -6571,9 +6605,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0053.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0053.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0053.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0053.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0053.mp3"
       },
       "image": {
         "status": "not_created",
@@ -6696,9 +6732,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0013.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0013.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0013.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0013.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0013.mp3"
       },
       "image": {
         "status": "not_created",
@@ -6818,9 +6856,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0014.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0014.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0014.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0014.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0014.mp3"
       },
       "image": {
         "status": "not_created",
@@ -6943,9 +6983,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0015.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0015.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0015.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0015.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0015.mp3"
       },
       "image": {
         "status": "not_created",
@@ -7064,9 +7106,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0054.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0054.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0054.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0054.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0054.mp3"
       },
       "image": {
         "status": "not_created",
@@ -7185,9 +7229,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0055.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0055.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0055.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0055.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0055.mp3"
       },
       "image": {
         "status": "not_created",
@@ -7307,9 +7353,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0056.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0056.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0056.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0056.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0056.mp3"
       },
       "image": {
         "status": "not_created",
@@ -7430,9 +7478,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0057.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0057.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0057.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0057.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0057.mp3"
       },
       "image": {
         "status": "not_created",
@@ -7550,9 +7600,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0058.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0058.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0058.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0058.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0058.mp3"
       },
       "image": {
         "status": "not_created",
@@ -7673,9 +7725,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0059.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0059.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0059.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0059.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0059.mp3"
       },
       "image": {
         "status": "not_created",
@@ -7794,9 +7848,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0060.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0060.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0060.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0060.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0060.mp3"
       },
       "image": {
         "status": "not_created",
@@ -7916,9 +7972,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0016.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0016.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0016.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0016.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0016.mp3"
       },
       "image": {
         "status": "not_created",
@@ -8039,9 +8097,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0017.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0017.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0017.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0017.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0017.mp3"
       },
       "image": {
         "status": "not_created",
@@ -8160,9 +8220,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0018.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0018.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0018.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0018.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0018.mp3"
       },
       "image": {
         "status": "not_created",
@@ -8277,9 +8339,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0061.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0061.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0061.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0061.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0061.mp3"
       },
       "image": {
         "status": "not_created",
@@ -8394,9 +8458,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0062.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0062.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0062.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0062.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0062.mp3"
       },
       "image": {
         "status": "not_created",
@@ -8514,9 +8580,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0063.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0063.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0063.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0063.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0063.mp3"
       },
       "image": {
         "status": "not_created",
@@ -8635,9 +8703,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0064.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0064.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0064.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0064.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0064.mp3"
       },
       "image": {
         "status": "not_created",
@@ -8736,9 +8806,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0065.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0065.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0065.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0065.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0065.mp3"
       },
       "image": {
         "status": "not_created",
@@ -8853,9 +8925,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0066.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0066.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0066.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0066.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0066.mp3"
       },
       "image": {
         "status": "not_created",
@@ -8971,9 +9045,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0067.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0067.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0067.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0067.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0067.mp3"
       },
       "image": {
         "status": "not_created",
@@ -9088,9 +9164,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0068.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0068.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0068.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0068.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0068.mp3"
       },
       "image": {
         "status": "not_created",
@@ -9209,9 +9287,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0019.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0019.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0019.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0019.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0019.mp3"
       },
       "image": {
         "status": "not_created",
@@ -9333,9 +9413,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0020.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0020.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0020.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0020.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0020.mp3"
       },
       "image": {
         "status": "not_created",
@@ -9457,9 +9539,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0021.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0021.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0021.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0021.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0021.mp3"
       },
       "image": {
         "status": "not_created",
@@ -9579,9 +9663,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0022.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0022.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0022.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0022.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0022.mp3"
       },
       "image": {
         "status": "not_created",
@@ -9698,9 +9784,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0023.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0023.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0023.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0023.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0023.mp3"
       },
       "image": {
         "status": "not_created",
@@ -9822,9 +9910,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0024.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0024.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0024.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0024.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0024.mp3"
       },
       "image": {
         "status": "not_created",
@@ -9942,9 +10032,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0069.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0069.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0069.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0069.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0069.mp3"
       },
       "image": {
         "status": "not_created",
@@ -10059,9 +10151,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0070.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0070.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0070.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0070.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0070.mp3"
       },
       "image": {
         "status": "not_created",
@@ -10182,9 +10276,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0025.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0025.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0025.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0025.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0025.mp3"
       },
       "image": {
         "status": "not_created",
@@ -10301,9 +10397,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0026.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0026.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0026.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0026.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0026.mp3"
       },
       "image": {
         "status": "not_created",
@@ -10424,9 +10522,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0027.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0027.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0027.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0027.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0027.mp3"
       },
       "image": {
         "status": "not_created",
@@ -10543,9 +10643,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0071.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0071.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0071.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0071.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0071.mp3"
       },
       "image": {
         "status": "not_created",
@@ -10664,9 +10766,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0028.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0028.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0028.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0028.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0028.mp3"
       },
       "image": {
         "status": "not_created",
@@ -10784,9 +10888,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0029.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0029.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0029.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0029.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0029.mp3"
       },
       "image": {
         "status": "not_created",
@@ -10908,9 +11014,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0030.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0030.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0030.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0030.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0030.mp3"
       },
       "image": {
         "status": "not_created",
@@ -11026,9 +11134,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0072.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0072.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0072.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0072.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0072.mp3"
       },
       "image": {
         "status": "not_created",
@@ -11148,9 +11258,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0073.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0073.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0073.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0073.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0073.mp3"
       },
       "image": {
         "status": "not_created",
@@ -11268,9 +11380,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0074.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0074.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0074.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0074.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0074.mp3"
       },
       "image": {
         "status": "not_created",
@@ -11393,9 +11507,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0031.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0031.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0031.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0031.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0031.mp3"
       },
       "image": {
         "status": "not_created",
@@ -11514,9 +11630,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0032.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0032.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0032.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0032.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0032.mp3"
       },
       "image": {
         "status": "not_created",
@@ -11635,9 +11753,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0075.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0075.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0075.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0075.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0075.mp3"
       },
       "image": {
         "status": "not_created",
@@ -11754,9 +11874,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0076.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0076.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0076.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0076.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0076.mp3"
       },
       "image": {
         "status": "not_created",
@@ -11872,9 +11994,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0077.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0077.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0077.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0077.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0077.mp3"
       },
       "image": {
         "status": "not_created",
@@ -11972,9 +12096,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0033.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0033.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0033.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0033.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0033.mp3"
       },
       "image": {
         "status": "not_created",
@@ -12092,9 +12218,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0034.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0034.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0034.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0034.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0034.mp3"
       },
       "image": {
         "status": "not_created",
@@ -12214,9 +12342,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0035.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0035.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0035.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0035.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0035.mp3"
       },
       "image": {
         "status": "not_created",
@@ -12335,9 +12465,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0036.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0036.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0036.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0036.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0036.mp3"
       },
       "image": {
         "status": "not_created",
@@ -12455,9 +12587,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0078.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0078.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0078.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0078.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0078.mp3"
       },
       "image": {
         "status": "not_created",
@@ -12573,9 +12707,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0079.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0079.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0079.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0079.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0079.mp3"
       },
       "image": {
         "status": "not_created",
@@ -12694,9 +12830,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0080.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0080.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0080.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0080.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0080.mp3"
       },
       "image": {
         "status": "not_created",
@@ -12818,9 +12956,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0005.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0005.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0005.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0005.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0005.mp3"
       },
       "image": {
         "status": "not_created",
@@ -12944,9 +13084,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0006.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0006.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0006.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0006.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0006.mp3"
       },
       "image": {
         "status": "not_created",
@@ -13069,9 +13211,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0007.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0007.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0007.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0007.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0007.mp3"
       },
       "image": {
         "status": "not_created",
@@ -13191,9 +13335,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0081.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0081.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0081.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0081.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0081.mp3"
       },
       "image": {
         "status": "not_created",
@@ -13312,9 +13458,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0082.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0082.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0082.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0082.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0082.mp3"
       },
       "image": {
         "status": "not_created",
@@ -13433,9 +13581,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0083.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0083.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0083.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0083.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0083.mp3"
       },
       "image": {
         "status": "not_created",
@@ -13554,9 +13704,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0084.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0084.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0084.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0084.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0084.mp3"
       },
       "image": {
         "status": "not_created",
@@ -13674,9 +13826,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0085.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0085.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0085.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0085.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0085.mp3"
       },
       "image": {
         "status": "not_created",
@@ -13795,9 +13949,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0086.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0086.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0086.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0086.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0086.mp3"
       },
       "image": {
         "status": "not_created",
@@ -13901,9 +14057,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0037.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0037.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0037.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0037.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0037.mp3"
       },
       "image": {
         "status": "not_created",
@@ -14024,9 +14182,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0038.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0038.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0038.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0038.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0038.mp3"
       },
       "image": {
         "status": "not_created",
@@ -14147,9 +14307,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0039.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0039.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0039.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0039.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0039.mp3"
       },
       "image": {
         "status": "not_created",
@@ -14268,9 +14430,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0040.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0040.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0040.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0040.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0040.mp3"
       },
       "image": {
         "status": "not_created",
@@ -14395,9 +14559,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0041.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0041.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0041.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0041.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0041.mp3"
       },
       "image": {
         "status": "not_created",
@@ -14517,9 +14683,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0087.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0087.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0087.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0087.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0087.mp3"
       },
       "image": {
         "status": "not_created",
@@ -14641,9 +14809,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0088.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0088.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0088.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0088.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0088.mp3"
       },
       "image": {
         "status": "not_created",
@@ -14765,9 +14935,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0089.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0089.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0089.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0089.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0089.mp3"
       },
       "image": {
         "status": "not_created",
@@ -14885,9 +15057,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0090.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0090.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0090.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0090.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0090.mp3"
       },
       "image": {
         "status": "not_created",
@@ -15005,9 +15179,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0004.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0004.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0004.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0004.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0004.mp3"
       },
       "image": {
         "status": "not_created",
@@ -15098,9 +15274,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0091.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0091.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0091.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0091.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0091.mp3"
       },
       "image": {
         "status": "not_created",
@@ -15199,9 +15377,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0092.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0092.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0092.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0092.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0092.mp3"
       },
       "image": {
         "status": "not_created",
@@ -15316,9 +15496,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0093.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0093.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0093.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0093.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0093.mp3"
       },
       "image": {
         "status": "not_created",
@@ -15430,9 +15612,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0094.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0094.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0094.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0094.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0094.mp3"
       },
       "image": {
         "status": "not_created",
@@ -15544,9 +15728,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0095.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0095.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0095.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0095.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0095.mp3"
       },
       "image": {
         "status": "not_created",
@@ -15658,9 +15844,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0096.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0096.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0096.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0096.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0096.mp3"
       },
       "image": {
         "status": "not_created",
@@ -15779,9 +15967,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0097.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0097.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0097.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0097.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0097.mp3"
       },
       "image": {
         "status": "not_created",
@@ -15892,9 +16082,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0098.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0098.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0098.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0098.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0098.mp3"
       },
       "image": {
         "status": "not_created",
@@ -16003,9 +16195,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0099.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0099.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0099.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0099.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0099.mp3"
       },
       "image": {
         "status": "not_created",
@@ -16120,9 +16314,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0100.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0100.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0100.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0100.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0100.mp3"
       },
       "image": {
         "status": "not_created",
@@ -16238,9 +16434,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0101.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0101.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0101.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0101.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0101.mp3"
       },
       "image": {
         "status": "not_created",
@@ -16358,9 +16556,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0102.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0102.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0102.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0102.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0102.mp3"
       },
       "image": {
         "status": "not_created",
@@ -16475,9 +16675,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0103.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0103.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0103.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0103.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0103.mp3"
       },
       "image": {
         "status": "not_created",
@@ -16593,9 +16795,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0104.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0104.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0104.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0104.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0104.mp3"
       },
       "image": {
         "status": "not_created",
@@ -16703,9 +16907,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0008.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0008.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0008.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0008.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0008.mp3"
       },
       "image": {
         "status": "not_created",
@@ -16816,9 +17022,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0009.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0009.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0009.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0009.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0009.mp3"
       },
       "image": {
         "status": "not_created",
@@ -16932,9 +17140,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0105.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0105.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0105.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0105.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0105.mp3"
       },
       "image": {
         "status": "not_created",
@@ -17045,9 +17255,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0106.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0106.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0106.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0106.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0106.mp3"
       },
       "image": {
         "status": "not_created",
@@ -17155,9 +17367,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0107.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0107.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0107.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0107.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0107.mp3"
       },
       "image": {
         "status": "not_created",
@@ -17271,9 +17485,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0108.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0108.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0108.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0108.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0108.mp3"
       },
       "image": {
         "status": "not_created",
@@ -17390,9 +17606,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0109.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0109.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0109.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0109.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0109.mp3"
       },
       "image": {
         "status": "not_created",
@@ -17509,9 +17727,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0110.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0110.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0110.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0110.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0110.mp3"
       },
       "image": {
         "status": "not_created",
@@ -17618,9 +17838,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0111.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0111.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0111.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0111.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0111.mp3"
       },
       "image": {
         "status": "not_created",
@@ -17727,9 +17949,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0112.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0112.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0112.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0112.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0112.mp3"
       },
       "image": {
         "status": "not_created",
@@ -17839,9 +18063,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0113.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0113.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0113.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0113.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0113.mp3"
       },
       "image": {
         "status": "not_created",
@@ -17902,9 +18128,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0114.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0114.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0114.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0114.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0114.mp3"
       },
       "image": {
         "status": "not_created",
@@ -17966,9 +18194,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0115.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0115.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0115.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0115.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0115.mp3"
       },
       "image": {
         "status": "not_created",
@@ -18030,9 +18260,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0116.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0116.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0116.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0116.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0116.mp3"
       },
       "image": {
         "status": "not_created",
@@ -18094,9 +18326,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0117.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0117.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0117.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0117.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0117.mp3"
       },
       "image": {
         "status": "not_created",
@@ -18158,9 +18392,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0118.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0118.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0118.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0118.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0118.mp3"
       },
       "image": {
         "status": "not_created",
@@ -18222,9 +18458,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0119.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0119.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0119.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0119.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0119.mp3"
       },
       "image": {
         "status": "not_created",
@@ -18286,9 +18524,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0120.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0120.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0120.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0120.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0120.mp3"
       },
       "image": {
         "status": "not_created",
@@ -18350,9 +18590,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0121.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0121.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0121.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0121.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0121.mp3"
       },
       "image": {
         "status": "not_created",
@@ -18410,9 +18652,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0122.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0122.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0122.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0122.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0122.mp3"
       },
       "image": {
         "status": "not_created",
@@ -18476,9 +18720,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0123.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0123.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0123.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0123.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0123.mp3"
       },
       "image": {
         "status": "not_created",
@@ -18540,9 +18786,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0124.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0124.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0124.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0124.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0124.mp3"
       },
       "image": {
         "status": "not_created",
@@ -18604,9 +18852,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0125.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0125.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0125.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0125.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0125.mp3"
       },
       "image": {
         "status": "not_created",
@@ -18668,9 +18918,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0126.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0126.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0126.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0126.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0126.mp3"
       },
       "image": {
         "status": "not_created",
@@ -18732,9 +18984,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0127.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0127.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0127.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0127.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0127.mp3"
       },
       "image": {
         "status": "not_created",
@@ -18796,9 +19050,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0128.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0128.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0128.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0128.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0128.mp3"
       },
       "image": {
         "status": "not_created",
@@ -18856,9 +19112,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0129.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0129.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0129.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0129.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0129.mp3"
       },
       "image": {
         "status": "not_created",
@@ -18920,9 +19178,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0130.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0130.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0130.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0130.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0130.mp3"
       },
       "image": {
         "status": "not_created",
@@ -18984,9 +19244,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0131.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0131.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0131.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0131.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0131.mp3"
       },
       "image": {
         "status": "not_created",
@@ -19050,9 +19312,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0132.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0132.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0132.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0132.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0132.mp3"
       },
       "image": {
         "status": "not_created",
@@ -19116,9 +19380,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0133.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0133.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0133.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0133.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0133.mp3"
       },
       "image": {
         "status": "not_created",
@@ -19178,9 +19444,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0134.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0134.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0134.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0134.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0134.mp3"
       },
       "image": {
         "status": "not_created",
@@ -19242,9 +19510,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0135.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0135.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0135.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0135.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0135.mp3"
       },
       "image": {
         "status": "not_created",
@@ -19304,9 +19574,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0136.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0136.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0136.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0136.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0136.mp3"
       },
       "image": {
         "status": "not_created",
@@ -19368,9 +19640,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0137.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0137.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0137.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0137.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0137.mp3"
       },
       "image": {
         "status": "not_created",
@@ -19430,9 +19704,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0138.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0138.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0138.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0138.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0138.mp3"
       },
       "image": {
         "status": "not_created",
@@ -19492,9 +19768,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0139.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0139.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0139.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0139.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0139.mp3"
       },
       "image": {
         "status": "not_created",
@@ -19554,9 +19832,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0140.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0140.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0140.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0140.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0140.mp3"
       },
       "image": {
         "status": "not_created",
@@ -19616,9 +19896,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0141.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0141.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0141.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0141.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0141.mp3"
       },
       "image": {
         "status": "not_created",
@@ -19678,9 +19960,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0142.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0142.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0142.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0142.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0142.mp3"
       },
       "image": {
         "status": "not_created",
@@ -19740,9 +20024,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0143.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0143.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0143.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0143.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0143.mp3"
       },
       "image": {
         "status": "not_created",
@@ -19804,9 +20090,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0144.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0144.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0144.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0144.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0144.mp3"
       },
       "image": {
         "status": "not_created",
@@ -19866,9 +20154,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0145.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0145.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0145.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0145.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0145.mp3"
       },
       "image": {
         "status": "not_created",
@@ -19928,9 +20218,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0146.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0146.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0146.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0146.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0146.mp3"
       },
       "image": {
         "status": "not_created",
@@ -19992,9 +20284,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0147.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0147.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0147.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0147.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0147.mp3"
       },
       "image": {
         "status": "not_created",
@@ -20054,9 +20348,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0148.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0148.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0148.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0148.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0148.mp3"
       },
       "image": {
         "status": "not_created",
@@ -20118,9 +20414,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0149.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0149.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0149.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0149.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0149.mp3"
       },
       "image": {
         "status": "not_created",
@@ -20180,9 +20478,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0150.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0150.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0150.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0150.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0150.mp3"
       },
       "image": {
         "status": "not_created",
@@ -20244,9 +20544,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0151.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0151.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0151.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0151.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0151.mp3"
       },
       "image": {
         "status": "not_created",
@@ -20306,9 +20608,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0152.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0152.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0152.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0152.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0152.mp3"
       },
       "image": {
         "status": "not_created",
@@ -20370,9 +20674,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0153.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0153.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0153.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0153.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0153.mp3"
       },
       "image": {
         "status": "not_created",
@@ -20434,9 +20740,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0154.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0154.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0154.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0154.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0154.mp3"
       },
       "image": {
         "status": "not_created",
@@ -20496,9 +20804,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0155.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0155.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0155.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0155.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0155.mp3"
       },
       "image": {
         "status": "not_created",
@@ -20560,9 +20870,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0156.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0156.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0156.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0156.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0156.mp3"
       },
       "image": {
         "status": "not_created",
@@ -20624,9 +20936,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0157.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0157.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0157.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0157.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0157.mp3"
       },
       "image": {
         "status": "not_created",
@@ -20688,9 +21002,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0158.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0158.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0158.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0158.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0158.mp3"
       },
       "image": {
         "status": "not_created",
@@ -20750,9 +21066,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0159.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0159.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0159.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0159.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0159.mp3"
       },
       "image": {
         "status": "not_created",
@@ -20814,9 +21132,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0160.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0160.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0160.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0160.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0160.mp3"
       },
       "image": {
         "status": "not_created",
@@ -20878,9 +21198,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0161.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0161.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0161.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0161.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0161.mp3"
       },
       "image": {
         "status": "not_created",
@@ -20942,9 +21264,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0162.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0162.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0162.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0162.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0162.mp3"
       },
       "image": {
         "status": "not_created",
@@ -21006,9 +21330,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0163.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0163.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0163.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0163.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0163.mp3"
       },
       "image": {
         "status": "not_created",
@@ -21068,9 +21394,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0164.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0164.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0164.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0164.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0164.mp3"
       },
       "image": {
         "status": "not_created",
@@ -21130,9 +21458,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0165.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0165.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0165.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0165.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0165.mp3"
       },
       "image": {
         "status": "not_created",
@@ -21192,9 +21522,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0166.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0166.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0166.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0166.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0166.mp3"
       },
       "image": {
         "status": "not_created",
@@ -21256,9 +21588,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0167.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0167.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0167.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0167.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0167.mp3"
       },
       "image": {
         "status": "not_created",
@@ -21318,9 +21652,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0168.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0168.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0168.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0168.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0168.mp3"
       },
       "image": {
         "status": "not_created",
@@ -21380,9 +21716,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0169.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0169.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0169.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0169.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0169.mp3"
       },
       "image": {
         "status": "not_created",
@@ -21444,9 +21782,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0170.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0170.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0170.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0170.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0170.mp3"
       },
       "image": {
         "status": "not_created",
@@ -21508,9 +21848,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0171.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0171.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0171.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0171.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0171.mp3"
       },
       "image": {
         "status": "not_created",
@@ -21574,9 +21916,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0172.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0172.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0172.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0172.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0172.mp3"
       },
       "image": {
         "status": "not_created",
@@ -21638,9 +21982,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0173.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0173.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0173.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0173.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0173.mp3"
       },
       "image": {
         "status": "not_created",
@@ -21700,9 +22046,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0174.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0174.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0174.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0174.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0174.mp3"
       },
       "image": {
         "status": "not_created",
@@ -21762,9 +22110,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0175.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0175.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0175.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0175.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0175.mp3"
       },
       "image": {
         "status": "not_created",
@@ -21826,9 +22176,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0176.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0176.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0176.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0176.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0176.mp3"
       },
       "image": {
         "status": "not_created",
@@ -21888,9 +22240,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0177.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0177.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0177.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0177.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0177.mp3"
       },
       "image": {
         "status": "not_created",
@@ -21950,9 +22304,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0178.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0178.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0178.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0178.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0178.mp3"
       },
       "image": {
         "status": "not_created",
@@ -22012,9 +22368,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0179.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0179.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0179.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0179.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0179.mp3"
       },
       "image": {
         "status": "not_created",
@@ -22076,9 +22434,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0180.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0180.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0180.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0180.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0180.mp3"
       },
       "image": {
         "status": "not_created",
@@ -22138,9 +22498,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0181.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0181.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0181.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0181.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0181.mp3"
       },
       "image": {
         "status": "not_created",
@@ -22202,9 +22564,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0182.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0182.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0182.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0182.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0182.mp3"
       },
       "image": {
         "status": "not_created",
@@ -22266,9 +22630,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0183.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0183.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0183.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0183.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0183.mp3"
       },
       "image": {
         "status": "not_created",
@@ -22326,9 +22692,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0184.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0184.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0184.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0184.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0184.mp3"
       },
       "image": {
         "status": "not_created",
@@ -22388,9 +22756,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0185.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0185.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0185.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0185.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0185.mp3"
       },
       "image": {
         "status": "not_created",
@@ -22452,9 +22822,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0186.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0186.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0186.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0186.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0186.mp3"
       },
       "image": {
         "status": "not_created",
@@ -22514,9 +22886,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0187.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0187.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0187.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0187.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0187.mp3"
       },
       "image": {
         "status": "not_created",
@@ -22578,9 +22952,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0188.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0188.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0188.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0188.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0188.mp3"
       },
       "image": {
         "status": "not_created",
@@ -22642,9 +23018,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0189.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0189.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0189.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0189.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0189.mp3"
       },
       "image": {
         "status": "not_created",
@@ -22706,9 +23084,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0190.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0190.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0190.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0190.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0190.mp3"
       },
       "image": {
         "status": "not_created",
@@ -22768,9 +23148,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0191.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0191.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0191.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0191.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0191.mp3"
       },
       "image": {
         "status": "not_created",
@@ -22830,9 +23212,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0192.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0192.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0192.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0192.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0192.mp3"
       },
       "image": {
         "status": "not_created",
@@ -22892,9 +23276,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0193.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0193.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0193.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0193.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0193.mp3"
       },
       "image": {
         "status": "not_created",
@@ -22954,9 +23340,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0194.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0194.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0194.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0194.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0194.mp3"
       },
       "image": {
         "status": "not_created",
@@ -23016,9 +23404,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0195.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0195.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0195.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0195.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0195.mp3"
       },
       "image": {
         "status": "not_created",
@@ -23079,9 +23469,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0196.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0196.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0196.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0196.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0196.mp3"
       },
       "image": {
         "status": "not_created",
@@ -23141,9 +23533,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0197.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0197.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0197.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0197.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0197.mp3"
       },
       "image": {
         "status": "not_created",
@@ -23204,9 +23598,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0198.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0198.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0198.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0198.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0198.mp3"
       },
       "image": {
         "status": "not_created",
@@ -23265,9 +23661,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0199.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0199.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0199.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0199.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0199.mp3"
       },
       "image": {
         "status": "not_created",
@@ -23329,9 +23727,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0200.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0200.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0200.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0200.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0200.mp3"
       },
       "image": {
         "status": "not_created",
@@ -23393,9 +23793,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0201.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0201.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0201.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0201.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0201.mp3"
       },
       "image": {
         "status": "not_created",
@@ -23456,9 +23858,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0202.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0202.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0202.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0202.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0202.mp3"
       },
       "image": {
         "status": "not_created",
@@ -23519,9 +23923,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0203.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0203.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0203.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0203.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0203.mp3"
       },
       "image": {
         "status": "not_created",
@@ -23581,9 +23987,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0204.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0204.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0204.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0204.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0204.mp3"
       },
       "image": {
         "status": "not_created",
@@ -23642,9 +24050,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0205.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0205.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0205.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0205.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0205.mp3"
       },
       "image": {
         "status": "not_created",
@@ -23705,9 +24115,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0206.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0206.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0206.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0206.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0206.mp3"
       },
       "image": {
         "status": "not_created",
@@ -23766,9 +24178,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0207.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0207.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0207.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0207.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0207.mp3"
       },
       "image": {
         "status": "not_created",
@@ -23827,9 +24241,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0208.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0208.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0208.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0208.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0208.mp3"
       },
       "image": {
         "status": "not_created",
@@ -23884,9 +24300,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0209.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0209.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0209.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0209.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0209.mp3"
       },
       "image": {
         "status": "not_created",
@@ -23947,9 +24365,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0210.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0210.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0210.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0210.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0210.mp3"
       },
       "image": {
         "status": "not_created",
@@ -24004,9 +24424,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0211.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0211.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0211.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0211.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0211.mp3"
       },
       "image": {
         "status": "not_created",
@@ -24067,9 +24489,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0212.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0212.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0212.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0212.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0212.mp3"
       },
       "image": {
         "status": "not_created",
@@ -24130,9 +24554,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0213.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0213.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0213.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0213.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0213.mp3"
       },
       "image": {
         "status": "not_created",
@@ -24195,9 +24621,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0214.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0214.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0214.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0214.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0214.mp3"
       },
       "image": {
         "status": "not_created",
@@ -24260,9 +24688,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0215.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0215.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0215.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0215.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0215.mp3"
       },
       "image": {
         "status": "not_created",
@@ -24323,9 +24753,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0216.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0216.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0216.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0216.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0216.mp3"
       },
       "image": {
         "status": "not_created",
@@ -24384,9 +24816,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0217.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0217.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0217.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0217.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0217.mp3"
       },
       "image": {
         "status": "not_created",
@@ -24447,9 +24881,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0218.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0218.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0218.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0218.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0218.mp3"
       },
       "image": {
         "status": "not_created",
@@ -24512,9 +24948,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0219.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0219.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0219.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0219.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0219.mp3"
       },
       "image": {
         "status": "not_created",
@@ -24575,9 +25013,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0220.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0220.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0220.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0220.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0220.mp3"
       },
       "image": {
         "status": "not_created",
@@ -24638,9 +25078,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0221.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0221.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0221.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0221.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0221.mp3"
       },
       "image": {
         "status": "not_created",
@@ -24703,9 +25145,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0222.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0222.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0222.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0222.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0222.mp3"
       },
       "image": {
         "status": "not_created",
@@ -24766,9 +25210,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0223.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0223.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0223.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0223.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0223.mp3"
       },
       "image": {
         "status": "not_created",
@@ -24829,9 +25275,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0224.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0224.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0224.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0224.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0224.mp3"
       },
       "image": {
         "status": "not_created",
@@ -24890,9 +25338,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0225.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0225.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0225.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0225.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0225.mp3"
       },
       "image": {
         "status": "not_created",
@@ -24953,9 +25403,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0226.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0226.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0226.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0226.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0226.mp3"
       },
       "image": {
         "status": "not_created",
@@ -25016,9 +25468,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0227.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0227.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0227.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0227.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0227.mp3"
       },
       "image": {
         "status": "not_created",
@@ -25081,9 +25535,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0228.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0228.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0228.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0228.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0228.mp3"
       },
       "image": {
         "status": "not_created",
@@ -25144,9 +25600,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0229.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0229.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0229.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0229.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0229.mp3"
       },
       "image": {
         "status": "not_created",
@@ -25207,9 +25665,11 @@
         "word_full": "06-assets/audio/spelling/words/sp_0230.mp3",
         "dialects": {
           "north": {
-            "word_full": "06-assets/audio/spelling/words/sp_0230.mp3"
+            "word_full": "06-assets/audio/spelling/words/sp_0230.mp3",
+            "example_sentence": "06-assets/audio/spelling/examples/sp_0230.mp3"
           }
-        }
+        },
+        "example_sentence": "06-assets/audio/spelling/examples/sp_0230.mp3"
       },
       "image": {
         "status": "not_created",
