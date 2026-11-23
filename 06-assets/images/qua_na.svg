@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <radialGradient id="naEye" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#bef264" />
+      <stop offset="70%" stop-color="#65a30d" />
+      <stop offset="100%" stop-color="#3f6212" />
+    </radialGradient>
+    <filter id="shadowNa" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.16" />
+    </filter>
+  </defs>
+
+  <!-- Stem & Leaf -->
+  <path d="M 60,25 Q 58,12 50,8" stroke="#4d7c0f" stroke-width="4.5" stroke-linecap="round" fill="none" />
+  <path d="M 58,16 Q 78,8 84,18 Q 72,26 58,16 Z" fill="#4ade80" stroke="#16a34a" stroke-width="1.5" />
+
+  <g filter="url(#shadowNa)">
+    <!-- Base Heart/Oval Fruit Shape -->
+    <path d="M 60,25 C 90,25 105,50 95,85 C 85,110 60,115 60,115 C 60,115 35,110 25,85 C 15,50 30,25 60,25 Z" fill="#3f6212" stroke="#365314" stroke-width="2" />
+
+    <!-- Bumpy Fruit Carpels (Mắt quả na nở đều) -->
+    <!-- Center Column -->
+    <ellipse cx="60" cy="35" rx="10" ry="8" fill="url(#naEye)" stroke="#365314" stroke-width="1.5" />
+    <ellipse cx="60" cy="52" rx="11" ry="9" fill="url(#naEye)" stroke="#365314" stroke-width="1.5" />
+    <ellipse cx="60" cy="70" rx="11" ry="9" fill="url(#naEye)" stroke="#365314" stroke-width="1.5" />
+    <ellipse cx="60" cy="88" rx="10" ry="8" fill="url(#naEye)" stroke="#365314" stroke-width="1.5" />
+    <ellipse cx="60" cy="103" rx="7" ry="6" fill="url(#naEye)" stroke="#365314" stroke-width="1.5" />
+
+    <!-- Left Column 1 -->
+    <ellipse cx="44" cy="42" rx="10" ry="8" fill="url(#naEye)" stroke="#365314" stroke-width="1.5" />
+    <ellipse cx="42" cy="60" rx="11" ry="9" fill="url(#naEye)" stroke="#365314" stroke-width="1.5" />
+    <ellipse cx="43" cy="78" rx="10" ry="9" fill="url(#naEye)" stroke="#365314" stroke-width="1.5" />
+    <ellipse cx="47" cy="94" rx="8" ry="7" fill="url(#naEye)" stroke="#365314" stroke-width="1.5" />
+
+    <!-- Right Column 1 -->
+    <ellipse cx="76" cy="42" rx="10" ry="8" fill="url(#naEye)" stroke="#365314" stroke-width="1.5" />
+    <ellipse cx="78" cy="60" rx="11" ry="9" fill="url(#naEye)" stroke="#365314" stroke-width="1.5" />
+    <ellipse cx="77" cy="78" rx="10" ry="9" fill="url(#naEye)" stroke="#365314" stroke-width="1.5" />
+    <ellipse cx="73" cy="94" rx="8" ry="7" fill="url(#naEye)" stroke="#365314" stroke-width="1.5" />
+
+    <!-- Outer Left Column 2 -->
+    <ellipse cx="28" cy="52" rx="8" ry="8" fill="url(#naEye)" stroke="#365314" stroke-width="1.5" />
+    <ellipse cx="27" cy="70" rx="9" ry="8" fill="url(#naEye)" stroke="#365314" stroke-width="1.5" />
+    <ellipse cx="32" cy="86" rx="8" ry="7" fill="url(#naEye)" stroke="#365314" stroke-width="1.5" />
+
+    <!-- Outer Right Column 2 -->
+    <ellipse cx="92" cy="52" rx="8" ry="8" fill="url(#naEye)" stroke="#365314" stroke-width="1.5" />
+    <ellipse cx="93" cy="70" rx="9" ry="8" fill="url(#naEye)" stroke="#365314" stroke-width="1.5" />
+    <ellipse cx="88" cy="86" rx="8" ry="7" fill="url(#naEye)" stroke="#365314" stroke-width="1.5" />
+  </g>
+</svg>

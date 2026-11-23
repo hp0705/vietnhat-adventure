@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pangoSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#92400e" />
+    </linearGradient>
+    <linearGradient id="pangoScale" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <filter id="shadowPango" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="3" stdDeviation="2.5" flood-opacity="0.2" />
+    </filter>
+  </defs>
+
+  <g filter="url(#shadowPango)">
+    <!-- Curled Tail -->
+    <path d="M 35,75 C 15,75 5,55 12,40 C 18,28 32,32 30,42 C 28,48 20,48 20,54 C 20,62 30,68 40,68 Z" fill="url(#pangoSkin)" stroke="#78350f" stroke-width="2" />
+
+    <!-- Feet -->
+    <ellipse cx="48" cy="88" rx="8" ry="5" fill="#92400e" stroke="#78350f" stroke-width="1.5" />
+    <ellipse cx="80" cy="88" rx="8" ry="5" fill="#92400e" stroke="#78350f" stroke-width="1.5" />
+
+    <!-- Pangolin Arched Body -->
+    <path d="M 32,72 C 32,45 52,32 78,35 C 98,37 105,55 98,76 C 92,86 42,88 32,72 Z" fill="url(#pangoSkin)" stroke="#78350f" stroke-width="2.5" />
+
+    <!-- Cute Snout & Head -->
+    <path d="M 92,60 C 102,62 114,68 116,72 C 114,75 104,76 96,75 Z" fill="#d97706" stroke="#78350f" stroke-width="2" />
+    <!-- Eye & Ear -->
+    <circle cx="94" cy="62" r="3.5" fill="#1e293b" />
+    <circle cx="95" cy="61" r="1.2" fill="#ffffff" />
+    <path d="M 88,54 C 90,50 93,52 92,56 Z" fill="#92400e" />
+
+    <!-- Overlapping Armor Scales (Vảy tê tê xếp lớp) -->
+    <!-- Row 1 -->
+    <path d="M 44,48 C 48,40 56,40 60,48 C 52,52 48,50 44,48 Z" fill="url(#pangoScale)" stroke="#78350f" stroke-width="1.5" />
+    <path d="M 58,46 C 62,38 70,38 74,46 C 66,50 62,48 58,46 Z" fill="url(#pangoScale)" stroke="#78350f" stroke-width="1.5" />
+    <path d="M 72,46 C 76,38 84,38 88,46 C 80,50 76,48 72,46 Z" fill="url(#pangoScale)" stroke="#78350f" stroke-width="1.5" />
+
+    <!-- Row 2 -->
+    <path d="M 36,60 C 40,52 48,52 52,60 C 44,64 40,62 36,60 Z" fill="url(#pangoScale)" stroke="#78350f" stroke-width="1.5" />
+    <path d="M 50,58 C 54,50 62,50 66,58 C 58,62 54,60 50,58 Z" fill="url(#pangoScale)" stroke="#78350f" stroke-width="1.5" />
+    <path d="M 64,58 C 68,50 76,50 80,58 C 72,62 68,60 64,58 Z" fill="url(#pangoScale)" stroke="#78350f" stroke-width="1.5" />
+    <path d="M 78,58 C 82,50 90,50 94,58 C 86,62 82,60 78,58 Z" fill="url(#pangoScale)" stroke="#78350f" stroke-width="1.5" />
+
+    <!-- Row 3 -->
+    <path d="M 42,72 C 46,64 54,64 58,72 C 50,76 46,74 42,72 Z" fill="url(#pangoScale)" stroke="#78350f" stroke-width="1.5" />
+    <path d="M 56,70 C 60,62 68,62 72,70 C 64,74 60,72 56,70 Z" fill="url(#pangoScale)" stroke="#78350f" stroke-width="1.5" />
+    <path d="M 70,70 C 74,62 82,62 86,70 C 78,74 74,72 70,70 Z" fill="url(#pangoScale)" stroke="#78350f" stroke-width="1.5" />
+  </g>
+</svg>

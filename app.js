@@ -437,7 +437,7 @@ const exampleIllustrationMap = {
   'cố đô': '🏯✨',
   'đi bộ': '🚶🌳',
   'hề': '🤡🎈',
-  'khế': '⭐🌿',
+  'khế': '<img src="06-assets/images/qua_khe.svg" class="pic-custom-img" alt="Quả khế" />',
   'khỉ bé': '🐒🍌',
   'hồ cá': '🐠💦',
   'dù': '☂️🌧️',
@@ -493,7 +493,7 @@ const pictureData = {
 
   // Mở rộng các từ SGK
   'cô': { emoji: '👩‍🏫', label: 'Cô Giáo' },
-  'na': { emoji: '🍈', label: 'Quả Na' },
+  'na': { emoji: '<img src="06-assets/images/qua_na.svg" class="pic-custom-img" alt="Quả na" />', label: 'Quả Na' },
   'cơ': { emoji: '🚩', label: 'Cờ Đỏ' },
   'đa': { emoji: '🌳', label: 'Cây Đa' },
   'ca nô': { emoji: '🛥️', label: 'Ca Nô' },
@@ -527,7 +527,7 @@ const pictureData = {
   'đổ': { emoji: '🫗', label: 'Rót Nước' },
   'hề': { emoji: '🤡', label: 'Chú Hề' },
   'kẻ': { emoji: '📏', label: 'Kẻ Vạch' },
-  'khế': { emoji: '⭐', label: 'Quả Khế' },
+  'khế': { emoji: '<img src="06-assets/images/qua_khe.svg" class="pic-custom-img" alt="Quả khế" />', label: 'Quả Khế' },
   'kì đà': { emoji: '🦎', label: 'Con Kì Đà' },
   'khe đá': { emoji: '⛰️', label: 'Khe Đá' },
   'khỉ bé': { emoji: '🐒', label: 'Con Khỉ' },
@@ -538,12 +538,12 @@ const pictureData = {
   'củ từ': { emoji: '🥔', label: 'Củ Từ' },
   'cử tạ': { emoji: '🏋️', label: 'Môn Cử Tạ' },
   'tu hú': { emoji: '🐦', label: 'Chim Tu Hú' },
-  'tê tê': { emoji: '🦔', label: 'Con Tê Tê' },
+  'tê tê': { emoji: '<img src="06-assets/images/te_te.svg" class="pic-custom-img" alt="Con tê tê" />', label: 'Con Tê Tê' },
   'nụ': { emoji: '🌷', label: 'Nụ Hoa' },
   'mạ': { emoji: '🌾', label: 'Cây Mạ Non' },
   'nơ đỏ': { emoji: '🎀', label: 'Chiếc Nơ Đỏ' },
   'tô mì': { emoji: '🍜', label: 'Tô Mì Thơm' },
-  'le le': { emoji: '🦆', label: 'Vịt Le Le' },
+  'le le': { emoji: '<img src="06-assets/images/le_le.svg" class="pic-custom-img" alt="Con le le" />', label: 'Con Le Le' },
   'li': { emoji: '🥛', label: 'Cái Ly (Cốc)' },
   'nho': { emoji: '🍇', label: 'Chùm Nho' },
   'pi-a-nô': { emoji: '🎹', label: 'Đàn Pi-a-nô' },
@@ -729,10 +729,10 @@ const vocabPictureData = {
   "đi đò": { emoji: "🛶", label: "Đi đò" },
   "hồ cá": { emoji: "🐠", label: "Hồ cá" },
   "tu hú": { emoji: "🐦", label: "Tu hú" },
-  "tê tê": { emoji: "🦔", label: "Tê tê" },
+  "tê tê": { emoji: '<img src="06-assets/images/te_te.svg" class="pic-custom-img" alt="Con tê tê" />', label: "Tê tê" },
   "nơ đỏ": { emoji: "🎀", label: "Nơ đỏ" },
   "tô mì": { emoji: "🍝", label: "Tô mì" },
-  "le le": { emoji: "🐤", label: "Le le" },
+  "le le": { emoji: '<img src="06-assets/images/le_le.svg" class="pic-custom-img" alt="Con le le" />', label: "Le le" },
   "ví da": { emoji: "👛", label: "Ví da" },
   "mèo": { emoji: "🐱", label: "Con mèo" },
   "vịt": { emoji: "🦆", label: "Con vịt" },
@@ -746,7 +746,7 @@ const vocabPictureData = {
   "mắt": { emoji: "👀", label: "Đôi mắt" },
   "ngủ": { emoji: "😴", label: "Đi ngủ" },
   "đau": { emoji: "🤕", label: "Đau bụng" },
-  "khế": { emoji: "⭐", label: "Quả khế" },
+  "khế": { emoji: '<img src="06-assets/images/qua_khe.svg" class="pic-custom-img" alt="Quả khế" />', label: "Quả khế" },
   "nho": { emoji: "🍇", label: "Chùm nho" },
   "phở": { emoji: "🍲", label: "Bát phở" },
   "tre": { emoji: "🎋", label: "Cây tre" },
@@ -754,7 +754,7 @@ const vocabPictureData = {
   "quả": { emoji: "🍎", label: "Quả" },
   "que": { emoji: "🥢", label: "Que gỗ" },
   "quạ": { emoji: "🐦‍⬛", label: "Con quạ" },
-  "mía": { emoji: "🌾", label: "Cây mía" },
+  "mía": { emoji: '<img src="06-assets/images/cay_mia.svg" class="pic-custom-img" alt="Cây mía" />', label: "Cây mía" },
   "cua": { emoji: "🦀", label: "Con cua" },
   "búa": { emoji: "🔨", label: "Chiếc búa" },
   "dừa": { emoji: "🥥", label: "Quả dừa" },
@@ -762,27 +762,27 @@ const vocabPictureData = {
   "sen": { emoji: "🌺", label: "Bông sen" },
   "vẹt": { emoji: "🦜", label: "Con vẹt" },
   "cà phê": { emoji: "☕", label: "Cà phê" },
-  "cục đá": { emoji: "🧊", label: "Cục đá" },
+  "cục đá": { emoji: "🪨", label: "Cục đá" },
   "che ô": { emoji: "🌂", label: "Che ô" },
   "nhà ga": { emoji: "🚉", label: "Nhà ga" },
-  "ru ngủ": { emoji: "🌙", label: "Ru ngủ" },
+  "ru ngủ": { emoji: "🤱", label: "Ru ngủ" },
   "ghế gỗ": { emoji: "💺", label: "Ghế gỗ" },
   "nô đùa": { emoji: "🧒", label: "Nô đùa" },
   "dưa lê": { emoji: "🍈", label: "Dưa lê" },
   "mưa gió": { emoji: "🌬️", label: "Mưa gió" },
-  "bàn là": { emoji: "👔", label: "Bàn là" },
+  "bàn là": { emoji: '<img src="06-assets/images/ban_la.svg" class="pic-custom-img" alt="Bàn là" />', label: "Bàn là" },
   "quả cam": { emoji: "🍊", label: "Quả cam" },
   "xe đạp": { emoji: "🚲", label: "Xe đạp" },
   "lạc đà": { emoji: "🐪", label: "Lạc đà" },
   "nhà sàn": { emoji: "🛖", label: "Nhà sàn" },
-  "gà mái": { emoji: "🥚", label: "Gà mái" },
+  "gà mái": { emoji: "🐔", label: "Gà mái" },
   "máy bay": { emoji: "✈️", label: "Máy bay" },
   "lái xe": { emoji: "🚘", label: "Lái xe" },
   "rau cải": { emoji: "🥬", label: "Rau cải" },
   "cái cân": { emoji: "⚖️", label: "Cái cân" },
   "quả mận": { emoji: "🍑", label: "Quả mận" },
   "đèn pin": { emoji: "🔦", label: "Đèn pin" },
-  "quả mít": { emoji: "🍈", label: "Quả mít" },
+  "quả mít": { emoji: '<img src="06-assets/images/qua_mit.svg" class="pic-custom-img" alt="Quả mít" />', label: "Quả mít" },
   "đàn vịt": { emoji: "🦆", label: "Đàn vịt" },
   "nón lá": { emoji: "👒", label: "Nón lá" },
   "cà rốt": { emoji: "🥕", label: "Cà rốt" },
@@ -859,7 +859,7 @@ const vocabPictureData = {
   "đồng ruộng": { emoji: "🌾", label: "Đồng ruộng" },
   "thước kẻ": { emoji: "📏", label: "Thước kẻ" },
   "hướng dương": { emoji: "🌻", label: "Hướng dương" },
-  "bập bênh": { emoji: "🎢", label: "Bập bênh" },
+  "bập bênh": { emoji: '<img src="06-assets/images/bap_benh.svg" class="pic-custom-img" alt="Bập bênh" />', label: "Bập bênh" },
   "bệnh viện": { emoji: "🏥", label: "Bệnh viện" },
   "máy tính": { emoji: "💻", label: "Máy tính" },
   "tờ lịch": { emoji: "📅", label: "Tờ lịch" },
@@ -888,7 +888,7 @@ const vocabPictureData = {
   "áo khoác": { emoji: "🧥", label: "Áo khoác" },
   "xe buýt": { emoji: "🚌", label: "Xe buýt" },
   "huýt sáo": { emoji: "😗", label: "Huýt sáo" },
-  "tập thể dục": { emoji: "🏋️", label: "Tập thể dục" },
+  "tập thể dục": { emoji: "🤸", label: "Tập thể dục" },
   "xe cứu hoả": { emoji: "🚒", label: "Xe cứu hoả" },
 };
 
@@ -898,7 +898,7 @@ const spellingExtraPictures = {
   'bát': { emoji: '🥣', label: 'Cái Bát' },
   'đất': { emoji: '🌱', label: 'Đất Trồng Cây' },
   'Tết': { emoji: '🧧', label: 'Ngày Tết' },
-  'mít': { emoji: '🍈', label: 'Quả Mít' },
+  'mít': { emoji: '<img src="06-assets/images/qua_mit.svg" class="pic-custom-img" alt="Quả Mít" />', label: 'Quả Mít' },
   'bút': { emoji: '🖊️', label: 'Cái Bút' },
   'ngọt': { emoji: '🍬', label: 'Vị Ngọt' },
   'tốt': { emoji: '👍', label: 'Việc Tốt' },
@@ -1742,12 +1742,15 @@ function openWordStation(item) {
   document.getElementById('example-text').textContent = `"${item.example_vi || 'Đang cập nhật ví dụ'}"`;
   
   const pic = getPictureDataForWord(item.word);
-  document.getElementById('word-emoji').textContent = pic.emoji || '📖';
+  const wordEmojiEl = document.getElementById('word-emoji');
+  if (wordEmojiEl) {
+    wordEmojiEl.innerHTML = pic.emoji || '📖';
+  }
   
   // Cập nhật hình ảnh minh họa cho câu ví dụ
   const exEmoji = document.getElementById('example-emoji');
   if (exEmoji) {
-    exEmoji.textContent = exampleIllustrationMap[item.word] || '🌟';
+    exEmoji.innerHTML = exampleIllustrationMap[item.word] || '🌟';
   }
 
   const isConfirmed = item.phonics && item.phonics.status === 'user_confirmed';
@@ -1979,7 +1982,10 @@ function handlePictureSelect(cardElement, option) {
 
     // 3. Phát giọng người thật khen ngợi ĐỒNG NHẤT 100% VỚI CHỮ HIỂN THỊ
     const praiseItem = PRAISE_ITEMS[Math.floor(Math.random() * PRAISE_ITEMS.length)];
-    playAudioSrc(praiseItem.audio, praiseItem.text);
+    playAudioSrc(praiseItem.audio, praiseItem.text).then(() => {
+      // 4. Tràng vỗ tay giòn giã tán thưởng ngay sau lời khen
+      playApplauseSound();
+    });
 
     // Lời khen ngợi hiển thị đồng nhất
     feedback.className = 'quiz-feedback success';
@@ -2193,6 +2199,58 @@ function playChimeSound(type) {
       osc.start(ctx.currentTime + idx * 0.08);
       osc.stop(ctx.currentTime + idx * 0.08 + 0.5);
     });
+  }
+}
+
+// Phát âm thanh tràng vỗ tay giòn giã sau khi khen
+function playApplauseSound() {
+  if (!state.soundEnabled) return;
+  try {
+    const a = new Audio('06-assets/audio/common/applause.mp3');
+    a.volume = 0.85;
+    const p = a.play();
+    if (p !== undefined) {
+      p.catch(() => synthApplauseWebAudio());
+    }
+  } catch (e) {
+    synthApplauseWebAudio();
+  }
+}
+
+// Fallback tạo tiếng vỗ tay rộn ràng bằng Web Audio API
+function synthApplauseWebAudio() {
+  const ctx = getAudioContext();
+  if (!ctx) return;
+  try {
+    const bufferSize = Math.floor(ctx.sampleRate * 2.2);
+    const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+    const data = buffer.getChannelData(0);
+    // Tạo chuỗi tiếng vỗ tay tự nhiên
+    for (let i = 0; i < bufferSize; i++) {
+      data[i] = (Math.random() * 2 - 1) * 0.35;
+    }
+    const noise = ctx.createBufferSource();
+    noise.buffer = buffer;
+
+    const filter = ctx.createBiquadFilter();
+    filter.type = 'bandpass';
+    filter.frequency.value = 1600;
+    filter.Q.value = 1.2;
+
+    const gain = ctx.createGain();
+    const now = ctx.currentTime;
+    gain.gain.setValueAtTime(0, now);
+    gain.gain.linearRampToValueAtTime(0.3, now + 0.15);
+    gain.gain.exponentialRampToValueAtTime(0.001, now + 2.2);
+
+    noise.connect(filter);
+    filter.connect(gain);
+    gain.connect(ctx.destination);
+
+    noise.start(now);
+    noise.stop(now + 2.2);
+  } catch (e) {
+    // Bỏ qua lỗi audio context
   }
 }
 
