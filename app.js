@@ -2217,38 +2217,30 @@ function playApplauseSound() {
   }
 }
 
-// Fallback tạo tiếng vỗ tay rộn ràng bằng Web Audio API
+// Fallback tạo âm thanh chúc mừng chiến thắng rộn rã bằng Web Audio API
 function synthApplauseWebAudio() {
   const ctx = getAudioContext();
   if (!ctx) return;
   try {
-    const bufferSize = Math.floor(ctx.sampleRate * 2.2);
-    const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
-    const data = buffer.getChannelData(0);
-    // Tạo chuỗi tiếng vỗ tay tự nhiên
-    for (let i = 0; i < bufferSize; i++) {
-      data[i] = (Math.random() * 2 - 1) * 0.35;
-    }
-    const noise = ctx.createBufferSource();
-    noise.buffer = buffer;
-
-    const filter = ctx.createBiquadFilter();
-    filter.type = 'bandpass';
-    filter.frequency.value = 1600;
-    filter.Q.value = 1.2;
-
-    const gain = ctx.createGain();
     const now = ctx.currentTime;
-    gain.gain.setValueAtTime(0, now);
-    gain.gain.linearRampToValueAtTime(0.3, now + 0.15);
-    gain.gain.exponentialRampToValueAtTime(0.001, now + 2.2);
+    // Hợp âm rộn rã, tưng bừng chúc mừng chiến thắng (C5 - E5 - G5 - C6 - E6)
+    const notes = [523.25, 659.25, 783.99, 1046.50, 1318.51];
+    notes.forEach((freq, idx) => {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(freq, now + idx * 0.1);
 
-    noise.connect(filter);
-    filter.connect(gain);
-    gain.connect(ctx.destination);
+      gain.gain.setValueAtTime(0, now + idx * 0.1);
+      gain.gain.linearRampToValueAtTime(0.3, now + idx * 0.1 + 0.04);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.1 + 0.6);
 
-    noise.start(now);
-    noise.stop(now + 2.2);
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+
+      osc.start(now + idx * 0.1);
+      osc.stop(now + idx * 0.1 + 0.65);
+    });
   } catch (e) {
     // Bỏ qua lỗi audio context
   }
